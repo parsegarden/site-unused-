@@ -1,0 +1,16 @@
+<svg viewBox="0 0 80 80"xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <circle id="path-1" cx="40" cy="40" r="40"></circle>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD-Copy" sketch:type="MSArtboardGroup" transform="translate(-162.000000, -31.000000)">
+            <g id="Oval-1-Copy-6" sketch:type="MSLayerGroup" transform="translate(162.000000, 31.000000)">
+                <mask id="mask-2" sketch:name="Mask" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#5856D6" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                <circle fill="#EBEDEF" sketch:type="MSShapeGroup" mask="url(#mask-2)" cx="40" cy="40" r="30"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

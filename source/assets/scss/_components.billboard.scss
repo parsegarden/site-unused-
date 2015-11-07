@@ -1,0 +1,99 @@
+/*------------------------------------*\
+    #BILLBOARD
+\*------------------------------------*/
+
+.billboard {
+    align-items: center;
+    display: flex;
+    height: 90vh;
+    padding-top: 120px;
+    position: relative;
+    z-index: 1;
+    
+    &:before {
+        @include position(fixed, 0 0 0 null);
+        background: url('../../assets/i/football-player@2x.png') no-repeat bottom right;
+        background-size: 1085px 755px;
+        content: "";
+        display: block;
+        height: 100vh;
+        margin-right: -540px;
+        width: 100%;
+    }
+    
+    .billboard-content {
+        width: 980px;
+    }
+    
+    .page-subtitle {
+        max-width: 900px;
+    }
+}
+
+
+.billboard-list {
+    display: flex;
+    padding: 60px 0;
+    width: 960px;
+}
+
+
+    .billboard-list--item {
+        flex: 1;
+        
+        &:first-child span {
+            border-bottom-color: $green;
+        }
+        
+        &:nth-child(2) span {
+            border-bottom-color: $orange;
+        }
+        
+        &:last-child span {
+            border-bottom-color: $red;
+        }
+        
+        .icon-arrow-right:before {
+            @include font-size($text-size-m);
+            position: relative;
+            top: 5px;
+        }
+    }
+    
+    
+    .billboard-list--link {
+        background-color: white;
+        border: 1px solid $grey-lighter;
+        display: block;
+        margin: 0 -1px 0 0;
+        padding: 30px 20px 30px 40px;
+        position: relative;
+        z-index: 1;
+        
+        &:hover {
+            border-color: $grey-light;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .05);
+            z-index: 2;
+        }
+    }
+    
+    
+    
+    .billboard-list--heading {
+        color: $grey-darkest;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        
+        span {
+            border-bottom: 3px solid #444;
+            display: inline-block;
+            line-height: 2;
+        }
+    }
+    
+    
+    
+    .billboard-list--copy {
+        color: $grey-darker;
+        margin-bottom: 10px;
+    }

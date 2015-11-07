@@ -1,0 +1,391 @@
+/* -------------------- *\
+   #UTILITIES
+\* -------------------- */
+
+%link, 
+.link {
+	color: $link-color;
+	
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+
+
+.copy-link {
+   color: $link-color !important;
+   
+   &:hover {
+		text-decoration: underline;
+	}
+}
+
+// Position
+
+
+.fix-it {
+	position: fixed !important;
+}
+
+
+
+/* 
+** Toggling content
+*/
+.is_shown {
+   visibility: visible;
+   display: block;
+}
+
+
+
+.is_invisible {
+  visibility: hidden;
+}
+
+
+
+.is_hidden {
+	@include is_hidden();
+	display: none;
+}
+
+
+.link-arrow { //?
+   padding: 0 3px;
+}
+
+
+
+// For Affix plugin
+.affix {
+  position: fixed;
+}
+
+
+
+/*
+** Clearing floats
+*/
+.group {
+	&:before,
+	&:after {
+	    content: " ";
+    	display: table;
+    }
+    &:after {
+ 	   clear: both;
+    }
+}
+
+
+
+
+/*
+** Accessible yet invisible text
+*/
+.hide-text {
+   @include hide-text;
+}
+
+
+
+/*
+**Wait Cursor
+*/
+.waitCursor{
+	cursor: wait;
+}
+
+
+
+/*
+** Separator
+*/
+
+.sep {
+  @include font-size($text-size-xs);
+  color: $text-color-lightest;
+	margin: 0 5px;
+}
+
+
+
+hr {
+	border: 1px solid $border-color-light;
+	border-width: 1px 0 0;
+	margin: 20px 0;
+	
+	&.wo-mar {
+   	margin: 0;
+	}
+	
+	&.lighter {
+   	border-color: $border-color-lighter;
+	}
+	
+	&.lightest {
+   	border-top: 1px solid $border-color-lightest;
+	}
+	
+	&.dotted {
+   	border-style: dotted !important;
+	}
+	
+	&.dashed {
+   	border-style: dashed !important;
+	}
+}
+
+
+
+
+/*
+** Line Break  
+*/
+.break {
+   
+	@include MQ(L) {
+		clear: left;
+		display: inline-block;	
+	}
+}
+
+
+
+/*
+** Center align text
+*/
+
+.t-center,
+.text-center {
+	text-align: center !important;
+}
+
+
+
+/*
+** Left align text
+*/
+
+.t-left{
+	text-align: left !important;
+}
+
+
+/*
+** Right align text
+*/
+
+.t-right {
+	text-align: right !important;
+}
+
+
+
+/*
+** ICON FONT TEXT HIDE
+*/
+.screen-reader-text {
+	@include hide-text;
+}
+
+
+
+.bold {
+	font-weight: bold;
+}
+
+
+
+.italic {
+	font-style: italic;
+}
+
+
+
+.big-title, {
+   @include font-size($text-size-xl);
+   font-weight: normal;
+   letter-spacing: -1px;
+}
+
+
+/*
+** TABLE LAYOUT 
+*/
+.cell_5 {
+   width: 5%;
+}
+
+.cell_10 {
+   width: 10%;
+}
+
+.cell_15 {
+   width: 15%;
+}
+
+.cell_20 {
+   width: 20%;
+}
+
+.cell_30 {
+   width: 30%;
+}
+
+.cell_35 {
+   width: 35%;
+}
+
+
+/* 
+** META – Used to display figures next to heading or some other text. Should be dim and light
+*/
+
+   .meta {
+     color: $text-color-lighter;
+   }
+
+
+/*
+** Blank Slate
+*/
+
+.blank_slate-text {//?
+   color: $text-color-lighter;
+   padding: 40px;
+   text-align: center;
+}
+
+
+/**
+ *  Nav Sub Alerts 
+ */
+.nav_sub_alert-warning {
+   @include font-size($text-size-xxs);
+   display: inline-block;
+   text-align: center;
+   border-radius: 2px;
+   margin: 3px 0 -2px -5px;
+   padding: 1px 5px;
+   .icon-warning {
+      @include font-size(13px);   
+   }
+}
+
+
+
+/** 
+ *  Notification Count for new feature under More menu
+ */
+.notification_count {
+	@include font-size($text-size-s);
+	font-weight: bold;
+	border-radius: 20px;
+	background-color: red;
+	padding: 2px 10px;
+	margin: 0 3px;
+	line-height: 1;
+	color: white;
+}
+
+
+
+/** 
+ *  LABEL
+ */
+%label {
+   display: inline-block;
+	@include font-size($text-size-xxs);
+	background-color: $background-color-lighter;
+	padding: 1px 5px;	
+	border-radius: 2px;
+	margin-right: 3px;
+}
+
+
+
+[class*='label-imp'] {
+   @extend %label;
+   background-color: lighten(red,40);
+}
+
+
+
+.small,
+.t-small {
+  font-size: $text-size-xs !important;
+}
+
+
+.t-base {
+  font-size: $text-size-s !important;
+}
+
+
+.t-medium {
+   font-size: $text-size-m !important;
+}
+
+
+.t-large {
+  font-size: $text-size-l !important;
+}
+
+
+.h1 {
+  font-size: $text-size-xl !important;
+  margin-bottom: 15px;
+}
+
+.h2 {
+  font-size: $text-size-l !important;
+  margin-bottom: 10px;
+}
+
+.h3 {
+  font-size: $text-size-m !important;
+  margin-bottom: 10px;
+}
+
+.h4 {
+  font-size: $text-size-s !important;
+  margin-bottom: 10px;
+}
+
+.text {
+    margin-bottom: 10px;
+}
+
+.push-left {
+   float: left !important;
+}
+
+
+
+.push-right {
+   float: right !important;
+}
+
+
+.no-space-below {
+   margin-bottom: 0 !important;
+}
+
+.no-space-above {
+   margin-top: 0 !important;
+}
+
+
+
+/* Text Colors */
+
+.col-light {
+    color: $text-color-light !important;
+}
+
+.col-lighter {
+    color: $text-color-lighter !important;
+}

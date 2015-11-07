@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    #CLIENTS
+\*------------------------------------*/
+
+
+
+/**
+ * 
+ */
+
+.clients-wrap {
+    @include group;
+    background-color: #f6f6f6;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+    .clients-list {
+        align-items: stretch;
+        display: flex;
+    }
+    
+        .clients-list--item {
+            flex-grow: 1;
+            height: 48px;   
+            justify-content: space-around;
+            
+            img {
+                height: 48px;   
+            }
+        }

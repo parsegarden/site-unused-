@@ -1,0 +1,12 @@
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <g id="Graphics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <circle id="Oval-1-Copy-3" opacity="0.1" fill="#5856D6" sketch:type="MSShapeGroup" cx="51" cy="51" r="47"></circle>
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(51.000000, 51.275862) rotate(-90.000000) translate(-51.000000, -51.275862) translate(27.000000, 31.000000)" stroke="#5856D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M26.1360828,20.4758897 L47.1724966,7.86182069 C46.0022897,5.87644138 43.3639448,5.03644138 41.3793931,6.20664828 L8.27594483,25.241131" id="Stroke-1690" sketch:type="MSShapeGroup"></path>
+            <path d="M21.5172414,17.7931034 L47.1724138,32.6896552 C46.0022069,34.6750345 43.3638621,35.5166897 41.3793103,34.3448276 L8.27586207,15.3103448" id="Stroke-1691" sketch:type="MSShapeGroup"></path>
+            <path d="M14.8965517,32.6896552 C14.8965517,36.8035862 11.5622069,40.137931 7.44827586,40.137931 C3.33434483,40.137931 0,36.8035862 0,32.6896552 C0,28.5765517 3.33434483,25.2413793 7.44827586,25.2413793 C11.5622069,25.2413793 14.8965517,28.5765517 14.8965517,32.6896552 L14.8965517,32.6896552 Z" id="Stroke-1692" sketch:type="MSShapeGroup"></path>
+            <path d="M14.8965517,7.86206897 C14.8965517,11.976 11.5622069,15.3103448 7.44827586,15.3103448 C3.33434483,15.3103448 0,11.976 0,7.86206897 C0,3.74896552 3.33434483,0.413793103 7.44827586,0.413793103 C11.5622069,0.413793103 14.8965517,3.74896552 14.8965517,7.86206897 L14.8965517,7.86206897 Z" id="Stroke-1693" sketch:type="MSShapeGroup"></path>
+        </g>
+        <circle id="Oval-1-Copy-2" stroke="#5856D6" sketch:type="MSShapeGroup" cx="51" cy="51" r="50"></circle>
+    </g>
+</svg>

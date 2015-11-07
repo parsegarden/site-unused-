@@ -1,0 +1,66 @@
+/* -------------------- *\
+   #Z-INDEXS
+\* -------------------- */
+
+.nav-social-list {
+    z-index: 2;
+}
+
+
+[class^='pg_border-'] {
+   z-index: 9;   
+}
+
+
+
+
+.highlighter {
+   z-index: 10;
+}
+
+
+
+.highlighter-wrap .callout-wrap {
+   z-index: 12;
+}      
+      
+
+
+.tipsy {
+   z-index: 199;
+}      
+
+
+.page-header-wrap.is_sticky {
+    z-index: 90;
+}
+
+.nav_sb-wrap {
+    z-index: 91;
+}
+
+.nav_sb-item {
+    z-index: 92;
+}
+
+.dd_btn-floating {
+    z-index: 93;
+}    
+
+.dd_list-floating,
+.help_ov-wrap {
+    z-index: 94;
+}
+
+    
+.overlay_wrap {
+   z-index: -99;
+
+   &.is_visible { 
+      z-index: 101; 
+   }
+   
+   &.is_topmost {
+   	z-index: 102;
+	}
+}

@@ -1,0 +1,166 @@
+/* ------------------------------------------- *\
+   #GRID – Using NEAT  http://neat.bourbon.io
+\* ------------------------------------------- */
+
+
+/*
+** To contain/wrap the main content of a page   
+*/
+.container {
+    position: relative;
+    width: 1240px;
+    margin: 0 auto;
+}
+
+
+
+[class*='size1of1'] {
+	@include span-columns(12);
+}
+
+
+
+[class*='size3of12'] {
+   
+   @include MQ(L) {
+   	@include span-columns(3);
+   }
+}
+
+
+
+[class*='size4of12'] {
+
+   @include MQ(L) {
+   	@include span-columns(4);
+   }
+}
+
+
+
+[class*='size5of12'] {
+
+   @include MQ(L) {
+   	@include span-columns(5);
+   }
+}
+
+
+
+[class*='size6of12'] {
+
+   @include MQ(L) {
+   	@include span-columns(6);
+   }
+}
+
+
+
+[class*='size7of12'] {
+
+   @include MQ(L) {
+   	@include span-columns(7);
+   }
+}
+
+
+
+[class*='size8of12'] {
+
+   @include MQ(L) {
+      @include span-columns(8);   
+   }
+}
+
+
+
+[class*='size9of12'] {
+
+   @include MQ(L) {
+   	@include span-columns(9);
+   }
+}
+
+
+[class*='size10of12'] {
+
+   @include MQ(L) {
+   	@include span-columns(10);
+   }
+}
+
+
+
+[class*='center-size'] {
+	@include outer-container;
+}
+
+
+
+.center-size4of12 {
+   
+   @include MQ(L) {
+   	@include shift(4);
+   }
+}
+
+
+
+.center-size5of12 {
+   
+   @include MQ(L) {
+   	margin-left: 30%;
+   }
+}
+
+
+
+.center-size6of12 {
+   
+   @include MQ(L) {
+   	@include shift(3);
+   }
+}
+
+
+
+.center-size7of12 {
+   
+   @include MQ(L) {
+   	margin-left: 20%;
+   }
+}
+
+
+
+.center-size8of12 {
+   
+   @include MQ(L) {
+   	@include shift(2);
+   }
+}
+
+
+
+.center-size9of12 {
+   
+   @include MQ(L) {
+   	margin-left: 12.5%;
+   }
+}
+
+.center-size10of12 {
+   
+   @include MQ(L) {
+   	margin-left: 8.5%;
+   }
+}
+
+
+
+/**
+ * Remove margin from last item of grid
+ */
+[class*='of12'].last {
+    margin-right: 0 !important;
+}

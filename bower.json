@@ -1,0 +1,23 @@
+{
+  "name": "gulp_test",
+  "version": "1.0.0",
+  "authors": [
+    "Amrinder Sandhu"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.4",
+    "bourbon": "4.2.3"
+  },
+  "devDependencies": {
+    "bourbon": "~4.2.5",
+    "neat": "~1.7.2"
+  }
+}
