@@ -93,6 +93,7 @@ small {
     @include font-size($text-size-xxl);
     color: $grey-darkest;
     font-weight: 900;
+    font-style: italic;
     letter-spacing: -2px;
 }
 

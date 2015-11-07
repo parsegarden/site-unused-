@@ -3,10 +3,9 @@
 \*------------------------------------*/
 
 .billboard {
-    align-items: center;
+    align-items: flex-end;
     display: flex;
     height: 90vh;
-    padding-top: 120px;
     position: relative;
     z-index: 1;
     
@@ -33,8 +32,8 @@
 
 .billboard-list {
     display: flex;
-    padding: 60px 0;
-    width: 960px;
+    padding: 140px 0 0;
+    width: 940px;
 }
 
 
@@ -62,8 +61,8 @@
     
     
     .billboard-list--link {
-        background-color: white;
-        border: 1px solid $grey-lighter;
+        background-color: rgba(white, .95);
+        border: 1px solid $grey-light;
         display: block;
         margin: 0 -1px 0 0;
         padding: 30px 20px 30px 40px;
