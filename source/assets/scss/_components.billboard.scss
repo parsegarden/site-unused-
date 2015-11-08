@@ -96,3 +96,55 @@
         color: $grey-darker;
         margin-bottom: 10px;
     }
+    
+    
+    
+
+
+// ALT VERSION
+    
+.page-home-alt {
+    .billboard {
+        align-items: center;
+        text-align: center;
+        padding-top: 100px;
+        
+        &:before {
+            background: #111 url('../../assets/i/football-player-alt.png') no-repeat center -30px;
+            margin: 0;
+        }
+    }
+    
+    .billboard-content,
+    .billboard-list {
+        width: 100%;
+    }
+    
+    .billboard-list {
+        padding: 40px 40px 0;
+    }
+    
+    .billboard-list--link {
+        border: none;
+        background-color: white;
+        border-radius: 5px;
+        margin: 5px 10px;
+        padding: 30px 40px;
+    }
+    
+    .page-title,
+    .page-subtitle {
+        text-shadow: 0 3px 10px rgba(black, .5);
+        color: white;
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+    
+    .clients-wrap {
+        border-top: none;
+    }
+    
+    .nav-link {
+        color: white;
+    }
+}
