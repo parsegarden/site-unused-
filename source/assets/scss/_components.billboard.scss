@@ -6,6 +6,7 @@
     align-items: flex-end;
     display: flex;
     height: 90vh;
+    max-height: 800px;
     position: relative;
     z-index: 1;
     
@@ -16,6 +17,7 @@
         content: "";
         display: block;
         height: 100vh;
+        max-height: 800px;
         margin-right: -540px;
         width: 100%;
     }
@@ -104,13 +106,18 @@
 // ALT VERSION
     
 .page-home-alt {
+    .top-bar .container {
+        width: 100%;    
+    }
+    
     .billboard {
         align-items: center;
         text-align: center;
         padding-top: 100px;
         
         &:before {
-            background: #111 url('../../assets/i/football-player-alt.png') no-repeat center -30px;
+            background: #111 url('../../assets/i/football-player-alt-2.png') no-repeat center -70px;
+            height: 800px;
             margin: 0;
         }
     }
@@ -126,7 +133,7 @@
     
     .billboard-list--link {
         border: none;
-        background-color: white;
+        background-color: rgba(white, .95);
         border-radius: 5px;
         margin: 5px 10px;
         padding: 30px 40px;
@@ -134,7 +141,7 @@
     
     .page-title,
     .page-subtitle {
-        text-shadow: 0 3px 10px rgba(black, .5);
+//        text-shadow: 0 3px 5px rgba(black, .15);
         color: white;
         width: 100%;
         margin: 0 auto 20px;
