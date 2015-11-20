@@ -3,7 +3,7 @@
 \* -------------------- */
 
  
-$text-size-xxl: 48px !default;
+$text-size-xxl: 60px !default;
 $text-size-xl:  32px !default;
 
 $text-size-l:   24px !default;
@@ -89,9 +89,14 @@ small {
 
 
 
+.page-title,
+.page-subtitle {
+    text-shadow: 0 0 3px rgba(black, .1);
+}
+
 .page-title {
     @include font-size($text-size-xxl);
-    color: $grey-darkest;
+    color: white;
     font-weight: 900;
     font-style: italic;
     letter-spacing: -2px;
@@ -99,6 +104,6 @@ small {
 
 .page-subtitle {
     @include font-size($text-size-l);
-    color: $grey-darker;
+    color: white;
     line-height: 1.3;
 }

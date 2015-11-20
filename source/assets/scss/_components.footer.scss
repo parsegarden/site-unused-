@@ -7,10 +7,12 @@
 .bottom-bar {
     @include group;
     @include font-size($text-size-xs);
-    background-color: white;
-    padding: 80px 0 60px 80px;
     position: relative;
     z-index: 2;
+    
+    .container {
+        padding: 40px 0 60px 80px;
+    }
     
     h3 {
         @include font-size($text-size-xs);
@@ -18,14 +20,17 @@
         text-transform: uppercase;
         
         span {
-            border-bottom: 2px solid $grey-base;
             display: inline-block;
-            line-height: 2;    
+            line-height: 1.8;    
         }
     }
     
     a {
         color: $grey-dark;
         line-height: 1.8;
+        
+        &:hover {
+            color: $link-color;
+        }
     }
 }

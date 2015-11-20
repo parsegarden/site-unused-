@@ -5,37 +5,41 @@
 .billboard {
     align-items: flex-end;
     display: flex;
-    height: 90vh;
-    max-height: 800px;
+    height: 100vh;
+    max-height: 1000px;
+    padding-bottom: 10px;
     position: relative;
+    text-align: center;
     z-index: 1;
-    
+
     &:before {
-        @include position(fixed, 0 0 0 null);
-        background: url('../../assets/i/football-player@2x.png') no-repeat bottom right;
-        background-size: 1085px 755px;
+        @include position(absolute, 0 0 0 null);
+        background: $link-color url('../../assets/i/bg-player@2x.png') no-repeat center bottom;
+        background-size: 100vw auto;
         content: "";
         display: block;
         height: 100vh;
-        max-height: 800px;
-        margin-right: -540px;
+        margin: 0;
+        max-height: 1000px;
         width: 100%;
     }
     
     .billboard-content {
-        width: 980px;
+        width: 100%;
     }
     
     .page-subtitle {
         max-width: 900px;
+        margin: 0 auto;
     }
 }
 
 
 .billboard-list {
     display: flex;
-    padding: 160px 0 0;
-    width: 940px;
+    flex-grow: 1;
+    padding: 10% 40px 0;
+    width: 100%;
 }
 
 
@@ -63,11 +67,12 @@
     
     
     .billboard-list--link {
-        background-color: rgba(white, .95);
-        border: 1px solid $grey-light;
+        background-color: rgba(white, .75);
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(black, .1);
         display: block;
-        margin: 0 -1px 0 0;
-        padding: 30px 20px 30px 40px;
+        margin: 10px;
+        padding: 25px 30px 30px;
         position: relative;
         z-index: 1;
         
@@ -96,62 +101,10 @@
     
     .billboard-list--copy {
         color: $grey-darker;
-        margin-bottom: 10px;
+        line-height: 1;
     }
     
     
-    
-
-
-// ALT VERSION
-    
-.page-home-alt {
-    .top-bar .container {
-        width: 100%;    
+    .billboard-list--more {
+        color: $link-color;
     }
-    
-    .billboard {
-        align-items: center;
-        text-align: center;
-        padding-top: 100px;
-        
-        &:before {
-            background: #111 url('../../assets/i/football-player-alt-2.png') no-repeat center -70px;
-            height: 800px;
-            margin: 0;
-        }
-    }
-    
-    .billboard-content,
-    .billboard-list {
-        width: 100%;
-    }
-    
-    .billboard-list {
-        padding: 40px 40px 0;
-    }
-    
-    .billboard-list--link {
-        border: none;
-        background-color: rgba(white, .95);
-        border-radius: 5px;
-        margin: 5px 10px;
-        padding: 30px 40px;
-    }
-    
-    .page-title,
-    .page-subtitle {
-//        text-shadow: 0 3px 5px rgba(black, .15);
-        color: white;
-        width: 100%;
-        margin: 0 auto 20px;
-    }
-    
-    .clients-wrap {
-        border-top: none;
-    }
-    
-    .nav-link {
-        color: white;
-    }
-}

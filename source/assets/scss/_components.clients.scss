@@ -10,26 +10,18 @@
 
 .clients-wrap {
     @include group;
-    background-color: white;
-    border: 1px solid $grey-light;
-    border-width: 1px 0;
-    margin-top: -1px;
-    padding: 20px 0 20px 80px;
+    margin: 20px 0 0;
+    padding: 0 10px;
     position: relative;
     z-index: 2;
 }
-
-    .clients-list {
-        align-items: stretch;
-        display: flex;
-    }
     
-        .clients-list--item {
-            flex-grow: 1;
-            height: 48px;   
-            justify-content: space-around;
-            
-            img {
-                height: 48px;   
-            }
+    .clients-list--item {
+        display: inline-block;
+        height: 44px;   
+        margin: 0 10px;
+        
+        img {
+            height: 44px;   
         }
+    }
