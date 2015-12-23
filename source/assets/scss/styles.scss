@@ -69,16 +69,23 @@
  */
 @import "components.alerts";
 @import "components.buttons";
-
+@import "components.analyze-competition";
+@import "components.analyze-performance";
+@import "components.form";
 @import "components.clients";
+@import "components.price";
 @import "components.header";
 @import "components.footer";
+@import "components.science";
+@import "components.social-content";
+@import "components.winning-strategies";
 @import "components.demand";
 @import "components.lists";
 @import "components.loading";
 @import "components.loader-page";
 @import "components.avatar";
 @import "components.news";
+@import "components.analyze-header";
 
 
 
@@ -94,6 +101,7 @@
  * #ANIMATION
  */
 @import "animatation.base";
+@import "animate";
 
 
 

@@ -1,0 +1,37 @@
+/*------------------------------------*\
+    #SECTION SCIENCE
+\*------------------------------------*/
+
+.science{
+	height: 440px;
+	padding-top: 20px;
+
+
+	&--content--title{
+		@extend .analyze-competition--content--title;
+		padding-bottom: 1.1em;
+		font-weight: 900;
+		font-style: italic;
+
+	}
+	img{
+		@include position(relative, -0.6em 0 0 0);
+	}
+}
+.science--content--avatar{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	.avatar{
+		height: 100px;
+	}
+	&--info{
+        padding-bottom: 1rem;
+	}
+	img{
+		height: 70px;
+	}
+}

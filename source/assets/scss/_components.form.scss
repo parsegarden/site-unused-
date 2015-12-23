@@ -1,0 +1,121 @@
+.form{
+	width: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	padding-top: 140px;
+	margin-bottom: 5em;
+
+	&--content--title{
+		@extend .analyze-competition--content--title;
+		font-weight: 900;
+		padding-bottom: 1em;
+	}
+
+	&--content--form {
+		border: 3px solid #EEEEFA;
+		border-radius: 3px;
+		position: relative;
+		padding: 4em;
+		}
+		.btn{ /* FF3.6-15 */
+		    background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 0%, #7db9e8 77%, #7db9e8 77%); /* FF3.6-15 */
+		    background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 0%,#7db9e8 77%,#7db9e8 77%); /* Chrome10-25,Safari5.1-6 */
+		    background: linear-gradient(to bottom, #1e5799 0%,#2989d8 0%,#7db9e8 77%,#7db9e8 77%);		border: none;
+		    border-radius: 5px;
+		    color: white;
+		
+	
+	}
+}
+
+.form--content--form::before{
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 3px solid #EEEEFA;
+    content: "";
+    display: block;
+    margin-left: 70px;
+    margin-bottom: 0%;
+    
+}
+.form--content--brand{
+	width: 250px;
+	position: absolute;
+	top: 4em;
+	right: 1.8em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+
+	img{
+		margin-top: 2em; 
+	}
+	.ford{
+		height: 42px;
+	}
+	.aa{
+		height: 44px;
+	}
+	.hm{
+		height: 36px;
+	}
+	.loreal{
+		height: 28px;
+	}
+	.gm{
+		height: 42px;
+	}
+	.unilever {
+		height: 42px;
+	}
+	&-title{
+		color: #AAAAAA;
+		text-align: center;
+	}
+}
+
+
+input{
+	background: none;
+	border: solid 2px black;  
+	padding: 15px 66px;
+	font-size: 18px;
+	display: inline-block;
+	font-weight: 500;
+
+}
+input:focus, input:active {
+  outline: none;
+}
+
+input[type="text"], input[type="email"] {
+	border: none;
+	border-bottom: solid 2px #EEEEFA;
+	width: 300px;
+	color: #72BAF3;
+	font-weight: 200;
+}
+select{
+	border: none;
+ 	border-bottom: solid 2px #EEEEFA;
+ 	width: 300px;
+ 	background-color: white;
+}
+.input-group {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 2em;
+
+	& input {
+ 		padding: 15px 0px;
+	}
+	label{
+		font-weight: 500;
+	}
+}

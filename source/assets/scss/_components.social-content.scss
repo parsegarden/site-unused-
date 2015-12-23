@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    #SECTION SOCIAL-MEDIA
+\*------------------------------------*/
+
+.social-media{
+    text-align: center;
+    height: 560px;
+
+    
+	&--content{
+		padding-top: 80px;
+	}
+	img{
+		height: 51px;
+	}
+
+}
+
+.media--content--title{
+	font-size: 48px;
+    color: #3E84E2;
+    font-weight: bold;
+    letter-spacing: -2px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 63px;
+
+}
+
+//h3 of social-media--info 
+
+.reporting-title{
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 18px;
+
+}
+.reporting-sub-info{
+    max-width: 250px;
+    margin: 0.5em auto;
+    line-height: 1.5;
+}

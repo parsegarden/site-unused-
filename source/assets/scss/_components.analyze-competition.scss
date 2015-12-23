@@ -1,0 +1,36 @@
+.analyze-competition{
+	height: 840px;
+	margin-bottom: 130px;
+
+	&--content--title{
+		text-align: center;
+		font-size: 36px;
+		font-weight: bold;
+		color: #444444;
+	}
+	&--content--sub-title{
+		text-align: center;
+		color: #444444;
+		max-width: 900px;
+		margin: 20px auto;
+		font-weight: 200;
+		margin-bottom: 69px;
+	}
+}
+ul.list{
+	margin-top: 78px;
+	padding-right: 2.5em;
+
+}
+.list--item{
+	
+	&:nth-child(2){
+		opacity: 1;
+		
+		.border-right{
+			width: 415px;
+			
+		}
+		
+	}
+}

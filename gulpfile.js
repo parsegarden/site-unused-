@@ -101,7 +101,7 @@ gulp.task('build-prod-css', function() {
 
 // JADE TO HTML – build .jade to .html
 gulp.task('build-html', function() {
-    gulp.src(config.jadePath + '/**/*.jade')
+    gulp.src(config.jadePath  + '/**/*.jade'+ 'source/product/**/*.jade')
     .pipe(jade({
             pretty: true,
             locals: {imagePath: 'assets/i'}

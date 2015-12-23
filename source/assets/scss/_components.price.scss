@@ -1,0 +1,102 @@
+/*------------------------------------*\
+    #SECTION PRICE
+\*------------------------------------*/
+
+.price{
+	height: 740px;
+	
+	&--content{
+	
+	} 
+
+	&--content--title{
+		@extend .analyze-competition--content--title;
+		padding-bottom: 0.6em;
+		font-weight: 900;
+		width: 550px;
+		margin: 0 auto;
+		text-align: center;
+
+	}
+	&--content--info{
+		padding-bottom: 4em;
+		width: 550px;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 18px;
+		line-height: 1.6;
+	}
+
+}
+
+
+.tabs-wrap{
+	width: 200px;
+	margin: 0 auto;
+	
+}
+.tabs-list{
+	display: flex;
+}
+.tab_link {
+	display: flex;
+	flex-direction: row;
+    
+	padding: 5px 10px 5px 10px;
+}
+
+
+.price--content--table {
+  margin-top: 7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 37px;
+}
+.table-title{
+  	text-align: left;
+  	img{
+  		height: 15px;
+  		position: relative;
+  		top: 2px;
+  	}
+  }
+
+
+
+th,
+td, {
+  border-bottom: 1px solid #EEEEEE;
+  padding: 10px 3em;
+  font-size: 16px;
+  color: #4A4A4A;
+  &:hover{
+  opacity: 0.4;
+  }
+
+  img{
+  	height: 20px;
+  }
+}
+
+
+.table-price{
+	height: 50px;
+}
+
+.table-date{
+	color: #777777;
+}
+
+.price--content--see-more{
+	text-align: center;
+	font-size: 18px;
+	
+	a{
+		color: #3E84E2;
+	}
+	img{
+		height: 10px;
+	}
+}

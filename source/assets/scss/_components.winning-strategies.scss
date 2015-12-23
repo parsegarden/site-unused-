@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    #SECTION WINNING-STRAGIES
+\*------------------------------------*/
+
+.winning-stragies{
+	height: 755px;
+	padding-top: 130px;
+	margin-bottom: 140px;
+	
+
+	&--content--title{
+		@extend .analyze-competition--content--title;
+		padding-bottom: 1.1em;
+	}
+}
+.evaluate-content{
+	margin: 0 auto;
+	&--title{
+		max-width: 400px;
+		margin: 0 auto;	
+	}	
+
+	&--info{
+		padding: 0.8em 0 2em 0;
+		max-width: 400px;
+		margin: 0 auto;
+
+	}
+	img{
+		padding-left: 1em;
+	}
+}	

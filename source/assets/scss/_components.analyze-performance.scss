@@ -1,0 +1,74 @@
+/*------------------------------------*\
+    #SECTION ANALYZE-PERFORMANCE
+\*------------------------------------*/
+
+.analyze-performance {
+	height: 780px;
+
+	&--content{
+		img{
+			height: 553px;
+			position: relative;
+			top: 2rem;
+		}
+	}
+		&--content--title{
+			@extend .analyze-competition--content--title;
+		}
+		&--content--sub-title{
+			text-align: center;
+			color: #444444;
+			max-width: 900px;
+			margin: 20px auto;
+			font-weight: 200;
+			margin-bottom: 69px;
+		}
+}
+
+
+
+.list{
+	margin-top: 78px;
+	padding-left: 2.5em;
+
+}
+.list-title{
+	color: #3E84E2;
+	font-size: 18px;
+	font-weight: 600;
+
+	a{
+		color: #3E84E2;
+	}
+}
+.list-info{
+	color: #444444;
+	font-size: 16px;
+	padding-top: 10px;
+}
+.list--item{
+	
+	&:nth-child(1){
+		opacity: 0.4;
+
+	}
+	&:nth-child(2){
+		opacity: 1;
+		
+		.border-left{
+			width: 415px;
+			margin-left: -4.4em;
+		}
+		
+}
+	&:nth-child(3){
+		opacity: 0.4;
+	}
+	span{
+		border-bottom: 1px solid black;
+		width: 412px;
+		height: 1px;
+		
+	}
+}
+
