@@ -98,8 +98,8 @@ small {
     @include font-size($text-size-xxl);
     color: white;
     font-weight: 900;
-    font-style: italic;
     letter-spacing: -2px;
+    font-size: 60px;
 }
 
 .page-subtitle {

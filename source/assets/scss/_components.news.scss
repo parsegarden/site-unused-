@@ -1,0 +1,54 @@
+.news{
+    @include group;
+
+    padding: 2em 10px 1em 10px  ;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 107px;
+
+
+    img {
+            height: 30px;   
+        }
+}
+
+.news-content-title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 82px;
+
+}
+   .news-brand--item {
+       padding: 0 2em;
+
+        .forbes-img{
+            height: 32px;
+        } 
+        .adage-img{
+            height: 42px;
+        }
+        .adweek-img{
+            height: 32px;
+        }
+        .logo-h{
+            height: 42px;
+        }
+        .wjs-img{
+            height: 32px;
+        }
+        .fortune-img{
+            height: 30px;
+        }
+
+  }  
+    .news-brand--list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 44px;   
+        margin: 0 10px;
+        
+        
+    }

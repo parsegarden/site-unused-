@@ -3,9 +3,16 @@
 \*------------------------------------*/
 
 .top-bar {
-    @include position(absolute, 0 0 null 0);
-    margin: 0 30px;
     z-index: 2;
+    background: url(../i/bg-player.jpg) no-repeat ;
+    background-size: cover;
+    background-position: bottom center;
+    min-height: 87vh;
+    width: 100%;
+    position: relative;
+    
+
+    
     
     .container {
         align-items: center;
@@ -16,26 +23,165 @@
     .logo {
         flex: 1;
         padding: 20px 0;
+        margin: 0 28px;
         
         img {
-            height: 16px;   
-        }   
+            height: 20px;   
+        }  
     }
 }
+.nav-wrap{
+    margin: 0 28px;
 
+}
 
 
 .nav-link {
     color: white;
-    margin-left: 10px;
-    padding: 10px 15px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 22px;
     text-transform: lowercase;
     
     &:hover {
         color: rgba(white, .75);
     }
 }
+//BILLBOARD
+.billboard {
+    position: absolute;
+    top: 16em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    z-index: 1;
+    
+    .billboard-content {
+        width: 100%;
+    }
+    h3,
+    h1,
+    span{
+        text-align: center;
+    }
+    
+}
 
+
+.billboard-list {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2.5em;
+}
+
+
+    .billboard-list--item {
+        flex: 1;
+        text-align: center;
+
+        
+        &:first-child span {
+            color: #fff;
+            padding: 5px 10px 5px 18px;
+            background: -moz-linear-gradient(#80C3F3, #4A90E2);
+            background: -webkit-linear-gradient(#80C3F3, #4A90E2);
+            background: linear-gradient(#80C3F3, #4A90E2);
+                        
+        }
+        
+        &:nth-child(2) span {
+            background: -moz-linear-gradient(#59DBE3,#2DB5C3);
+            background: -webkit-linear-gradient(#59DBE3,#2DB5C3);
+            background: linear-gradient(#59DBE3,#2DB5C3);
+            padding: 5px 10px 5px 18px;
+            color: #fff;
+         
+            
+        }
+        
+        &:last-child span {
+            background: -moz-linear-gradient(#0CE7BB,#05CA86);
+            background: -webkit-linear-gradient(#0CE7BB,#05CA86);
+            background: linear-gradient(#0CE7BB,#05CA86);
+            padding: 5px 10px 5px 18px;
+            color: #fff;
+
+
+        }
+
+        &:first-child h3 {
+            color: #4A90E2;
+            
+            
+        }
+        
+        &:nth-child(2) h3 {
+            color: #2DB5C3;
+            
+        }
+        
+        &:last-child h3 {
+            color: #05CA86;
+
+        }
+        
+        .icon-arrow-right:before {
+            @include font-size($text-size-m);
+            position: relative;
+            top: 5px;
+        }
+    }
+    
+    
+    .billboard-list--link {
+        background-color: rgba(white, .9);
+        border-radius: 5px;
+        box-shadow: 0 3px 15px rgba(black, .2);
+        display: block;
+        margin: 2px;
+        padding: 55px 53px 55px 53px;
+        position: relative;
+        z-index: 1;
+        
+        &:hover {
+            border-color: $grey-light;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .05);
+            z-index: 2;
+        }
+    }
+    
+    
+    
+    .billboard-list--heading {
+        color: $grey-darkest;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 18px;
+        
+        
+    }
+    
+    
+    
+    .billboard-list--copy {
+        color: $grey-darker;
+        line-height: 1; 
+        
+    }
+    
+    
+    .billboard-list--more {
+        color: $link-color;
+        position: relative;
+        border-radius: 3px;
+        top: 0.5em;
+        font-weight: 400;
+        font-size: 16px;
+        
+}
 
     
     

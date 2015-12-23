@@ -8,20 +8,45 @@
  * 
  */
 
-.clients-wrap {
+.clients {
     @include group;
-    margin: 20px 0 0;
-    padding: 0 10px;
+    padding: 2em 10px 1em 10px  ;
     position: relative;
     z-index: 2;
+    background: #DAF7ED;
+
+    img {
+            height: 36px;   
+        }
 }
+
+    .client-unit{
+         position: absolute;
+        top: 0px;
+        right: null;
+        left: 50%;
+        bottom: null;
+        margin: 0 0 50px -375;
+    }
     
-    .clients-list--item {
-        display: inline-block;
+    .clients-brand--item {
+        padding: 0 2em; 
+
+  }  
+    .clients-brand--list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         height: 44px;   
         margin: 0 10px;
         
-        img {
-            height: 44px;   
-        }
+        
     }
+.clients-brand-header{
+    text-align: center;
+    padding: 1em;
+    color: #777777;
+    font-size: 20px;
+}
+

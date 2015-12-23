@@ -1,4 +1,15 @@
-$(function() {
-    $(".page-title").fitText(1, { minFontSize: '18px', maxFontSize: '70px' });
-    $(".page-subtitle").fitText(1, { minFontSize: '20px', maxFontSize: '72px' });
-});
+ function clientStuff(){
+
+    $('.avatar-unit').first().addClass('active-avatar');
+    $('.avatar-face').first().addClass('active-avatar');
+   
+    $('.avatar-photo').click(function(){
+    var $this = $(this) ,
+       $siblings = $this.parent().children(),
+       position = $siblings.index($this);
+       $(".avatar-unit").removeClass('active-avatar').eq(position).addClass('active-avatar');
+       $siblings.removeClass('active-avatar');
+       $this.addClass('active-avatar');
+
+    });
+    } 
