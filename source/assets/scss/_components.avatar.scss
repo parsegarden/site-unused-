@@ -1,25 +1,58 @@
-.avatar  {
-    @include group;
-    padding: 2em 10px 1em 10px  ;
-    position: relative;
-    z-index: 2;
-
-    img {
-            height: 36px;   
-        }
+ @keyframes grow{
+    0%{
+       transform: scale(0);
+    }
+    30%{
+       transform: scale(0);
+    }
+    60%{
+        transform: scale(0.9);
+    }
 }
-.avatar-content {
-    text-align: center;
-    margin: 0 auto; 
-    padding-top: 130px;
 
-    .avatar-content--info{
-        max-width: 700px;
+ .section-avatar{
+  position: relative;
+}
+.avatar-belt{
+  width: 100%;
+  position: relative;
+  padding-top: 127px;
+  overflow: hidden;
+}
+  .avatar-unit{
+    max-width: 750px;
+    margin: 50px auto;
+    position: relative;
+    z-index: 1;
+
+    display: none;
+
+
+    &.active-avatar{
+
+    display: flex;
+    animation: grow .4s ease-out backwards ;
+      
+  }
+
+}
+    .avatar-content{
+        width: 700px;
         margin: 0 auto;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        font-size: 24px;
-        font-syle: italic;
+        text-align: center;
+
+
+}
+.avatar-content--info{
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-syle: italic;
         
 
   }
@@ -30,7 +63,7 @@
         color: black;
         padding-top: 10px;
     }
- }
+ 
 
  .avatar-content--info{
     font-style: italic;
@@ -54,31 +87,42 @@
 
  }
 
- .avatar-belt{
+// Logos
+.avatar-logos{
+  position: relative;
+  z-index: 3;
+  max-width: 750px;
+  margin: 0px auto 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 44px;   
-    margin: 4em 10px;
+  .avatar-face{
+    cursor: pointer;
+    margin: 0 20px 20px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid transparent;
+    opacity: 0.5;
+    transition: .4s ease-out;
 
-    .avatar-face{
-        padding: 0 2em;  
-    }
- }
- .avatar-face{
-    transition: .3s;
-    img{
-        height: 70px;
-      
-    }
+        img{
+            height: 60px;
+        }
     &:hover{
-        transform: scale(1.2);
+        opacity: 1;
+    }
 
+    &.active-avatar{
+      opacity: 1;
+      transform: scale(1.5);
     }
-    .avatar-span{
-        color: #4F2D7F;
-        font-weight: 500;
-    }
- }
+}
+.avatar-logo-3{
+    img{
+    position: relative;
+    top: 1em;
+    
+    height: 16px;
+       } 
+        }

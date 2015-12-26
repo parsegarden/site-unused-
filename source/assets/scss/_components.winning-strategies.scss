@@ -3,30 +3,34 @@
 \*------------------------------------*/
 
 .winning-stragies{
-	height: 755px;
-	padding-top: 130px;
-	margin-bottom: 140px;
+	@include group;
+	padding-top: 20em;
 	
 
 	&--content--title{
-		@extend .analyze-competition--content--title;
+		font-size: 36px;
+		font-weight: bold;
+		color: #444444;
 		padding-bottom: 1.1em;
+		text-align: center;
 	}
 }
 .evaluate-content{
 	margin: 0 auto;
+	
 	&--title{
-		max-width: 400px;
-		margin: 0 auto;	
+		max-width: 410px;
+	    color: #3E84E2;
+	    font-size: 18px;
+	    font-weight: 600;
+	    margin: 0 auto;	
 	}	
 
 	&--info{
-		padding: 0.8em 0 2em 0;
+		padding: 1em 0 2em 0;
 		max-width: 400px;
 		margin: 0 auto;
 
 	}
-	img{
-		padding-left: 1em;
-	}
+
 }	

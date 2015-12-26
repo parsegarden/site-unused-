@@ -1,6 +1,4 @@
 .demand{
-	height: 800px;
-	padding-top: 110px;
 	
 	&--content{
 	
@@ -30,7 +28,6 @@
 }
 
 .tabs-wrap{
-	width: 200px;
 	margin: 0 auto;
 	
 }
@@ -39,25 +36,28 @@
 }
 .tab_link {
 	display: flex;
-	flex-direction: row;
-    
+	flex-direction: row; 
 	padding: 5px 10px 5px 10px;
 }
 
 
 .demand--content--table {
   display: flex;
-
+  width: 100%;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin-bottom: 37px;
+
+  td{
+  	padding: 10px 80px 8px 0;
+  }
 }
 .table-title{
   	text-align: left;
-  	padding-right: 10em;
   	font-weight: normal;
-  	width: 430px;
+  	width: 400px;
 
   	img{
   		height: 15px;
@@ -65,6 +65,7 @@
   		top: 2px;
   	}
   }
+
 .table-brand{
 	.unmetric-img{
 		height: 16px;
@@ -84,7 +85,6 @@
 th,
 td, {
   border-bottom: 1px solid #EEEEEE;
-  padding: 10px 3em;
   font-size: 16px;
   color: #4A4A4A;
   &:hover{

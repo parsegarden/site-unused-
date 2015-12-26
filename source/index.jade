@@ -46,11 +46,11 @@ html
 
 
                 nav.nav-wrap
-                    a.nav-link(href='product/analyze.html') Products
+                    a.nav-link(href='product/analyze.html') products
                 
-                    a.nav-link(href='#') Company
+                    a.nav-link(href='#') company
                 
-                    a.nav-link(href='#') Log in
+                    a.nav-link(href='#') sign in
                     
                 
                 
@@ -122,34 +122,68 @@ html
                         img(src="./assets/i/logo-gm.png", alt="logo-gm")
                 h2.clients-brand-header Thousands of real-time marketers at hundreds of leading brands and agencies across 20+ countries use Unmetric to compete and win.                                    
         
-        section.avatar
-            .container
-                .avatar-content 
-                    p.avatar-content--info<img src="./assets/i/left-quote.svg" class="left-quote">The ability to see the performance of competitor campaigns and engagement lends itself to truly valuable insights.<img src="./assets/i/right-quote.svg" class="right-quote">
-                    small.avatar-intro CHRISSY STANOJEV, SOCIAL MEDIA STRATEGIST
+        .section-avatar
 
-                    ul.avatar-belt
-                        li.avatar-face
-                            figure
-                                img(src="./assets/i/avatar-1.jpg", alt="")  
+            .avatar-belt
 
-                        li.avatar-face
-                            figure
-                                img(src="./assets/i/avatar-2.png", alt="") 
-                                figcaption 
+                .avatar-unit.active-avatar
+                
+                    .avatar-content
+                        p.avatar-content--info<img src="./assets/i/left-quote.svg" class="left-quote">The ability to see the performance of competitor campaigns and engagement lends itself to truly valuable insights.<img src="./assets/i/right-quote.svg" class="right-quote">
+                        small.avatar-intro CHRISSY STANOJEV, SOCIAL MEDIA STRATEGIST
 
-                        li.avatar-face
-                            figure
-                                img(src="./assets/i/avatar-3.jpg", alt="") 
-                                figcaption <span class="avatar-span"> MRM</span> // McCANN 
-                        li.avatar-face
-                            figure
-                                img(src="./assets/i/avatar-4.png", alt="")  
-                                figcaption
-                        li.avatar-face
-                            figure
-                                img(src="./assets/i/avatar-5.png", alt="")      
-                                figcaption
+                .avatar-unit
+                
+                    .avatar-content
+                        p.avatar-content--info<img src="./assets/i/left-quote.svg" class="left-quote">The ability to see the performance of competitor campaigns and engagement lends itself to truly valuable insights.<img src="./assets/i/right-quote.svg" class="right-quote">
+                        small.avatar-intro CHRISSY STANOJEV, SOCIAL MEDIA STRATEGIST
+
+                .avatar-unit
+                
+                    .avatar-content
+                        
+                        p.avatar-content--info<img src="./assets/i/left-quote.svg" class="left-quote">The ability to see the performance of competitor campaigns and engagement lends itself to truly valuable insights.<img src="./assets/i/right-quote.svg" class="right-quote">
+                        small.avatar-intro CHRISSY STANOJEV, SOCIAL MEDIA STRATEGIST
+
+                .avatar-unit                
+                    .avatar-content
+
+                        p.avatar-content--info<img src="./assets/i/left-quote.svg" class="left-quote">The ability to see the performance of competitor campaigns and engagement lends itself to truly valuable insights.<img src="./assets/i/right-quote.svg" class="right-quote">
+                        small.avatar-intro CHRISSY STANOJEV, SOCIAL MEDIA STRATEGIST
+                
+                .avatar-unit
+                
+                    .avatar-content
+                        p.avatar-content--info<img src="./assets/i/left-quote.svg" class="left-quote">The ability to see the performance of competitor campaigns and engagement lends itself to truly valuable insights.<img src="./assets/i/right-quote.svg" class="right-quote">
+                        small.avatar-intro CHRISSY STANOJEV, SOCIAL MEDIA STRATEGIST                          
+
+    
+            .avatar-logos      
+
+                .avatar-face
+                    img(src="./assets/i/avatar-1.jpg", alt="")  
+                    .avatar-logo-3 
+                        img(src="./assets/i/avatar-logo-3.png", alt="")
+                .avatar-face
+                
+                    img(src="./assets/i/avatar-2.png", alt="") 
+                    .avatar-logo-3 
+                        img(src="./assets/i/avatar-logo-3.png", alt="")     
+
+                .avatar-face.active-avatar
+                    
+                    img(src="./assets/i/avatar-3.png", alt="") 
+                    .avatar-logo-3 
+                        img(src="./assets/i/avatar-logo-3.png", alt="")
+                        
+                .avatar-face
+                    img(src="./assets/i/avatar-4.png", alt="")  
+                    .avatar-logo-3 
+                        img(src="./assets/i/avatar-logo-3.png", alt="")
+                .avatar-face
+                    img(src="./assets/i/avatar-5.png", alt="")      
+                    .avatar-logo-3 
+                        img(src="./assets/i/avatar-logo-3.png", alt="")
 
         section.demand
             .container
@@ -216,7 +250,7 @@ html
         .news
             .container 
                 .news-content 
-                    h1.news-content-title We're making the news 
+                    h1.news-content-title We&rsquo;re making the news 
                     ul.news-brand--list 
                         li.news-brand--item
                             img(src="./assets/i/logo-forbes.jpg", alt="Ford" class="forbes-img")  
@@ -330,7 +364,6 @@ html
                             a.footer-list--link(href='#') SlideShare
 
 
-
-
         script(src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
-        script(src='assets/js/functions.js')
+
+        script(src='../assets/js/functions.js')     

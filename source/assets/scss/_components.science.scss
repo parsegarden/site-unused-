@@ -3,8 +3,8 @@
 \*------------------------------------*/
 
 .science{
-	height: 440px;
-	padding-top: 20px;
+	@include group;
+	padding-top: 140px;
 
 
 	&--content--title{
@@ -26,7 +26,7 @@
 	text-align: center;
 
 	.avatar{
-		height: 150px;
+		height: 100px;
 	}
 	&--info{
         padding-bottom: 1rem;

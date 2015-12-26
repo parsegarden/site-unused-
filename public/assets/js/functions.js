@@ -1,15 +1,37 @@
- function clientStuff(){
+$(function() {
+  clientStuff();
+  analyzeCompetition();
 
-    $('.avatar-unit').first().addClass('active-avatar');
-    $('.avatar-face').first().addClass('active-avatar');
-   
-    $('.avatar-photo').click(function(){
-    var $this = $(this) ,
-       $siblings = $this.parent().children(),
-       position = $siblings.index($this);
-       $(".avatar-unit").removeClass('active-avatar').eq(position).addClass('active-avatar');
-       $siblings.removeClass('active-avatar');
-       $this.addClass('active-avatar');
+});
 
-    });
-    } 
+
+
+
+function clientStuff() {
+
+  $('.avatar-face, .avatar-button').click(function() {
+    var $this = $(this),
+        position = $this.parent().children().index($this);
+
+    $('.avatar-unit').removeClass('active-avatar').eq(position).addClass('active-avatar');
+    $('.avatar-face').removeClass('active-avatar').eq(position).addClass('active-avatar');
+    $('.avatar-button').removeClass('active-avatar').eq(position).addClass('active-avatar');
+  });
+
+
+}
+function analyzeCompetition() {
+
+  $('.analize-info-list, .analyze-button').click(function() {
+    var $this = $(this),
+        position = $this.parent().children().index($this);
+
+    $('.analyze-unit-info').removeClass('active-analyze').eq(position).addClass('active-analyze');
+    $('.analize-info-list').removeClass('active-analyze').eq(position).addClass('active-analyze');
+    $('.analyze-button').removeClass('active-analyze').eq(position).addClass('active-analyze');
+  });
+
+}
+
+
+

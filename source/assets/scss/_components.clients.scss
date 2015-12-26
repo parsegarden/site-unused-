@@ -10,43 +10,45 @@
 
 .clients {
     @include group;
-    padding: 2em 10px 1em 10px  ;
+    padding: 2.5em 10px 2.5em 10px  ;
     position: relative;
-    z-index: 2;
-    background: #DAF7ED;
+    z-index: 2;    
+    background: #E4F7F4;
 
     img {
             height: 36px;   
         }
 }
 
-    .client-unit{
-         position: absolute;
-        top: 0px;
-        right: null;
-        left: 50%;
-        bottom: null;
-        margin: 0 0 50px -375;
+    .avatar--content-unit{
+        max-width: 750px;
+        margin: 50px auto;
+        position: relative;
+        z-index: 1;
+        display: none;
+
+        &.active-avatar{
+          display: flex;
+        }
     }
     
-    .clients-brand--item {
-        padding: 0 2em; 
-
-  }  
     .clients-brand--list {
+        width: 70%;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        height: 44px;   
-        margin: 0 10px;
+        height: 44px;
+        padding-top: 10px;   
+        
         
         
     }
 .clients-brand-header{
     text-align: center;
-    padding: 1em;
     color: #777777;
-    font-size: 20px;
+    font-size: 19px;
+    padding-top: 0.7em;
 }
 

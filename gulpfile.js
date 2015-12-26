@@ -6,8 +6,8 @@
 
 // Configure paths
 var config = {
-    htmlpath:   './public',
-    jadePath:   './source',
+    htmlpath:   './public/product',
+    jadePath:   './source/product',
     sassPath:   './source/assets/scss',
     bowerDir:   './bower_components',
     bourbonDir: './bower_components/bourbon/app/assets/stylesheets',
@@ -101,7 +101,7 @@ gulp.task('build-prod-css', function() {
 
 // JADE TO HTML – build .jade to .html
 gulp.task('build-html', function() {
-    gulp.src(config.jadePath  + '/**/*.jade'+ 'source/product/**/*.jade')
+    gulp.src(config.jadePath  + '/**/*.jade')
     .pipe(jade({
             pretty: true,
             locals: {imagePath: 'assets/i'}
