@@ -56,3 +56,19 @@
     background: linear-gradient(to bottom, #1e5799 0%,#2989d8 0%,#7db9e8 77%,#7db9e8 77%);
     color: white;
 }
+.btn-track{
+    position: relative;
+    color: white;
+    padding: 15px 80px;
+    background: -moz-linear-gradient(#2DB5C3, #59DBE3);
+    background: -webkit-linear-gradient(#2DB5C3, #59DBE3);
+    background: linear-gradient(#2DB5C3, #59DBE3);
+    border-radius: 3px;
+    font-size: 18px;
+
+    .icon-arrow-right{
+        position: relative;
+        top: 3px;
+        left: 2px;
+    }
+}

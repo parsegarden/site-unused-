@@ -44,40 +44,7 @@
     }
 }
 .caption{
-    text-align: center;
-    margin: 0.4em auto;
-    color: white;
-
-    h1{
-        font-size: 48px;
-        font-weight: 900; 
-    }
-    h3:before,
-    h3:after {
-    width: 74px;
-    height: 1px;
-    display: inline-block;
-    vertical-align: middle;
-    content: "";
-    background: #fff;
-    margin: 0 1%;
-    }
-
-    h3 {
-    text-align: center;
-    color: #fff;
-    font-size: 18px;
-    font-style: italic;
-    margin: -0.5em 0 0 0;
-    font-weight: normal;
-    opacity: 0.7;
     
-    }
-    p{
-        color: #fff;
-        font-size: 18px;
-    }
-
     .video{
         transition: .3s linear;
         padding-top: 8.2em;
@@ -86,5 +53,6 @@
         transform : scale(1.1);
 
     }
-}
-}   
+
+} 
+}  

@@ -1,0 +1,39 @@
+.section-track-competition{
+    @include group;
+    text-align: center;
+    padding-top: 20px;
+
+    img{
+        height: 51px;
+    }
+
+    .track-competition--info{
+        @include group;
+        margin: 0 auto;
+        padding: 0 10em 0 10em;
+    }
+}
+.track-competition--content{
+    padding-top: 80px;
+    }
+
+.track-competition--title {
+	font-size: 48px;
+    color: #2FB5C1;
+    font-weight: bold;
+    letter-spacing: -2px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 63px;
+    line-height: 0.9;
+
+}
+.link-app{
+    padding-top: 140px; 
+
+    a{
+        color: #FB9A03;
+        font-size: 18px;
+        font-weight: 500;
+        }
+    } 

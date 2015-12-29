@@ -47,7 +47,6 @@
  	display: flex;
  	flex-direction: column;
     cursor: pointer;
-    
 
     hr{
     	width: 350px;
@@ -77,8 +76,10 @@
 	top: 4.6em;
 	padding-top: 1em
 }
+
 .f4.is-active{
 	opacity: 1
+	
 	
 }
 
@@ -88,6 +89,8 @@
 
 .f5.is-active{
 	opacity: 1
+	
+	
 }
 
 .f5.is-active + .feature-b-img{
@@ -97,6 +100,8 @@
 
 .f6.is-active{
 	opacity: 1
+
+	
 	
 }
 

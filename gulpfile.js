@@ -112,7 +112,7 @@ gulp.task('build-html', function() {
         }))
     )
 
-    .pipe(gulp.dest('./public'))
+    .pipe(gulp.dest('./public/product'))
 });
 
 

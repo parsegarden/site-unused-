@@ -1,0 +1,32 @@
+.unmetric-track--content{
+	width: 650px;	
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 160px;
+
+	img{
+		height: 16px;
+		position: relative;
+		top: -10px;
+	}
+
+	.avatar{
+		margin-top: 20px;
+		height: 80px;
+	}
+	.logo{
+		height: 48px;
+	}
+}
+.unmetric-track--title{
+	font-size: 24px;
+	color: black;
+	font-style: italic;
+	line-height: 1.4;
+}
+
+.unmetric-track--info{
+	text-align: center;
+	font-size: 14px;
+
+}
