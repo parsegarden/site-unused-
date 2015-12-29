@@ -1,0 +1,202 @@
+doctype html
+
+html
+    head
+        title Unmetric Home
+        
+        meta(charset="utf-8")
+        meta(name="author", content="unmetric")
+        meta(http-equiv="cleartype", content="on")
+        // http://t.co/dKP3o1e
+        meta(name="HandheldFriendly", content="True")
+        meta(name="MobileOptimized", content="320")
+        meta(name="viewport", content="initial-scale=1.0")
+        meta(name="apple-mobile-web-app-capable", content="yes")
+        meta(name="apple-mobile-web-app-title", content="Unmetric")
+        meta(name="msapplication-TileImage", content="")
+        meta(name="msapplication-TileColor", content="#4c5bb7")
+        
+        
+        
+        // Styles
+        link(href="../assets/css/styles.css", rel="stylesheet", type="text/css")
+     
+
+        
+        // FONTASTIC ICONS
+        link(href="https://file.myfontastic.com/MbCTJofyGYYqRjeb8aineC/icons.css", rel="stylesheet")
+        
+        
+        // Favicon
+        link(rel="shortcut icon", href="i/favicon.ico")
+        
+        
+        
+        // JavaScript
+        script(src="https://use.typekit.net/njh2cfh.js")
+        script.
+            try{Typekit.load({ async: true });}catch(e){}
+            
+    
+
+    body
+        //Header
+        header.top-bar4.ds
+            .container
+                a.logo(href="#")
+                    img(src='../assets/i/unmetric-logo-bg.png' alt='Unmetric logo')
+    
+                    
+                ul.nav-wrap
+
+                    li
+                        a(href="#").more.nav-link product
+                        ul#popover
+                            li: a(href="#").nav-link About
+                            li: a(href="#").nav-link Blog
+                            li: a(href="#").nav-link Contact
+
+                    li: a(href="#").nav-link company
+                    li: a(href="#").nav-link.btn-sec sign in
+                   
+             
+
+            .caption-3
+                h1 DISCOVER
+                h3 for
+                p CONTENT CREATORS
+               
+                .link-discover
+                    a(href="#").btn-link-discover COMING REAL SOON 
+
+            .discover
+                    
+                .discover-content
+                           
+                    ul.discover-list
+                        li.discover-list--item
+                            img(src="../assets/i/logo-voice.png", alt="Voice")
+                            h3.discover-list--heading Power your campaigns
+                                
+                                p.discover-list--copy 
+                                    | On-demand inspiration lets you explore content ideas from the world’s most innovative brands. 
+                                    
+                        
+                        
+                        
+                        li.discover-list--item
+                            img(src="../assets/i/logo-tourch.png", alt="Tourch")
+                            h3.discover-list--heading Discover trending topics
+                                
+                                p.discover-list--copy 
+                                    | Find what the world is talking about across different industries and geographies – all in one place. 
+                                   
+                                
+                                
+                        li.discover-list--item
+                            img(src="../assets/i/signal.png", alt="Signal")
+                            .discover-list--heading.position Share and Collaborate
+                                
+                                p.discover-list--copy.position  
+                                    | Execute on creative ideas instantly by saving, sharing and collaborating across teams. 
+            .discover-form
+                input(type="text" placeholder="Email address")
+                input(type="submit" value="Request Invite")                        
+        
+        footer.bottom-bar
+            .container
+                .size4of12            
+                    ul
+                        li 
+                            h3 
+                                span Products
+                        
+                        li
+                            a.footer-list--link(href='#') Sense — for Marketers
+    
+                        li
+                            a.footer-list--link(href='#') Analyze — for Social Media Analysts
+                            
+                        li    
+                            a.footer-list--link(href='#') Discover — for Content Creators
+                  
+                
+                .size3of12
+                    ul
+                        li
+                            h3 
+                                span About
+                            
+                        li   
+                            a.footer-list--link(href='#') Company
+ 
+                        li
+                            a.footer-list--link(href='#') Customers
+                        
+                        li
+                            a.footer-list--link(href='#') Why Agencies love us
+
+                        li      
+                            a.footer-list--link(href='#') Our blog
+                        
+                        li    
+                            a.footer-list--link(href='#') Press & News coverage
+                        
+                        li  
+                            a.footer-list--link(href='#') Job openings
+
+                          
+
+                .size3of12
+                    ul
+                        li
+                            h3 
+                                span Resources 
+                    
+                        li
+                            a.footer-list--link(href='#') Articles 
+                        
+                        li  
+                            a.footer-list--link(href='#') Ebooks
+                        
+                        li  
+                            a.footer-list--link(href='#') Infographics
+                        
+                        li  
+                            a.footer-list--link(href='#') Interviews
+                        
+                        li  
+                            a.footer-list--link(href='#') Industry Reports
+                      
+                      
+                .size2of12
+                    ul 
+                        li 
+                            h3 
+                                span Contact
+                            
+                        li
+                            a.footer-list--link(href='#') Get in touch 
+                        
+                        li
+                            a.footer-list--link(href='#') Twitter
+                        
+                        li  
+                            a.footer-list--link(href='#') Facebook
+                        
+                        li
+                            a.footer-list--link(href='#') Pinterest
+                        
+                        li
+                            a.footer-list--link(href='#') LinkedIn
+                        
+                        li
+                            a.footer-list--link(href='#') SlideShare
+
+
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+
+        script(src='../assets/js/functions.js')  
+        script(src='../assets/js/uilang.js')
+
+        <code>clicking on ".more" toggles class "visible" on "#popover"</code>                     
