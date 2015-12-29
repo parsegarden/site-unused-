@@ -2,6 +2,7 @@
     @include group;
     padding-top: 15px;
     overflow: hidden;
+    height: 930px;
 
     .social-profile--content{
 		text-align: center;
@@ -42,17 +43,17 @@
 	    color: #3FB5C1;
 		font-size: 18px;
 		font-weight: 600;
+		padding-top: 5px;
 
 	}
 	.feature-3-list-info{
 		width: 350px;
 		color: #444444;
 		font-size: 16px;
-		padding-top: 10px;
+		padding: 10px 0 5px 0;
 	}
 }
 .feature-3 {
-	max-width: 700px;
 	margin: 0 auto;
 
  	
@@ -68,11 +69,12 @@
 
     .feature-3-img{
     	display: none;
-    	width: 800px;
+    	width: 930px;
+    	height: 690px;
     	position: absolute;
 		top: 2em;
-		left: 41.5em;
 		right: 0;
+		left: 420px;
 		bottom: 0;
 
     }
@@ -80,8 +82,8 @@
 }
 .link-feature--3{
 	position: relative;
-	top: 6em;
-	left: -11em;
+	top: 6.5em;
+	left: -26.6em;
 }
 .f1,
 .f2,
