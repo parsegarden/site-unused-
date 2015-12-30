@@ -1,4 +1,4 @@
-.top-bar5 {
+.top-bar6 {
     z-index: 3;
     height: 480px;
     width: 100%;
@@ -41,8 +41,7 @@
         color: rgba(white, .75);
     }
 }
-
-.about-unmetric--content{
+.media-strategy--content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,7 +54,6 @@
         font-weight: 900;    
     }
     .content--more{
-        max-width: 600px;
         color: white;
         margin: 0 auto;
         font-size: 21px;

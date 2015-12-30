@@ -29,3 +29,15 @@ a {
         outline: 0;
     }
 }
+a[class^='social_button-'] {
+    font-size: 12px;
+    font-size: 1.2rem;
+    -webkit-transition: background, 0.3s;
+    -moz-transition: background, 0.3s;
+    transition: background, 0.3s;
+    background: #d8d9e5;
+    color: #022550;
+    padding: 6px 12px;
+    margin-right: 1px;
+    text-transform: uppercase;
+}

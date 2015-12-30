@@ -1,12 +1,14 @@
 //Themes
 
-.ds{
+.ds-mod{
 	background: -moz-linear-gradient(#06CB89, #04C8BA,#02C4FB);
     background: -webkit-linear-gradient(#06CB89, #04C8BA,#02C4FB);
     background: linear-gradient(#06CB89, #04C8BA,#02C4FB);
 }
 
-.ab{
+
+
+.ab-mod{
 	background: -moz-linear-gradient(#5856D8, #884FAB,#D34466);
     background: -webkit-linear-gradient(#5856D8, #884FAB,#D34466);
     background: linear-gradient(#5856D8, #884FAB,#D34466);
@@ -20,4 +22,25 @@ $ds-green: #00C57C;
 
 
 
+.hm-mod{
+	background: -moz-linear-gradient(#5856D6, #53A0FD,#00CD7E);
+    background: -webkit-linear-gradient(#5856D6, #53A0FD,#00CD7E);
+    background: linear-gradient(#5856D6, #53A0FD,#00CD7E);
+}
 
+//variables
+
+
+
+
+
+.tk-mod{
+	background: -moz-linear-gradient(#2DB5C3, #96A760,#FB9902);
+    background: -webkit-linear-gradient(#2DB5C3, #96A760,#FB9902);
+    background: linear-gradient(#2DB5C3, #96A760,#FB9902);
+}
+.bs-mod{
+	background: -moz-linear-gradient(#5856D8, #8C4ED6,#CA44D3);
+    background: -webkit-linear-gradient(#5856D8, #8C4ED6,#CA44D3);
+    background: linear-gradient(#5856D8, #8C4ED6,#CA44D3);
+}

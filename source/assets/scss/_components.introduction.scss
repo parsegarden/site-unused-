@@ -1,0 +1,33 @@
+.section-introduction{
+	overflow: hidden;
+	
+	.introduction-content{
+
+		.content--title{
+			font-size: 48px;
+			color: #C534D0;
+			font-weight: 900;
+			padding-top: 140px;
+			text-align: center;
+		}
+
+		.content--intro{
+			max-width: 800px;
+			margin: 0 auto;	
+			padding-top: 5px;
+			font-size: 21px;
+			text-align: center;
+		}
+	}
+}
+
+.content--more{
+	max-width: 600px;
+	margin: 0 auto;
+	padding-top: 60px;
+
+}
+.highlight{
+		font-weight: 700;
+		color: #5856D6;
+	}
