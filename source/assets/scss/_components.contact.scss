@@ -1,0 +1,75 @@
+.section-contact{
+	@include group;
+	padding-top: 140px;
+}
+.contact-content{
+	.content--title{
+		text-align: center;
+		font-size: 36px;
+		color: #444444;
+		font-weight: 600;
+		letter-spacing: -1px;
+	}
+	
+	.content--more{
+		max-width: 730px;
+		text-align: center;
+		margin: 0 auto;
+		color: #444444;
+		padding-top: 20px;
+		font-size: 21px;
+	}
+	
+	.content-form{
+		max-width: 360px;
+		margin: 30px auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		input[type="text"],
+		input[type="email"]{
+			width: 360px;
+			padding: 20px 0 5px 0;
+			border-bottom: 1px solid grey;
+			color: #D13959;
+
+		}
+		
+		input[type="submit"]{
+			margin-top: 40px;
+		}
+	}
+	.content-location--1,
+	.content-location--2{
+
+		h3{
+			font-size: 18px;
+			font-weight: 500;
+		}
+		p{
+			font-size: 14px;
+			font-weight: 500;
+		}
+	}
+
+	.content-location--1{
+		width: 170px;
+		margin: 0 auto;
+		text-align: center;
+		
+		h3{
+			padding: 104px 0 10px 0;
+		}
+	}
+	.content-location--2{
+		width: 250px;
+		margin: 0 auto;
+		text-align: center;
+		padding-bottom: 140px;
+		
+		h3{
+			padding: 60px 0 10px 0;
+		}
+	}
+}

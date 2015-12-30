@@ -1,0 +1,40 @@
+.section-advisor{
+	@include group;
+	padding-top: 80px;
+}
+
+.advisor-content{
+
+	.content-title{
+		text-align: center;
+		font-size: 36px;
+		color: #444444;
+		font-weight: 600;
+	}
+	.content-more{
+		max-width: 900px;
+		margin: 10px auto;
+		text-align: center;
+		font-size: 21px;
+	}
+	.advisor-img{
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		padding-top: 47px;
+		
+		figure{
+			img{
+				margin: 0 40px 0 40px;
+				height: 60px;
+			}
+			figcaption{
+				font-size: 16px;
+			}
+		}
+
+	}
+
+}	

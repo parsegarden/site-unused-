@@ -1,0 +1,35 @@
+.section-executives{
+	@include group;
+	padding-top: 110px;
+	img{
+		height: 100px;
+	}
+
+	.executive-content--title{
+		text-align: center;
+		font-size: 36px;
+		font-weight: 600;
+	}
+
+}
+.executives-content--intro{
+	padding: 92px 60px 0 60px;
+
+	.content--title{
+		font-size: 36px;
+		font-weight: 600;
+		font-size: 18px;
+		padding: 8px 0 8px 0;
+
+	}
+	.content--position{
+		margin-bottom: 8px;
+		font-size: 14px;
+		font-weight: 500;
+	}
+	.content--more{
+		font-size: 16px;
+		padding-bottom: 60px;
+	}
+	
+}
