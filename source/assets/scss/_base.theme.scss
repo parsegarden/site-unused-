@@ -1,9 +1,13 @@
 //Themes
 
 .ds-mod{
-	background: -moz-linear-gradient(#06CB89, #04C8BA,#02C4FB);
-    background: -webkit-linear-gradient(#06CB89, #04C8BA,#02C4FB);
-    background: linear-gradient(#06CB89, #04C8BA,#02C4FB);
+	
+	.top-bar4{
+		background: -moz-linear-gradient(#06CB89, #04C8BA,#02C4FB);
+	    background: -webkit-linear-gradient(#06CB89, #04C8BA,#02C4FB);
+	    background: linear-gradient(#06CB89, #04C8BA,#02C4FB);
+	}
+
 }
 
 
@@ -23,9 +27,11 @@ $ds-green: #00C57C;
 
 
 .hm-mod{
-	background: -moz-linear-gradient(#5856D6, #53A0FD,#00CD7E);
-    background: -webkit-linear-gradient(#5856D6, #53A0FD,#00CD7E);
-    background: linear-gradient(#5856D6, #53A0FD,#00CD7E);
+	.top-bar{
+		background: -moz-linear-gradient(#5856D6, #53A0FD,#00CD7E);
+	    background: -webkit-linear-gradient(#5856D6, #53A0FD,#00CD7E);
+	    background: linear-gradient(#5856D6, #53A0FD,#00CD7E);
+	}
 }
 
 //variables
@@ -35,12 +41,23 @@ $ds-green: #00C57C;
 
 
 .tk-mod{
-	background: -moz-linear-gradient(#2DB5C3, #96A760,#FB9902);
-    background: -webkit-linear-gradient(#2DB5C3, #96A760,#FB9902);
-    background: linear-gradient(#2DB5C3, #96A760,#FB9902);
+	.top-bar3{
+		background: -moz-linear-gradient(#2DB5C3, #96A760,#FB9902);
+	    background: -webkit-linear-gradient(#2DB5C3, #96A760,#FB9902);
+	    background: linear-gradient(#2DB5C3, #96A760,#FB9902);
+	}
 }
+
 .bs-mod{
 	background: -moz-linear-gradient(#5856D8, #8C4ED6,#CA44D3);
     background: -webkit-linear-gradient(#5856D8, #8C4ED6,#CA44D3);
     background: linear-gradient(#5856D8, #8C4ED6,#CA44D3);
+}
+
+.new-mod{
+	.top-bar7{
+		background: -moz-linear-gradient(#56AED8, #F4A536,#FFFFFF);
+	    background: -webkit-linear-gradient(#56AED8, #F4A536,#FFFFFF);
+	    background: linear-gradient(#56AED8, #F4A536,#FFFFFF);
+	}
 }

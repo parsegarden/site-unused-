@@ -39,9 +39,9 @@ html
             
     
 
-    body.ds-mod
+    body.new-mod
         //Header
-        header.top-bar4
+        header.top-bar7
             .container
                 a.logo(href="#")
                     img(src='../assets/i/unmetric-logo-bg.png' alt='Unmetric logo')
@@ -58,51 +58,50 @@ html
 
                     li: a(href="#").nav-link company
                     li: a(href="#").nav-link.btn-sec sign in
-                   
-             
 
-            .caption-3
-                h1 DISCOVER
-                h3 for
-                p CONTENT CREATORS
-               
-                .link-discover
-                    a(href="#").btn-link-discover COMING REAL SOON 
+            h1.title NEWS & MEDIA 
 
-            .discover
+        section.section-news
+            .container
+                .news-content
+                    #tabs(align="center" style="margin:-2em; padding:10px 10px 50px 10px;")
+                        <a href="#brands" class="button btn-info active" style="position:relative; left:11px;">Media Coverage</a>
+                        <a href="#agencies" class="button btn-info">Company News</a>
+
+                    h1.content-title Unmetric in the news
+                    p.content-more The Unmetric team strives to put out intelligent, informative and valuable content on social media, data analytics, and digital marketing. Our senior management team is often sought out for opinions and thought leadership pieces from leading publications.
+
+                    .news-content-image
+                        img(src="../assets/i/logo-fortune.jpg", alt="Fortune")
                     
-                .discover-content
-                           
-                    ul.discover-list
-                        li.discover-list--item
-                            img(src="../assets/i/logo-voice.png", alt="Voice")
-                            h3.discover-list--heading Power your campaigns
-                                
-                                p.discover-list--copy 
-                                    | On-demand inspiration lets you explore content ideas from the world’s most innovative brands. 
-                                    
+                    .news-content-intro
+                        p This mobile app keeps tabs on your competitors
+                        <span class="date"> August 6, 2015</span>
+
+                    .news-content-image
+                        img(src="../assets/i/logo-addweek.jpg", alt="Addweek")
+                    
+                    .news-content-intro
+                        p Marketing for Peanuts Movie Was Everywhere, but Consumers Didn’t Engage With It
+                        <span class="date"> November 10, 2015</span>
+
+                    .news-content-image
+                        img(src="../assets/i/infographic.png", alt="Infographic")
+                    
+                    .news-content-intro
+                        p How the (Real) Clients from Mad Men are doing on Twitter Now
+                        <span class="date"> May 15, 2015</span>
+
+                    .news-content-image
                         
-                        
-                        
-                        li.discover-list--item
-                            img(src="../assets/i/logo-tourch.png", alt="Tourch")
-                            h3.discover-list--heading Discover trending topics
-                                
-                                p.discover-list--copy 
-                                    | Find what the world is talking about across different industries and geographies – all in one place. 
-                                   
-                                
-                                
-                        li.discover-list--item
-                            img(src="../assets/i/signal.png", alt="Signal")
-                            .discover-list--heading.position Share and Collaborate
-                                
-                                p.discover-list--copy.position  
-                                    | Execute on creative ideas instantly by saving, sharing and collaborating across teams. 
-            .discover-form
-                input(type="text" placeholder="Email address")
-                input(type="submit" value="Request Invite")                        
-        
+                    
+                    .news-content-intro
+                        p A Timeline of Brands Scoring Big in Social Media
+                        <span class="date"> December 24, 2014</span>
+                    
+                    .clear 
+
+
         footer.bottom-bar
             .container
                 .size4of12            
@@ -199,4 +198,4 @@ html
         script(src='../assets/js/functions.js')  
         script(src='../assets/js/uilang.js')
 
-        <code>clicking on ".more" toggles class "visible" on "#popover"</code>                     
+        <code><!-- start by removing the previous "open" class -->clicking on ".btn-info" removes class "active" on ".btn-info.active" <!-- then add it to the clicked title -->clicking on ".btn-info" adds class ".btn-info" on "target" clicking on ".more" toggles class "visible" on "#popover"</code>                                         
