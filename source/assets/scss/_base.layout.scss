@@ -20,6 +20,7 @@ ul#popover {
         transition: 0.4s;
         opacity: 0.9;
         background-color: white;
+        margin-top: 1px;
 
         &:hover{
             background-color: white;
@@ -30,7 +31,6 @@ ul#popover {
         cursor: pointer;
         display: block;
         padding: 20px 20px;
-        border-bottom: 1px solid transparent;
         opacity: 0.7;
         font-weight: normal;
         line-height: 20px;
