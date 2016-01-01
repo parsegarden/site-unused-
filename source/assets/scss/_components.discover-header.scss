@@ -72,8 +72,7 @@
 
 }    
 .discover {
-
-    @include position(absolute, 13em 0 0 0);
+    margin-top: -48px;
     
     .discover-content {
         width: 100%;
@@ -141,7 +140,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 335px;
+    margin-top: -40px;
 
    input{
         width: 230px;
@@ -149,7 +148,7 @@
         background: white;
         opacity: 0.7;   
         text-align: left;
-        padding: 12px 104px 12px 8px;
+        padding: 12px 20px 12px 15px;
         border-radius: 3px;
     
    }

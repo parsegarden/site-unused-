@@ -39,7 +39,7 @@ html
             
     
 
-    body.new-mod
+    body.nw-mod
         //Header
         header.top-bar7
             .container
@@ -52,11 +52,26 @@ html
                     li
                         a(href="#").more.nav-link product
                         ul#popover
-                            li: a(href="#").nav-link About
-                            li: a(href="#").nav-link Blog
-                            li: a(href="#").nav-link Contact
+                            li
+                                a(href="#").nav-sub-link 
+                                    span.menu-track TRACK
+                                    <br>
+                                    span.menu-intro Keep an eye on your competition
+                            
+                            li
+                                a(href="#").nav-sub-link 
+                                    span.menu-analyze ANALYZE
+                                    <br>
+                                    span.menu-intro Compare and analyze your competitors
+                            
+                            li 
+                                a(href="#").nav-sub-link 
+                                    span.menu-discover DISCOVER<i class="fa fa-caret-right"></i>
+                                    <br>
+                                    span.menu-intro Find inspiration to create content
 
                     li: a(href="#").nav-link company
+                    li: a(href="#").nav-link contact
                     li: a(href="#").nav-link.btn-sec sign in
 
             h1.title NEWS & MEDIA 
@@ -75,28 +90,32 @@ html
                         img(src="../assets/i/logo-fortune.jpg", alt="Fortune")
                     
                     .news-content-intro
-                        p This mobile app keeps tabs on your competitors
+                        a(href="#")
+                            p This mobile app keeps tabs on your competitors
                         <span class="date"> August 6, 2015</span>
 
                     .news-content-image
                         img(src="../assets/i/logo-addweek.jpg", alt="Addweek")
                     
                     .news-content-intro
-                        p Marketing for Peanuts Movie Was Everywhere, but Consumers Didn’t Engage With It
+                        a(href="#")
+                            p Marketing for Peanuts Movie Was Everywhere, but Consumers Didn’t Engage With It
                         <span class="date"> November 10, 2015</span>
 
                     .news-content-image
                         img(src="../assets/i/infographic.png", alt="Infographic")
                     
                     .news-content-intro
-                        p How the (Real) Clients from Mad Men are doing on Twitter Now
+                        a(href="#")
+                            p How the (Real) Clients from Mad Men are doing on Twitter Now
                         <span class="date"> May 15, 2015</span>
 
                     .news-content-image
                         
                     
                     .news-content-intro
-                        p A Timeline of Brands Scoring Big in Social Media
+                        a(href="#")
+                            p A Timeline of Brands Scoring Big in Social Media
                         <span class="date"> December 24, 2014</span>
                     
                     .clear 

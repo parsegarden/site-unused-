@@ -45,13 +45,32 @@ html
                     
 
 
-                nav.nav-wrap
-                    a.nav-link(href='product/analyze.html') products
-                
-                    a.nav-link(href='#') company
-                
-                    a.nav-link(href='#') sign in
-                    
+                ul.nav-wrap
+
+                    li
+                        a(href="#").more.nav-link product
+                        ul#popover
+                            li
+                                a(href="#").nav-sub-link 
+                                    span.menu-track TRACK
+                                    <br>
+                                    span.menu-intro Keep an eye on your competition
+                            
+                            li
+                                a(href="#").nav-sub-link 
+                                    span.menu-analyze ANALYZE
+                                    <br>
+                                    span.menu-intro Compare and analyze your competitors
+                            
+                            li 
+                                a(href="#").nav-sub-link 
+                                    span.menu-discover DISCOVER<i class="fa fa-caret-right"></i>
+                                    <br>
+                                    span.menu-intro Find inspiration to create content
+
+                    li: a(href="#").nav-link company
+                    li: a(href="#").nav-link contact
+                    li: a(href="#").nav-link.btn-sec sign in
                 
                 
                 
@@ -366,4 +385,7 @@ html
 
         script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
 
-        script(src='../assets/js/functions.js')     
+        script(src='../assets/js/functions.js')
+        script(src='../assets/js/uilang.js')
+             
+        <code>clicking on ".more" toggles class "visible" on "#popover"</code>

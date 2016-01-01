@@ -47,13 +47,32 @@ html
                     img(src='../assets/i/unmetric-logo-bg.png' alt='Unmetric logo')
     
 
-                nav.nav-wrap
-                    a.nav-link(href='#') products
-                
-                    a.nav-link(href='#') company
-                
-                    a.nav-link(href='#') sign in
-                    a.nav-link(href='#').btn-sec <strong>Sign up for free trial</strong>
+                ul.nav-wrap
+
+                    li
+                        a(href="#").more.nav-link product
+                        ul#popover
+                            li
+                                a(href="#").nav-sub-link 
+                                    span.menu-track TRACK
+                                    <br>
+                                    span.menu-intro Keep an eye on your competition
+                            
+                            li
+                                a(href="#").nav-sub-link 
+                                    span.menu-analyze ANALYZE
+                                    <br>
+                                    span.menu-intro Compare and analyze your competitors
+                            
+                            li 
+                                a(href="#").nav-sub-link 
+                                    span.menu-discover DISCOVER<i class="fa fa-caret-right"></i>
+                                    <br>
+                                    span.menu-intro Find inspiration to create content
+
+                    li: a(href="#").nav-link company
+                    li: a(href="#").nav-link contact
+                    li: a(href="#").nav-link.btn-sec sign in
 
             .caption-2
                 h1 TRACK
@@ -304,5 +323,5 @@ html
                     offset: 100    
                 });   
             });            
-        <code>clicking on ".f2" removes class "is-active" on ".f1.is-active" clicking on ".f2" adds class "is-active" on ".f2" clicking on ".f3" removes class "is-active" on ".f2.is-active" clicking on ".f3" adds class "is-active" on ".f3"  
+        <code>clicking on ".f2" removes class "is-active" on ".f1.is-active" clicking on ".f2" adds class "is-active" on ".f2" clicking on ".f3" removes class "is-active" on ".f2.is-active" clicking on ".f3" adds class "is-active" on ".f3" clicking on ".more" toggles class "visible" on "#popover" 
         </code>                                           

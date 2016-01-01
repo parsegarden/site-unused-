@@ -1,46 +1,15 @@
+
+
 .top-bar5 {
     z-index: 3;
     height: 480px;
     width: 100%;
     position: relative;
 
-    .container {
-        align-items: center;
-        display: flex;
-        width: 100%;
-    }    
-
-
-    .logo {
-        margin: 1.5em 40px; 
-        opacity: 0.9;
-        flex: 1;
-        padding:  0;
-        
-        img {
-            height: 21px;   
-        }   
-    }
-
 }
 
 
-.nav-wrap{
-    margin: 0.5em 30px;
-    display: flex;
-    align-items: center;
 
-}
-.nav-link {
-    color: white;
-    margin-left: 10px;
-    margin: 15px 15px;
-    text-transform: lowercase;
-    
-    &:hover {
-        color: rgba(white, .75);
-    }
-}
 
 .about-unmetric--content{
     display: flex;

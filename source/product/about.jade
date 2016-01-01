@@ -39,9 +39,9 @@ html
             
     
 
-    body
+    body.ab-mod
         //Header
-        header.top-bar5.ab-mod
+        header.top-bar5
             .container
                 a.logo(href="#")
                     img(src='../assets/i/unmetric-logo-bg.png' alt='Unmetric logo')
@@ -52,11 +52,26 @@ html
                     li
                         a(href="#").more.nav-link product
                         ul#popover
-                            li: a(href="#").nav-link About
-                            li: a(href="#").nav-link Blog
-                            li: a(href="#").nav-link Contact
+                            li
+                                a(href="#").nav-sub-link 
+                                    span.menu-track TRACK
+                                    <br>
+                                    span.menu-intro Keep an eye on your competition
+                            
+                            li
+                                a(href="#").nav-sub-link 
+                                    span.menu-analyze ANALYZE
+                                    <br>
+                                    span.menu-intro Compare and analyze your competitors
+                            
+                            li 
+                                a(href="#").nav-sub-link 
+                                    span.menu-discover DISCOVER<i class="fa fa-caret-right"></i>
+                                    <br>
+                                    span.menu-intro Find inspiration to create content
 
                     li: a(href="#").nav-link company
+                    li: a(href="#").nav-link contact
                     li: a(href="#").nav-link.btn-sec sign in
             
             .about-unmetric--content

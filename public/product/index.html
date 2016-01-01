@@ -31,7 +31,18 @@
   <body class="page-home hm-mod">
     <header class="top-bar">
       <div class="container"><a href="#" class="logo"><img src="../assets/i/unmetric-logo-white.png" alt="Unmetric logo"></a>
-        <nav class="nav-wrap"><a href="product/analyze.html" class="nav-link">products</a><a href="#" class="nav-link">company</a><a href="#" class="nav-link">sign in</a></nav>
+        <ul class="nav-wrap">
+          <li><a href="#" class="more nav-link">product</a>
+            <ul id="popover">
+              <li><a href="#" class="nav-sub-link"> <span class="menu-track">TRACK</span><br><span class="menu-intro">Keep an eye on your competition</span></a></li>
+              <li><a href="#" class="nav-sub-link"> <span class="menu-analyze">ANALYZE</span><br><span class="menu-intro">Compare and analyze your competitors</span></a></li>
+              <li> <a href="#" class="nav-sub-link"> <span class="menu-discover">DISCOVER<i class="fa fa-caret-right"></i></span><br><span class="menu-intro">Find inspiration to create content</span></a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="nav-link">company</a></li>
+          <li><a href="#" class="nav-link">contact</a></li>
+          <li><a href="#" class="nav-link btn-sec">sign in</a></li>
+        </ul>
         <div class="billboard">
           <div class="billboard-content">
             <h1 class="page-title">Take Your Competition Head On</h1>
@@ -250,6 +261,7 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="../assets/js/functions.js">    </script>
+    <script src="../assets/js/functions.js"></script>
+    <script src="../assets/js/uilang.js"></script><code>clicking on ".more" toggles class "visible" on "#popover"</code>
   </body>
 </html>

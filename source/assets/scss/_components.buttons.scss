@@ -36,7 +36,7 @@
 }
 
 .btn-info{
-    background-color: white;     
+    background-color: white;   
     color: #72BAF3;
     border: 1px solid #72BAF3;
 
@@ -58,14 +58,8 @@
     background: linear-gradient(to bottom, #1e5799 0%,#2989d8 0%,#7db9e8 77%,#7db9e8 77%);
     color: white;
 }
+
 .btn-tk{
-
-    padding: 15px 80px;
-    background: -moz-linear-gradient(#2DB5C3, #59DBE3);
-    background: -webkit-linear-gradient(#2DB5C3, #59DBE3);
-    background: linear-gradient(#2DB5C3, #59DBE3);
-
-
 
     .icon-arrow-right{
         position: relative;
@@ -73,12 +67,8 @@
         left: 2px;
     }
 }
-.btn-ab{
-    background: -moz-linear-gradient(#D13959, #DB6780);
-    background: -webkit-linear-gradient(#D13959, #DB6780);
-    background: linear-gradient(#D13959, #DB6780);
- 
-}
+
+
 
 [class^='btn-'] {
     color: white;
