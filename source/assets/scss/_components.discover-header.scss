@@ -113,7 +113,7 @@
     
     .discover-list--heading {
         color: #fff;
-        padding-top: 30px;
+        padding-top: 20px;
         margin-bottom: 15px;
         font-weight: 900;
         font-size: 18px;
@@ -130,9 +130,7 @@
         opacity: 0.8;
         font-weight: normal;
         font-size: 16px;
-        text-transform: lowercase;
-
-        
+    
     }
     
    
@@ -163,11 +161,10 @@
         opacity: 1;
         border-radius: 0 3px 3px 0;
         color: $ds-green;
-        padding: 12px 10px 12px 27px;
+        padding: 12px 10px 12px 25px;
         position: relative;
         left: -3px;
-        z-index: -2;  
 
-   }
+    }
 
 }
