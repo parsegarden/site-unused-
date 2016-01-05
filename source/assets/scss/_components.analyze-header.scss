@@ -3,12 +3,18 @@
 \*------------------------------------*/
 
 .top-bar2 {
-    z-index: 2;
-    background: #83CAF9 url(../i/bg-2x.jpg) no-repeat center center;
-    background-size: cover;
-    min-height: 560px;
-    width: 100%;
+    height: 600px;
 
+    &::before{
+        @include position(absolute, 7em 0 0 0);
+        display: block;
+        content: "";
+        z-index: 1;
+        background: url(../i/bg-2x.png) no-repeat center center;
+        height: 560px;
+        background-position: center center;
+        background-size: 720px 360px;
+    }
 }
 
 
@@ -18,6 +24,7 @@
         transition: .3s linear;
         position: relative;
         top: 8.2em;
+        z-index: 2;
     
     &:hover{
         transform : scale(1.1);
