@@ -157,10 +157,16 @@
  }
 
 // Logos
+.active-avatar > img{
+    transform: scale(1.2);
+    transition: .4s ease-out;
+
+}
+
 .avatar-logos{
   position: relative;
   z-index: 3;
-  max-width: 750px;
+  max-width: 600px;
   margin: 0px auto 100px;
   display: flex;
   align-items: flex-end;
@@ -169,11 +175,12 @@
 
   .avatar-face{
     cursor: pointer;
-    margin: 0 20px 20px;
+    margin: 0 0 20px;
     padding-bottom: 20px;
     border-bottom: 4px solid transparent;
     opacity: 0.5;
     transition: .4s ease-out;
+    text-align: center;
 
         img{
             height: 60px;
@@ -182,6 +189,12 @@
         opacity: 1;
     }
 
+    &.active-avatar{
+      opacity: 1;
+      transform: scale(1.3);
+    }
+
+}
     .avatar-logo-3{
         opacity: 0;
 
@@ -194,11 +207,7 @@
     } 
 }     
        
-    &.active-avatar{
-      opacity: 1;
-      transform: scale(1.3);
-    }
-}
+    
 .avatar-logo-3{
     
     &.active-avatar{

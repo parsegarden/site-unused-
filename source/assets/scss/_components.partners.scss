@@ -1,21 +1,18 @@
 .partners{
 	@include group;
-	z-index: 2;
 	background: white;
 	position: relative;
-	padding-top: 140px
+	padding-top: 140px;
+	z-index: 2;
 }
 .partners-content{
     text-align: center;
 
     .partners-content--title{
-    	font-size: 36px;
-    	font-weight: 600;
-    	color: #444444;
   
     }
     .partners-images{
-    	padding-top: 144px;
+    	padding-top: 80px;
     	padding-bottom: 40px;
     	display: flex;
     	justify-content: space-around;

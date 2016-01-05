@@ -7,7 +7,7 @@ $text-size-xxl: 64px !default;
 $text-size-xl:  32px !default;
 
 $text-size-l:   24px !default;
-$text-size-m:   21px !default;
+$text-size-m:   36px !default;
 $text-size-s:   16px !default;
 
 $text-size-xs:  14px !default;
@@ -38,6 +38,9 @@ h1 {
 
 h2 {
 	@include font-size($text-size-m);
+    color: #444444;
+    font-size: 36px;
+    font-weight: 600;
 }
 
 h3 {

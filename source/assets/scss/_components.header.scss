@@ -105,9 +105,9 @@
         }
         
         .icon-arrow-right:before {
-            @include font-size($text-size-m);
             position: relative;
-            top: 5px;
+            top: 3px;
+            right: -1px;
         }
     }
     
