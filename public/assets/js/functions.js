@@ -9,13 +9,14 @@ $(function() {
 
 function clientStuff() {
 
-  $('.avatar-face, .avatar-button').click(function() {
+  $('.avatar-face, .avatar-button, .avatar-logo-3').click(function() {
     var $this = $(this),
         position = $this.parent().children().index($this);
 
     $('.avatar-unit').removeClass('active-avatar').eq(position).addClass('active-avatar');
     $('.avatar-face').removeClass('active-avatar').eq(position).addClass('active-avatar');
     $('.avatar-button').removeClass('active-avatar').eq(position).addClass('active-avatar');
+    $('.avatar-logo-3').removeClass('active-avatar').eq(position).addClass('active-avatar');
   });
 
 

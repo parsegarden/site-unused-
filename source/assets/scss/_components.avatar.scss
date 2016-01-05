@@ -11,12 +11,17 @@
 }
 
  .section-avatar{
-  position: relative;
+    @include group;
+    position: relative;
+    background: white;
+    z-index: 2;
+    margin-top: 840px;
 }
+
 .avatar-belt{
   width: 100%;
   position: relative;
-  padding-top: 127px;
+  padding-top: 90px;
   overflow: hidden;
 }
   .avatar-unit{
@@ -69,17 +74,81 @@
     font-style: italic;
     color: black;
 
-    .right-quote{
+    .right-quote-1{
         position: relative;
-        top: 1.5em;
-        right: 3em;
+        top: 35px;
+        right: 80px;
         height: 20px;
         width: 20px;    
     
     }
-    .left-quote{
+    .left-quote-1{
         position: relative;
-        top: -0.2em;
+        top: -5px;
+        left: 10px;
+        height: 20px;
+        width: 20px;    
+    
+    }
+
+     .right-quote-2{
+        position: relative;
+        top: 35px;
+        right: 145px;
+        height: 20px;
+        width: 20px;    
+    
+    }
+    .left-quote-2{
+        position: relative;
+        top: -5px;
+        left: 5px;
+        height: 20px;
+        width: 20px;    
+    
+    }
+     .right-quote-3{
+        position: relative;
+        top: 35px;
+        right: 80px;
+        height: 20px;
+        width: 20px;    
+    
+    }
+    .left-quote-3{
+        position: relative;
+        top: -5px;
+        height: 20px;
+        width: 20px;    
+    
+    }
+     .right-quote-4{
+        position: relative;
+        top: 70px;
+        right: 270px;
+        height: 20px;
+        width: 20px;    
+    
+    }
+    .left-quote-4{
+        position: relative;
+        top: -5px;
+        left: 15px;
+        height: 20px;
+        width: 20px;    
+    
+    }
+     .right-quote-5{
+        position: relative;
+        top: 35px;
+        right: 110px;
+        height: 20px;
+        width: 20px;    
+    
+    }
+    .left-quote-5{
+        position: relative;
+        top: -5px;
         height: 20px;
         width: 20px;    
     
@@ -113,16 +182,26 @@
         opacity: 1;
     }
 
+    .avatar-logo-3{
+        opacity: 0;
+
+        img{
+        position: relative;
+        top: 1em;
+        transform: scale(0.9);
+        height: 16px;
+           
+    } 
+}     
+       
     &.active-avatar{
       opacity: 1;
-      transform: scale(1.5);
+      transform: scale(1.3);
     }
 }
 .avatar-logo-3{
-    img{
-    position: relative;
-    top: 1em;
     
-    height: 16px;
-       } 
-        }
+    &.active-avatar{
+        opacity: 1;
+    }   
+}

@@ -13,6 +13,7 @@
     @include font-size($text-size-xs);
     position: relative;
     z-index: 2;
+    opacity: 0.95;
     
     
     .container {

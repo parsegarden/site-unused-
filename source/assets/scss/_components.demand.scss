@@ -1,5 +1,9 @@
 .demand{
-	
+	position: relative;
+	background: white;
+	z-index: 2;
+	@include group;
+
 	&--content{
 	
 	} 
@@ -21,7 +25,7 @@
 
 		margin: 0 auto;
 		text-align: center;
-		font-size: 18px;
+		font-size: 21px;
 		line-height: 1.6;
 	}
 
@@ -51,7 +55,7 @@
   margin-bottom: 37px;
 
   td{
-  	padding: 10px 80px 8px 0;
+  	padding: 10px 35px 8px 0;
   }
 }
 .table-title{
@@ -67,18 +71,18 @@
   }
 
 .table-brand{
+	width: 180px;
+
 	.unmetric-img{
 		height: 16px;
 	}
-	.simply-measured-img{
-		height: 24px;
+
+	span{
+		font-weight: 600;
+		font-size: 14px;
+
 	}
-	.shareable-img{
-		height: 24px
-	}
-	.socialbaker-img{
-		height: 48px;
-	}
+
 }
 
 
