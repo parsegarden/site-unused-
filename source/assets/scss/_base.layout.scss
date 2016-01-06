@@ -144,6 +144,7 @@ ul#popover {
         margin: 0.5em 30px;
         display: flex;
         align-items: center;
+  
         
         .more::before{
 
@@ -172,12 +173,10 @@ ul#popover {
         }
     }    
 
-
 }
     .nav-link {
         color: white;
         font-size: 18px;
-        margin-left: 10px;
         margin: 15px 15px;
         text-transform: lowercase;
 
