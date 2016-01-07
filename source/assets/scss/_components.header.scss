@@ -31,6 +31,7 @@
 .billboard {
     @include position(absolute, 13em 0 0 0);
     z-index: -1;
+    margin-top: 10px;
     
     .billboard-content {
         width: 100%;

@@ -4,17 +4,15 @@
 
 .winning-stragies{
 	@include group;
-	padding-top: 20em;
+	padding-top: 220px;
 	
 
 	&--content--title{
-		font-size: 36px;
-		font-weight: bold;
-		color: #444444;
 		padding-bottom: 1.1em;
 		text-align: center;
 	}
 }
+
 .evaluate-content{
 	margin: 0 auto;
 	

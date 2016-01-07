@@ -9,13 +9,13 @@
     position: relative;
     
     &::before{
-        @include position(absolute, 14em 0 0 24.5em);
+        @include position(absolute, 9em 0 0 2em);
         display: block;
         content: "";
         background: url('../i/LED-Phone.png') no-repeat center;
         background-size: cover;
-        height: 381px;
-        width: 671px;
+        background-size: 675px 386px;
+        height: 550px;
     }
 
 

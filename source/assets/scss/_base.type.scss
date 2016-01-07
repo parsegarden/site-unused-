@@ -6,7 +6,7 @@
 $text-size-xxl: 64px !default;
 $text-size-xl:  32px !default;
 
-$text-size-l:   24px !default;
+$text-size-l:   48px !default;
 $text-size-m:   36px !default;
 $text-size-s:   16px !default;
 
@@ -33,14 +33,17 @@ h6 {
 	
 h1 {
 	@include font-size($text-size-l);
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 0.9;
 	margin-bottom: 10px;
 }
 
 h2 {
 	@include font-size($text-size-m);
     color: #444444;
-    font-size: 36px;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
 h3 {
