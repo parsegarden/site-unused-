@@ -15,9 +15,8 @@
 		}
 
 		.content--title{
-			font-size: 48px;
-			color: #C534D0;
-			font-weight: 900;
+			color: #4DBCD5;
+			font-weight: normal;
 		}
 		.lists{
 
@@ -31,8 +30,6 @@
 		}
 		.content-sub--title{
 			padding-top: 60px;
-			font-size: 36px;
-			font-weight: 600;
 			letter-spacing: -1px;
 		}
 		.content-image--a{
@@ -79,28 +76,48 @@
 			padding-bottom: 29px;
 		}
 		.btn-l-info{
-			background: -moz-linear-gradient(#B912C7,#BC1CCA ,#BF24CD);
-		    background: -webkit-linear-gradient(#B912C7, #BC1CCA ,#BF24CD);
-		    background: linear-gradient(#B912C7,#BC1CCA , #BF24CD);
 		    padding: 14px 48px;
 		}
-		.social_button-tw.social_button-tw {
+		.social_button-tw {
 	    border-radius: 20px 0 0 20px;
 	    padding-left: 15px;
 		}
-		.social_button-in.social_button-in {
+		.social_button-in {
 		    border-radius: 0 20px 20px 0;
 		    padding-right: 15px;
+			
+			&:hover{
+				background-color: $instagram-color;
+				color: white;
+			}
 		}
 		.social_buttons-wrap{
 			padding: 63px 0 103px 0;
 		}
-		.social_button-tw.social_button-tw:hover {
-    		background-color: #00aced;
+
+		.social_button-tw:hover {
+    		background-color: $twitter-color;
+    		color: white;
 		}
 		.social_button-fb:hover {
-		    background-color: #325a97;
+		    background-color: $facebook-color;
+		    color: white;
 		}
+		.social_button-gp{
+			padding: 6px 20px 6px 20px;
+
+			&:hover{
+				background-color: #dd4b39;
+		    	color: white;
+		}
+		.social_button-in{
+			
+			&:hover{
+				background-color: $instagram-color;
+		    	color: white;
+			}
+		}
+	}	
 }	
 
 .steps{

@@ -1,14 +1,14 @@
 .section-introduction{
 	overflow: hidden;
-	
+	margin-top: -40px;
+	z-index: 3;
+
 	.introduction-content{
 
 		.content--title{
-			font-size: 48px;
-			color: #C534D0;
-			font-weight: 900;
-			padding-top: 140px;
+			color: #4DBCD5;
 			text-align: center;
+			font-weight: normal;
 		}
 
 		.content--intro{
@@ -18,15 +18,16 @@
 			font-size: 21px;
 			text-align: center;
 		}
+		.content--more{
+		max-width: 600px;
+		margin: 0 auto;
+		padding-top: 60px;
+
+}
 	}
 }
 
-.content--more{
-	max-width: 600px;
-	margin: 0 auto;
-	padding-top: 60px;
 
-}
 .highlight{
 		font-weight: 700;
 		color: #5856D6;

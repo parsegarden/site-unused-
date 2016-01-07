@@ -1,6 +1,6 @@
 .top-bar6 {
-    z-index: 3;
-    height: 480px;
+    z-index: 0;
+    height: 600px;
     width: 100%;
     position: relative;
 
@@ -49,15 +49,15 @@
     padding-top: 100px;
 
     .content--title{
-        max-width: 800px;
+        max-width: 750px;
+        margin-top: 40px;
         text-align: center;
         font-size: 72px;
-        color: white;
-        font-weight: 900;    
+        color: white; 
+        font-weight: 900;   
     }
     .content--more{
         color: white;
-        margin: 0 auto;
         font-size: 21px;
         padding-top: 10px;
         text-align: center;
