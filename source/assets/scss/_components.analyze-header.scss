@@ -3,10 +3,10 @@
 \*------------------------------------*/
 
 .top-bar2 {
-    height: 600px;
+    height: 640px;
 
     &::before{
-        @include position(absolute, 7em 0 0 0);
+        @include position(absolute, 8.5em 0 0 0);
         display: block;
         content: "";
         z-index: 1;
@@ -19,7 +19,8 @@
 
 
 .caption{
-    
+    padding-top: 2em;
+
     .video{
         transition: .3s linear;
         position: relative;
