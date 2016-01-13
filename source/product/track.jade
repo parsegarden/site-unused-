@@ -123,7 +123,7 @@ html
                     .link-app
                         a  iOS/ANDROID APP  
         
-        section.section-pulse-competition   
+        section.section-pulse-competition  
             .container
                 .pulse-competition--content
                     h2.pulse-competition--title Feel the pulse of your competition in just 60 seconds
@@ -329,15 +329,10 @@ html
                         
                         li
                             a.footer-list--link(href='#') SlideShare
-        script(src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
-        script(src='../assets/js/fadein.js')
+
+        script(src="https://code.jquery.com/jquery-1.10.2.js")
+        script(src='../assets/js/functions.js')
         script(src='../assets/js/uilang.js')
-        script.
-            jQuery(document).ready(function() {
-                jQuery('section').addClass("hidden").viewportChecker({
-                    classToAdd: 'visible animated ', // Class to add to the elements when they are visible
-                    offset: 100    
-                });   
-            });            
+              
         <code>clicking on ".f2" removes class "is-active" on ".f1.is-active" clicking on ".f2" adds class "is-active" on ".f2" clicking on ".f3" removes class "is-active" on ".f2.is-active" clicking on ".f3" adds class "is-active" on ".f3" clicking on ".more" toggles class "visible" on "#popover" 
         </code>                                           

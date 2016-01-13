@@ -41,5 +41,42 @@ $(function() {
 
 });
 
+$(window).scroll(function(){
 
+ var iScroll = $(this).scrollTop();
+
+   if(iScroll > $('.parallax1').offset().top - $(window).height()){
+
+    var offset = (Math.min(0, iScroll - $('.feature').offset().top +$(window).height() - 350)).toFixed();
+
+    $('.feature-img').css({'transform': 'translate('+ offset +'px, '+ Math.abs(offset * 0.2) +'px)'});
+
+
+  }
+
+  if(iScroll > $('.parallax2').offset().top - $(window).height()){
+
+    var offset = (Math.min(0, iScroll - $('.feature-b').offset().top +$(window).height() - 350)).toFixed();
+
+    $('.feature-b-img').css({'transform': 'translate('+ Math.abs(offset) +'px, '+ Math.abs(offset * 0.2) +'px)'});
+
+  }
+ 
+ if(iScroll > $('.winning-stragies').offset().top - $(window).height()){
+
+    var offset = (Math.min(0, iScroll - $('.winning-stragies--content').offset().top +$(window).height() - 350)).toFixed();
+
+    $('.parallax3').css({'transform': 'translate('+ offset +'px, '+ Math.abs(offset * 0.2) +'px)'});
+
+    $('.parallax4').css({'transform': 'translate('+ Math.abs(offset) +'px, '+ Math.abs(offset * 0.2) +'px)'});
+
+  }
+if(iScroll > $('.feature-3-section').offset().top - $(window).height()){
+
+    
+    console.log(hi)
+
+  }
+ 
+ });
 

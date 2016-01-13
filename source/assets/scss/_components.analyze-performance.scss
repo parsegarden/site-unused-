@@ -4,7 +4,7 @@
 
 .analyze-performance {
 	@include group;
-	padding-top: 290px;
+	padding-top: 100px;
 
 	&--content{
 		img{
@@ -44,16 +44,6 @@
 
 
 
-.feature-b {
- 	display: flex;
- 	flex-direction: column;
-    cursor: pointer;
-
-    hr{
-    	width: 350px;
-    }
-}
-
     .feature-b-img{
     	margin-left: 25em;
     	display: none;
@@ -69,6 +59,28 @@
 		}
     }
 
+
+
+.feature-section{
+	margin-bottom: 164px;
+
+}
+.feature-b{
+	margin: 0 auto;
+
+ 	
+ 	.feature-b-info{
+		text-align: left;
+		position: relative;
+		cursor: pointer;
+		
+		hr{
+			width: 350px;
+		}
+ 	}
+ 
+}
+
 .f4,
 .f5,
 .f6{
@@ -77,10 +89,12 @@
 	top: 4.6em;
 	padding-top: 1em
 }
-
 .f4.is-active{
-	opacity: 1
-	
+	opacity: 1;
+	hr{
+		width: 450px;
+	}
+
 	
 }
 
@@ -89,9 +103,10 @@
 }
 
 .f5.is-active{
-	opacity: 1
-	
-	
+	opacity: 1;
+	hr{
+		width: 450px;
+	}
 }
 
 .f5.is-active + .feature-b-img{
@@ -102,7 +117,9 @@
 .f6.is-active{
 	opacity: 1
 
-	
+	hr{
+		width: 450px;
+	}
 	
 }
 
