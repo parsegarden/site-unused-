@@ -1,8 +1,11 @@
 .demand{
+	@include group;
+	width: 100vw;
 	position: relative;
 	background: white;
 	z-index: 2;
-	@include group;
+	overflow: hidden;
+	
 
 	&--content{
 	
@@ -13,14 +16,14 @@
 		padding-bottom: 0.6em;
 		font-weight: 900;
 		font-size: 36px;
-		width: 80%;
+		width: 80vw;
 		margin: 0 auto;
 		text-align: center;
 
 	}
 	&--content--info{
 		padding-bottom: 4em;
-		width: 600px;
+		width: 600vw;
 		text-align: center;
 		margin: 0 auto;
 		text-align: center;
@@ -97,4 +100,21 @@ td, {
   img{
   	height: 20px;
   }
+}
+@media (max-width: 775px){
+
+.demand{
+	width: 90vw;
+
+	&--content--title{
+		width: 90vw;
+
+	}
+	&--content--info{
+		width: 90vw;
+	}
+
+}
+
+
 }

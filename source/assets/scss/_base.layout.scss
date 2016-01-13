@@ -126,12 +126,11 @@ ul#popover {
    .container {
         align-items: center;
         display: flex;
-        width: 100%;
+        width: 95%;
     }    
 
 
     .logo {
-        margin: 1.5em 40px; 
         opacity: 0.9;
         flex: 1;
         padding:  0;
@@ -141,10 +140,11 @@ ul#popover {
         }   
     }
     .nav-wrap{
-        margin: 0.5em 30px;
         display: flex;
         align-items: center;
-  
+        justify-content: flex-end;
+        margin-right: -10px;
+        
         .more{
             padding-right: 15px;
         }
@@ -174,7 +174,8 @@ ul#popover {
             color: #444444;
         
         }
-    }    
+    } 
+      
 
 }
     .nav-link {
@@ -189,3 +190,129 @@ ul#popover {
         }
     }
 }
+
+.nav-wrap > li{
+    z-index: 3;
+}
+
+.mobile-nav-toggle{
+        display: none;
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        align-items: center;
+        cursor: pointer;
+
+        &.is-open span{
+            background: transparent;
+        }    
+
+        span,
+        span:before,
+        span:after{
+            content: "";
+            display: block;
+            height: 2px;
+            width: 100%;
+            background: white;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+        }
+
+        span:before{
+            top: 15px;
+        }
+
+          span:after{
+            top: -17px;
+        }
+        &.is-open span:before,
+        &.is-open span:after{
+            transform-origin: center;
+            transform: rotate(40deg);
+            top: 0;
+        }
+        &.is-open span:after{
+           transform: rotate(-45deg); 
+        }
+    }  
+.mobile-nav{
+    width: 100vw;
+    display: none;
+    position: fixed;
+    top: 5em;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    transform: translateY(-210%);
+    transition: all 0.6s ease-in-out;
+ 
+}
+ @media (max-width: 775px){
+    .top-bar,
+    .top-bar2, .top-bar3,
+    .top-bar4, .top-bar5,
+    .top-bar6, .top-bar6,
+    .top-bar7, .top-bar7{
+        
+        .logo,
+        .nav-wrap,
+        .mobile-nav-toggle{
+            margin-top: 20px;
+        } 
+        .logo{
+            margin-left: 20px; 
+        } 
+        .nav-wrap{
+            display: none;
+        }
+
+        .mobile-nav-toggle{
+            display: flex;
+        }    
+    } 
+    .mobile-nav.is-open{
+        display: block; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #01CD7E;
+        transform: translateY(0%);
+    }
+    ul#popover{
+        margin-top: 10px;
+    }
+    ul#popover li{
+        opacity: 0.98;
+
+        span{
+            color: #444;
+        }
+    } 
+   ul#popover .menu-discover::before {
+            content: "";
+            position: absolute;
+            top: 228px;
+            left: 109px;
+            right: 0px;
+            bottom: 0;
+            width: 0; 
+            height: 0; 
+            border-top: 5.5px solid transparent;
+            border-bottom: 5.5px solid transparent;   
+            border-left: 5.5px solid #04A2B6;
+    }
+    ul#popover .menu-analyze::before {
+            content: "";
+            position: absolute;
+            top: 127px;
+            left: 101px;
+            right: 0px;
+            bottom: 0;
+            width: 0; 
+            height: 0; 
+            border-top: 5.5px solid transparent;
+            border-bottom: 5.5px solid transparent;   
+            border-left: 5.5px solid #04A2B6;
+    }
+}    

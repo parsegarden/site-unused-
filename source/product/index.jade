@@ -37,48 +37,53 @@ html
     
 
     body.page-home.hm-mod
+        //header
+        mixin nav-content()
+
+            ul.nav-wrap
+                li
+                    a.more.nav-link.hide(href="#") product
+
+                    ul#popover
+                        li
+                            a.nav-sub-link(href="track.html") 
+                                span.menu-track TRACK
+                                
+                                <br>
+                                
+                                span.menu-intro Keep an eye on your competition
+                        
+                        li
+                            a.nav-sub-link(href="analyze.html")
+                                span.menu-analyze ANALYZE
+                                
+                                <br>
+                                
+                                span.menu-intro Compare and analyze your competitors
+                        
+                        li 
+                            a.nav-sub-link(href="discover.html")
+                                span.menu-discover DISCOVER<i class="fa fa-caret-right"></i>
+                                
+                                <br>
+                                
+                                span.menu-intro Find inspiration to create content
+
+
+                li: a.nav-link.hide(href="about.html") company
+                li: a.nav-link.hide(href="#") contact
+                li: a.nav-link.hide.btn-sec(href="#") sign in
+        .mobile-nav
+            +nav-content()
+
         header.top-bar
             .container
                 a.logo(href="#")
                     img(src='../assets/i/unmetric-logo-white.png' alt='Unmetric logo')
                     
+                +nav-content()
 
-
-                ul.nav-wrap
-                    li
-                        a.more.nav-link(href="#") product
-
-                        ul#popover
-                            li
-                                a.nav-sub-link(href="track.html") 
-                                    span.menu-track TRACK
-                                    
-                                    <br>
-                                    
-                                    span.menu-intro Keep an eye on your competition
-                            
-                            li
-                                a.nav-sub-link(href="analyze.html")
-                                    span.menu-analyze ANALYZE
-                                    
-                                    <br>
-                                    
-                                    span.menu-intro Compare and analyze your competitors
-                            
-                            li 
-                                a.nav-sub-link(href="discover.html")
-                                    span.menu-discover DISCOVER<i class="fa fa-caret-right"></i>
-                                    
-                                    <br>
-                                    
-                                    span.menu-intro Find inspiration to create content
-
-
-                    li: a.nav-link(href="about.html") company
-                    li: a.nav-link(href="#") contact
-                    li: a.nav-link.btn-sec(href="#") sign in
-                
-                
+                .mobile-nav-toggle: span
                 
                 .billboard
                     .billboard-content
@@ -470,8 +475,8 @@ html
                         li
                             a.footer-list--link(href='#') SlideShare
 
-        
-        script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+
+        script(src="https://code.jquery.com/jquery-1.10.2.js")
 
         script(src='../assets/js/functions.js')
         

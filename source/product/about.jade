@@ -40,39 +40,53 @@ html
     
 
     body.ab-mod
-        //Header
+        //header
+        mixin nav-content()
+
+            ul.nav-wrap
+                li
+                    a.more.nav-link.hide(href="#") product
+
+                    ul#popover
+                        li
+                            a.nav-sub-link(href="track.html") 
+                                span.menu-track TRACK
+                                
+                                <br>
+                                
+                                span.menu-intro Keep an eye on your competition
+                        
+                        li
+                            a.nav-sub-link(href="analyze.html")
+                                span.menu-analyze ANALYZE
+                                
+                                <br>
+                                
+                                span.menu-intro Compare and analyze your competitors
+                        
+                        li 
+                            a.nav-sub-link(href="discover.html")
+                                span.menu-discover DISCOVER<i class="fa fa-caret-right"></i>
+                                
+                                <br>
+                                
+                                span.menu-intro Find inspiration to create content
+
+
+                li: a.nav-link.hide(href="about.html") company
+                li: a.nav-link.hide(href="#") contact
+                li: a.nav-link.hide.btn-sec(href="#") sign in
+        .mobile-nav
+            +nav-content()
+
         header.top-bar5
             .container
                 a.logo(href="#")
-                    img(src='../assets/i/unmetric-logo-bg.png' alt='Unmetric logo')
-    
+                    img(src='../assets/i/unmetric-logo-white.png' alt='Unmetric logo')
                     
-                ul.nav-wrap
+                +nav-content()
 
-                    li
-                        a(href="#").more.nav-link product
-                        ul#popover
-                            li
-                                a(href="track.html").nav-sub-link 
-                                    span.menu-track TRACK
-                                    <br>
-                                    span.menu-intro Keep an eye on your competition
-                            
-                            li
-                                a(href="analyze.html").nav-sub-link 
-                                    span.menu-analyze ANALYZE
-                                    <br>
-                                    span.menu-intro Compare and analyze your competitors
-                            
-                            li 
-                                a(href="discover.html").nav-sub-link 
-                                    span.menu-discover DISCOVER<i class="fa fa-caret-right"></i>
-                                    <br>
-                                    span.menu-intro Find inspiration to create content
-
-                    li: a(href="about.html").nav-link company
-                    li: a(href="#").nav-link contact
-                    li: a(href="#").nav-link.btn-sec sign in
+                .mobile-nav-toggle: span
             
             .about-unmetric--content
                h1.content--title About Unmetric

@@ -4,9 +4,6 @@ $(function() {
 
 });
 
-
-
-
 function clientStuff() {
 
   $('.avatar-face, .avatar-button, .avatar-logo-3').click(function() {
@@ -21,6 +18,7 @@ function clientStuff() {
 
 
 }
+
 function analyzeCompetition() {
 
   $('.analize-info-list, .analyze-button').click(function() {
@@ -33,6 +31,15 @@ function analyzeCompetition() {
   });
 
 }
+
+$(function() {
+   $('.mobile-nav-toggle').on('click', function(){
+    var status = $(this).hasClass('is-open');
+    if(status){ $('.mobile-nav-toggle, .mobile-nav').removeClass('is-open'); }
+    else { $('.mobile-nav-toggle, .mobile-nav').addClass('is-open'); }
+  });
+
+});
 
 
 
