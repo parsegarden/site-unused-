@@ -239,12 +239,12 @@ ul#popover {
 .mobile-nav{
     width: 100vw;
     display: none;
-    position: fixed;
+    position: absolute;
     top: 5em;
     left: 0;
     right: 0;
     z-index: 2;
-    transform: translateY(-210%);
+    transform: translateY(-100%);
     transition: all 0.6s ease-in-out;
  
 }
