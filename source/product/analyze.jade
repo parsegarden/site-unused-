@@ -91,8 +91,11 @@ html
                 h1 ANALYZE 
                 h3 for
                 p SOCIAL MEDIA ANALYSTS
-                img(src="../assets/i/video.svg", alt="").video         
-
+                img(src="../assets/i/video.svg", alt="").video
+                figcaption Watch the video         
+            
+            .analyze-btn
+                a(href="#").btn-analyze Start my free trial
    
 
         //section
@@ -101,22 +104,22 @@ html
                 .social-media--content
                     h1.media--content--title Your social media analytics done faster than ever.
 
-                    .size3of12 
+                    .size3of12.reporting 
                         img(src="../assets/i/reporting.jpg", alt="Reporting")  
                         h2.reporting-title Automated reporting
                         p.reporting-sub-info Get instant reports delivered in PowerPoint and Excel format right to your inbox 
 
-                    .size3of12 
+                    .size3of12.reporting  
                         img(src="../assets/i/social-network.jpg", alt="Social Network ")  
                         h2.reporting-title 6 major social networks
-                        p.reporting-su  b-info All the insights and data you need from Facebook, Twitter, Instagram, YouTube, Pinterest and LinkedIn
+                        p.reporting-sub-info All the insights and data you need from Facebook, Twitter, Instagram, YouTube, Pinterest and LinkedIn
 
-                    .size3of12 
+                    .size3of12.reporting  
                         img(src="../assets/i/post.jpg", alt="Paid Post")  
                         h2.reporting-title Paid post detection
                         p.reporting-sub-info Pull back the curtain on the paid social strategy of your competitors on Facebook and Twitter
                     
-                    .size3of12 
+                    .size3of12.reporting  
                         img(src="../assets/i/data.jpg", alt="Historical data")  
                         h2.reporting-title 3 years of historical data
                         p.reporting-sub-info Go back up to 3 years of historical data and find what worked in past for your competitors
@@ -157,9 +160,10 @@ html
                                 .feature-img
                                     img(src="../assets/i/virgin-america.jpg", alt="Virgin America")                          
 
-                
+            
+
         //section
-        section.analyze-performance.fadeInUpBig
+        section.analyze-performance
             .container
                 .analyze-performance--content
                     h2.analyze-performance--content--title Social media analytics done in minutes, not hours 
@@ -192,6 +196,7 @@ html
                                     <hr>
                                 .feature-b-img
                                     img(src="../assets/i/american-airline.jpg", alt="Virgin America")                      
+       
         //section
         section.winning-stragies.fadeInUpBig
             .container
@@ -204,10 +209,14 @@ html
                             p.evaluate-content--info Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. 
                             img(src="../assets/i/performance-sshot.jpg", alt="Performance").float
 
-                    .size6of12.evaluate-content.parallax4
-                        h3.evaluate-content--title Share, Collaborate & Win 
-                        p.evaluate-content--info Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. 
-                        img(src="../assets/i/share-sshot.jpg", alt="Performance")
+                    .size6of12
+                        .evaluate-content.parallax4
+                            h3.evaluate-content--title Share, Collaborate & Win 
+                            p.evaluate-content--info Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. 
+                            img(src="../assets/i/share-sshot.jpg", alt="Performance")
+
+            
+                                
         //section
         section.science.fadeInUpBig
             .container
@@ -218,6 +227,7 @@ html
                         p.science--content--avatar--info Alan Chumley <br>SVP, Research & Analytics
        
                         <img src="../assets/i/fleishmanhillard.jpg"> 
+                            
         //section
         section.price.fadeInUpBig
             .container
@@ -229,47 +239,66 @@ html
                     #tabs(align="center" style="margin:-2em; padding:10px 10px 50px 10px;")
                         <a href="#brands" class="button btn-info active" style="position:relative; left:11px;">Brands</a>
                         <a href="#agencies" class="button btn-info">Agencies</a>
-                        table.price--content--table
-                            tr.table-list
-                                td.table-title All major Social Networks  <img src="../assets/i/question-mark.jpg" alt="">
-                                td <img src="../assets/i/right-symbol.jpg" alt="">
-                                td <img src="../assets/i/right-symbol.jpg" alt="">
-                                td <img src="../assets/i/right-symbol.jpg" alt="">
-                              
-                            tr
-                                td.table-title Unlimited Audience Size  <img src="../assets/i/question-mark.jpg" alt="">
-                                td <img src="../assets/i/right-symbol.jpg" alt="">
-                                td <img src="../assets/i/right-symbol.jpg" alt="">
-                                td <img src="../assets/i/right-symbol.jpg" alt="">
-                              
-                            tr
-                                td.table-title Unlimited Users  <img src="../assets/i/question-mark.jpg" alt="">
-                                td <img src="../assets/i/right-symbol.jpg" alt="">
-                                td <img src="../assets/i/right-symbol.jpg" alt="">
-                                td <img src="../assets/i/right-symbol.jpg" alt="">
-                        
-                            tr
-                                td.table-title Content & Campaign Intelligence  <img src="../assets/i/question-mark.jpg" alt="">
-                                td 
-                                td <img src="../assets/i/right-symbol.jpg" alt="">
-                                td <img src="../assets/i/right-symbol.jpg" alt="">
-
-                            tr
-                                td.table-title Historical Data for  <img src="../assets/i/question-mark.jpg" alt="">
-                                td.table-date 6 months
-                                td.table-date 18 months
-                                td.table-date 36 months  
-                            
-                            tr
-                                td 
-                                td: img(src="../assets/i/price-1.jpg" alt="").table-price
-                                td: img(src="../assets/i/price-2.jpg" alt="").table-price
-                                td: img(src="../assets/i/price-3.jpg" alt="").table-price  
+                    table.price--content--table
+                        tr.table-list
+                            td.table-title All major Social Networks  <img src="../assets/i/question-mark.jpg" alt="">
+                            td <img src="../assets/i/right-symbol.jpg" alt="">
+                            td <img src="../assets/i/right-symbol.jpg" alt="">
+                            td <img src="../assets/i/right-symbol.jpg" alt="">
+                          
+                        tr
+                            td.table-title Unlimited Audience Size  <img src="../assets/i/question-mark.jpg" alt="">
+                            td <img src="../assets/i/right-symbol.jpg" alt="">
+                            td <img src="../assets/i/right-symbol.jpg" alt="">
+                            td <img src="../assets/i/right-symbol.jpg" alt="">
+                          
+                        tr
+                            td.table-title Unlimited Users  <img src="../assets/i/question-mark.jpg" alt="">
+                            td <img src="../assets/i/right-symbol.jpg" alt="">
+                            td <img src="../assets/i/right-symbol.jpg" alt="">
+                            td <img src="../assets/i/right-symbol.jpg" alt="">
                     
-                    .price--content--see-more
-                        a(href="#") See comparision of Basic/Pro/Premium plans    <img src="../assets/i/down-arrow.jpg" alt="">           
+                        tr
+                            td.table-title Content & Campaign Intelligence  <img src="../assets/i/question-mark.jpg" alt="">
+                            td 
+                            td <img src="../assets/i/right-symbol.jpg" alt="">
+                            td <img src="../assets/i/right-symbol.jpg" alt="">
+
+                        tr
+                            td.table-title Historical Data for  <img src="../assets/i/question-mark.jpg" alt="">
+                            td.table-date 6 months
+                            td.table-date 18 months
+                            td.table-date 36 months  
+                        
+                        tr.table-price
+                            td 
+                            td: img(src="../assets/i/price-1.jpg" alt="")
+                            td: img(src="../assets/i/price-2.jpg" alt="")
+                            td: img(src="../assets/i/price-3.jpg" alt="")
+
+                    .basic-table-price  
+                        figure
+                            img(src="../assets/i/price-1.jpg" alt="")
+                            figcaption All major Social Network Unlimated Audience Size Unlimited Users Content & Campaign Intelligence 6 months of Historical Data
+
+                            <hr>   
+
+                        figure
+                            img(src="../assets/i/price-2.jpg" alt="")
+                            figcaption All major Social Network Unlimated Audience Size Unlimited Users Content & Campaign Intelligence 6 months of Historical Data 
+                            
+                            <hr>
+
+                        figure
+                            img(src="../assets/i/price-3.jpg" alt="")
+                            figcaption All major Social Network Unlimated Audience Size Unlimited Users Content & Campaign Intelligence 6 months of Historical Data
+
+                            <hr>             
+                    
+                .price--content--see-more
+                    a(href="#") See comparision of Basic/Pro/Premium plans    <img src="../assets/i/down-arrow.jpg" alt="">           
         //section
-        section.form.rotateInUpRight
+        section.form
             .container
                 .form--content
                     h2.form--content--title Try it free for 7 days
@@ -308,13 +337,14 @@ html
 
                         .form--content--brand
                             h3.form--content--brand-title Thousands of real-time marketers use Unmetric to analyze their competitor’s social media efforts.
-                            img(src="../assets/i/ford.png", alt="").ford 
-                            img(src="../assets/i/logo-aa.png", alt="").aa 
-                            img(src="../assets/i/logo-h&m.png", alt="").hm
-                            img(src="../assets/i/logo-loreal.png", alt="").loreal 
-                            img(src="../assets/i/logo-gm.png", alt="").gm 
-                            img(src="../assets/i/logo-unilever.png", alt="").unilever 
-        //section
+                            .client-images
+                                img(src="../assets/i/ford.png", alt="").ford 
+                                img(src="../assets/i/logo-aa.png", alt="").aa 
+                                img(src="../assets/i/logo-h&m.png", alt="").hm
+                                img(src="../assets/i/logo-loreal.png", alt="").loreal 
+                                img(src="../assets/i/logo-gm.png", alt="").gm 
+                                img(src="../assets/i/logo-unilever.png", alt="").unilever 
+            //section
         footer.bottom-bar
             .container
                 .size4of12            

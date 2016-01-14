@@ -16,6 +16,11 @@
 	    background: -webkit-linear-gradient(#5856D6, #02DCFB,#FFFFFF);
 	    background: linear-gradient(#5856D6, #02DCFB,#FFFFFF);
 	}
+	[class^='btn-'] {
+		background: linear-gradient(to bottom, #1e5799 0%, #2989d8 0%, #7db9e8 77%, #7db9e8 77%);
+    	padding: 10px 65px;
+
+	}
 }
 
 .ab-mod{

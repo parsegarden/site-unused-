@@ -12,12 +12,16 @@
 
 .analyze-competition{
 	@include group;
+	display: flex;
 	padding-top: 140px;
-	overflow: hidden;
 	
+	.container{
+		width: 1200px;
+	}	
 
 	&--content--title{
-		text-align: center;
+		display: flex;
+		justify-content: center;
 		font-weight: bold;
 	}
 	&--content--sub-title{
@@ -51,12 +55,12 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	right: 0;
+	right: 2em;
 	bottom: 0;
 	img{
 		width: 790px;
     }
-	
+
 }
  .feature {
  	
@@ -112,4 +116,11 @@
 .f3.is-active + .feature-img{
 	display: block;
 
+}
+
+
+@media (max-width: 1200px) {	
+	.analyze-competition{
+		@include is-hidden;
+	}
 }

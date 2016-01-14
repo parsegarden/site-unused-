@@ -1,6 +1,9 @@
 /*------------------------------------*\
     #ANALYZE-HEADER
 \*------------------------------------*/
+body{
+    overflow: hidden;
+}
 
 .top-bar2 {
     height: 640px;
@@ -21,16 +24,84 @@
 .caption{
     padding-top: 2em;
 
-    .video{
+    .video {
         transition: .3s linear;
         position: relative;
         top: 8.2em;
         z-index: 2;
     
-    &:hover{
-        transform : scale(1.1);
+        &:hover{
+            transform : scale(1.1);
 
+        }
+    } 
+    figcaption{
+        margin-top: 25px;
+        font-weight: 600;
+        display: none;
+    }
+} 
+.analyze-btn{
+    display: none;
+} 
+
+@media (max-width: 800px) {
+    
+    .top-bar2 {
+        height: 720px;
+
+        &::before{
+            @include position(absolute, 28em 0 0 0);
+            display: block;
+            content: "";
+            z-index: 1;
+            background: url(../i/bg-2x.png) no-repeat center center;
+            height: 300px;
+            background-position: center center;
+            background-size: 720px 360px;
+        }
     }
 
-} 
-}  
+    .caption{
+        padding-top: 4em;
+    
+        .video {
+            position: relative;
+            top: 2em;
+            height: 50px;
+        }
+    }
+
+}
+
+
+   
+@media (max-width: 1200px) {
+    .analyze-btn{
+        display: block;
+        text-align: center;
+
+        
+        a.btn-analyze {
+            z-index: 4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 300px;
+            margin: 330px auto; 
+        }
+    }
+}
+@media (max-width: 800px) {
+    .analyze-btn{
+        a.btn-analyze {
+            margin: 460px auto;
+        }
+    }
+    .caption{
+        figcaption{
+            display: block;
+        }
+    }
+   
+}        

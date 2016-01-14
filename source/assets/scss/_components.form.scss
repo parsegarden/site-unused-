@@ -1,3 +1,5 @@
+//FORM 
+
 .form{
 	@include group;
 	display: flex;
@@ -6,6 +8,7 @@
 	margin: 0 auto;
 	padding-top: 140px;
 	margin-bottom: 5em;
+	
 
 	&--content--title{
 		text-align: center;
@@ -31,6 +34,7 @@
 .form--content--form{
     width: 800px;
     margin: 0 auto;
+
 }
 	.form--content--form::before{
 		position: absolute;
@@ -51,35 +55,49 @@
 	position: absolute;
 	top: 4em;
 	right: 1.8em;
+	color: #AAAAAA;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
 
-	img{
-		margin-top: 2.8em; 
-	}
-	.ford{
-		height: 42px;
-	}
-	.aa{
-		height: 44px;
-	}
-	.hm{
-		height: 36px;
-	}
-	.loreal{
-		height: 28px;
-	}
-	.gm{
-		height: 42px;
-	}
-	.unilever {
-		height: 42px;
-	}
-	&-title{
-		color: #AAAAAA;
-		text-align: center;
+	.client-images{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 0.2em; 
+		
+		img{
+			margin-top: 2.8em; 
+		}
+		.ford{
+			height: 42px;
+			width: 97.65px;
+		}
+		.aa{
+			height: 44px;
+			width: 45.32px;
+		}
+		.hm{
+			height: 36px;
+			width: 53.26px;
+		}
+		.loreal{
+			height: 28px;
+			width: 129.77px;
+		}
+		.gm{
+			height: 42px;
+			width: 44px;
+		}
+		.unilever {
+			height: 42px;
+			width: 45.32px;
+		}
+		&-title{
+			color: #AAAAAA;
+			text-align: center;
+		}
 	}
 }
 
@@ -130,3 +148,52 @@ select{
 label{
 	font-weight: 600;
 	}
+
+@media (max-width: 900px) {
+	.form{
+		margin-bottom: 350px;
+		padding-top: 0;
+		
+		&--content--title{
+			font-size: 24px;
+		}
+	}
+	.form--content--form{
+		width: 300px;
+		text-align: left;
+		padding: 0.5em;
+		border: none;
+
+		&::before{
+			border: none;
+		}
+		input[type="text"], input[type="email"], select {
+			border-bottom: 1px solid #444;
+			width: 280px;
+		}
+				
+	}
+	
+	input[type="submit"],
+	[class^='btn-']{
+		width: 280px;
+		padding-left: 42px;
+		font-size: 18px;
+	}
+	.form--content--brand{
+		margin-top: 560px;
+		text-align: center;
+
+		.client-images{
+			width: 300px;
+			height: 200px;
+			display: block;
+
+			img{
+				margin-right: 1.2em;
+			}
+		}
+		
+	}
+
+}
