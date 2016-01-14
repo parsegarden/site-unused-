@@ -1,6 +1,7 @@
 .section-advisor{
 	@include group;
 	padding-top: 80px;
+	display: flex;
 }
 
 .advisor-content{
@@ -36,3 +37,24 @@
 	}
 
 }	
+@media (max-width: 750px) {
+	
+	.section-advisor{
+		
+		.advisor-content{
+			.content-more{
+				font-size: 18px;
+			}
+
+			.advisor-img{
+				display: flex;
+				flex-direction: column;
+			
+				figure{
+					margin-bottom: 15px;
+				}
+			}
+		
+		}
+	}
+}

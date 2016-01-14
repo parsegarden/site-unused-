@@ -1,6 +1,10 @@
+//SECTION-CONTACT
+
 .section-contact{
 	@include group;
 	padding-top: 140px;
+	display: flex;
+	overflow: hidden;
 }
 .contact-content{
 	.content--title{
@@ -69,4 +73,27 @@
 			padding: 60px 0 10px 0;
 		}
 	}
+}
+
+@media (max-width: 750px) {
+	.contact-content{
+		text-align: center;
+		
+		.content--more{
+			font-size: 18px;
+			margin: 0 10px 0 5px;
+		}
+		
+		.content-form{
+			max-width: 340px;
+
+			input{
+				max-width: 240px;
+			}
+			input[type="submit"]{
+				padding-left: 48px; 
+			}
+		}
+	}
+
 }

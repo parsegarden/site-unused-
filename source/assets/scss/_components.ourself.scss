@@ -1,8 +1,13 @@
-.section-about-ourself{
-	overflow: hidden;
-	margin-top: -60px;
-	z-index: 3;
+//ABOUT-OURSELF
 
+.section-about-ourself{
+	margin-top: -60px;
+	overflow: hidden;
+	z-index: 3;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	
 	.content--title{
 		text-align: center;
 		color: #D34365;
@@ -12,8 +17,23 @@
 	.content-more{
 		max-width: 900px;
 		padding-top: 30px;
-		text-align: center;
 		margin: 0 auto;
+		text-align: center;
 		font-size: 21px;
+	}
+}
+
+@media (max-width: 750px) {
+	
+	.section-about-ourself{
+		
+		.content--title{
+			font-size: 34px;
+		}
+		.content-more{
+			font-size: 18px;
+		}
+			
+	
 	}
 }

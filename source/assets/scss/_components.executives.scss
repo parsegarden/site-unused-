@@ -1,6 +1,11 @@
+//SECTIOLN-EXECUTIVEES
+
 .section-executives{
 	@include group;
 	padding-top: 110px;
+	display: flex;
+
+
 	img{
 		height: 100px;
 	}
@@ -12,7 +17,7 @@
 }
 .executives-content--intro{
 	padding: 92px 60px 0 60px;
-	text-align: center;
+
 
 	.content--title{
 		font-weight: 600;
@@ -33,3 +38,4 @@
 	}
 	
 }
+
