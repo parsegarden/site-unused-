@@ -8,17 +8,19 @@ body{
 .top-bar2 {
     height: 640px;
 
-    &::before{
-        @include position(absolute, 8.5em 0 0 0);
-        display: block;
-        content: "";
-        z-index: 1;
-        background: url(../i/bg-2x.png) no-repeat center center;
-        height: 560px;
-        background-position: center center;
-        background-size: 720px 360px;
+    .analyze-header-image{
+        width:600px;
+        margin: -70px auto; 
+        display: flex;
+        align-items: center;
+        text-align: center;
+        a{
+            img{
+                width: 720px;
+            }
+        }    
     }
-}
+}    
 
 
 .caption{
@@ -54,18 +56,15 @@ body{
 @media (max-width: 800px) {
     
     .top-bar2 {
-        height: 100vh;
+        height: 80vh;
+        .analyze-header-image{
+            width: 90%;
+            a{
 
-        &::before{
-            @include position(absolute, 22em 0 0 0);
-            display: block;
-            content: "";
-            z-index: 1;
-            background: url(../i/bg-2x.png) no-repeat center center;
-            height: 40vh;
-            width: 100vw;
-            background-position: center center;
-            background-size: 720px 360px;
+                img{
+                    
+                }
+            }
         }
     }
 
@@ -74,9 +73,12 @@ body{
     
         .video {
             position: relative;
-            top: 2em;
+            top: 7em;
             height: 50px;
             box-shadow: none;
+        }
+        figcaption{
+            display: block;
         }
     }
 
@@ -104,20 +106,5 @@ body{
 }
 
 
-@media (max-width: 800px) {
-    
-    .caption{
-        figcaption{
-            display: block;
-        }
-    }
-    .bottom-bar{
-        padding: 60px 40px 0 0;
 
-
-       .footer{
-        margin-bottom: 25px;
-       }
-    }
-   
-}        
+       

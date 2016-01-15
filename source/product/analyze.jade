@@ -1,5 +1,5 @@
 doctype html
-
+ 
 html
     head
         title Unmetric Home
@@ -41,13 +41,12 @@ html
 
     body.an-mod
         //header
-        mixin nav-content()
-
+        .mobile-nav
             ul.nav-wrap
                 li
-                    a.more.nav-link.hide(href="#") product
+                    a.more.nav-link(href="#") Product
 
-                    ul#popover
+                    ul.popover
                         li
                             a.nav-sub-link(href="track.html") 
                                 span.menu-track TRACK
@@ -71,20 +70,51 @@ html
                                 <br>
                                 
                                 span.menu-intro Find inspiration to create content
+                
+                li: a.nav-link(href="about.html") About
+                li: a.nav-link(href="#") Contact
+                li: a.nav-link(href="#") Resource
 
-
-                li: a.nav-link.hide(href="about.html") company
-                li: a.nav-link.hide(href="#") contact
-                li: a.nav-link.hide.btn-sec(href="#") sign in
-        .mobile-nav
-            +nav-content()
 
         header.top-bar2
             .container
                 a.logo(href="#")
                     img(src='../assets/i/unmetric-logo-white.png' alt='Unmetric logo')
-                    
-                +nav-content()
+                   
+
+                ul.nav-wrap
+                    li
+                        a.more.nav-link(href="#") product
+
+                        ul#popover
+                            li
+                                a.nav-sub-link(href="track.html") 
+                                    span.menu-track TRACK
+                                    
+                                    <br>
+                                    
+                                    span.menu-intro Keep an eye on your competition
+                            
+                            li
+                                a.nav-sub-link(href="analyze.html")
+                                    span.menu-analyze ANALYZE
+                                    
+                                    <br>
+                                    
+                                    span.menu-intro Compare and analyze your competitors
+                            
+                            li 
+                                a.nav-sub-link(href="discover.html")
+                                    span.menu-discover DISCOVER<i class="fa fa-caret-right"></i>
+                                    
+                                    <br>
+                                    
+                                    span.menu-intro Find inspiration to create content
+
+
+                    li: a.nav-link(href="about.html") about
+                    li: a.nav-link(href="#") contact
+                    li: a.nav-link.btn-sec(href="#") sign in
 
                 .mobile-nav-toggle: span
             .caption
@@ -94,8 +124,12 @@ html
                 img(src="../assets/i/video.svg", alt="").video
                 figcaption Watch the video         
             
+            .analyze-header-image
+                a(href="#") 
+                    img(src="../assets/i/bg-2x.png", alt="")
+
             .analyze-btn
-                a(href="#").btn-analyze Start my free trial
+                a(href="#form").btn-analyze Start my free trial
    
 
         //section
@@ -298,7 +332,7 @@ html
                 .price--content--see-more
                     a(href="#") See comparision of Basic/Pro/Premium plans    <img src="../assets/i/down-arrow.jpg" alt="">           
         //section
-        section.form
+        section.form#form
             .container
                 .form--content
                     h2.form--content--title Try it free for 7 days

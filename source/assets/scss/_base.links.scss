@@ -16,7 +16,7 @@ a,
 
 a {
     &:hover {
-        color: lighten($link-color, 5);
+        color: lighten(white, 10%);
         text-decoration: none;    
     }
     

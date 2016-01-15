@@ -25,22 +25,7 @@
 }
 
 
-.nav-wrap{
-    margin: 0.5em 30px;
-    display: flex;
-    align-items: center;
 
-}
-.nav-link {
-    color: white;
-    margin-left: 10px;
-    margin: 15px 15px;
-    text-transform: lowercase;
-    
-    &:hover {
-        color: rgba(white, .75);
-    }
-}
 .media-strategy--content{
     display: flex;
     flex-direction: column;
