@@ -79,4 +79,13 @@ if(iScroll > $('.feature-3-section').offset().top - $(window).height()){
   }
  
  });
-
+$(document).scroll(function() {
+    checkOffset();
+});
+function checkOffset() {
+    if($('.analyze-btn').offset().top + $('.analyze-btn').height() 
+                                           >= $('.form').offset().top - 10)
+        $('.analyze-btn').css('position', 'absolute');
+    if($(document).scrollTop() + window.innerHeight < $('.form').offset().top)
+        $('.analyze-btn').css('position', 'fixed'); // restore when you scroll up
+}

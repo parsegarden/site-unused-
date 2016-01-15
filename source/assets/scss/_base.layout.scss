@@ -205,6 +205,7 @@ ul#popover {
 
         &.is-open span{
             background: transparent;
+
         }    
 
         span,
@@ -212,9 +213,11 @@ ul#popover {
         span:after{
             content: "";
             display: block;
-            height: 3px;
+            height: 5px;
+            border-radius: 10px;
             width: 100%;
             background: white;
+            opacity: 0.9;
             position: relative;
             transition: all 0.3s ease-in-out;
         }
@@ -224,7 +227,7 @@ ul#popover {
         }
 
           span:after{
-            top: -17px;
+            top: -19px;
         }
         &.is-open span:before,
         &.is-open span:after{
@@ -278,6 +281,10 @@ ul#popover {
         justify-content: center;
         background: #01CD7E;
         transform: translateY(0%);
+        
+        .btn-sec{
+            display: none;
+        }
     }
     ul#popover{
         margin-top: 10px;
@@ -289,30 +296,31 @@ ul#popover {
             color: #444;
         }
     } 
-   ul#popover .menu-discover::before {
-            content: "";
-            position: absolute;
-            top: 228px;
-            left: 109px;
-            right: 0px;
-            bottom: 0;
-            width: 0; 
-            height: 0; 
-            border-top: 5.5px solid transparent;
-            border-bottom: 5.5px solid transparent;   
-            border-left: 5.5px solid #04A2B6;
+    ul#popover .menu-discover::before {
+        content: "";
+        position: absolute;
+        top: 228px;
+        left: 109px;
+        right: 0px;
+        bottom: 0;
+        width: 0; 
+        height: 0; 
+        border-top: 5.5px solid transparent;
+        border-bottom: 5.5px solid transparent;   
+        border-left: 5.5px solid #04A2B6;
     }
+
     ul#popover .menu-analyze::before {
-            content: "";
-            position: absolute;
-            top: 127px;
-            left: 101px;
-            right: 0px;
-            bottom: 0;
-            width: 0; 
-            height: 0; 
-            border-top: 5.5px solid transparent;
-            border-bottom: 5.5px solid transparent;   
-            border-left: 5.5px solid #04A2B6;
+        content: "";
+        position: absolute;
+        top: 127px;
+        left: 101px;
+        right: 0px;
+        bottom: 0;
+        width: 0; 
+        height: 0; 
+        border-top: 5.5px solid transparent;
+        border-bottom: 5.5px solid transparent;   
+        border-left: 5.5px solid #04A2B6;
     }
 }    
