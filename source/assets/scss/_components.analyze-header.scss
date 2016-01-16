@@ -7,9 +7,18 @@ body{
 
 .top-bar2 {
     height: 640px;
-
+   
+    .container{
+        width: 100vw;
+        background: #4278DF;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0 50px;
+        z-index: 4;
+    }
     .analyze-header-image{
-        width:600px;
+        width: 720px;
         margin: -70px auto; 
         display: flex;
         align-items: center;
@@ -24,7 +33,7 @@ body{
 
 
 .caption{
-    padding-top: 2em;
+    padding-top: 100px;
 
     .video {
         transition: .3s linear;
@@ -54,22 +63,33 @@ body{
 } 
 
 @media (max-width: 800px) {
-    
+
+    body.is-open{
+        position: fixed;
+    }
     .top-bar2 {
         height: 80vh;
+
+        .container{
+            background: none;
+            position: relative;
+            padding: 0;
+            width: 95%;
+
+                a.logo{
+                    margin-left: 10px;
+                }
+        }        
         .analyze-header-image{
             width: 90%;
-            a{
-
-                img{
-                    
-                }
-            }
+           
         }
     }
 
     .caption{
         padding-top: 4em;
+
+
     
         .video {
             position: relative;

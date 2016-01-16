@@ -198,13 +198,15 @@ ul#popover {
 //MOBILE-NAV
 
 .mobile-nav-toggle{
-        display: none;
-        width: 30px;
-        height: 2px;
-        margin-right: 20px;
-        align-items: center;
-        cursor: pointer;
-
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 20px;
+    z-index: 4;
+    position: absolute;
+    top: -20px;
+    right: -15px;   
         &.is-open span{
             background: transparent;
 
@@ -219,65 +221,63 @@ ul#popover {
             border-radius: 10px;
             width: 100%;
             background: white;
-            opacity: 0.9;
             position: relative;
             transition: all 0.3s ease-in-out;
         }
 
         span:before{
-            top: 7px;
+            top: 6px;
         }
 
           span:after{
-            top: -11px;
+            top: -10px;
         }
         &.is-open span:before,
         &.is-open span:after{
             transform-origin: center;
             transform: rotate(45deg);
-            top: 0px;
+            top: 2px;
+
         }
+
         &.is-open span:after{
             transform: rotate(-45deg); 
-            top: -3.5px;
+            top: -2px;
+           
         }
     } 
 
 .mobile-nav{
-    width: 100vw;
-    display: none;
-    position: absolute;
-    top: 5em;
     left: 0;
     right: 0;
     z-index: 3;
-    transform: translateY(-100%);
+    transform: translateY(120%);
     transition: all 0.6s ease-in-out;
+    position: fixed;
+    top: 60px;
+    bottom: 80px;
+    background: rgba(white, .90);
+    overflow: auto;
+    padding-top: 20px;
     
     ul{
-        position: absolute;
-        left: 0;
-        right: 0;
         width: 300px;
-        top: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         
         li{
             margin-bottom: 20px;
+
         }
-        li:nth-child(2){
-            margin-top: 160px;
-        }
+        
         
         a{
         color: #444;
         font-weight: 500;
         font-size: 18px;
             &:hover{
-                color: black;
-                font-weight: bold;
+                color: #444;
             }   
         }
     }
@@ -288,9 +288,10 @@ ul#popover {
     .top-bar,
     .top-bar2,
     .top-bar3,
-    .top-bar4, .top-bar5,
-    .top-bar6,.top-bar7{
-        
+    .top-bar4, 
+    .top-bar5,
+    .top-bar6,
+    .top-bar7{
         .logo,
         .nav-wrap,
         .mobile-nav-toggle{
@@ -310,25 +311,18 @@ ul#popover {
     } 
     .mobile-nav.is-open{
         display: block; 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background: white;
-        height: 80vh;
-        opacity: 0.9;
         transform: translateY(0%);
         
         .btn-sec{
             display: none;
         }
+
+
     }
     .popover{
         display: block;
     }
     ul.popover{
-        margin-top: 40px;
-        opacity: 1;
-        box-shadow: none;
         
         li:nth-child(2){
             margin-top: -10px;
@@ -337,16 +331,23 @@ ul#popover {
     ul.popover li{
         opacity: 0.98;
         margin-bottom: 0;
-        margin-top: -20px;
+        position: relative;
+        top: 10px;
 
         a{
-            padding: 10px 20px;
+            padding: 5px 10px;
             display: block;
         
+        }
+        .nav-sub-link.active{
+            color: black;
+            font-weight: 600;
         }
 
         span.menu-intro{
             color: grey;
+            position: relative;
+            top: -5px;
             font-size: 14px;
         }
 
@@ -354,11 +355,7 @@ ul#popover {
         .menu-discover,
         .menu-analyze{
             color: #444;
-            font-size: 15px;
-            &:hover{
-                color: black;
-                font-weight: 700;
-            }        
+            font-size: 15px;      
         }
     } 
 }    

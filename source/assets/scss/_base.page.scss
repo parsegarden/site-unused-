@@ -2,6 +2,7 @@
     #PAGE
 \*------------------------------------*/
  
+//Html
 
 html {
 	background-color: white;
@@ -19,14 +20,14 @@ html {
      -webkit-font-smoothing: antialiased; 
 }
 
-
+//Body
 
 body {
 	@include size(100%); /* So that overlay extends to edges*/
 	@include font-size($text-size-s);
 }
 
-
+//Nav ul
 
 ul {
 	list-style: none;
@@ -46,11 +47,13 @@ hr {
 }
 
 
+//Img
 
 img {
    max-width: 100%;
 }
 
+//Caption
 
 .caption,
 .caption-2,
@@ -65,7 +68,7 @@ img {
     }
     h3:before,
     h3:after {
-    width: 74px;
+    width: 45px;
     height: 1px;
     display: inline-block;
     vertical-align: middle;
@@ -89,3 +92,5 @@ img {
         font-size: 18px;
     }
 }
+
+

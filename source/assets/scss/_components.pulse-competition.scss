@@ -125,3 +125,42 @@
 	display: block;
 
 }
+
+@media (max-width: 900px) {
+	.section-pulse-competition {
+
+		.container{
+			width: 90%;
+			text-align: center;
+		}	
+	
+	
+		.pulse-competition--content--title{
+			font-size: 24px;
+			width: auto;
+
+		}
+		.pulse-competition--content--sub-title{
+			font-size: 18px;
+			width: auto;
+
+		}
+	}
+
+	.feature-2-img{
+		position: relative;
+		display: block;
+		margin-top: 100px;
+		left: 0;
+	}
+	.f1,
+	.f2,
+	.f3{
+		opacity: 1;
+		display: block;
+
+		hr{
+			border: none;
+		}
+	}
+}		

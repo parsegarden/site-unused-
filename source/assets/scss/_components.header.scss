@@ -8,6 +8,7 @@
     width: 100vw;
     position: fixed;
     top: 0;
+    overflow: hidden;
 
     
     &::before{
@@ -164,8 +165,9 @@
 
 @media (max-width: 775px){
     .top-bar {
-    position: relative;
-}
+        position: relative;
+    }
+   
     .billboard-list{
         overflow: hidden;
         width: 95vw;

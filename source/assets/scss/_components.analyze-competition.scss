@@ -14,6 +14,7 @@
 	@include group;
 	display: flex;
 	padding-top: 140px;
+	padding-bottom: 50px;
 	
 	.container{
 		width: 1200px;
@@ -38,9 +39,9 @@
 
 .list-info{
 	width: 350px;
-	color: #444444;
-	font-size: 16px;
 	padding-top: 10px;
+	font-size: 16px;
+	padding-bottom: 10px;
 }
 
 .list-title{
@@ -48,9 +49,10 @@
     float: left;
     margin-top: -1em;
     color: #3E84E2;
-	font-size: 18px;
-	font-weight: 600;
+    font-size: 18px;
+    font-weight: 600;
 }
+
 .feature-img{
 	position: absolute;
 	top: 0;
@@ -58,6 +60,7 @@
 	right: 2em;
 	bottom: 0;
 	img{
+		height: 625px;
 		width: 790px;
     }
 
@@ -72,6 +75,7 @@
 		cursor: pointer;
 		position: relative;
     	top: 40px;
+		
 		hr{
 			width: 350px;
 		}
@@ -85,7 +89,6 @@
 .f1,
 .f2,
 .f3{
-	opacity: 0.5;
 	position: relative;
 	top: 4.6em;
 	padding-top: 1em
@@ -119,8 +122,73 @@
 }
 
 
-@media (max-width: 1200px) {	
+
+@media (max-width: 900px) {
+	
 	.analyze-competition{
-		@include is-hidden;
+		padding-top: 40px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid lighten(grey, 43%);
+
+		.container{
+			width: 90%;
+			text-align: center;
+		}	
+	
+	
+		&--content--title{
+			font-size: 24px;
+			width: auto;
+		}
+
+		&--content--sub-title{
+			font-size: 18px;
+			width: auto;
+
+		}
 	}
-}
+	.list-info{
+		width: auto;
+		margin-bottom: 40px;
+	}
+
+	.list-title{
+		text-align: center;
+		width: auto;
+	}
+
+	.feature{
+		margin-top: -30px;
+
+		.feature-info{
+			display: block;
+			flex-direction: column;
+			align-items: flex-end;	
+ 		}
+	
+		.feature-img{
+			display: block;
+			position: relative;
+			margin-top: 70px;
+			margin-bottom: 20px;
+
+
+			img{
+				height: auto;
+			 	width: auto;
+			}
+
+		}
+	}
+
+		.f1,
+		.f2,
+		.f3{
+			opacity: 1;
+			display: block;
+			
+			hr{
+				border: none;
+			}
+		}
+}	
