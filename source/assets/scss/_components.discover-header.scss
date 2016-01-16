@@ -1,3 +1,5 @@
+//DISCOVER HEADER
+
 .top-bar4 {
     z-index: 3;
     height: 760px;
@@ -24,7 +26,7 @@
 
 }
 
-
+//Caption
 
 .caption-3 {
    padding-top: 1em;
@@ -36,23 +38,25 @@
         font-size: 25px;
     }
     .link-discover{
-        padding-top: 14px;
+        padding-top: 20px;
         letter-spacing: 0.92px;
+        cursor: pointer;
 
-        .btn-link-discover{
-            padding: 4px 55px;
-            background: #fff;
-            opacity: 0.75;
-            border-radius: 20px 20px ;
-            font-size: 12px;
-            color: $ds-green;
-            font-weight: 500;
+        a{
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
         }
+
     }
 
-}    
+}  
+//Section Discover 
+
 .discover {
-    margin-top: -48px;
+    background: rgba(black, 0.15);
+    margin: 40px 160px 0 160px;
+    border-radius: 5px;
     
     .discover-content {
         width: 100%;
@@ -70,7 +74,6 @@
     display: flex;
     width: 60em;
     margin: 0 auto;
-    padding-top: 2.5em;
 }
 
 
@@ -118,13 +121,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 100px;
     margin-top: -40px;
 
    input{
         width: 230px;
         border: 1px solid white;
-        background: white;
-        opacity: 0.7;   
+        background: white;  
         text-align: left;
         padding: 12px 20px 12px 15px;
         border-radius: 3px;
@@ -140,10 +143,12 @@
         width: 162px;
         opacity: 1;
         border-radius: 0 3px 3px 0;
-        color: $ds-green;
-        padding: 12px 10px 12px 25px;
+        color: white;
+        padding: 13px 10px 13px 25px;
         position: relative;
         left: -3px;
+        background: linear-gradient(#20C05C, #14E48E);
+        border: none;
 
     }
 

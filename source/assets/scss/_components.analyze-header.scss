@@ -19,14 +19,28 @@ body{
     }
     .analyze-header-image{
         width: 720px;
-        margin: -70px auto; 
+        margin: 0px auto; 
         display: flex;
         align-items: center;
         text-align: center;
         a{
             img{
                 width: 720px;
+                position: relative;
             }
+            
+            .video {
+                position: absolute;
+                margin-top: 150px;
+                transition: .3s linear;
+                height: 64px;
+                z-index: 2;
+            
+                &:hover{
+                    transform : scale(1.1);
+
+                }
+            }     
         }    
     }
 }    
@@ -35,17 +49,6 @@ body{
 .caption{
     padding-top: 100px;
 
-    .video {
-        transition: .3s linear;
-        position: relative;
-        top: 8.2em;
-        z-index: 2;
-    
-        &:hover{
-            transform : scale(1.1);
-
-        }
-    } 
     figcaption{
         margin-top: 25px;
         font-weight: 600;
@@ -80,26 +83,21 @@ body{
                     margin-left: 10px;
                 }
         }        
-        .analyze-header-image{
+        .analyze-header-image {
             width: 90%;
-           
-        }
+           a{
+                .video{
+                    height: 50px;
+                    margin-top: 40px;
+                    margin-left: -10px;
+                }
+           }
     }
+}
 
     .caption{
         padding-top: 4em;
 
-
-    
-        .video {
-            position: relative;
-            top: 7em;
-            height: 50px;
-            box-shadow: none;
-        }
-        figcaption{
-            display: block;
-        }
     }
 
 }

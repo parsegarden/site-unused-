@@ -42,25 +42,25 @@ ul#popover {
     .menu-track{
         font-size: 18px;
         font-weight: 600;
-        color: #3D83E1;
+        color: #1DACBD;
 }
         .menu-track::before{
             content: "";
             position: absolute;
-            top: 25px;
-            left: 82px;
+            top: 108px;
+            left: 80px;
             right: 0px;
             bottom: 0;
             width: 0; 
             height: 0; 
             border-top: 5.5px solid transparent;
             border-bottom: 5.5px solid transparent;   
-            border-left: 5.5px solid #3176E0;
+            border-left: 5.5px solid #04A2B6;
 
 }
 
     .menu-analyze{
-        color: #1DACBD;
+        color: #3D83E1;
         font-size: 18px;
         font-weight: 600;
     }
@@ -68,15 +68,15 @@ ul#popover {
     .menu-analyze::before{
         content: "";
         position: absolute;
-        top: 108px;
-        left: 104px;
+        top: 25px;
+        left: 98px;
         right: 0px;
         bottom: 0;
         width: 0; 
         height: 0; 
         border-top: 5.5px solid transparent;
         border-bottom: 5.5px solid transparent;   
-        border-left: 5.5px solid #04A2B6;
+        border-left: 5.5px solid #3176E0;
     }
         
     .menu-discover{
@@ -88,8 +88,8 @@ ul#popover {
     .menu-discover::before{
         content: "";
         position: absolute;
-        top: 192.5px;
-        left: 114px;
+        top: 192px;
+        left: 108px;
         right: 0px;
         bottom: 0;
         width: 0; 

@@ -84,7 +84,37 @@ html
                 a.logo(href="#")
                     img(src='../assets/i/unmetric-logo-white.png' alt='Unmetric logo')
                     
-                +nav-content()
+                ul.nav-wrap
+                    li
+                        a.more.nav-link(href="#") product
+
+                        ul#popover
+                            li
+                                a.nav-sub-link(href="analyze.html")
+                                    span.menu-analyze ANALYZE 
+                                    
+                                    <br>
+                                    span.menu-intro Compare and analyze your competitors
+                        
+                            li
+                                a.nav-sub-link(href="track.html")
+                                    span.menu-track TRACK
+                                    
+                                    <br>
+                                    span.menu-intro Keep an eye on your competition
+                            
+                            li 
+                                a.nav-sub-link(href="discover.html")
+                                    span.menu-discover DISCOVER<i class="fa fa-caret-right"></i>
+                                    
+                                    <br>
+                                    
+                                    span.menu-intro Find inspiration to create content
+
+
+                    li: a.nav-link(href="about.html") about
+                    li: a.nav-link(href="#") contact
+                    li: a.nav-link.btn-sec(href="#") sign in
 
                 .mobile-nav-toggle: span
                    
@@ -95,8 +125,10 @@ html
                 h3 for
                 p CONTENT CREATORS
                
-                .link-discover
-                    a(href="#").btn-link-discover COMING REAL SOON 
+                figure.link-discover
+                    a(href="#")
+                        img(src="../assets/i/play-video.svg", alt="video-icon")
+                    figcaption  Watch the video 
 
             .discover
                     
@@ -104,7 +136,7 @@ html
                            
                     ul.discover-list
                         li.discover-list--item
-                            img(src="../assets/i/logo-voice.png", alt="Voice")
+                            img(src="../assets/i/pencil.png", alt="Pencil Stand")
                             h3.discover-list--heading Power your campaigns
                                 
                                 p.discover-list--copy 
@@ -128,9 +160,9 @@ html
                                 
                                 p.discover-list--copy.position  
                                     | Execute on creative ideas instantly by saving, sharing and collaborating across teams. 
-            .discover-form
-                input(type="text" placeholder="Email address")
-                input(type="submit" value="Request Invite")                        
+                .discover-form
+                    input(type="text" placeholder="Email address")
+                    input(type="submit" value="Request Invite")                        
         
         footer.bottom-bar
             .container

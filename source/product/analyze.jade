@@ -88,20 +88,18 @@ html
 
                         ul#popover
                             li
-                                a.nav-sub-link(href="track.html") 
+                                a.nav-sub-link(href="analyze.html")
+                                    span.menu-analyze ANALYZE 
+                                    
+                                    <br>
+                                    span.menu-intro Compare and analyze your competitors
+                        
+                            li
+                                a.nav-sub-link(href="track.html")
                                     span.menu-track TRACK
                                     
                                     <br>
-                                    
                                     span.menu-intro Keep an eye on your competition
-                            
-                            li
-                                a.nav-sub-link(href="analyze.html")
-                                    span.menu-analyze ANALYZE
-                                    
-                                    <br>
-                                    
-                                    span.menu-intro Compare and analyze your competitors
                             
                             li 
                                 a.nav-sub-link(href="discover.html")
@@ -114,7 +112,7 @@ html
 
                     li: a.nav-link(href="about.html") about
                     li: a.nav-link(href="#") contact
-                    li: a.nav-link.btn-sec(href="#form") sign in
+                    li: a.nav-link.btn-sec(href="#") sign in
 
                 .mobile-nav-toggle: span
             
@@ -126,15 +124,14 @@ html
                 h3 for
                
                 p SOCIAL MEDIA ANALYSTS
-               
-                img(src="../assets/i/video.svg", alt="").video
-            
-                figcaption Watch the video         
+                   
             
             //Analyze Header Image
             .analyze-header-image
                
-                a(href="#") 
+                a(href="#")
+                    img(src="../assets/i/video.svg", alt="").video
+
                     img(src="../assets/i/bg-2x.png", alt="")
             
             //Analyze Button

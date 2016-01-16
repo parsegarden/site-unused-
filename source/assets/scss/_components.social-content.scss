@@ -6,6 +6,7 @@
     @include group;
     text-align: center;
     border: 0;
+    
 
 
     
@@ -45,7 +46,7 @@
 @media (max-width: 800px){
     .social-media{
         border-bottom: 1px solid lighten(grey, 42%);
-        
+        width: auto;
     }
 
     .media--content--title{
