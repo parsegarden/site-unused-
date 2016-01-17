@@ -10,14 +10,10 @@ body{
    
     .container{
         width: 100vw;
-        background: linear-gradient(#5856D6, #3F75E2);
+        background: linear-gradient(#5856D6, #4474DE);
         position: fixed;
-        top: 0;
-        left: 0;
-        padding: 0 50px;
-        z-index: 4;
     }
-    .analyze-header-image{
+    .product-header-image{
         width: 720px;
         margin: 0px auto; 
         display: flex;
@@ -61,11 +57,11 @@ body{
     position: fixed;
     left: 0;
     right: 0;
-    z-index: 4;
+    z-index: 5;
     background: white;
 } 
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
     
     body.is-open{
         position: fixed;
@@ -83,7 +79,7 @@ body{
                     margin-left: 10px;
                 }
         }        
-        .analyze-header-image {
+        .product-header-image {
             width: 90%;
             margin-top: -40px;
            a{
@@ -114,6 +110,7 @@ body{
         height: 80px;
         left: 0;
         right: 0;
+        z-index: 4;
         
         a.btn-analyze {
             z-index: 4;

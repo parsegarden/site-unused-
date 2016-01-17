@@ -40,6 +40,13 @@ $(function() {
   });
 
 });
+$(function() {
+  $('.analyze-btn').on('click', function(){
+    $(".mobile-nav-toggle, .mobile-nav, body").removeClass('is-open');
+  });
+
+});  
+
 
 $(window).scroll(function(){
 

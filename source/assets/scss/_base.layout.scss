@@ -254,10 +254,10 @@ ul#popover {
     transform: translateY(120%);
     transition: all 0.6s ease-in-out;
     position: fixed;
-    height: 100vh;
     top: 60px;
-    bottom: 80px;
-    background: rgba(white, .90);
+    bottom: 10%;
+    background: rgba(white, .95);
+    opacity: 0.95;
     overflow: auto;
     padding-top: 20px;
     

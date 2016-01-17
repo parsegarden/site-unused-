@@ -40,43 +40,49 @@ html
 
     body.bs-mod
         //header
-        mixin nav-content()
-
-            ul.nav-wrap
-                li
-                    a.more.nav-link.hide(href="#") product
-
-                    ul#popover
-                        li
-                            a.nav-sub-link(href="track.html") 
-                                span.menu-track TRACK
-                                
-                                <br>
-                                
-                                span.menu-intro Keep an eye on your competition
-                        
-                        li
-                            a.nav-sub-link(href="analyze.html")
-                                span.menu-analyze ANALYZE
-                                
-                                <br>
-                                
-                                span.menu-intro Compare and analyze your competitors
-                        
-                        li 
-                            a.nav-sub-link(href="discover.html")
-                                span.menu-discover DISCOVER<i class="fa fa-caret-right"></i>
-                                
-                                <br>
-                                
-                                span.menu-intro Find inspiration to create content
-
-
-                li: a.nav-link.hide(href="about.html") company
-                li: a.nav-link.hide(href="#") contact
-                li: a.nav-link.hide.btn-sec(href="#") sign in
+        
         .mobile-nav
-            ul.nav-wrap
+                ul.nav-wrap
+                    li
+                        a.nav-link.more(href="#") Product
+
+                        ul.popover
+
+                            li
+                                a.nav-sub-link(href="analyze.html")
+                                    span.menu-analyze ANALYZE
+                                    
+                                    <br>
+                                    
+                                    span.menu-intro Compare and analyze your competitors
+
+                            li
+                                a.nav-sub-link.active(href="track.html") 
+                                    span.menu-track TRACK
+                                    
+                                    <br>
+                                    
+                                    span.menu-intro Keep an eye on your competition
+                            
+                            
+                            li 
+                                a.nav-sub-link(href="discover.html")
+                                    span.menu-discover DISCOVER<i class="fa fa-caret-right"></i>
+                                    
+                                    <br>
+                                    
+                                    span.menu-intro Find inspiration to create content
+                    
+                    li: a.nav-link(href="about.html") About
+                    li: a.nav-link(href="#") Contact
+                    li: a.nav-link(href="#") Resource
+
+        header.top-bar6
+            .container
+                a.logo(href="#")
+                    img(src='../assets/i/unmetric-logo-white.png' alt='Unmetric logo')
+                    
+                ul.nav-wrap
                     li
                         a.more.nav-link(href="#") product
 
@@ -107,13 +113,6 @@ html
                     li: a.nav-link(href="about.html") about
                     li: a.nav-link(href="#") contact
                     li: a.nav-link.btn-sec(href="#") sign in
-
-        header.top-bar6
-            .container
-                a.logo(href="#")
-                    img(src='../assets/i/unmetric-logo-white.png' alt='Unmetric logo')
-                    
-                +nav-content()
 
                 .mobile-nav-toggle: span
 

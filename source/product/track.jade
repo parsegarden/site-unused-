@@ -41,50 +41,80 @@ html
 
     body.tk-mod
         //header
-        mixin nav-content()
-
-            ul.nav-wrap
-                li
-                    a.more.nav-link.hide(href="#") product
-
-                    ul#popover
-                        li
-                            a.nav-sub-link(href="track.html") 
-                                span.menu-track TRACK
-                                
-                                <br>
-                                
-                                span.menu-intro Keep an eye on your competition
-                        
-                        li
-                            a.nav-sub-link(href="analyze.html")
-                                span.menu-analyze ANALYZE
-                                
-                                <br>
-                                
-                                span.menu-intro Compare and analyze your competitors
-                        
-                        li 
-                            a.nav-sub-link(href="discover.html")
-                                span.menu-discover DISCOVER<i class="fa fa-caret-right"></i>
-                                
-                                <br>
-                                
-                                span.menu-intro Find inspiration to create content
-
-
-                li: a.nav-link.hide(href="about.html") company
-                li: a.nav-link.hide(href="#") contact
-                li: a.nav-link.hide.btn-sec(href="#") sign in
+        
         .mobile-nav
-            +nav-content()
+            .mobile-nav
+                ul.nav-wrap
+                    li
+                        a.nav-link.more(href="#") Product
+
+                        ul.popover
+
+                            li
+                                a.nav-sub-link(href="analyze.html")
+                                    span.menu-analyze ANALYZE
+                                    
+                                    <br>
+                                    
+                                    span.menu-intro Compare and analyze your competitors
+
+                            li
+                                a.nav-sub-link.active(href="track.html") 
+                                    span.menu-track TRACK
+                                    
+                                    <br>
+                                    
+                                    span.menu-intro Keep an eye on your competition
+                            
+                            
+                            li 
+                                a.nav-sub-link(href="discover.html")
+                                    span.menu-discover DISCOVER<i class="fa fa-caret-right"></i>
+                                    
+                                    <br>
+                                    
+                                    span.menu-intro Find inspiration to create content
+                    
+                    li: a.nav-link(href="about.html") About
+                    li: a.nav-link(href="#") Contact
+                    li: a.nav-link(href="#") Resource
 
         header.top-bar3
             .container
                 a.logo(href="#")
                     img(src='../assets/i/unmetric-logo-white.png' alt='Unmetric logo')
                     
-                +nav-content()
+                ul.nav-wrap
+                    li
+                        a.more.nav-link(href="#") product
+
+                        ul#popover
+                            li
+                                a.nav-sub-link(href="analyze.html")
+                                    span.menu-analyze ANALYZE 
+                                    
+                                    <br>
+                                    span.menu-intro Compare and analyze your competitors
+                        
+                            li
+                                a.nav-sub-link(href="track.html")
+                                    span.menu-track TRACK
+                                    
+                                    <br>
+                                    span.menu-intro Keep an eye on your competition
+                            
+                            li 
+                                a.nav-sub-link(href="discover.html")
+                                    span.menu-discover DISCOVER<i class="fa fa-caret-right"></i>
+                                    
+                                    <br>
+                                    
+                                    span.menu-intro Find inspiration to create content
+
+
+                    li: a.nav-link(href="about.html") about
+                    li: a.nav-link(href="#") contact
+                    li: a.nav-link.btn-sec(href="#") sign in
 
                 .mobile-nav-toggle: span
 
@@ -92,28 +122,36 @@ html
                 h1 TRACK
                 h3 for
                 p MARKETERS
+            
 
+            .track-header-image
+               
+                a(href="#")
+                    img(src="../assets/i/LED-Phone.png", alt="")
+            //track Button
+            .analyze-btn
+                a(href="#request-form").btn-analyze Request Invite
         section.section-track-competition
             .container
                 .track-competition--content
                     h1.track-competition--title Track your competition on social media in real time
                     
                     .track-competition--info
-                        .size4of12 
+                        .size4of12.track-feature
                             img(src="../assets/i/brand-profile.jpg", alt="Reporting")  
                             
                             h2.reporting-title 35,000 brand profiles
                             
                             p.reporting-sub-info We’ve covered world’s most popular brands for you. If it’s missing we’ll add it right away. 
 
-                        .size4of12 
+                        .size4of12.track-feature 
                             img(src="../assets/i/socials.jpg", alt="Social Network ")  
                             
                             h2.reporting-title 4 major social networks
                             
                             p.reporting-sub-info All the insights and data you need from Facebook, Twitter, Instagram, YouTube, Pinterest and LinkedIn
 
-                        .size4of12 
+                        .size4of12.track-feature 
                             img(src="../assets/i/logo-LED.jpg", alt="Paid Post")  
                             
                             h2.reporting-title Use it everywhere
@@ -163,7 +201,7 @@ html
                                     img(src="../assets/i/large-phone.jpg", alt="Virgin America")
 
                             .link-feature-2
-                                a(href="#").btn-tk Request Invite for Track<i class="icon-arrow-right"></i>          
+                                a(href="#").btn-tk Request Invite for Track        
                     .link-app
                         a(href="#") COMMAND-CENTER WEB APP                    
         
@@ -206,7 +244,7 @@ html
                                     img(src="../assets/i/large-LED.jpg", alt="Virgin America")  
                             
                             .link-feature--3        
-                                a(href="#").btn-tk Request Invite for Track<i class="icon-arrow-right"></i>             
+                                a(href="#").btn-tk Request Invite for Track            
                     
 
         section.section-unmetric-track
@@ -219,30 +257,59 @@ html
                     <br>
                     img(src="../assets/i/logo-cococola.jpg", alt="ColoCola" class="logo")    
         
-        section.section-invite
-            .container
-                .invite-title Request an invite
-                .invite-content 
-    
-                    .invite--content--form 
-                        input-control
-                            label.email Email
-                            <br>
-                            input(type="text" placeholder="sherlock@holmes.com")
-                            a(href="#").btn-tk.btn Request Invite
 
-                    .invite--content--brand
-                        h3.invite--content--brand-title Thousands of real-time marketers use Unmetric to analyze their competitor’s social media efforts.
-                    .invite-brand-img    
-                        img(src="../assets/i/ford.png", alt="").ford 
-                        img(src="../assets/i/logo-aa.png", alt="").aa 
-                        img(src="../assets/i/logo-h&m.png", alt="").hm
-                        img(src="../assets/i/logo-gm.png", alt="").gm 
-                        img(src="../assets/i/logo-unilever.png", alt="").unilever  
-                        img(src="../assets/i/logo-loreal.png", alt="").loreal        
+         //Section Form
+        section.form#request-form
+            //Container
+            .container
+                //Form Content
+                .form--content
+                   
+                    h2.invite-title Request an invite
+
+                    //Form contant form
+                    .form--content--form 
+                       
+                        label.sign-in(for="sign in")  I’m interested in:<br>
+            
+                        <input type="checkbox"  class="active" name="client" checked> Track Mobile App<br>
+                        p.form-app-info An iOS/Andriod app to help you stay on top of your competition across Facebook, Twitter, YouTube and Instagram.</p> 
+                       
+                        <input type="checkbox"  name="client" > Track Command Center
+                        p.form-app-info A web app for your command center to help you stay on top of your competition across Facebook, Twitter, YouTube and Instagram. 
+                        <br>
+                        
+                        //Input Group
+                        .input-group.request-group
+                       
+                            label.email Email
+                       
+                            <br>
+                       
+                            input(type="text" placeholder="sherlock@holmes.com")
+                       
+                        <br>
+                        //Input Submit
+                        input(type="submit" value="Request Invite").btn-fb 
+                        
+                        //Form Content Brand
+                        .form--content--brand.unique-brand
+                            h3.form--content--brand-title Thousands of real-time marketers use Unmetric to analyze their competitor’s social media efforts.
+                            
+                            //Client Images
+                            .client-images.brand-images
+                                img(src="../assets/i/logo-gm.png", alt="").gm 
+                                img(src="../assets/i/logo-unilever.png", alt="").unilever  
+                                img(src="../assets/i/logo-loreal.png", alt="").loreal  
+                                img(src="../assets/i/og.png", alt="").og 
+                                img(src="../assets/i/logo-aa.png", alt="").aa 
+                                img(src="../assets/i/logo-h&m.png", alt="").hm
+                                
+                                
+                                  
         footer.bottom-bar
             .container
-                .size4of12            
+                .size4of12.footer            
                     ul
                         li 
                             h3 
@@ -258,7 +325,7 @@ html
                             a.footer-list--link(href='#') Discover — for Content Creators
                   
                 
-                .size3of12
+                .size3of12.footer
                     ul
                         li
                             h3 
@@ -284,7 +351,7 @@ html
 
                           
 
-                .size3of12
+                .size3of12.footer
                     ul
                         li
                             h3 
@@ -306,7 +373,7 @@ html
                             a.footer-list--link(href='#') Industry Reports
                       
                       
-                .size2of12
+                .size2of12.footer
                     ul 
                         li 
                             h3 
@@ -330,9 +397,8 @@ html
                         li
                             a.footer-list--link(href='#') SlideShare
 
-        script(src="https://code.jquery.com/jquery-1.10.2.js")
+        script(src="../assets/js/jquery-2.1.3.min.js") 
         script(src='../assets/js/functions.js')
         script(src='../assets/js/uilang.js')
               
-        <code>clicking on ".f2" removes class "is-active" on ".f1.is-active" clicking on ".f2" adds class "is-active" on ".f2" clicking on ".f3" removes class "is-active" on ".f2.is-active" clicking on ".f3" adds class "is-active" on ".f3" clicking on ".more" toggles class "visible" on "#popover" 
-        </code>                                           
+        <code>clicking on ".f2" removes class "is-active" on ".f1.is-active" clicking on ".f2" adds class "is-active" on ".f2" clicking on ".f3" removes class "is-active" on ".f2.is-active" clicking on ".f3" adds class "is-active" on ".f3" clicking on ".more" toggles class "visible" on "#popover" </code>                                           

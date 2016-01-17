@@ -93,4 +93,14 @@ img {
     }
 }
 
+//container
 
+[class^="top-"]{
+    .container{
+        top: 0;
+        left: 0;
+        padding: 0 50px;
+        z-index: 4;
+
+    }
+}

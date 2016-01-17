@@ -41,43 +41,48 @@ html
 
     body.nw-mod
         //header
-        mixin nav-content()
+            .mobile-nav
+                ul.nav-wrap
+                    li
+                        a.nav-link.more(href="#") Product
 
-            ul.nav-wrap
-                li
-                    a.more.nav-link.hide(href="#") product
+                        ul.popover
 
-                    ul#popover
-                        li
-                            a.nav-sub-link(href="track.html") 
-                                span.menu-track TRACK
-                                
-                                <br>
-                                
-                                span.menu-intro Keep an eye on your competition
-                        
-                        li
-                            a.nav-sub-link(href="analyze.html")
-                                span.menu-analyze ANALYZE
-                                
-                                <br>
-                                
-                                span.menu-intro Compare and analyze your competitors
-                        
-                        li 
-                            a.nav-sub-link(href="discover.html")
-                                span.menu-discover DISCOVER<i class="fa fa-caret-right"></i>
-                                
-                                <br>
-                                
-                                span.menu-intro Find inspiration to create content
+                            li
+                                a.nav-sub-link(href="analyze.html")
+                                    span.menu-analyze ANALYZE
+                                    
+                                    <br>
+                                    
+                                    span.menu-intro Compare and analyze your competitors
 
+                            li
+                                a.nav-sub-link.active(href="track.html") 
+                                    span.menu-track TRACK
+                                    
+                                    <br>
+                                    
+                                    span.menu-intro Keep an eye on your competition
+                            
+                            
+                            li 
+                                a.nav-sub-link(href="discover.html")
+                                    span.menu-discover DISCOVER<i class="fa fa-caret-right"></i>
+                                    
+                                    <br>
+                                    
+                                    span.menu-intro Find inspiration to create content
+                    
+                    li: a.nav-link(href="about.html") About
+                    li: a.nav-link(href="#") Contact
+                    li: a.nav-link(href="#") Resource
 
-                li: a.nav-link.hide(href="about.html") company
-                li: a.nav-link.hide(href="#") contact
-                li: a.nav-link.hide.btn-sec(href="#") sign in
-        .mobile-nav
-            ul.nav-wrap
+        header.top-bar7
+            .container
+                a.logo(href="#")
+                    img(src='../assets/i/unmetric-logo-white.png' alt='Unmetric logo')
+                    
+                ul.nav-wrap
                     li
                         a.more.nav-link(href="#") product
 
@@ -108,13 +113,6 @@ html
                     li: a.nav-link(href="about.html") about
                     li: a.nav-link(href="#") contact
                     li: a.nav-link.btn-sec(href="#") sign in
-
-        header.top-bar7
-            .container
-                a.logo(href="#")
-                    img(src='../assets/i/unmetric-logo-white.png' alt='Unmetric logo')
-                    
-                +nav-content()
 
                 .mobile-nav-toggle: span
 
@@ -167,7 +165,7 @@ html
 
         footer.bottom-bar
             .container
-                .size4of12            
+                .size4of12.footer           
                     ul
                         li 
                             h3 
@@ -183,7 +181,7 @@ html
                             a.footer-list--link(href='#') Discover — for Content Creators
                   
                 
-                .size3of12
+                .size3of12.footer
                     ul
                         li
                             h3 
@@ -209,7 +207,7 @@ html
 
                           
 
-                .size3of12
+                .size3of12.footer
                     ul
                         li
                             h3 
@@ -231,7 +229,7 @@ html
                             a.footer-list--link(href='#') Industry Reports
                       
                       
-                .size2of12
+                .size2of12.footer
                     ul 
                         li 
                             h3 
@@ -261,4 +259,4 @@ html
         script(src='../assets/js/functions.js')  
         script(src='../assets/js/uilang.js')
 
-        <code><!-- start by removing the previous "open" class -->clicking on ".btn-info" removes class "active" on ".btn-info.active" <!-- then add it to the clicked title -->clicking on ".btn-info" adds class ".btn-info" on "target" clicking on ".more" toggles class "visible" on "#popover"</code>                                         
+        <code><!-- start by removing the previous "open" class -->clicking on ".btn-info" removes class "active" on ".btn-info.active" <!-- then add it to the clicked title -->clicking on ".btn-info" adds class ".btn-info" on "target" clicking on ".more" toggles class "visible" on "#popover"</code>                                         .footer

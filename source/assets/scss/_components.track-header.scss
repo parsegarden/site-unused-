@@ -3,22 +3,15 @@
 \*------------------------------------*/
 
 .top-bar3 {
-    z-index: 3;
     height: 640px;
     width: 100%;
     position: relative;
-    
-    &::before{
-        @include position(absolute, 10em 0 0 2em);
-        display: block;
-        content: "";
-        background: url('../i/LED-Phone.png') no-repeat center;
-        background-size: cover;
-        background-size: 675px 386px;
-        height: 550px;
+
+    .container{
+        width: 100vw;
+        background: linear-gradient(#0098AF, #00ADB5);
+        position: fixed;
     }
-
-
 }
 
 
@@ -33,7 +26,7 @@
     }
 }
 .caption-2{
-   padding-top: 2em;
+   padding-top: 90px;
 
     h3:before,
     h3:after{
@@ -41,6 +34,72 @@
     }
     p{
         font-size: 26px;
+    }
+}
+ .track-header-image{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+    a{
+        img{
+            height: 373px;
+        }
+    }
+ }
+ @media (max-width: 800px) {
+.top-bar3{
+
+        .container{
+            background: none;
+            position: relative;
+            padding: 0;
+            width: 95%;
+
+            a.logo{
+                margin-left: 10px;
+            }
+        }
+    }
+ }
+
+ @media (max-width: 750px) {
+
+    .top-bar3{
+        height: 500px;
+
+        .container{
+            background: none;
+            position: relative;
+            padding: 0;
+            width: 95%;
+
+            a.logo{
+                margin-left: 10px;
+            }
+        }
+        .caption-2{
+            margin-top: -10px;
+         
+          h1{
+                font-size: 35px
+          }
+            p{
+                font-size: 20px;
+            }
+        }
+
+        .track-header-image{
+            width: 90%;
+            text-align: center;
+
+            a{
+                img{
+                    width: 90%;
+                    height: 60%; 
+                }
+            }
+         }          
     }
 }
   

@@ -29,35 +29,58 @@
     </script>
   </head>
   <body class="nw-mod">
-    <!--header-->
-    <div class="mobile-nav">
-      <ul class="nav-wrap">
-        <li><a href="#" class="more nav-link">product</a>
-          <ul id="popover">
-            <li><a href="analyze.html" class="nav-sub-link"><span class="menu-analyze">ANALYZE </span><br><span class="menu-intro">Compare and analyze your competitors</span></a></li>
-            <li><a href="track.html" class="nav-sub-link"><span class="menu-track">TRACK</span><br><span class="menu-intro">Keep an eye on your competition</span></a></li>
-            <li> <a href="discover.html" class="nav-sub-link"><span class="menu-discover">DISCOVER<i class="fa fa-caret-right"></i></span><br><span class="menu-intro">Find inspiration to create content</span></a></li>
-          </ul>
-        </li>
-        <li><a href="about.html" class="nav-link">about</a></li>
-        <li><a href="#" class="nav-link">contact</a></li>
-        <li><a href="#" class="nav-link btn-sec">sign in</a></li>
-      </ul>
-    </div>
+    <!--header
+    .mobile-nav
+        ul.nav-wrap
+            li
+                a.nav-link.more(href="#") Product
+    
+                ul.popover
+    
+                    li
+                        a.nav-sub-link(href="analyze.html")
+                            span.menu-analyze ANALYZE
+                            
+                            <br>
+                            
+                            span.menu-intro Compare and analyze your competitors
+    
+                    li
+                        a.nav-sub-link.active(href="track.html") 
+                            span.menu-track TRACK
+                            
+                            <br>
+                            
+                            span.menu-intro Keep an eye on your competition
+                    
+                    
+                    li 
+                        a.nav-sub-link(href="discover.html")
+                            span.menu-discover DISCOVER<i class="fa fa-caret-right"></i>
+                            
+                            <br>
+                            
+                            span.menu-intro Find inspiration to create content
+            
+            li: a.nav-link(href="about.html") About
+            li: a.nav-link(href="#") Contact
+            li: a.nav-link(href="#") Resource
+    
+    -->
     <header class="top-bar7">
       <div class="container"><a href="#" class="logo"><img src="../assets/i/unmetric-logo-white.png" alt="Unmetric logo"></a>
-            <ul class="nav-wrap">
-              <li><a href="#" class="more nav-link hide">product</a>
-                <ul id="popover">
-                  <li><a href="track.html" class="nav-sub-link"> <span class="menu-track">TRACK</span><br><span class="menu-intro">Keep an eye on your competition</span></a></li>
-                  <li><a href="analyze.html" class="nav-sub-link"><span class="menu-analyze">ANALYZE</span><br><span class="menu-intro">Compare and analyze your competitors</span></a></li>
-                  <li> <a href="discover.html" class="nav-sub-link"><span class="menu-discover">DISCOVER<i class="fa fa-caret-right"></i></span><br><span class="menu-intro">Find inspiration to create content</span></a></li>
-                </ul>
-              </li>
-              <li><a href="about.html" class="nav-link hide">company</a></li>
-              <li><a href="#" class="nav-link hide">contact</a></li>
-              <li><a href="#" class="nav-link hide btn-sec">sign in</a></li>
+        <ul class="nav-wrap">
+          <li><a href="#" class="more nav-link">product</a>
+            <ul id="popover">
+              <li><a href="analyze.html" class="nav-sub-link"><span class="menu-analyze">ANALYZE </span><br><span class="menu-intro">Compare and analyze your competitors</span></a></li>
+              <li><a href="track.html" class="nav-sub-link"><span class="menu-track">TRACK</span><br><span class="menu-intro">Keep an eye on your competition</span></a></li>
+              <li> <a href="discover.html" class="nav-sub-link"><span class="menu-discover">DISCOVER<i class="fa fa-caret-right"></i></span><br><span class="menu-intro">Find inspiration to create content</span></a></li>
             </ul>
+          </li>
+          <li><a href="about.html" class="nav-link">about</a></li>
+          <li><a href="#" class="nav-link">contact</a></li>
+          <li><a href="#" class="nav-link btn-sec">sign in</a></li>
+        </ul>
         <div class="mobile-nav-toggle"><span></span></div>
       </div>
       <h1 class="title">NEWS & MEDIA </h1>
@@ -89,7 +112,7 @@
     </section>
     <footer class="bottom-bar">
       <div class="container">
-        <div class="size4of12">           
+        <div class="size4of12 footer">          
           <ul>
             <li> 
               <h3> <span>Products</span></h3>
@@ -99,7 +122,7 @@
             <li>   <a href="#" class="footer-list--link">Discover — for Content Creators</a></li>
           </ul>
         </div>
-        <div class="size3of12">
+        <div class="size3of12 footer">
           <ul>
             <li>
               <h3> <span>About</span></h3>
@@ -112,7 +135,7 @@
             <li> <a href="#" class="footer-list--link">Job openings</a></li>
           </ul>
         </div>
-        <div class="size3of12">
+        <div class="size3of12 footer">
           <ul>
             <li>
               <h3> <span>Resources </span></h3>
@@ -124,7 +147,7 @@
             <li> <a href="#" class="footer-list--link">Industry Reports</a></li>
           </ul>
         </div>
-        <div class="size2of12">
+        <div class="size2of12 footer">
           <ul> 
             <li> 
               <h3> <span>Contact</span></h3>
@@ -141,6 +164,6 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="../assets/js/functions.js"> </script>
-    <script src="../assets/js/uilang.js"></script><code><!-- start by removing the previous "open" class -->clicking on ".btn-info" removes class "active" on ".btn-info.active" <!-- then add it to the clicked title -->clicking on ".btn-info" adds class ".btn-info" on "target" clicking on ".more" toggles class "visible" on "#popover"</code>                                         
+    <script src="../assets/js/uilang.js"></script><code><!-- start by removing the previous "open" class -->clicking on ".btn-info" removes class "active" on ".btn-info.active" <!-- then add it to the clicked title -->clicking on ".btn-info" adds class ".btn-info" on "target" clicking on ".more" toggles class "visible" on "#popover"</code>                                         .footer
   </body>
 </html>

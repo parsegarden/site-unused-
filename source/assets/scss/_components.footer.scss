@@ -22,14 +22,14 @@
     
     h3 {
         @include font-size($text-size-xs);
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         text-transform: uppercase;
         color: #777777;
         font-weight: 700;
         
         span {
             display: inline-block;
-            line-height: 1.8;    
+            line-height: 1.8;
         }
     }
     
@@ -47,7 +47,7 @@
 @media (max-width: 800px) {
     
     .bottom-bar .container{
-        padding: 0 0 20px 40px;
+        padding: 0 0 20px 20px;
 
        .footer{
         margin-bottom: 25px;

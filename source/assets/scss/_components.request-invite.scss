@@ -1,76 +1,57 @@
-.section-invite{
-	padding-top: 140px;
-	margin-bottom: 140px;
-}
+//SECTION REQUEST
+
 .invite-title{
 	text-align: center;
 	font-size: 36px;
 	font-weight: 900;
 	margin-bottom: 36px;
+	z-index: 0;
 
 }
-.invite-content{
-	width: 800px;
-    margin: 0 auto;
-    border: 2px solid #EEEEFA;
 
+input[type="checkbox"]{
+	margin-bottom: 5px;
+	margin-top: 10px;
 }
-.invite--content--form {
-	padding: 60px 103px;
-    border-bottom: 2px solid #EEEEFA;
+
+.form-app-info{
+	width: 280px;
+	font-size: 14px;
+	color: #AAAAAA;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+.checkbox{
+	margin-bottom: 80px;
+}
+.unique-brand{
 	
-	.btn{
-		margin-left: 20px;
-	}	    
-}
-.invite--content--brand{
-	padding: 60px 60px 45px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
-}
-
-	.invite--content--brand-title{
-	    font-size: 18px;
-    	color: #AAAAAA;
-    	letter-spacing: -1px;
-	}
-
-	.invite-brand-img {
-		display: flex;
-	    padding-bottom: 60px;
-	    flex-direction: row;
-	    justify-content: center;
-
-	    img{
-	    	position: relative;
-		    height: 32px;
-		    margin: 0 29px;
-	    }
+	.brand-images{
+        padding: 10px;
+		display: block;
+		margin: 0 20px;
 		
-	}
-	
-
-input-control{
-	width: 800px;
-
-	input{
-		background: none;
-	    border-bottom: 2px solid black;
-	    padding: 15px 0px;
-	    font-size: 18px;
-	    display: inline-block;
-	}
-	input[type="text"] {
-    border: none;
-    border-bottom: solid 1px grey;
-    width: 300px;
-    color: #72BAF3;
-    font-weight: 200;
+		img{
+			margin-left: 2em;
+		}
 	}
 }
-.email{
-	font-weight: 500;
+.og{
+	height: 64px;
+}
+.request-group{
+	padding-top: 4px;
+}
+
+@media (max-width: 800px) {
+	.invite-title{
+		font-size: 26px;
+	}
+
+	#request-form{
+		margin-bottom: 550px;
+	}
+	.unique-brand{
+		margin-top: 420px;
+	}
 }
