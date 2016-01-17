@@ -1,7 +1,7 @@
 //DISCOVER HEADER
 
 .top-bar4 {
-    height: 760px;
+    height: 100%;
     width: 100%;
     position: relative;
     display: flex;
@@ -54,9 +54,10 @@
 
 .discover {
     background: rgba(black, 0.15);
-    margin: 120px auto;
+    margin: 0 auto;
     width: 1100px;
-    border-radius: 5px;
+    position: relative;
+    top: 30px;
     
     .discover-content {
         width: 100%;
@@ -158,7 +159,6 @@
 
 @media (max-width: 800px) {
     .top-bar4 {
-        height: 1200px;
 
         .container{
             background: none;
