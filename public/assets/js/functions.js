@@ -78,12 +78,6 @@ $(window).scroll(function(){
     
 
   }
-if(iScroll > $('.feature-3-section').offset().top - $(window).height()){
-
-    
-    console.log(hi)
-
-  }
  
  });
 $(document).scroll(function() {
