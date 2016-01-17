@@ -80,10 +80,10 @@
     }
  
 }
-.link-feature--3{
+.profile-btn{
 	position: relative;
 	top: 6.5em;
-	left: -23em;
+	left: -25.5em;
 }
 .f1,
 .f2,
@@ -135,6 +135,10 @@
 	
 	.feature-3-section{
 		margin-bottom: 150px;
+		padding: 0;
+	}
+	.btn-tk{
+		padding: 10px 15px;
 	}		
 }
 @media (max-width: 1200px) {

@@ -76,7 +76,7 @@
     }
  
 }
-.link-feature-2{
+.pulse-btn{
 	position: relative;
 	top: 4em;
 	left: 11em;
@@ -128,6 +128,7 @@
 	display: block;
 
 }
+
 
 @media (max-width: 1200px) {
 	.section-pulse-competition {
@@ -194,8 +195,8 @@
 			
 	    }
 	}  
-	.link-feature-2{
-		@include position(relative, 20px 0 0 0);
+	.mobile-btn{
+		@include position(relative, 30px 0 0 0);
 
 		.btn-tk{
 			padding: 15px 35px;
