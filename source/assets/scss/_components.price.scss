@@ -123,11 +123,11 @@
 			font-size: 18px;
 		}
 		.price--content--table{
-			@include is_hidden();
+			@include is-hidden();
 
 		}
 		.price--content--see-more{
-			@include is_hidden();			
+			@include is-hidden();			
 		}
 
 	}

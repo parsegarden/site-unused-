@@ -6,8 +6,8 @@
 
 // Configure paths
 var config = {
-    htmlpath:   './public/product',
-    jadePath:   './source/product',
+    htmlpath:   './public',
+    jadePath:   './source',
     sassPath:   './source/assets/scss',
     bowerDir:   './bower_components',
     bourbonDir: './bower_components/bourbon/app/assets/stylesheets',
@@ -112,7 +112,7 @@ gulp.task('build-html', function() {
         }))
     )
 
-    .pipe(gulp.dest('./public/product'))
+    .pipe(gulp.dest('./public'))
 });
 
 

@@ -6,7 +6,7 @@
 // @include font-size(VALUEpx)
 @mixin font-size($font-size){
 	font-size: $font-size;
-   font-size: ($font-size / $base-font-size) * 1rem;
+    font-size: ($font-size / $base-font-size) * 1rem;
 }
 
 
@@ -56,7 +56,7 @@
 
 
 // Hidden but available to speaking browsers
-@mixin is_hidden() {
+@mixin is-hidden() {
 	overflow : hidden;
 	position : absolute;
 	clip : rect(0 0 0 0);
@@ -66,7 +66,7 @@
 	padding : 0;
 	border : 0;
 	
-// Make is_hidden focusable with a keyboard
+// Make is-hidden focusable with a keyboard
 	&.focusable {
 		&:active,
 		&:focus {

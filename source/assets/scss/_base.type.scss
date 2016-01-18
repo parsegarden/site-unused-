@@ -2,102 +2,126 @@
    #TYPOGRAPHY
 \* -------------------- */
 
- 
-$text-size-xxl: 64px !default;
-$text-size-xl:  32px !default;
 
-$text-size-l:   48px !default;
-$text-size-m:   36px !default;
-$text-size-s:   16px !default;
 
-$text-size-xs:  14px !default;
-$text-size-xxs: 13px !default;
+/* Type Variable */ 
+$text-size-xxxl: 60px !default;
+$text-size-xxl:  48px !default;
+$text-size-xl:   36px !default;
+$text-size-l:    24px !default;
+$text-size-m:    21px !default;
+$text-size-s:    18px !default;
+$text-size-xs:   16px !default;
+$text-size-xxs:  14px !default;
+$text-size-xxxs: 12px !default;
 
 
 
 /**
  * Typographical base selectors.
  */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-   font-weight: normal;
-   line-height: 1.1;
-   margin: 0;
-}
+
+
 
 /* Heading sizes defined */
 	
-h1 {
-	@include font-size($text-size-l);
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 0.9;
-	  margin-bottom: 10px;
+h1 {   
+	@include font-size($text-size-xl);
+    font-weight: 900;
+    letter-spacing: -2px;
+    line-height: 1;
+    margin-bottom: 20px;
+    
+    @include media-query(desk) {
+        @include font-size($text-size-xxl);    
+    }
 }
 
+
+
+
 h2 {
-	@include font-size($text-size-m);
-  font-size: 36px;
-  font-size: 3.6rem;
-  color: #444444;
-  font-weight: 600;
-  margin-bottom: 10px;
+	@include font-size($text-size-l);
+	letter-spacing: -1px;
+    margin-bottom: 20px;
+    
+    @include media-query(desk) {
+        @include font-size($text-size-xl);    
+    }
 }
+
+
 
 h3 {
 	@include font-size($text-size-s);
-
 }
 
-h4, 
-h5, 
-h6{
-	@include font-size($text-size-xs);
+
+
+h4 {
+	@include font-size($text-size-xxs);
+}
+
+
+
+h5,
+h6 {
+    @include font-size($text-size-xxxs);
 }
 
 
 
 /* Other text elements  */
 
+ul,
+ol,
 p {
-  margin: 0;
+    @include font-size($text-size-xs);
+    color: $grey-base;
+    margin: 0 0 20px;
 }
 
 
 
 abbr {
-  border-bottom: 1px dotted $border-color-light;
-  cursor: help;
+    border-bottom: 1px dotted $grey-light;
+    cursor: help;
 }
 
 
 
 b,
-strong {
-  font-weight: bold;
+strong,
+.bold {
+    font-weight: bold;
 }
 
 
 
-/**
- * mainly set to normal because of icons wrapped in <i>
- */
-i {
-   font-style: normal;
+i,
+em,
+.italic {
+   font-style: italic;
 }
 
 
 
-small {
-	@include font-size($text-size-xs);
+small,
+.small {
+	@include font-size($text-size-xxs);
+}
+
+.smaller {
+    @include font-size($text-size-xxxs);
 }
 
 
 
+
+
+/** 
+    Typography Helper Classes for Titles, Subtitles, Intros, etc. 
+**/
 .page-title,
 .page-subtitle {
     text-shadow: 0 0 3px rgba(black, .1);
@@ -115,4 +139,34 @@ small {
     @include font-size($text-size-l);
     color: white;
     line-height: 1.3;
+}
+
+
+
+/* Used before section title to label the section */
+.section-label {
+    @include font-size($text-size-xs);
+    color: $grey-light; // Might be changed based on Theme
+    text-transform: uppercase;
+    
+    @include media-query(hd) {
+        @include font-size($text-size-s);    
+    }
+}
+
+
+
+.section-title {
+    color: $grey-dark;
+}
+
+
+
+.intro {
+    @include font-size($text-size-s);
+    color: $grey-base;
+    
+    @include media-query(hd) {
+        @include font-size($text-size-m);    
+    }
 }

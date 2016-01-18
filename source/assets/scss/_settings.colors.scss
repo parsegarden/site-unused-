@@ -3,15 +3,28 @@
 \* -------------------- */
 
 
-$primary-color:	#384047; // Primary dark color to be used for backgrounds, borders and text colors throughout the app
+/* Color with names */
+$unmetric-voilet: 	#5856D6;
 
-$grey-lightest: #F6F6F6; // #E3E4EA
-$grey-lighter:  #EBEDEF;
-$grey-light:    #D4D9DD;
-$grey-base:     #B7C0C7;
-$grey-dark:     #7E8D9A;
-$grey-darker:   #4E5A64;
-$grey-darkest:  #384047;
+$sea-blue:          #2996cc;
+
+
+$grey-lightest: #F6F6F6;
+$grey-lighter:  #DDD;
+$grey-light:    #AAA;
+$grey-base:     #777;
+$grey-dark:     #444;
+$grey-darker:   #111;
+
+
+
+$link-color: 		   #5856D6;
+$color-secondary: $sea-blue;
+
+
+
+
+
 
 
 
@@ -38,72 +51,6 @@ $youtube-text-color:		#1b7fcc;
 
 
 
-// User for package badge color based on plan
-
-$silver-color: #c0c0c0;
-$bronze-color: #cd7f32;
-$gold-color:   #D09F34;
-
-
-
-// TEXT COLORS 
-// -------------------------
-
-$text-color-dark:		 $primary-color;
-$text-color-base:		 lighten($primary-color, 10);
-$text-color-normal:   lighten($primary-color, 20);
-$text-color-light:	 lighten($primary-color, 30);
-$text-color-lighter:	 lighten($primary-color, 40);
-$text-color-lightest: lighten($primary-color, 50);;
-
-// links
-$link-color: 		   #5856D6;
-$link-color-hover:	darken($link-color, 10);
-
-
-
-// BACKGROUND COLORS.
-// 
-
-$background-color:            lighten($primary-color, 68); //#edeff0;
-$background-color-base:        lighten($primary-color, 60); //#b6b6b6;
-
-$background-color-dark:        lighten($primary-color, 30); //#666;
-$background-color-darker:      lighten($primary-color, 10); //#464646;
-$background-color-darkest:     darken($primary-color, 10); //#161616;
-
-$background-color-light:       lighten($primary-color, 60); //#d6d6d6;
-$background-color-lighter:     lighten($primary-color, 65); //#e9e9e9;
-$background-color-lightest:    lighten($primary-color, 69); //#f3f3f3;
-$background-color-extra-light: lighten($primary-color, 72); //#fcfcfc;
-
-
-
-// BORDER COLORS.
-// 
-$border-color-darkest:     lighten($primary-color, 10); //#464646;
-$border-color-darker: 	   lighten($primary-color, 20); //#666;
-$border-color-dark:        lighten($primary-color, 40); //#aaa;
-
-$border-color-base:        lighten($primary-color, 60); //#b6b6b6;
-
-$border-color-light:       lighten($primary-color, 53); //#d6d6d6;
-$border-color-lighter:     lighten($primary-color, 60); //#e6e6e6;
-$border-color-lightest:    lighten($primary-color, 65); //#f3f3f3;
-$border-color-extra-light: lighten($primary-color, 70); //#f3f3f3;
-
-
-
-
-
-// BUTTON COLORS.
-// 
-$btn-color-light:      lighten($link-color,35);
-$btn-color-dark:       $link-color;
-$btn-color-disabled:   lighten($primary-color, 55); //#d6d6d6;
-
-
-
 
 
 
@@ -121,68 +68,3 @@ $success-background:       #dff0d8 !default;
 
 $info-text:                #3a87ad !default;
 $info-background:          #bce8f1 !default;
-
-
-
-//? NAME THESE COLORS
-$color-code-1: #8FC67C;
-$color-code-2: #FFE07C;
-$color-code-3: #DE6C6A;
-$color-code-4: #B5BFE3;
-$color-code-5: #B5D5AD;
-
-
-
-/* GRAY */
-$color-code-1_1: rgba(56, 64, 71, .80);
-$color-code-1_2: rgba(56, 64, 71, .55);
-$color-code-1_3: rgba(56, 64, 71, .30);
-$color-code-1_4: rgba(56, 64, 71, .15);
-
-
-
-/* GREEN */
-$color-code-5_1: rgba(49, 163, 84, .95);
-$color-code-5_2: rgba(49, 163, 84, .75);
-$color-code-5_3: rgba(49, 163, 84, .55);
-$color-code-5_4: rgba(49, 163, 84, .35);
-
-
-
-/* PURPLE */
-$color-code-6_1: rgba(117, 107, 177, .95);
-$color-code-6_2: rgba(117, 107, 177, .75);
-$color-code-6_3: rgba(117, 107, 177, .55);
-$color-code-6_4: rgba(117, 107, 177, .35);
-
-
-
-/* SEA_GREEN */
-$color-code-7_1: rgba(67, 162, 202, .95);
-$color-code-7_2: rgba(67, 162, 202, .75);
-$color-code-7_3: rgba(67, 162, 202, .55);
-$color-code-7_4: rgba(67, 162, 202, .35);
-
-
-
-/* BRAND_BLUE */
-$color-code-8_1: rgba(77, 77, 251, .95);
-$color-code-8_2: rgba(76, 91, 184, .75);
-$color-code-8_3: rgba(76, 91, 184, .55);
-$color-code-8_4: rgba(76, 91, 184, .35);
-
-
-
-/* PINK */
-$color-code-9_1: rgba(221, 28, 119, .95);
-$color-code-9_2: rgba(221, 28, 119, .75);
-$color-code-9_3: rgba(221, 28, 119, .55);
-$color-code-9_4: rgba(221, 28, 119, .35);
-
-
-
-/* ORANGE */
-$color-code-10_1: rgba(217, 95, 14, .95);
-$color-code-10_2: rgba(217, 95, 14, .75);
-$color-code-10_3: rgba(217, 95, 14, .55);
-$color-code-10_4: rgba(217, 95, 14, .35);
