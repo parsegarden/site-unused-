@@ -25,22 +25,32 @@ input[type="checkbox"]{
 	margin-bottom: 80px;
 }
 .unique-brand{
-	
+
+
 	.brand-images{
+		max-width: 190px;
         padding: 10px;
 		display: block;
-		margin: 0 20px;
+		text-align: center;
+		margin: -30px 0;
 		
 		img{
-			margin-left: 2em;
+			margin-top: 35px;
+		    margin-left: 20px;
+		    position: relative;
+		    left: -15px;
 		}
 	}
 }
+
 .og{
 	height: 64px;
 }
 .request-group{
 	padding-top: 4px;
+}
+.form--content--brand-title{
+	text-align: center;
 }
 
 @media (max-width: 800px) {
