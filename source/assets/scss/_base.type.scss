@@ -43,7 +43,7 @@ h1 {
 h2 {
 	@include font-size($text-size-l);
 	letter-spacing: -1px;
-    margin-bottom: 20px;
+    margin: 0 0 10px;
     
     @include media-query(desk) {
         @include font-size($text-size-xl);    
@@ -87,6 +87,22 @@ abbr {
     border-bottom: 1px dotted $grey-light;
     cursor: help;
 }
+
+
+
+blockquote {
+    q {
+        @include font-size($text-size-l);
+        font-style: italic;
+    }
+}
+
+    .d-quotes {
+        @include font-size($text-size-xxxl);
+        
+        line-height: 1;
+        
+    }
 
 
 
@@ -148,6 +164,7 @@ small,
     @include font-size($text-size-xs);
     color: $grey-light; // Might be changed based on Theme
     text-transform: uppercase;
+    margin-bottom: 0;
     
     @include media-query(hd) {
         @include font-size($text-size-s);    
@@ -165,8 +182,11 @@ small,
 .intro {
     @include font-size($text-size-s);
     color: $grey-base;
+    line-height: 1.3;
+    margin-bottom: 20px;
     
     @include media-query(hd) {
         @include font-size($text-size-m);    
+        margin-bottom: 40px;
     }
 }
