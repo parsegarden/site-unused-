@@ -3,7 +3,16 @@
 \*------------------------------------*/
 
 
+footer.row.has-padding {
+    @include linear-gradient(#f6f6f6, #fff);
+    padding-bottom: 80px;
+}
 
+
+
+
+/*------------------------------------*\
+\*------------------------------------*/
 .bottom-bar {
     @include group;
     padding-top: 5em;

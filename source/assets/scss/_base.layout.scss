@@ -1,6 +1,47 @@
 /* -------------------- *\
    #LAYOUT
 \* -------------------- */
+
+
+// Edge to edge section with .content and everything else
+.row {
+    &.has-border { // Assign a bottom border to section with this class
+        border-bottom: 1px solid $grey-lighter;
+    }    
+    
+    &.has-padding { // Add some gap below a section with this class
+        padding: 80px 0;
+        
+        @include media-query(hd) {
+            padding: 140px 0;
+        }
+    }
+}
+
+
+
+// Wrap actual content with set width inside a .row
+.content {
+    margin: 0 auto;
+    max-width: 90%;
+    
+    @include media-query(hd) {
+        max-width: 1190px;
+    }
+}
+
+
+
+
+
+
+.demo {
+    background-color: $grey-lighter;
+    padding: 1em 1em .1em;
+}
+
+
+
 //SUB-NAV
 
 ul#popover {

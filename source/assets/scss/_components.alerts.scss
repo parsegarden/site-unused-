@@ -1,3 +1,40 @@
 /*------------------------------------*\
     #ALERTS
 \*------------------------------------*/
+
+
+// Alert messages styles
+
+.alert-wrap {
+    background-color: red;
+    color: white;
+    padding: 10px 10px 10px 40px; 
+    position: relative;
+}
+
+
+
+.alert-error {
+    background-color: red;
+}
+
+
+
+.alert-warning {
+    background-color: gold;
+}
+
+
+
+.alert-success {
+    background-color: limegreen;
+}
+
+
+
+
+.icon-alert,
+.icon-check-circle {
+    @include font-size($text-size-l);
+    @include position(absolute, 8px 0 0 10px);
+}

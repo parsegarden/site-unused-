@@ -60,13 +60,6 @@
 
 
 /**
- * #FONTS
- */
-
-
-
-
-/**
  * #COMPONENTS
  */
 @import "components.alerts";
@@ -77,6 +70,7 @@
 @import "components.clients";
 @import "components.price";
 @import "components.header";
+@import "components.hero";
 @import "components.footer";
 @import "components.science";
 @import "components.social-content";
@@ -87,6 +81,9 @@
 @import "components.loader-page";
 @import "components.avatar";
 @import "components.news";
+
+@import "components.nav-main";
+
 @import "components.analyze-header";
 @import "components.track-header";
 @import "components.track-competition";
@@ -107,10 +104,19 @@
 @import "components.unmetric-news";
 @import "components.partners";
 @import "columns";
+
+@import "components.header-main";
+
+@import "components.testimonial";
+
+
+
+
+
 /**
  * #THEME
  */
-
+@import "theme.base";
 
 
 

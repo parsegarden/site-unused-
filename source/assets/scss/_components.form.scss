@@ -31,11 +31,17 @@
 		margin-top: 30px;
 	}
 }
+
+
+
 .form--content--form{
     width: 800px;
     margin: 0 auto;
 
 }
+
+
+
 	.form--content--form::before{
 		position: absolute;
 	    top: 0;
@@ -49,6 +55,8 @@
 	    margin-bottom: 0%;
 	    
 	}
+	
+	
 	
 .form--content--brand{
 	width: 250px;
@@ -102,38 +110,7 @@
 }
 
 
-input{
-	background: none;
-	border: solid 2px black;  
-	padding: 15px 66px;
-	font-size: 18px;
-	display: inline-block;
-	font-weight: 500;
 
-}
-input:focus, input:active {
-  outline: none;
-}
-
-input[type="text"], input[type="email"] {
-	border: none;
-	border-bottom: solid 2px #EEEEFA;
-	width: 300px;
-	color: #72BAF3;
-	font-weight: 200;
-}
-
-select{
-
-	border: 0;
- 	border-bottom: solid 2px #EEEEFA;
- 	width: 300px;
-    background-color: white;
-    padding: .7em 0 1.4em;
-    cursor: pointer;
-    color: rgba(47, 34, 115, 0.3);
-    -webkit-appearance: none;
-}
 .input-group {
   display: inline-block;
   position: relative;
@@ -142,12 +119,9 @@ select{
 	& input {
  		padding: 13px 0px;
 	}
-	
-
 }
-label{
-	font-weight: 600;
-	}
+
+
 
 @media (max-width: 900px) {
 	.form{

@@ -33,16 +33,16 @@ function analyzeCompetition() {
 }
 
 $(function() {
-   $('.mobile-nav-toggle').on('click', function(){
+   $('.icon-menu').on('click', function(){
     var status = $(this).hasClass('is-open');
-    if(status){ $('.mobile-nav-toggle, .mobile-nav , body').removeClass('is-open'); }
-    else { $('.mobile-nav-toggle, .mobile-nav, body').addClass('is-open'); }
+    if(status){ $('.nav-menu, body').removeClass('is-open'); }
+    else { $('.nav-menu, body').addClass('is-open'); }
   });
 
 });
 $(function() {
-  $('.analyze-btn').on('click', function(){
-    $(".mobile-nav-toggle, .mobile-nav, body").removeClass('is-open');
+  $('.icon-menu').on('click', function(){
+    $(".nav-menu, body").removeClass('is-open');
   });
 
 });  

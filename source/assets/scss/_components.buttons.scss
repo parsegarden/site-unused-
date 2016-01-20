@@ -2,6 +2,30 @@
    #BUTTONS
 \* -------------------- */
 
+
+.btn {
+    border-radius: 5px;    
+    padding: 15px;
+    width: 100%;
+}
+
+
+.btn-primary {
+    @include linear-gradient(#5658D8, #27DCF9);   
+    border: none;
+    color: white;
+}
+
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid $grey-light;
+}
+
+
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
 .btn-sec{
     display: inline-block;
 	border-radius: 5px;

@@ -1,0 +1,63 @@
+/* -------------------- *\
+   #NAV-MAIN
+\* -------------------- */
+
+.nav-main {
+    @include position(fixed, 42px 0 0 0);
+    background-color: #4474DE;
+    z-index: 9;
+    
+    
+    @include media-query(hd) {
+        @include position(relative, 0 0 0 0);
+        background: none;
+
+    }
+}
+    .nav-main-wrap{
+        
+        
+        @include media-query(hd) {
+            display: flex;
+            
+        }
+    }
+
+    .nav-main--link {
+        border-top: 1px solid rgba(white, .25);
+        color: white;
+        display: block;
+        padding: 12px 0;
+        margin: 0 20px;
+        
+        &.is-active {
+            color: rgba(white, .5);
+        }
+        
+        .icon-arrow-dropdown:before {
+            @include font-size($text-size-s);
+            position: relative;
+            top: 4px;
+        }
+       
+        @include media-query(hd) {
+            border: none;
+         
+        }          
+    }
+    
+    
+    
+        .nav-main--desc {
+            @include font-size($text-size-xxs);
+            color: rgba(white, .75);
+            display: inline-block;
+            margin-top: -5px;
+        }
+        
+        
+        .nav-main--link-signin {
+            @include media-query(portable) {
+                display: none;
+            }
+        }

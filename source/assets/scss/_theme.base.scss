@@ -1,0 +1,18 @@
+/*------------------------------------*\
+   #THEME
+\*------------------------------------*/
+
+.theme--basic {
+    
+    .hero {
+        @include linear-gradient(#5856D8, #27DCF9, #FFF);
+    }
+    
+    .header {
+        @include linear-gradient(#5856D6, #4474DE);
+    }
+    
+    .btn-primary {
+        @include linear-gradient(#5658D8, #27DCF9);
+    }
+}

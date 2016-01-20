@@ -1,0 +1,95 @@
+/* -------------------- *\
+   #HEADER MAIN
+\* -------------------- */
+
+.header {
+    @include position(fixed, 0 0 null 0);
+    height: 42px;
+    z-index: 3;
+
+    
+    @include media-query(hd) {
+        display: flex;
+        height: 64px;
+    }
+    
+    .logo {
+        display: block;
+        opacity: .75;
+        padding: 10px 20px;  
+          
+        
+        @include media-query(hd) {
+            padding: 20px;
+            flex: 1;
+        }
+    }
+    
+    .logo-image {
+        height: 16px; 
+        
+        @include media-query(hd) {
+            height: 18px;
+        }   
+    }
+}
+
+
+
+// Menu icon for mobile, hide for desktop
+.menu-icon,
+.menu-icon:before,
+.menu-icon:after {
+    @include media-query(palm) {
+        @include position(absolute, 21px 20px null null);
+        background-color: rgba(white, .75);
+        content: "";
+        display: block;
+        height: 2px;
+        width: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.menu-icon {
+    width: 15px;
+    
+    &:before {
+        top: -6px;
+        right: 0;
+    }
+    
+    &:after {
+        right: 0;
+        top: 6px;
+    }
+}
+
+
+
+// Mobile link to activate menu
+.menu-link {
+    
+    @include media-query(palm) {
+        @include position(absolute, 0 0 null null);
+        @include size(48px);
+        
+        // Make it cross when hovered
+        &:hover {
+            .menu-icon {
+                background: transparent;    
+                
+                &::before {
+                    transform-origin: 100% 100%;
+                    transform: rotate(-45deg);
+                }
+                
+                &::after{
+                    transform-origin: 85% 100%;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}    
+    

@@ -2,3 +2,85 @@
    #FORM
 \* -------------------- */
 
+input {
+    @include font-size($text-size-s);
+	padding: 15px 0;
+	text-align: left;
+	
+	@include media-query(hd) {
+        @include font-size($text-size-m);	
+	}
+}
+
+
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    border: 1px solid $grey-light;
+    border-width: 0 0 1px;
+    width: 100%;
+}
+
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 3px;
+}
+
+input,
+select,
+textarea {
+    &:focus, 
+    &:active    
+    {
+        outline: none;
+    }
+}
+
+
+
+select,
+textarea {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    -webkit-appearance: none;
+    z-index: 2;
+}
+
+
+
+textarea {
+    padding: 15px 0 0;
+}
+
+
+button {}
+
+
+
+
+// Wrapper for input, button, select etc.
+
+.control-wrap {
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    
+    @include media-query(hd) {
+        width: 300px;
+    }
+}
+
+
+
+.icon-select {
+    @include position(absolute, null 0 12px null);
+    z-index: 1;
+}

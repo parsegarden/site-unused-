@@ -1,0 +1,34 @@
+/* -------------------- *\
+   #HERO SECTION
+\* -------------------- */
+
+.hero {
+    height: 100vh;
+    position: relative;
+    
+    @include media-query(hd) {
+        height: 95vh;    
+    }
+}
+
+
+    .hero-title {
+        @include font-size($text-size-xl);
+        color: white;
+        
+        @include media-query(hd) {
+            @include font-size($text-size-xxxl);    
+        }
+    }
+    
+    
+    
+    .hero-subtitle {
+        @include font-size($text-size-s);
+        color: white;
+        line-height: 1.3;
+        
+        @include media-query(hd) {
+            @include font-size($text-size-l);    
+        }
+    }

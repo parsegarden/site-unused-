@@ -1,6 +1,96 @@
 /* ------------------------------------------- *\
-   #GRID – Using NEAT  http://neat.bourbon.io
+   #GRID
 \* ------------------------------------------- */
+
+/**
+ *   Modern Grid system using Flexbox
+ **/
+ 
+.grid {
+    
+    @include media-query(hd) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.grid--gutter {
+    @include media-query(hd) {
+        margin: -1em 0 1em -1em;
+        
+        > .grid-cell {
+           padding: 1em 0 0 1em; 
+        }
+    }
+}
+
+
+
+// To align child cell in center
+.grid--center {
+    @include media-query(hd) {
+        justify-content: center;
+    }
+}
+
+
+    .grid-cell {
+        @include media-query(hd) {
+            flex: 1;
+        }
+    }
+    
+    
+        .grid-cell--center {
+            align-self: center;
+        }
+    
+    
+    .size1of2 {
+        @include media-query(hd) {
+            flex: none;
+            width: 50%;
+        }
+    }
+    
+    .size1of3 {
+        @include media-query(hd) {
+            flex: none;
+            width: 33.3%;
+        }
+    }
+    
+    .size1of4 {
+        @include media-query(hd) {
+            flex: none;
+            width: 25%;
+        }
+    }
+    
+    .size3of4 {
+        @include media-query(hd) {
+            flex: none;
+            width: 75%;
+        }
+    }
+    
+    .size1of6 {
+        @include media-query(hd) {
+            flex: none;
+            width: 75%;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*
