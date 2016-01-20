@@ -5,9 +5,60 @@
 
 footer.row.has-padding {
     @include linear-gradient(#f6f6f6, #fff);
-    padding-bottom: 80px;
+    padding: 80px 0 60px;
+    text-align: center;
+    
+    h4 {
+        color: $grey-light;
+    }
+    
+    @include media-query(hd) {
+        text-align: left;
+    }
 }
 
+
+
+.nav-footer--list {
+    margin-bottom: 30px;    
+}
+
+
+
+// Footer navigation
+.nav-footer--link {
+    @include font-size($text-size-xxs);
+    color: $grey-light;
+}
+
+
+
+.site-info-wrap {
+    margin-top: 80px;
+}
+    .site-info {
+        @include font-size($text-size-xxxs);
+        color: $grey-light;    
+    }
+
+    .victory {
+        @include font-size($text-size-xl);
+        color: $grey-lighter;
+        margin: -20px 0 0;
+        text-align: center;
+    }
+    
+    .site-links {
+        @include font-size($text-size-xxxs);
+        
+        a {
+            color: $grey-light;    
+        }
+        
+        @include media-query(hd) {
+            text-align: right;        
+        }
+    }
 
 
 
