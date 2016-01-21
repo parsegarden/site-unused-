@@ -1,0 +1,126 @@
+doctype html
+html
+    include includes/_head.jade
+
+    body.theme--basic
+         // HEADER
+        header.header
+            
+            a.logo(href="#") 
+                img.logo-image(src="assets/i/unmetric-logo-white.png" alt="Unmetric logo")
+            
+            a.menu-link(href="#")
+                span.menu-icon
+            
+            nav.nav-main.is-hidden
+                ul.nav-main-wrap
+                    li 
+                        a.more.nav-main--link(href="#") Products 
+                            i.icon-arrow-dropdown
+                        
+                        ul.nav-main-dd
+                            li: a.nav-main--link.is-active(href="#") Analyze
+                                    br
+                                    span.nav-main--desc Compare and analyze your competitors
+                                
+                            li 
+                                a.nav-main--link(href="#") Track
+                                    br
+                                    span.nav-main--desc Keep an eye on your competition
+                                
+                            li 
+                                a.nav-main--link(href="#") Discover
+                                    br
+                                    span.nav-main--desc Find inspiration to create content
+                    
+                    li: a.nav-main--link(href="#") About
+                    
+                    li: a.nav-main--link(href="#") Contact
+                    
+                    li: a.nav-main--link.nav-main--link-signin(href="#") Sign In
+
+        
+        footer.row.has-padding
+            .content
+                ul.nav-footer.grid.grid--gutters
+                    li.grid-cell.size1of3
+                        h4 Products
+                        
+                        ul.nav-footer--list
+                            li: a.nav-footer--link(href="#") Analyze &mdash; for Social Media Analysts
+                            
+                            li: a.nav-footer--link(href="#") Track &mdash; for Marketers
+                            
+                            li: a.nav-footer--link(href="#") Discover &mdash; for Content Creators
+                    
+                    
+                    
+                    li.grid-cell
+                        h4 About
+                        
+                        ul.nav-footer--list
+                            li: a.nav-footer--link(href='#') Company
+ 
+                            li: a.nav-footer--link(href='#') Customers
+                            
+                            li: a.nav-footer--link(href='#') Why Agencies love us
+    
+                            li: a.nav-footer--link(href='#') Our blog
+                            
+                            li: a.nav-footer--link(href='#') Press & News coverage
+                            
+                            li: a.nav-footer--link(href='#') Job openings
+                    
+                    
+                    
+                    li.grid-cell
+                        h4 Resources
+                        
+                        ul.nav-footer--list
+                            li: a.nav-footer--link(href="#") Articles
+                            
+                            li: a.nav-footer--link(href="#") Ebooks 
+                            
+                            li: a.nav-footer--link(href="#") Infographics 
+                            
+                            li: a.nav-footer--link(href="#") Interviews 
+                            
+                            li: a.nav-footer--link(href="#") Industry Reports 
+                            
+                            
+                            
+                    
+                    li.gird-cell 
+                        h4 Contact
+                        
+                        ul.nav-footer--list    
+                            li: a.nav-footer--link(href='#') Get in touch 
+                            
+                            li: a.nav-footer--link(href='#') Twitter
+                            
+                            li: a.nav-footer--link(href='#') Facebook
+                            
+                            li: a.nav-footer--link(href='#') Pinterest
+                            
+                            li: a.nav-footer--link(href='#') LinkedIn
+                            
+                            li: a.nav-footer--link(href='#') SlideShare
+
+                
+                
+                .grid.site-info-wrap
+                    .grid-cell
+                        p.site-info &copy; Unmetric 
+                        
+                        
+                    .grid-cell    
+                        p.victory &#9996;       
+                        
+                    .grid-cell
+                        p.site-links
+                            a(href="#") Privacy
+                            
+                            
+                            
+                            
+    include includes/_foot.jade

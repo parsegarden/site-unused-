@@ -1,0 +1,240 @@
+doctype html
+html
+    include includes/_head.jade
+
+    body.theme--basic
+         // HEADER
+        header.header
+            
+            a.logo(href="#") 
+                img.logo-image(src="assets/i/unmetric-logo-white.png" alt="Unmetric logo")
+            
+            a.menu-link(href="#")
+                span.menu-icon
+            
+            nav.nav-main.is-hidden
+                ul.nav-main-wrap
+                    li 
+                        a.more.nav-main--link(href="#") Products 
+                            i.icon-arrow-dropdown
+                        
+                        ul.nav-main-dd
+                            li: a.nav-main--link.is-active(href="#") Analyze
+                                    br
+                                    span.nav-main--desc Compare and analyze your competitors
+                                
+                            li 
+                                a.nav-main--link(href="#") Track
+                                    br
+                                    span.nav-main--desc Keep an eye on your competition
+                                
+                            li 
+                                a.nav-main--link(href="#") Discover
+                                    br
+                                    span.nav-main--desc Find inspiration to create content
+                    
+                    li: a.nav-main--link(href="#") About
+                    
+                    li: a.nav-main--link(href="#") Contact
+                    
+                    li: a.nav-main--link.nav-main--link-signin(href="#") Sign In
+           
+         section.hero.row.has-border.has-padding
+            .content.t-center
+                h1.hero-title About Unmetric
+                
+                p.hero-subtitle We're more than a data company.We're on a mission to make marketers even smarter.
+
+
+
+        section.row.has-border.has-padding
+            .content.t-center
+                h2 What type of people are we?
+                p.intro The "let the girlfriend of a prospective employee interview the CEO before the boyfriend takes the job" kind. The "hangout with clients even after the party is over" kind. The "let a client sleep over at your house when he's in town" kind. And yes, those are all true stories.
+
+                h2.section-title Executives
+                
+
+                .grid.grid--gutter
+                    .grid-cell
+                        .box    
+                            img.box-image.box-avatar(src="assets/i/avatars/lux.png" alt="Lakshmanan Narayan Headshot")
+                            
+                            h3.box-heading Lakshmanan Narayan
+                            
+                            p.box-subheading CEO & CO-FOUNDER
+                            
+                            p.box-copy Lux has 18 years of experience across media, Internet, advertising and entertainment, seven of them with the Interpublic Group, and then Unmetric, which he co-founded with fellow IIT/IIM-alumni Kumar and Joe.
+                    
+                    
+                    
+                    .grid-cell
+                        .box    
+                            img.box-image.box-avatar(src="assets/i/Kumar.png" alt="Lakshmanan Narayan Headshot")
+                            
+                            h3.box-heading Kumar Krishnasami
+                            
+                            p.box-subheading HEAD OF PRODUCT & CO-FOUNDER
+
+                            
+                            p.box-copy Kumar has close to 2 decades of experience, in senior technology roles and across verticals, at JP Morgan Chase, Allstate Insurance, MCI Worldcom and startups. Before Unmetric, Kumar headed Vembu Labs.
+                            
+                    
+                    
+                    .grid-cell
+                        .box    
+                            img.box-image.box-avatar(src="assets/i/joseph.png" alt="Lakshmanan Narayan Headshot")
+                            
+                            h3.box-heading Joseph Varghese
+                            
+                            p.box-subheading HEAD OF GLOBAL CLIENT DEVELOPMENT
+                            
+                            p.box-copy Along with 18 years of experience, mostly in the SAP ecosystem as an independent consultant and with AkzoNobel, Joe also dabbled in other technology platforms and developed many products, some for his own amusement.
+
+                    
+                    .grid.grid--gutter
+                        .grid-cell
+                            .box    
+                                img.box-image.box-avatar(src="assets/i/jay.png" alt="Lakshmanan Narayan Headshot")
+                                
+                                h3.box-heading Lakshmanan Narayan
+                                
+                                p.box-subheading CEO & CO-FOUNDER
+                                
+                                p.box-copy Lux has 18 years of experience across media, Internet, advertising and entertainment, seven of them with the Interpublic Group, and then Unmetric, which he co-founded with fellow IIT/IIM-alumni Kumar and Joe.
+                        
+                        
+                        
+                        .grid-cell
+                            .box    
+                                img.box-image.box-avatar(src="assets/i/tina.png" alt="Lakshmanan Narayan Headshot")
+                                
+                                h3.box-heading Kumar Krishnasami
+                                
+                                p.box-subheading HEAD OF PRODUCT & CO-FOUNDER
+
+                                
+                                p.box-copy Kumar has close to 2 decades of experience, in senior technology roles and across verticals, at JP Morgan Chase, Allstate Insurance, MCI Worldcom and startups. Before Unmetric, Kumar headed Vembu Labs.
+                                
+        section.row.has-border.has-padding
+            .content.t-center
+                h2 Advisor
+                p.intro It's easy for us to say we believe in our product, but it makes us proud to know that others do as well. An impressive collection of industry leaders have come on board to lend their expertise and knowledge to help us make Unmetric a great product for our customers.
+
+
+        section.row.has-border.has-padding
+            .content.t-center
+
+
+        section.row.has-border.has-padding
+            .content.t-center
+                h2 Email Us 
+                p.intro Got a question? We'd love to hear from you. Email us at 
+                    <a href="#"> info@unmetric.com</a> or send us a message and we'll respond to you as soon as possible.
+        
+                form
+
+                    .control-wrap
+                        
+                        input(type="text" id="input-text" placeholder="Your Name")
+
+                        br
+
+                        input(type="text" id="input-text" placeholder="Email Address")
+                    
+                        br
+                        
+                        textarea(id="text-area" placeholder="Your Message")
+
+                        i.icon-select.icon-arrow-dropdown
+                        select
+                            option Please Choose a Department
+                            option Option 2
+                            option Option 3    
+                        
+                        
+                    .control-wrap
+
+                        button.btn.btn-primary(type="submit") I’m a button
+
+        footer.row.has-padding
+            .content
+                ul.nav-footer.grid.grid--gutter
+                    li.grid-cell.size1of3
+                        h4 Products
+                        
+                        ul.nav-footer--list
+                            li: a.nav-footer--link(href="#") Analyze &mdash; for Social Media Analysts
+                            
+                            li: a.nav-footer--link(href="#") Track &mdash; for Marketers
+                            
+                            li: a.nav-footer--link(href="#") Discover &mdash; for Content Creators
+                    
+                    
+                    
+                    li.grid-cell
+                        h4 About
+                        
+                        ul.nav-footer--list
+                            li: a.nav-footer--link(href='#') Company
+ 
+                            li: a.nav-footer--link(href='#') Customers
+                            
+                            li: a.nav-footer--link(href='#') Why Agencies love us
+    
+                            li: a.nav-footer--link(href='#') Our blog
+                            
+                            li: a.nav-footer--link(href='#') Press & News coverage
+                            
+                            li: a.nav-footer--link(href='#') Job openings
+                    
+                    
+                    
+                    li.grid-cell
+                        h4 Resources
+                        
+                        ul.nav-footer--list
+                            li: a.nav-footer--link(href="#") Articles
+                            
+                            li: a.nav-footer--link(href="#") Ebooks 
+                            
+                            li: a.nav-footer--link(href="#") Infographics 
+                            
+                            li: a.nav-footer--link(href="#") Interviews 
+                            
+                            li: a.nav-footer--link(href="#") Industry Reports 
+                            
+                            
+                            
+                    
+                    li.gird-cell 
+                        h4 Contact
+                        
+                        ul.nav-footer--list    
+                            li: a.nav-footer--link(href='#') Get in touch 
+                            
+                            li: a.nav-footer--link(href='#') Twitter
+                            
+                            li: a.nav-footer--link(href='#') Facebook
+                            
+                            li: a.nav-footer--link(href='#') Pinterest
+                            
+                            li: a.nav-footer--link(href='#') LinkedIn
+                            
+                            li: a.nav-footer--link(href='#') SlideShare
+
+                
+                
+                .grid.site-info-wrap
+                    .grid-cell
+                        p.site-info &copy; Unmetric 
+                        
+                        
+                    .grid-cell    
+                        p.victory &#9996;       
+                        
+                    .grid-cell
+                        p.site-links
+                            a(href="#") Privacy
+
+    include includes/_foot.jade      
