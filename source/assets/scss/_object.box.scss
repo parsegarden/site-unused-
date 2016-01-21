@@ -1,0 +1,58 @@
+/*------------------------------------*\
+   #BOX
+\*------------------------------------*/
+
+.box {
+    margin-bottom: 40px;
+}
+
+    // For all type of images, icons, avatars
+    .box-image {
+        margin-bottom: 10px;
+    }
+    
+    // Esp. for icon inside box
+    .box-icon {
+        height: 60px;
+    }
+    
+    // Esp. for avatar inside box
+    .box-avatar {
+        width: 100px;
+    }
+    
+    
+    .box-subheading {
+        color: $grey-base;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+    
+    
+
+//
+// Product feature box
+//
+.box-feature {
+    
+    @include media-query(hd) {
+        position: relative;
+        
+        .box-link {
+            border-bottom: 1px solid $grey-lighter;    
+            text-align: left;
+            width: 300px;
+        }
+        
+        .box-screenshot {
+            @include position(absolute, 0 0 null null);
+            visibility: hidden;
+        }
+        
+        &.is-active {
+            .box-screenshot {
+                visibility: visible;
+            }
+        }    
+    }
+}
