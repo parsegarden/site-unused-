@@ -3,7 +3,6 @@
 \* -------------------- */
 
 .hero {
-    height: 100vh;
     position: relative;
     
     @include media-query(hd) {

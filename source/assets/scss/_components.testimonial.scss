@@ -2,16 +2,185 @@
    #TESTIMONIAL
 \*------------------------------------*/
 
-.testimonial-avatar {
-    border-radius: 100px;
-    width: 60px;
+
+
+.testimonial-wrap {
+    position: relative;
+    height: 200px;
     
-    .is-large {
-        width: 100px;    
-    }
+    @include media-query(hd) {
+        height: 240px;    
+    }  
 }
 
 
-.testimonial-logo {
-    height: 60px;
-}
+
+        .testimonial-content {
+            height: 100px;
+            position: absolute;
+            width: 100%;
+            
+            // When a testimonial is active/clicked/tapped
+            &.is-active {
+                .testimonial-avatar {
+                    @include transform(scale(1.1));
+                    margin-bottom: 10px;
+                    opacity: 1;
+                    padding: 1px;
+                    -webkit-filter: none;
+                }
+                
+                .testimonial-logo {
+                    height: 24px;    
+                }
+                
+                .testimonial-text-wrap,
+                .testimonial-logo {
+                    visibility: visible;
+                }
+                
+            }
+           
+        }
+        
+        
+        .testimonial-content--1 {
+            .testimonial-link {
+                margin-left: -150px;
+                
+                @include media-query(hd) {
+                    margin-left: -375px;
+                }
+            }
+        }
+        
+        
+        .testimonial-content--2 {
+            .testimonial-link {
+                margin-left: -90px;
+                
+                @include media-query(hd) {
+                    margin-left: -225px;
+                }
+            }
+        }
+        
+        
+        .testimonial-content--3 {
+            .testimonial-link {
+                margin-left: -25px;
+                
+                @include media-query(hd) {
+                    margin-left: -75px;
+                }
+            }
+        }
+
+
+        .testimonial-content--4 {
+            .testimonial-link {
+                margin-left: 35px;
+                
+                @include media-query(hd) {
+                    margin-left: 75px;
+                }
+            }
+        }
+        
+        
+        .testimonial-content--5 {
+            .testimonial-link {
+                margin-left: 95px;
+                
+                @include media-query(hd) {
+                    margin-left: 225px;
+                }
+            }
+        }
+                
+                
+                
+            .testimonial-link {
+                display: block;
+                left: 50%;
+                position: relative;
+                top: 20px;
+                width: 50px;
+                
+                @include media-query(hd) {
+                    width: 150px;
+                
+                    &:hover {
+                        .testimonial-avatar {
+                            opacity: 1;    
+                        }
+                        .testimonial-logo {
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+        
+        
+        
+            .testimonial-text-wrap {
+                height: 100px;
+                padding: 0 10px;
+                visibility: hidden;
+            }
+        
+        
+        
+            .testimonial-avatar {
+                border-radius: 100px;
+                margin-bottom: 5px;
+                opacity: .5;
+                width: 60px;
+                -webkit-filter: grayscale(1);
+                
+                .is-large {
+                    width: 100px;    
+                }
+            }
+            
+            
+            
+            .testimonial-logo {
+                height: 20px;
+                visibility: hidden;
+            }
+ 
+ 
+ 
+            .testimonial-author {
+                @include font-size($text-size-xxxs);
+                
+                @include media-query(hd) {
+                    @include font-size($text-size-s);    
+                }   
+            }
+ 
+ 
+ 
+ 
+            
+            // Double quotes used for testimonial
+            .d-quotes {
+                @include font-size($text-size-xxl);
+                line-height: 1;
+                margin-top: -8px;
+                position: absolute;
+                
+                @include media-query(hd) {
+                    @include font-size($text-size-xxxl);    
+                }
+            }
+            
+            
+            .d-quotes--left {
+                margin-left: -22px;
+                
+                @include media-query(hd) {
+                    margin-left: -30px;
+                }
+            }

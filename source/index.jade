@@ -6,40 +6,44 @@ html
         // HEADER
         header.header
             
-            a.logo(href="#") 
+            a.logo(href="javascript:void(0)") 
                 img.logo-image(src="assets/i/unmetric-logo-white.png" alt="Unmetric logo")
             
-            a.menu-link(href="#")
+            a.menu-link(href="javascript:void(0)")
                 span.menu-icon
             
-            nav.nav-main.is-hidden
+            nav.nav-main
                 ul.nav-main-wrap
                     li 
-                        a.more.nav-main--link(href="#") Products 
+                        a.more.nav-main--link(href="javascript:void(0)") Products 
                             i.icon-arrow-dropdown
                         
                         ul.nav-main-dd
-                            li: a.nav-main--link.is-active(href="#") Analyze
+                            li: a.nav-main--link.is-active(href="javascript:void(0)") Analyze
                                     br
                                     span.nav-main--desc Compare and analyze your competitors
                                 
                             li 
-                                a.nav-main--link(href="#") Track
+                                a.nav-main--link(href="javascript:void(0)") Track
                                     br
                                     span.nav-main--desc Keep an eye on your competition
                                 
                             li 
-                                a.nav-main--link(href="#") Discover
+                                a.nav-main--link(href="javascript:void(0)") Discover
                                     br
                                     span.nav-main--desc Find inspiration to create content
                     
-                    li: a.nav-main--link(href="#") About
+                    li: a.nav-main--link(href="javascript:void(0)") About
                     
-                    li: a.nav-main--link(href="#") Contact
+                    li: a.nav-main--link(href="javascript:void(0)") Contact
                     
-                    li: a.nav-main--link.nav-main--link-signin(href="#") Sign In
+                    li: a.nav-main--link.nav-main--link-signin(href="javascript:void(0)") Sign In
+        
+        
+        
+        
                 
-        section.hero.row.has-border.has-padding
+        section.hero.row.has-border.has-padding.0is-hidden
             .content.t-center
                 h1.hero-title Take Your Competition Head On  
                 
@@ -77,26 +81,394 @@ html
                             span.btn.btn-small.btn-primary Learn more about Discover
                                 i.icon-arrow-right
 
-                p Thousands of real-time marketers at hundreds of leading brands and agencies across 20+ countries use Unmetric to compete and win                    
+                p Thousands of real-time marketers at hundreds of leading brands and agencies 
+                    span.break across 20+ countries use Unmetric to compete and win                    
+                   
+                   
+                   
+                   
+                   
+        // Testimonials                               
+        section.row.has-border.has-padding
+            .content.t-center
+                .testimonial-wrap
+                    blockquote.testimonial-content.testimonial-content--1
+                        .testimonial-text-wrap
+                            q.testimonial-text
+                                span.d-quotes.d-quotes--left &ldquo;
                                 
-        section.row.has-border.has-padding
-            .content.t-center
+                                span Unmetric has made it simple to get a great pulse on 
+                                    span.break competitive performance in a matter of minutes.
+                                
+                                        span.d-quotes.d-quotes--right &rdquo; 
+                                 
+                            p.testimonial-author Christopher Brown, Director of Social Media Strategy
+                    
+                        a.testimonial-link(href="javascript:void(0)")    
+                            img.testimonial-avatar(src="assets/i/avatars/alan-chumley.png" alt="Christopher Brown")
+                            
+                            br
+                                
+                            img.testimonial-logo(src="assets/i/logos/logo-mrm.png")
+                        
+                 
+                          
+                    blockquote.testimonial-content.testimonial-content--2
+                        .testimonial-text-wrap
+                            q.testimonial-text
+                                span.d-quotes.d-quotes--left &ldquo;
+                                
+                                span Being able to keep tabs on communities and their publishing performance 
+                                    span.break has been faster and easier using Unmetric than other tools.                                    
+                                        span.d-quotes.d-quotes--right &rdquo; 
+                                 
+                            p.testimonial-author Christopher Brown, Director of Social Media Strategy
+                        
+                        a.testimonial-link(href="javascript:void(0)")
+                            img.testimonial-avatar(src="assets/i/avatars/kumar.png" alt="Christopher Brown")
+                        
+                            br
+                            
+                            img.testimonial-logo(src="assets/i/logos/logo-story.png")
+                        
+                  
+                        
+                    blockquote.testimonial-content.testimonial-content--3.is-active
+                        .testimonial-text-wrap
+                            q.testimonial-text
+                                span.d-quotes.d-quotes--left &ldquo;
+                                span Unmetric has made it simple to get a great pulse on 
+                                    span.break competitive performance in a matter of minutes.
+                                        span.d-quotes.d-quotes--right &rdquo; 
+                                 
+                            p.testimonial-author Christopher Brown, Director of Social Media Strategy
+                        
+                        a.testimonial-link(href="javascript:void(0)")
+                            img.testimonial-avatar(src="assets/i/avatars/lux.png" alt="Christopher Brown")
+                            
+                            br
+                                
+                            img.testimonial-logo(src="assets/i/logos/logo-mrm.png")
+                        
                 
-
+                               
+                    blockquote.testimonial-content.testimonial-content--4
+                        .testimonial-text-wrap
+                            q.testimonial-text
+                                span.d-quotes.d-quotes--left &ldquo;
+                                
+                                span Unmetric has made it simple to get a great pulse on 
+                                    span.break competitive performance in a matter of minutes.
+                                        span.d-quotes.d-quotes--right &rdquo; 
+                                 
+                            p.testimonial-author Christopher Brown, Director of Social Media Strategy
+                        
+                        a.testimonial-link(href="javascript:void(0)")
+                            img.testimonial-avatar(src="assets/i/avatars/jay.png" alt="Christopher Brown")
+                            
+                            br
+                                
+                            img.testimonial-logo(src="assets/i/logos/logo-changi.png")
+                        
+                        
+                               
+                    blockquote.testimonial-content.testimonial-content--5
+                        .testimonial-text-wrap
+                            q.testimonial-text
+                                span.d-quotes.d-quotes--left &ldquo;
+                                
+                                span Unmetric has made it simple to get a great pulse on 
+                                    span.break competitive performance in a matter of minutes.
+                                        span.d-quotes.d-quotes--right &rdquo; 
+                                 
+                            p.testimonial-author Christopher Brown, Director of Social Media Strategy
+                        
+                        a.testimonial-link(href="javascript:void(0)")
+                            img.testimonial-avatar(src="assets/i/avatars/joseph.png" alt="Christopher Brown")
+                            
+                            br
+                                
+                            img.testimonial-logo(src="assets/i/logos/logo-story.png")
+    
+    
+    
+    
         section.row.has-border.has-padding
             .content.t-center
-                h2.section-title Demand More From Your Social Analytics Provider   
-                p See why people are choosing Unmetric
-
-
+                h2 Demand More From Your Social Analytics Provider
+                                
+                p.intro See why people are choosing Unmetric
+                
+                table.data-table
+                    tbody
+                        tr
+                            th
+                            
+                            th 
+                                b Unmetric Analyze
+                                
+                            th Other social analyze providers
+                            
+                            th Other command center solutions
+                            
+                            th Other content creation apps
+    
+                            
+                        
+                        tr
+                            td No Audience Size Penalties
+                                span.tooltip-wrap
+                                    i.icon-help
+                                    
+                                    span.tooltip Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            
+                            td  
+                                i.icon-check-circle
+                            
+                            td
+                                &mdash;
+                            
+                            td
+                                &mdash;
+                                
+                            td
+                                &mdash;
+    
+    
+                        
+                         tr
+                            td Unrivaled Campaign Intelligence  
+                                i.icon-help
+                            
+                            td 
+                                i.icon-check-circle
+                            
+                            td
+                                &mdash;
+                            
+                            td
+                                &mdash;
+                                
+                            td
+                                &mdash;        
+                                
+    
+    
+                        tr
+                            td Promoted Content Detection   
+                                i.icon-help
+                            
+                            td 
+                                i.icon-check-circle
+                            
+                            td
+                                i.icon-check-circle
+                            
+                            td
+                                &mdash;
+                                
+                            td
+                                &mdash;          
+                        
+                        
+    
+                        tr
+                            td 1-Click Automated Reporting & Alerts 
+                                i.icon-help
+                            
+                            td 
+                                i.icon-check-circle
+                            
+                            td
+                                &mdash;
+                            
+                            td
+                                &mdash;
+                                
+                            td
+                                &mdash;                            
+                        
+    
+    
+                        tr
+                            th
+                            
+                            th 
+                                b Unmetric Track
+                                
+                            th 
+                            
+                            th 
+                            
+                            th  
+                                                            
+    
+    
+                        tr
+                            td User-generated Social Media Listening  
+                                i.icon-help
+                            
+                            td  
+                                &mdash;
+                            
+                            td
+                                &mdash;
+                            
+                            td
+                                i.icon-check-circle
+                                
+                            td
+                                &mdash;
+                        
+                         tr
+                            td Real-time Competitor Content Stream   
+                                i.icon-help
+                            
+                            td 
+                                i.icon-check-circle
+                            
+                            td
+                                &mdash;
+                            
+                            td
+                                &mdash;
+                                
+                            td
+                                &mdash;        
+                        
+                        
+                                
+                        tr
+                            td Filtered Feeds For Tent-pole Events    
+                                i.icon-help
+                            
+                            td 
+                                i.icon-check-circle
+                            
+                            td
+                                &mdash;
+                            
+                            td
+                                &mdash;
+                                
+                            td
+                                &mdash;          
+                        
+                        
+                        
+                        tr
+                            td Track 'Owned Content' Engagement  
+                                i.icon-help
+                            
+                            td 
+                                i.icon-check-circle
+                            
+                            td
+                                &mdash;
+                            
+                            td
+                                &mdash;
+                                
+                            td
+                                i.icon-check-circle                            
+                        
+                        
+                        
+                        tr
+                            th
+                            
+                            th 
+                                b Unmetric Discover
+                                
+                            th 
+                            
+                            th 
+                            
+                            th 
+                        
+                        
+                                     
+                        tr
+                            td Social Media Publishing Tools  
+                                i.icon-help
+                            
+                            td  
+                                i.icon-check-circle
+                            
+                            td
+                                &mdash;
+                            
+                            td
+                                &mdash;
+                                
+                            td
+                                &mdash;
+                        
+                        
+                        
+                        tr
+                            td Brand Content Search Engine   
+                                i.icon-help
+                            
+                            td 
+                                i.icon-check-circle
+                            
+                            td
+                                &mdash;
+                            
+                            td
+                                &mdash;
+                                
+                            td
+                                &mdash;        
+                                
+                        
+                        
+                        tr
+                            td Discover Engaging Trends & Topics     
+                                i.icon-help
+                            
+                            td 
+                                i.icon-check-circle
+                            
+                            td
+                                &mdash;
+                            
+                            td
+                                &mdash;
+                                
+                            td
+                                &mdash;          
+                        
+                        
+                        
+                        tr
+                            td Track 'Owned Content' Engagement  
+                                i.icon-help
+                            
+                            td 
+                                i.icon-check-circle
+                            
+                            td
+                                &mdash;
+                            
+                            td
+                                &mdash;
+                                
+                            td
+                                &mdash;              
+        
+             
+        
+                
         section.row.has-border.has-padding
             .content.t-center
-                h2.section-title Our Partners
+                h2 Our Partners
 
 
          section.row.has-border.has-padding
             .content.t-center
-                h2.section-title We're Making the News                
+                h2 We&rsquo;re Making the News                
 
                                  
                               
@@ -107,11 +479,11 @@ html
                         h4 Products
                         
                         ul.nav-footer--list
-                            li: a.nav-footer--link(href="#") Analyze &mdash; for Social Media Analysts
+                            li: a.nav-footer--link(href="javascript:void(0)") Analyze &mdash; for Social Media Analysts
                             
-                            li: a.nav-footer--link(href="#") Track &mdash; for Marketers
+                            li: a.nav-footer--link(href="javascript:void(0)") Track &mdash; for Marketers
                             
-                            li: a.nav-footer--link(href="#") Discover &mdash; for Content Creators
+                            li: a.nav-footer--link(href="javascript:void(0)") Discover &mdash; for Content Creators
                     
                     
                     
@@ -137,15 +509,15 @@ html
                         h4 Resources
                         
                         ul.nav-footer--list
-                            li: a.nav-footer--link(href="#") Articles
+                            li: a.nav-footer--link(href="javascript:void(0)") Articles
                             
-                            li: a.nav-footer--link(href="#") Ebooks 
+                            li: a.nav-footer--link(href="javascript:void(0)") Ebooks 
                             
-                            li: a.nav-footer--link(href="#") Infographics 
+                            li: a.nav-footer--link(href="javascript:void(0)") Infographics 
                             
-                            li: a.nav-footer--link(href="#") Interviews 
+                            li: a.nav-footer--link(href="javascript:void(0)") Interviews 
                             
-                            li: a.nav-footer--link(href="#") Industry Reports 
+                            li: a.nav-footer--link(href="javascript:void(0)") Industry Reports 
                             
                             
                             
@@ -178,7 +550,7 @@ html
                         
                     .grid-cell
                         p.site-links
-                            a(href="#") Privacy
+                            a(href="javascript:void(0)") Privacy
                             
                             
                             

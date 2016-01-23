@@ -5,13 +5,14 @@
 .nav-main {
     @include position(fixed, 42px 0 0 0);
     background-color: #4474DE;
+    display: none;
     z-index: 9;
     
     
     @include media-query(hd) {
         @include position(relative, 0 0 0 0);
         background: none;
-
+        display: block;
     }
 }
     .nav-main-wrap{

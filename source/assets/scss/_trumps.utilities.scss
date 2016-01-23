@@ -90,14 +90,11 @@ hr {
 
 
 
-/*
-** Line Break  
-*/
-.break {  
-	@include media-query(hd) {
-		clear: left;
-		display: inline-block;	
-	}
+// Break text to next line in desktops only
+.break {
+    @include media-query(hd) {
+        display: block;
+    }
 }
 
 

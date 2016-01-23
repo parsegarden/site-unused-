@@ -10,6 +10,12 @@
     color: white;
     padding: 10px 10px 10px 40px; 
     position: relative;
+    
+    .icon-alert,
+    .icon-check-circle {
+        @include font-size($text-size-l);
+        @include position(absolute, 8px 0 0 10px);
+    }
 }
 
 
@@ -28,13 +34,4 @@
 
 .alert-success {
     background-color: limegreen;
-}
-
-
-
-
-.icon-alert,
-.icon-check-circle {
-    @include font-size($text-size-l);
-    @include position(absolute, 8px 0 0 10px);
 }
