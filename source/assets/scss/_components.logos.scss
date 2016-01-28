@@ -3,13 +3,26 @@
 \*------------------------------------*/
 
 .logo-list-item {
-	background-image: url(/i/logo-sprite.png);
-	border: 1px solid red;
 	display: inline-block;
-	height: 48px;
-	width: 120px;
-	
+    width: 40px;
+    height: 40px;
+    
+    background: url(../i/logo-sprite.png) 0 0 no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+   
 	span {
 		display: none;
 	}
+}
+
+.logo-list-item--or{
+
+    background-position: 0 0%;
+}
+.logo-list-item--sf{
+
+    background-position: 0 0;
 }

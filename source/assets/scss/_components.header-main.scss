@@ -53,7 +53,7 @@
 
 .menu-icon {
     width: 15px;
-    
+        
     &:before {
         top: -6px;
         right: 0;
@@ -77,7 +77,8 @@
         // Make it cross when hovered
         &:hover {
             .menu-icon {
-                background: transparent;    
+                background: transparent; 
+                   
                 
                 &::before {
                     transform-origin: 100% 100%;

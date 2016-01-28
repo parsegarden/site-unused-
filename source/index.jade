@@ -19,19 +19,27 @@ html
                             i.icon-arrow-dropdown
                         
                         ul.nav-main-dd
-                            li: a.nav-main--link.is-active(href="javascript:void(0)") Analyze
+                            li 
+                                a.nav-main--link.is-active(href="javascript:void(0)") 
+                                    span.menu-analyze Analyze
+                                        i.icon-arrow-right.arrow-right
                                     br
-                                    span.nav-main--desc Compare and analyze your competitors
+                                    span.nav-main--desc Analytics for social media analysts
                                 
                             li 
-                                a.nav-main--link(href="javascript:void(0)") Track
+                                a.nav-main--link(href="javascript:void(0)") 
+                                    span.menu-track Track
+                                        i.icon-arrow-right.arrow-right
                                     br
                                     span.nav-main--desc Keep an eye on your competition
                                 
                             li 
-                                a.nav-main--link(href="javascript:void(0)") Discover
+                                a.nav-main--link(href="javascript:void(0)") 
+                                    span.menu-discover Discover
+                                        i.icon-arrow-right.arrow-right
                                     br
                                     span.nav-main--desc Find inspiration to create content
+
                     
                     li: a.nav-main--link(href="javascript:void(0)") About
                     
@@ -48,11 +56,12 @@ html
                 h1.hero-title Take Your Competition Head On  
                 
                 .grid.grid--gutter
-                    .grid-cell.box
-                        a.box-link   
+                    .grid-cell.box.hero-list--item
+                        a.box-link.hero-list--link
                             
+                            h3.hero-list--heading Social Media Analysts
                             p.box-copy 
-                                b Analyze 
+                                b.hero-list--copy Analyze 
                                 | your competition’s social content and campaign in depth.
                             
                             span.btn.btn-small.btn-primary Learn more about Analyze
@@ -60,23 +69,25 @@ html
                                 
                                 
                                 
-                    .grid-cell.box
-                        a.box-link   
+                    .grid-cell.box.hero-list--item
+                        a.box-link.hero-list--link   
                             
+                            h3.hero-list--heading Marketers 
                             p.box-copy 
-                                b Marketers
-                                | Track your competitors' social media marketing in real time.
+                                b.hero-list--copy Track
+                                |    your competitors' social media marketing in real time.
                             
                             span.btn.btn-small.btn-primary Learn more about Track
                                 i.icon-arrow-right
                                 
                     
-                    .grid-cell.box
-                        a.box-link   
+                    .grid-cell.box.hero-list--item
+                        a.box-link.hero-list--link   
                             
+                            h3.billboard-list--heading Content Creators
                             p.box-copy 
-                                b Content creators
-                                | Discover ideas and inspiration to create engaging social content
+                                b.hero-list--copy  Discover
+                                |    ideas and inspiration to create engaging social content
                             
                             span.btn.btn-small.btn-primary Learn more about Discover
                                 i.icon-arrow-right
@@ -220,7 +231,7 @@ html
                                 span.tooltip-wrap
                                     i.icon-help
                                     
-                                    span.tooltip Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    span.tooltip Unmetric does not charge you extra for your success or if you want to monitor brands with large audiences.
                             
                             td  
                                 i.icon-check-circle
@@ -238,7 +249,10 @@ html
                         
                          tr
                             td Unrivaled Campaign Intelligence  
-                                i.icon-help
+                                span.tooltip-wrap
+                                    i.icon-help
+                                    
+                                    span.tooltip Unmetric uses human analysts to identify and tag campaigns and content in a way no algorithm can.
                             
                             td 
                                 i.icon-check-circle
@@ -251,12 +265,13 @@ html
                                 
                             td
                                 &mdash;        
-                                
-    
     
                         tr
                             td Promoted Content Detection   
-                                i.icon-help
+                                span.tooltip-wrap
+                                    i.icon-help
+                                    
+                                    span.tooltip Unmetric will dissect your competitors' paid content strategies on Facebook and Twitter.
                             
                             td 
                                 i.icon-check-circle
@@ -274,7 +289,10 @@ html
     
                         tr
                             td 1-Click Automated Reporting & Alerts 
-                                i.icon-help
+                                span.tooltip-wrap
+                                    i.icon-help
+                                    
+                                    span.tooltip All your analysis and comparison reports created automatically in Powerpoint and Excel."
                             
                             td 
                                 i.icon-check-circle
@@ -306,7 +324,10 @@ html
     
                         tr
                             td User-generated Social Media Listening  
-                                i.icon-help
+                                span.tooltip-wrap
+                                    i.icon-help
+                                    
+                                    span.tooltip Unmetric focuses on brands and competitive intelligence. Our partners can help you with social listening.
                             
                             td  
                                 &mdash;
@@ -322,7 +343,10 @@ html
                         
                          tr
                             td Real-time Competitor Content Stream   
-                                i.icon-help
+                                span.tooltip-wrap
+                                    i.icon-help
+                                    
+                                    span.tooltip The missing piece in your command center setup, Unmetric Track live streams your competitors' content.
                             
                             td 
                                 i.icon-check-circle
@@ -340,7 +364,10 @@ html
                                 
                         tr
                             td Filtered Feeds For Tent-pole Events    
-                                i.icon-help
+                                span.tooltip-wrap
+                                    i.icon-help
+                                    
+                                    span.tooltip Remove the noise and see exactly what brands are posting around big events like the Oscars and Super Bowl.
                             
                             td 
                                 i.icon-check-circle
@@ -358,7 +385,10 @@ html
                         
                         tr
                             td Track 'Owned Content' Engagement  
-                                i.icon-help
+                                span.tooltip-wrap
+                                    i.icon-help
+                                    
+                                    span.tooltip The only app that lets you track competitor content in real time and on the go.
                             
                             td 
                                 i.icon-check-circle
@@ -390,7 +420,10 @@ html
                                      
                         tr
                             td Social Media Publishing Tools  
-                                i.icon-help
+                                span.tooltip-wrap
+                                    i.icon-help
+                                    
+                                    span.tooltip Unmetric focuses on what brands are doing but our partners can help you with your publishing requirements.
                             
                             td  
                                 i.icon-check-circle
@@ -408,7 +441,10 @@ html
                         
                         tr
                             td Brand Content Search Engine   
-                                i.icon-help
+                                span.tooltip-wrap
+                                    i.icon-help
+                                    
+                                    span.tooltip The only search engine focused on brands social media content.
                             
                             td 
                                 i.icon-check-circle
@@ -426,7 +462,10 @@ html
                         
                         tr
                             td Discover Engaging Trends & Topics     
-                                i.icon-help
+                                span.tooltip-wrap
+                                    i.icon-help
+                                    
+                                    span.tooltip Never miss an opportunity to engage with a timely piece of content by staying on top of trends and topics.
                             
                             td 
                                 i.icon-check-circle
@@ -444,7 +483,11 @@ html
                         
                         tr
                             td Track 'Owned Content' Engagement  
-                                i.icon-help
+                                span.tooltip-wrap
+                                    i.icon-help
+                                    
+                                    span.tooltip Unmetric does not charge you extra for your success or if you want to monitor brands with large audiences
+
                             
                             td 
                                 i.icon-check-circle

@@ -20,6 +20,7 @@
         visibility: hidden;
         width: 240px;
         z-index: 2;
+        left: 30px;
         
         &:after {
             @include position(absolute, 21px null null -8px);
