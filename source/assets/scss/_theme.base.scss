@@ -16,3 +16,20 @@
         @include linear-gradient(#5658D8, #27DCF9);
     }
 }
+
+//Home page
+
+.hm--mod {
+    
+    .hero {
+        @include linear-gradient( #20D3B9,#48C2F7,#00CD7E);
+    }
+    
+    .header {
+        background: transparent;
+    }
+    
+    .btn-primary {
+        @include linear-gradient(#5658D8, #27DCF9);
+    }
+}
