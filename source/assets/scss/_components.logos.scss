@@ -1,14 +1,12 @@
 /*------------------------------------*\
    #LOGOS
 \*------------------------------------*/
+.logo-list-wrap{
+	margin-top: 40px;
+}
 
 .logo-list-item {
 	display: inline-block;
-    width: 40px;
-    height: 40px;
-    
-    background: url(../i/logo-sprite.png) 0 0 no-repeat;
-    background-size: cover;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
@@ -18,11 +16,81 @@
 	}
 }
 
-.logo-list-item--or{
 
+//Logo-list-a
+
+.logo-list-a{
+    background: url(../i/logo-sprite.png) 0 0 no-repeat;
+    background-size: cover;
+    height: 60px; 
+}
+
+
+.logo-list-item--or{
+	width: 155px;
     background-position: 0 0%;
 }
 .logo-list-item--sf{
-
-    background-position: 0 0;
+	width: 120px;
+    background-position: -158px 0;
 }
+
+.logo-list-item--km{
+	width: 210px;
+	background-position: -272px 0;
+}
+
+.logo-list-item--hs{
+	width: 165px;
+	background-position: -485px 0;
+}
+.logo-list-item--pr{
+	width: 200px;
+	background-position: -675px 0;
+}
+.logo-list-item--bw{
+	width: 250px;
+	background-position: -885px 0;
+		
+}
+
+
+//Logo-list-b
+
+
+.logo-list-b{
+    background: url(../i/logos/logo-sprite2.png) 0 0 no-repeat;
+    background-size: cover;
+    height: 50px; 
+    width: 170px;
+
+}
+
+.logo-list-item--fo{
+	
+    background-position: 0 0%;
+}
+.logo-list-item--aa{
+	
+    background-position: -240px 0;
+}
+
+.logo-list-item--aw{
+	
+	background-position: -460px 0;
+}
+
+.logo-list-item--hp{
+	
+	background-position: -680px 0;
+}
+.logo-list-item--wsj{
+	
+	background-position: -840px 0;
+}
+.logo-list-item--ft{
+	width: 265px;
+	background-position: -1050px 0;
+		
+}
+
