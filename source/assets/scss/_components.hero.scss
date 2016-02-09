@@ -45,14 +45,14 @@
         }
         
         &:nth-child(2) span {
-            @include linear-gradient(#2DB5C3,#2DB5C3);   
+            @include linear-gradient(#2DB5C3,#59DBE3);   
             color: #fff;
          
             
         }
         
         &:last-child span {
-            @include linear-gradient(#0CE7BB,#05CA86);   
+            @include linear-gradient(#05CA86 ,#0CE7BB);   
             color: #fff;
 
 

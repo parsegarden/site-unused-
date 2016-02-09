@@ -22,11 +22,12 @@
 .hm--mod {
     
     .hero {
-        @include linear-gradient( #20D3B9,#48C2F7,#00CD7E);
+        @include linear-gradient(#3F75E2,#20D3B9,#00CD7E);
     }
     
     .header {
         background: transparent;
+
     }
     
     .btn-primary {

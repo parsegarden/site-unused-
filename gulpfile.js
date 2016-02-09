@@ -47,11 +47,9 @@ gulp.task('browser-sync', function() {
 });
 
 
-
-
-
 // Convert SASS TO CSS
 gulp.task('build-css', function() {
+
     return gulp.src(config.sassPath + '/**/*.scss')
     
     .pipe(sourcemaps.init())  // Process the original sources
@@ -77,6 +75,8 @@ gulp.task('build-css', function() {
 
 // Convert SASS TO CSS
 gulp.task('build-prod-css', function() {
+
+
     return gulp.src(config.sassPath + '/**/*.scss')
         
     .pipe(sass({
