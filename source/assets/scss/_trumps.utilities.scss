@@ -87,7 +87,56 @@ hr {
 	}
 }
 
+/*
+** Padding
+*/
 
+.u-pad-top{
+	padding: 140px 0 0 0;
+}
+
+.u-pad-less{
+	padding: 0 0 60px 0;
+}
+
+.u-pad--top-less{
+	padding: 80px 0;
+        
+        @include media-query(hd) {
+            padding: 140px 0 60px 0;
+        }
+}
+ .u-pad--less-top{
+ 	padding: 80px 0;
+        
+        @include media-query(hd) {
+            padding: 60px 0 140px 0;
+        }
+ }
+
+.u-pad--top{
+	padding: 80px 0;
+        
+        @include media-query(hd) {
+            padding: 140px 0;
+        }
+}
+
+.u-pad--less{
+	padding: 80px 0;
+        
+        @include media-query(hd) {
+            padding: 60px 0;
+        }
+}
+
+.u-pad-less-top{
+	padding: 80px 0;
+        
+        @include media-query(hd) {
+            padding: 60px 0 0 0;
+        }
+}
 
 
 // Break text to next line in desktops only
@@ -174,4 +223,10 @@ hr {
 
 .lighter {
     color: $grey-lighter !important;
+}
+
+/* Overflow */
+
+.u-overflow{
+	overflow: auto;
 }

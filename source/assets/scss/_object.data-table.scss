@@ -4,6 +4,7 @@
 
 
 // Basic Table Styles with data/text
+
 .data-table {		
     tr {
         > th {
@@ -40,6 +41,7 @@
 	
 	td {
     	padding:  10px;
+        border-bottom: 1px solid #EEEEEE;
 
         &:hover{
             opacity: 1;
