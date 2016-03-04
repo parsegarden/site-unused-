@@ -4,7 +4,7 @@
 
 input {
     @include font-size($text-size-s);
-	padding: 15px 0;
+	padding: 14px 0;
 	text-align: left;
 	
 	@include media-query(hd) {
@@ -78,6 +78,24 @@ button {}
     }
 }
 
+.inline-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   input{
+        width: 230px;  
+        text-align: center;
+        border-radius: 3px;
+        border: 1px solid $grey-light;
+    
+   }
+   .btn{
+    border: none;
+    position: relative;
+    right: 2px;
+   }
+}
 
 
 .icon-select {
