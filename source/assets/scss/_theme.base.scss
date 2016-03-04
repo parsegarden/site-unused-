@@ -2,10 +2,18 @@
    #THEME
 \*------------------------------------*/
 
+body.theme--basic::before{
+    display: block;
+    content: "";
+    @include linear-gradient(#5856D8, #27DCF9, #FFF);
+    height: 95vh;
+    @include position(absolute, 22px 0 0 0);
+}
+
 .theme--basic {
     
     .hero {
-        @include linear-gradient(#5856D8, #27DCF9, #FFF);
+        color: white;
     }
     
     .header {
@@ -22,12 +30,29 @@
 .hm--mod {
     
     .hero {
-        @include linear-gradient(#3F75E2,#20D3B9,#00CD7E);
+        background-color: #01CC80;
+
+        &::before{
+            @include position(absolute,0 0 0 0);
+            display: block;
+            content: "";
+            background: url('../i/bg-2x-football.png') no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 97vh;
+            
+
+            @include media-query(palm) {
+                background-color: #5857D6;
+                height: 820px;
+              
+            }    
+        }
     }
     
-    .header {
-        background: transparent;
-
+    .header {   
+        position: relative;
+        height: 0;
     }
     
     .btn-primary {

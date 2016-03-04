@@ -4,10 +4,6 @@
 
 .hero {
     position: relative;
-    
-    @include media-query(hd) {
-        height: 95vh;    
-    }
 }
 
 
@@ -106,3 +102,11 @@
         font-weight: 600;
         font-size: 18px;
     }  
+
+
+.is-tall{
+    
+     @include media-query(hd) {
+        height: 95vh;    
+    }
+}    

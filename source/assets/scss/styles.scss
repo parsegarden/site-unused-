@@ -43,7 +43,7 @@
 @import "base.layout";
 @import "base.grid";
 @import "base.form";
-@import "base.theme";
+@import "base.theme-old";
 
 
 
@@ -67,48 +67,46 @@
 
 
 
-@import "components.analyze-competition";
-@import "components.analyze-performance";
+@import "components.analyze-competition-old";
+@import "components.analyze-performance-old";
+@import "components.analyze-header-old";
 @import "components.logos";
-@import "components.form";
-@import "components.clients";
-@import "components.price";
-@import "components.header";
+@import "components.form-old";
+@import "components.clients-old";
+@import "components.price-old";
+@import "components.header-old";
 @import "components.hero";
 @import "components.footer";
-@import "components.science";
-@import "components.social-content";
-@import "components.winning-strategies";
-@import "components.demand";
+@import "components.science-old";
+@import "components.social-content-old";
+@import "components.winning-strategies-old";
+@import "components.demand-old";
 @import "components.lists";
 @import "components.loading";
 @import "components.loader-page";
-@import "components.avatar";
-@import "components.news";
+@import "components.avatar-old";
+@import "components.news-old";
 @import "_components.caption";
 @import "components.nav-main";
-
-@import "components.analyze-header";
-@import "components.track-header";
-@import "components.track-competition";
-@import "components.pulse-competition";
-@import "components.social-profile";
-@import "components.unmetric-track";
-@import "components.request-invite";
-@import "components.discover-header";
-@import "components.about-unmetric-header";
-@import "components.ourself";
-@import "components.executives";
-@import "components.advisor";
-@import "components.contact";
-@import "components.media-strategy-header";
-@import "components.introduction";
-@import "components.contents";
-@import "components.news-header";
-@import "components.unmetric-news";
-@import "components.partners";
+@import "components.track-header-old";
+@import "components.track-competition-old";
+@import "components.pulse-competition-old";
+@import "components.social-profile-old";
+@import "components.unmetric-track-old";
+@import "components.request-invite-old";
+@import "components.discover-header-old";
+@import "components.about-unmetric-header-old";
+@import "components.ourself-old";
+@import "components.executives-old";
+@import "components.advisor-old";
+@import "components.contact-old";
+@import "components.media-strategy-header-old";
+@import "components.introduction-old";
+@import "components.contents-old";
+@import "components.news-header-old";
+@import "components.unmetric-news-old";
+@import "components.partners-old";
 @import "columns";
-
 @import "components.header-main";
 @import "components.testimonial";
 @import "components.tooltip";
