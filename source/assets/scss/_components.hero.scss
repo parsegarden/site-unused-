@@ -10,6 +10,8 @@
     .hero-title {
         @include font-size($text-size-xl);
         color: white;
+        position: relative;
+        z-index: 2;
         
         @include media-query(hd) {
             @include font-size($text-size-xxxl);    
@@ -110,3 +112,9 @@
         height: 95vh;    
     }
 }    
+
+.is-short{
+    @include media-query(hd) {
+        height: 600px;    
+    }
+}

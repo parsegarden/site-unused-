@@ -6,8 +6,8 @@ body.theme--basic::before{
     display: block;
     content: "";
     @include linear-gradient(#5856D8, #27DCF9, #FFF);
-    height: 95vh;
-    @include position(absolute, 22px 0 0 0);
+    height: 600px;
+    @include position(absolute, 0 0 0 0);
 }
 
 .theme--basic {
@@ -22,6 +22,13 @@ body.theme--basic::before{
     
     .btn-primary {
         @include linear-gradient(#5658D8, #27DCF9);
+    }
+}
+.theme--basic .header-rm{
+    .header{
+        background: transparent;
+        position: relative;
+        height: 0;
     }
 }
 

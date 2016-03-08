@@ -1,0 +1,16 @@
+/* Images */
+img{
+	max-width: 100%;
+}
+
+.img-theme{
+	@include position(absolute, -150px 0 0 0);
+	height: 583.68px;
+	width: 960px;
+	margin: 0 auto;
+	z-index: 1;
+	background-blend-mode: lighten;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+

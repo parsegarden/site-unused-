@@ -72,6 +72,67 @@
 
 
 
+//Blog menu for mobile
+
+.blog-menu_icon,
+.blog-menu_icon:before,
+.blog-menu_icon:after {
+    @include media-query(hd) {
+        @include position(absolute, 21px 20px null null);
+        background-color: rgba(white, .75);
+        content: "";
+        display: block;
+        height: 2px;
+        width: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.blog-menu_icon {
+    width: 15px;
+        
+    &:before {
+        top: -6px;
+        right: 0;
+    }
+    
+    &:after {
+        right: 0;
+        top: 6px;
+    }
+}
+
+
+
+//Blog link
+
+.blog-menu_link {
+
+     @include media-query(hd) {
+        @include position(absolute, 0 0 null null);
+        @include size(48px);
+    
+        // Make it cross when hovered
+        &:hover {
+            .blog-menu_icon {
+                background: transparent; 
+                   
+                
+                &::before {
+                    transform-origin: 100% 100%;
+                    transform: rotate(-45deg);
+                }
+                
+                &::after{
+                    transform-origin: 85% 100%;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
+
+
 // Mobile link to activate menu
 .menu-link {
     

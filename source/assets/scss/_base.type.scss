@@ -85,6 +85,8 @@ p {
     @include font-size($text-size-xs);
     color: $grey-base;
     margin: 0 0 20px;
+    z-index: 2;
+    position: relative;
 }
 
 
