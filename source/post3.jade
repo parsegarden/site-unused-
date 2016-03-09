@@ -1,0 +1,312 @@
+doctype html
+html
+    include includes/_head.jade
+    
+    body.theme--basic
+        .header-rm
+            // HEADER
+            header.header
+                
+                a.logo(href="#") 
+                    img.logo-image(src="assets/i/unmetric-logo-white.png" alt="Unmetric logo")
+                
+
+                a.blog-menu_link(href="#")
+                    span.blog-menu_icon
+
+                a.menu-link(href="#")
+                    span.menu-icon
+                
+
+
+                nav.nav-main.is-hidden
+                    ul.nav-main-wrap
+                        li 
+                            a.more.nav-main--link(href="#") Products 
+                                i.icon-arrow-dropdown
+                            
+                            ul.nav-main-dd
+                                li: a.nav-main--link.is-active(href="#") Analyze
+                                        br
+                                        span.nav-main--desc Compare and analyze your competitors
+                                    
+                                li 
+                                    a.nav-main--link(href="#") Track
+                                        br
+                                        span.nav-main--desc Keep an eye on your competition
+                                    
+                                li 
+                                    a.nav-main--link(href="#") Discover
+                                        br
+                                        span.nav-main--desc Find inspiration to create content
+                        
+                        li: a.nav-main--link(href="#") About
+                        
+                        li: a.nav-main--link(href="#") Contact
+                        
+                        li: a.nav-main--link.nav-main--link-signin(href="#") Sign In
+
+               
+        section.hero.row.u-pad--top-less
+            .content
+                .grid.grid--center
+                    .grid-cell.col-4.t-center
+                        
+                        .img-theme(style="background-image: linear-gradient(#5856D8,#3ADFFA,#E1FAFE), url(assets/i/oracle-social-cloud.png);opacity: 0.5;")
+
+                        h1.hero-title Unmetric is now integrated with Oracle Social Cloud
+
+                        p.t-center Mar 4, 2016 
+
+        
+
+
+        section.row
+            .content
+                .grid.grid--center.main
+                    .grid-cell.col-6
+
+                        p
+                            span.info Drum roll please... we've partnered with Oracle Social Cloud!
+                        
+                        p    
+                            a.blog-link(href="http://www.oracle.com/us/solutions/social/overview/index.html" target="_blank") Oracle Social Cloud 
+                            |is Oracle’s platform that helps enterprises manage and scale their customer relationships on social media channels. Our competitive analytics capabilities will now be accessible on Oracle Social Relationship Management (SRM) solution, which includes tools for social listening, publishing, engagement, analytics and workflow management.
+                        
+                        .t-center
+                            p
+                                img(src="../assets/i/oracleand&unmetric.png", alt="Oracleand & Unmetric")
+
+                        
+                        p.light.u-left-border 
+                            em &ldquo; We continually add capabilities to enable our customers to innovate and take advantage of real-time insights for better data-driven business decisions,” said John Stetic, Group Vice President, Oracle Marketing Cloud. “The integration of Oracle Social Cloud with Unmetric is another example of our expanding ecosystem for seamless solutions; it will provide our customers with a new way to quickly assess their marketplace and develop strategies against their competitors. &rdquo;
+                        
+                        
+                       
+                        p Given the similarity between our audiences, the partnership simplifies the social element of our customers' daily workflow. The data and intelligence from Unmetric will complement Oracle SRM’s extensive analytics capabilities.
+
+                       
+                       
+                        p.light.u-left-border 
+                            em &ldquo; As brands continue taking a more strategic, holistic approach to social media, we&#44;re focused on helping marketers deliver an ideal customer experience,&rdquo; said our CEO Lux Narayan. &ldquo;Unmetric works alongside a brand’s social listening and publishing tools, and this integration will enable Oracle Social Cloud customers to gain a competitive edge &rdquo;
+
+                       
+                       
+                        p This makes it our third partnership this year! We&#39;d like to think of ourselves as a &#39;social&#39; butterfly. We&#39;re already friends with 
+                            a.blog-link(href="http://blog.unmetric.com/unmetric-is-now-integrated-with-hootsuite" target="_blank") Hootsuite
+                            |, 
+                            
+                            a.blog-link(href="http://blog.unmetric.com/weve-partnered-with-kantar-media" target="_blank") Kantar
+                            |, 
+                            
+                            a.blog-link(href="https://medium.com/@salesforce/turbo-charge-your-creativity-with-data-driven-inspiration-from-unmetric-877c5bc9c1c7#.g43gk37kk" target="_blank") Salesforce 
+                            |and all this apart from being 
+
+                            a.blog-link(href="http://blog.unmetric.com/we-made-things-official-with-twitter" target="_blank") Twitter's certified partner. 
+
+                        
+                       
+                        .box.u-pad--less.is-hidden
+                            form
+
+                                h3.t-center Start your free 3 day trial now
+
+                                p.t-center Immediately discover the best performing content in your industry and benchmark it against your own efforts.
+
+                                .control-wrap
+                                
+                                    input(type="text" id="input-text" placeholder="Name")
+                                    
+                                    input(type="text" id="input-text" placeholder="Email")
+                                    
+                                    br
+                                    
+                                    input(type="text" id="input-text" placeholder="Company")   
+                                    
+                                    i.icon-select.icon-arrow-dropdown
+                            
+                                    select
+                                        option(selected disabled) Select your Industry
+                                        option AGENCY (managing social media for clients)
+                                        option Aviation 
+                                        option Banking &amp; Finance
+                                        option Beverages - Alcohol
+                                        option Consumer Electronics 
+                                        option Diversified
+                                        option Education
+                                        option Entertainment 
+                                        option Food/Beverage
+                                        option Home Appliances 
+                                        option Home Care
+                                        option Hospitality
+                                        option Insurance 
+                                        option Luxury
+                                        option Media - Audio/Visual
+                                        option Media - Online
+                                        option Media - Print
+                                        option Mobiles & Handhelds
+                                        option Non Profits
+                                        option Non-Retail Ecommerce
+                                        option Personal Care
+                                        option Pet Care
+                                        option Pharma & Health
+                                        option Professional Services
+                                        option Publishing
+                                        option Restaurant & Cafe
+                                        option Retail
+                                        option Retail Chains
+                                        option Sports
+                                        option Technology
+                                        option Telecom & Digital Services
+                                        option Television
+                                        option Travel & Tourism
+
+                                    select
+                                        option(selected disabled) Select a sector you’d be interested in
+                                        option Automotive
+                                        option Aviation 
+                                        option Banking & Finance
+                                        option Beverages - Alcohol
+                                        option Consumer Electronics 
+                                        option Diversified
+                                        option Education
+                                        option Entertainment 
+                                        option Food/Beverage
+                                        option Home Appliances 
+                                        option Home Care
+                                        option Hospitality
+                                        option Insurance 
+                                        option Luxury
+                                        option Media - Audio/Visual
+                                        option Media - Online
+                                        option Media - Print
+                                        option Mobiles & Handhelds
+                                        option Non Profits
+                                        option Non-Retail Ecommerce
+                                        option Personal Care
+                                        option Pet Care
+                                        option Pharma & Health
+                                        option Professional Services
+                                        option Publishing
+                                        option Restaurant & Cafe
+                                        option Retail
+                                        option Retail Chains
+                                        option Sports
+                                        option Technology
+                                        option Telecom & Digital Services
+                                        option Television
+                                        option Travel & Tourism
+
+                                    
+                                    select
+                                        option(selected disabled) Select your Geography
+                                        option North America
+                                        option Europe 
+                                        option Australia
+                                        option Africa
+                                        option Asia 
+                                        option South America
+                                    
+                                .control-wrap
+
+                                    button.btn.btn-primary(type="submit") Start My Trail Now 
+
+                                    p No credit card required, no obligations, just a free trial of our Facebook analytics platform - and you get access to Twitter, Instagram, YouTube, Pinterest and LinkedIn analytics as well. 
+
+                                img.box-image(src="../assets/i/client-sprite.png", alt="")
+
+                        hr
+
+                        .box
+                            img.box-image.box-avatar(src="../assets/i/ranjani-raghupathi.jpg", alt="Ranjani") 
+                       
+                            h3 Posted by
+                           
+                            a(href="#") Ranjani Raghupathi
+                           
+                            p.light A writer, a dreamer and a foodie all rolled in to one, Ranjani enjoys her not-so-secret affair with marketing and social media metrics. She plays cupid with words and marries them so they can live happily ever after as beautiful sentences. You can find her at any restaurant serving great food or at a book store sneaking a peak at the latest arrivals.
+ 
+        
+        // FOOTER SECTION                    
+        footer.row.has-padding
+            .content
+                ul.nav-footer.grid.grid--gutters
+                    li.grid-cell.size1of3
+                        h4 Products
+                        
+                        ul.nav-footer--list
+                            li: a.nav-footer--link(href="#") Analyze &mdash; for Social Media Analysts
+                            
+                            li: a.nav-footer--link(href="#") Track &mdash; for Marketers
+                            
+                            li: a.nav-footer--link(href="#") Discover &mdash; for Content Creators
+                    
+                    
+                    
+                    li.grid-cell
+                        h4 About
+                        
+                        ul.nav-footer--list
+                            li: a.nav-footer--link(href='#') Company
+ 
+                            li: a.nav-footer--link(href='#') Customers
+                            
+                            li: a.nav-footer--link(href='#') Why Agencies love us
+    
+                            li: a.nav-footer--link(href='#') Our blog
+                            
+                            li: a.nav-footer--link(href='#') Press & News coverage
+                            
+                            li: a.nav-footer--link(href='#') Job openings
+                    
+                    
+                    
+                    li.grid-cell
+                        h4 Resources
+                        
+                        ul.nav-footer--list
+                            li: a.nav-footer--link(href="#") Articles
+                            
+                            li: a.nav-footer--link(href="#") Ebooks 
+                            
+                            li: a.nav-footer--link(href="#") Infographics 
+                            
+                            li: a.nav-footer--link(href="#") Interviews 
+                            
+                            li: a.nav-footer--link(href="#") Industry Reports 
+                            
+                            
+                            
+                    
+                    li.gird-cell 
+                        h4 Contact
+                        
+                        ul.nav-footer--list    
+                            li: a.nav-footer--link(href='#') Get in touch 
+                            
+                            li: a.nav-footer--link(href='#') Twitter
+                            
+                            li: a.nav-footer--link(href='#') Facebook
+                            
+                            li: a.nav-footer--link(href='#') Pinterest
+                            
+                            li: a.nav-footer--link(href='#') LinkedIn
+                            
+                            li: a.nav-footer--link(href='#') SlideShare
+
+                
+                
+                .grid.site-info-wrap
+                    .grid-cell
+                        p.site-info &copy; Unmetric 
+                        
+                        
+                    .grid-cell    
+                        p.victory &#9996;       
+                        
+                    .grid-cell
+                        p.site-links
+                            a(href="#") Privacy
+
+        include includes/_foot.jade                                               
+                            

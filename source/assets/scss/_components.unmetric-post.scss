@@ -1,0 +1,155 @@
+//Unmetric Post 
+
+.article_link{
+	
+	img{
+		float: right;
+
+		&:hover{
+			background: red;
+		}
+	}
+
+	@include media-query(palm){
+		text-align: center;
+
+		img{
+			float: none;
+		}		
+
+	}
+}
+
+.post__link{
+	max-width: 480px;
+	float: left;
+	color: #333333;
+	z-index: 2;
+	font-weight: 500;
+	position: relative;
+
+	@include media-query(palm){
+		float: none;
+		max-width: 100%;
+	}
+}
+
+.article-date {
+	position: relative;
+    top: -12px;
+	clear: both;
+
+	@include media-query(palm){
+		top: 0;
+	}
+}
+
+
+
+
+
+
+
+//Section Download Link
+.download-link{
+	background: #F6F6F6;
+}
+
+.download-link .o-box:hover a{
+	color: #3E84E2;
+}
+
+.bg-graident{
+	@include linear-gradient(to bottom right, #5856D8, #26B4D5,#00FBD3);
+}
+
+.competition{
+
+	p{
+		width: 240px;
+		font-size: 18px;
+	}
+}
+
+
+
+
+//Article link 
+
+.article_link:hover a h2{
+	color: #3E84E2;
+}
+
+
+.article_link:hover .article_link--image{
+
+	display: block;
+	
+}
+
+.article_link--image{
+	
+	@include media-query(hd){
+		@include linear-gradient(to bottom right,#5856D8, #00FBD3);
+		display: none;
+		opacity: 0.6;
+		height: 160px;
+		width: 300px;
+		position: absolute;
+		right: 115px;
+		z-index: 3;
+	}
+}	
+
+.article-title{
+	line-height: 1;
+}
+
+
+
+
+//Section Subscribe
+
+.subscribe{
+	padding: 25px 0;
+
+}
+
+.subscribe{
+
+	p {
+		font-size: 24px;
+		max-width: 540px;
+		font-weight: 200;
+
+		@include media-query(palm){
+			font-size: 18px;
+		}
+	}
+
+}
+
+//Social Link
+
+.social-link{
+
+	a{
+		margin-left: 20px;
+		color: #4A90E2; 
+	}
+}
+
+
+
+
+
+
+
+//blog-button
+
+.blog-btn{
+	
+	.btn{
+		border: 1px solid $grey-lighter;
+	}
+}

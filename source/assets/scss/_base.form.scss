@@ -102,3 +102,41 @@ button {}
     @include position(absolute, null 0 12px null);
     z-index: 1;
 }
+
+.parallal-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    input{
+        margin-bottom: 10px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        background: transparent;
+        padding-left: 10px;
+    }
+    ::-webkit-input-placeholder {
+   color: white;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+       color: white;  
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+       color: white;  
+    }
+
+    :-ms-input-placeholder {  
+       color: white;  
+    }
+
+    .btn{
+        border: none;
+        position: relative;
+        right: 2px;
+   }
+
+}

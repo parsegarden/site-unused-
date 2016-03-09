@@ -1,7 +1,13 @@
 /* Images */
 img{
 	max-width: 100%;
+	position: relative;
+	z-index: 2;
 }
+
+
+
+//Hero image theme
 
 .img-theme{
 	@include position(absolute, -150px 0 0 0);
@@ -12,5 +18,31 @@ img{
 	background-blend-mode: lighten;
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	@include media-query(palm){
+		left: -20px;
+	}
 }
 
+
+
+
+//Small Image
+
+.small-image{
+	height: 160px;
+	width: 300px;
+}
+
+
+
+
+//Blog Avatar-image
+
+.blog-avatar--image{
+	width: 200px;
+
+	@include media-query(palm){
+		width: 100px;
+	}
+}

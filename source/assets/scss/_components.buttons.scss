@@ -8,6 +8,9 @@
     display: inline-block;
     padding: 15px;
     width: 100%;
+    border: none;
+    position: relative;
+    z-index: 2;
     
     > .icon-arrow-right {
         position: relative;
@@ -31,6 +34,11 @@
 .btn-secondary {
     background-color: transparent;
     border: 2px solid $grey-light;
+}
+
+.w-btn{
+    background: white;
+    color: #4A9AD4;
 }
 
 
@@ -81,14 +89,10 @@
     color: white;
 }   
 .button:focus{
-    background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 0%, #7db9e8 77%, #7db9e8 77%); 
-    background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 0%,#7db9e8 77%,#7db9e8 77%); 
-    background: linear-gradient(to bottom, #1e5799 0%,#2989d8 0%,#7db9e8 77%,#7db9e8 77%);
+    @include linear-gradient(to bottom, #1e5799 0%,#2989d8 0%,#7db9e8 77%,#7db9e8 77%);
 }
 .btn-info.active{
-    background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 0%, #7db9e8 77%, #7db9e8 77%); 
-    background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 0%,#7db9e8 77%,#7db9e8 77%); 
-    background: linear-gradient(to bottom, #1e5799 0%,#2989d8 0%,#7db9e8 77%,#7db9e8 77%);
+    @include linear-gradient(to bottom, #1e5799 0%,#2989d8 0%,#7db9e8 77%,#7db9e8 77%);
     color: white;
 }
 
@@ -110,8 +114,6 @@
     font-size: 18px;
 }
 .btn-fb{ 
-        background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 0%, #7db9e8 77%, #7db9e8 77%); 
-        background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 0%,#7db9e8 77%,#7db9e8 77%); 
-        background: linear-gradient(to bottom, #1e5799 0%,#2989d8 0%,#7db9e8 77%,#7db9e8 77%);      
+        @include linear-gradient(to bottom, #1e5799 0%,#2989d8 0%,#7db9e8 77%,#7db9e8 77%);      
         padding: 10px  65px;
 }

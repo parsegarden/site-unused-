@@ -92,3 +92,20 @@
             }
         }
 }
+
+//Blog box 
+
+.o-box{
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 0px 15px rgba(0, 0, 0, 0.1);
+
+    @include media-query(palm){
+        width: 100%;
+        margin: 10px auto;
+    }
+}
+
+.o-box__pad {
+    padding: 20px;
+}

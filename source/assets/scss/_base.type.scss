@@ -202,6 +202,49 @@ small,
     }
 }
 
+
+.info{
+    @include font-size($text-size-m);
+        color: #333333;;
+        line-height: 1.3;
+        margin-bottom: 20px;
+    
+    @include media-query(hd) {
+        @include font-size($text-size-l);    
+        margin-bottom: 60px;
+    }
+}
+
+
+
 .t-white{
     color: white;
+}
+
+.t-p--color{
+    color: #333333;
+}
+
+
+// Blog paragraph 
+
+.main p{
+    color: #333333;
+    font-size: 18px;
+
+    @include media-query(palm){
+        font-size: 16px;
+    }
+}
+
+.t-weight--m{
+    font-weight: 500;
+}
+
+.t-weight--book{
+    font-weight: 200;
+}
+
+.t-weight--heavy{
+    font-weight: 900;
 }
