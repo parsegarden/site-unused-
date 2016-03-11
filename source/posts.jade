@@ -54,7 +54,7 @@ html
                         
                         .img-theme(style="background-image: linear-gradient(#5856D8,#3ADFFA,#E1FAFE), url(assets/i/social-media-strategy.png); opacity: 0.5;")
 
-                        h1.hero-title 5 ways Chipotle creates an awesome social media strategy
+                        h1.article-title 5 ways Chipotle creates an awesome social media strategy
                         
                         button.btn.col-btn.w-btn.t-weight--m Read on
 
@@ -118,7 +118,7 @@ html
                 .grid.grid--center
                     .grid-cell.col-5
                         
-                        .o-box.size4of12
+                        .o-box.size4of12.media-link
                             a(href="#")
                             
                                 .o-box__pad
@@ -127,16 +127,16 @@ html
                                 
                                     .u-pad-too--less.t-center
                                     
-                                        a(href="#").blog-post_copy.t-weight--m Download the Report 
+                                        a(href="#").t-p--color.t-weight--m Download the Report 
 
                         
                         
-                        .o-box.size4of12.bg-graident.competition
+                        .o-box.size4of12.bg-graident.competition.media-link
                             a(href="#")
                             
                                 .o-box__pad
                                     .u-pad-m
-                                        h2.article-title.t-weight--heavy.t-white Take your competition head on.
+                                        h2.t-weight--heavy.t-white Take your competition head on.
                                         
                                     .u-pad--t
                                         p.t-white Thousands of real-time marketers at hundreds of leading brands and agencies across 20+ countries use Unmetric to compete and win.
@@ -150,7 +150,7 @@ html
 
 
 
-                        .o-box.size4of12
+                        .o-box.size4of12.media-link
                             a(href="#")
                             
                                 .o-box__pad
@@ -159,7 +159,7 @@ html
                                 
                                     
                                     .u-pad-too--less.t-center    
-                                        a(href="#").blog-post_copy.t-weight--m Download the Report 
+                                        a(href="#").t-p--color.t-weight--m Download the Report 
 
 
 
@@ -304,17 +304,105 @@ html
                                 
                             
 
-        section.row.bg-graident.subscribe
+
+        section.row.subscribe.u-pad-bottom
             .content
-                .grid.grid--gutter.col-5
+                .bg-graident.col-5.pad-sub
+
+                    .grid.grid--gutter
+                        
+                            .grid-cell
+
+                                p.t-white Get interviews from your peers and industry experts, advice on social analytics and analyst debriefs of thought leaders delivered directly to your inbox.
+
+                            .grid-cell.size1of3
+                                .control-wrap
+                                        .parallal-input.t-center
+                                        
+                                            input(type="text" placeholder="Email Address")
+                                        
+                                            button.btn.w-btn Subscribe to Email updates
+
+        
+        // FOOTER SECTION                    
+        footer.row.has-padding
+            .content
+                ul.nav-footer.grid.grid--gutters
+                    li.grid-cell.size1of3
+                        h4 Products
+                        
+                        ul.nav-footer--list
+                            li: a.nav-footer--link(href="#") Analyze &mdash; for Social Media Analysts
+                            
+                            li: a.nav-footer--link(href="#") Track &mdash; for Marketers
+                            
+                            li: a.nav-footer--link(href="#") Discover &mdash; for Content Creators
+                    
+                    
+                    
+                    li.grid-cell
+                        h4 About
+                        
+                        ul.nav-footer--list
+                            li: a.nav-footer--link(href='#') Company
+ 
+                            li: a.nav-footer--link(href='#') Customers
+                            
+                            li: a.nav-footer--link(href='#') Why Agencies love us
+    
+                            li: a.nav-footer--link(href='#') Our blog
+                            
+                            li: a.nav-footer--link(href='#') Press & News coverage
+                            
+                            li: a.nav-footer--link(href='#') Job openings
+                    
+                    
+                    
+                    li.grid-cell
+                        h4 Resources
+                        
+                        ul.nav-footer--list
+                            li: a.nav-footer--link(href="#") Articles
+                            
+                            li: a.nav-footer--link(href="#") Ebooks 
+                            
+                            li: a.nav-footer--link(href="#") Infographics 
+                            
+                            li: a.nav-footer--link(href="#") Interviews 
+                            
+                            li: a.nav-footer--link(href="#") Industry Reports 
+                            
+                            
+                            
+                    
+                    li.gird-cell 
+                        h4 Contact
+                        
+                        ul.nav-footer--list    
+                            li: a.nav-footer--link(href='#') Get in touch 
+                            
+                            li: a.nav-footer--link(href='#') Twitter
+                            
+                            li: a.nav-footer--link(href='#') Facebook
+                            
+                            li: a.nav-footer--link(href='#') Pinterest
+                            
+                            li: a.nav-footer--link(href='#') LinkedIn
+                            
+                            li: a.nav-footer--link(href='#') SlideShare
+
+                
+                
+                .grid.site-info-wrap
                     .grid-cell
+                        p.site-info &copy; Unmetric 
+                        
+                        
+                    .grid-cell    
+                        p.victory &#9996;       
+                        
+                    .grid-cell
+                        p.site-links
+                            a(href="#") Privacy
 
-                        p.t-white Get interviews from your peers and industry experts, advice on social analytics and analyst debriefs of thought leaders delivered directly to your inbox.
-
-                    .grid-cell.size1of3
-                        .control-wrap
-                                .parallal-input.t-center
-                                    
-                                    input(type="text" placeholder="Email Address")
-                                    
-                                    button.btn.w-btn Subscribe to Email updates
+        include includes/_foot.jade                                                                           

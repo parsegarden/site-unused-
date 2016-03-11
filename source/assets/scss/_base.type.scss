@@ -217,6 +217,9 @@ small,
 
 
 
+
+//Font color 
+
 .t-white{
     color: white;
 }
@@ -226,16 +229,11 @@ small,
 }
 
 
-// Blog paragraph 
 
-.main p{
-    color: #333333;
-    font-size: 18px;
 
-    @include media-query(palm){
-        font-size: 16px;
-    }
-}
+
+
+// Font Weight
 
 .t-weight--m{
     font-weight: 500;

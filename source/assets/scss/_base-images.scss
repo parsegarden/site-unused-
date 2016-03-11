@@ -10,9 +10,9 @@ img{
 //Hero image theme
 
 .img-theme{
-	@include position(absolute, -150px 0 0 0);
+	@include position(absolute, -150px 0 0 -125px);
 	height: 583.68px;
-	width: 960px;
+	width: 1440px;
 	margin: 0 auto;
 	z-index: 1;
 	background-blend-mode: lighten;

@@ -1,6 +1,44 @@
 //Unmetric Post 
 
+
+//Main 
+
+// Blog paragraph 
+
+.main p{
+    color: #333333;
+    font-size: 18px;
+
+    @include media-query(palm){
+        font-size: 16px;
+    }
+}
+
+.main h2{
+	margin-top: 2em;
+}
+
+.main p img{
+	margin: 60px 0;
+	border: 10px solid $grey-lightest;
+
+	@include media-query(palm){
+		margin: 40px 0;
+		border: 5px solid $grey-lightest;
+	}
+}
+
+
+
+
+
+
+//Article
 .article_link{
+
+	h2{
+		margin: 0;
+	}
 	
 	img{
 		float: right;
@@ -20,6 +58,21 @@
 	}
 }
 
+
+
+.article-title{
+	@include font-size($text-size-xl);
+        color: white;
+        position: relative;
+        z-index: 2;
+        
+    @include media-query(hd) {
+        font-size: 72px;    
+    }
+}
+
+
+
 .post__link{
 	max-width: 480px;
 	float: left;
@@ -34,6 +87,8 @@
 	}
 }
 
+
+
 .article-date {
 	position: relative;
     top: -12px;
@@ -43,6 +98,7 @@
 		top: 0;
 	}
 }
+
 
 
 
@@ -63,13 +119,34 @@
 	@include linear-gradient(to bottom right, #5856D8, #26B4D5,#00FBD3);
 }
 
+
 .competition{
+
+	
+	h2{
+		line-height: 1;
+
+		@include media-query(palm){
+			@include font-size($text-size-xl)
+		}
+
+	}
 
 	p{
 		width: 240px;
 		font-size: 18px;
 	}
 }
+
+.media-link{
+	height: 480px;
+	width: 300px;
+}
+
+
+
+
+
 
 
 
@@ -108,14 +185,22 @@
 
 
 
+
+
+
 //Section Subscribe
 
-.subscribe{
-	padding: 25px 0;
-
-}
 
 .subscribe{
+
+	.pad-sub{
+		padding: 50px 85px 5px 50px;
+		
+		@include media-query(palm){
+			padding: 20px;
+		}
+
+	}
 
 	p {
 		font-size: 24px;
@@ -128,6 +213,11 @@
 	}
 
 }
+
+
+
+
+
 
 //Social Link
 
@@ -153,3 +243,9 @@
 		border: 1px solid $grey-lighter;
 	}
 }
+
+
+
+
+
+
