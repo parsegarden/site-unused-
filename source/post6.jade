@@ -11,40 +11,43 @@ html
                     img.logo-image(src="assets/i/unmetric-logo-white.png" alt="Unmetric logo")
                 
 
-                a.blog-menu_link(href="#")
-                    span.blog-menu_icon
 
                 a.menu-link(href="#")
                     span.menu-icon
                 
 
 
-                nav.nav-main.is-hidden
+                nav.nav-main.0is-hidden
                     ul.nav-main-wrap
                         li 
-                            a.more.nav-main--link(href="#") Products 
+                            a.more.nav-main--link(href="#") All Posts
                                 i.icon-arrow-dropdown
                             
                             ul.nav-main-dd
-                                li: a.nav-main--link.is-active(href="#") Analyze
-                                        br
-                                        span.nav-main--desc Compare and analyze your competitors
+                                li: a.nav-main--link.is-active(href="posts.html") 5 ways Chipotle creates an awesome social media strategy
+                            
                                     
                                 li 
-                                    a.nav-main--link(href="#") Track
-                                        br
-                                        span.nav-main--desc Keep an eye on your competition
+                                    a.nav-main--link(href="post5.html") Unmetric is now integrated with Oracle Social Cloud
+                                        
                                     
                                 li 
-                                    a.nav-main--link(href="#") Discover
-                                        br
-                                        span.nav-main--desc Find inspiration to create content
+                                    a.nav-main--link(href="post2.html") Top Home Appliance Brands On Social Media Q4 2015
+
+
+                                li: a.nav-main--link.is-active(href="post6.html") 367% Increase in Super Bowl Content By Brands Since 2012
+                            
+                                    
+                                li 
+                                    a.nav-main--link(href="post4.html") Analyzing top APAC and MEA Aviation brands on social media: Key Learnings
+
+                        li
+                            a.nav-main--link
+                                .btn.btn-secondary.t-weight--m(href="#") Subscribe    
+                                        
+                                        
                         
-                        li: a.nav-main--link(href="#") About
                         
-                        li: a.nav-main--link(href="#") Contact
-                        
-                        li: a.nav-main--link.nav-main--link-signin(href="#") Sign In
 
                
         section.hero.row.u-pad--top-less
@@ -54,7 +57,7 @@ html
                         
                         .img-theme(style="background-image: linear-gradient(#5856D8,#3ADFFA,#E1FAFE), url(assets/i/super-bowl.png);opacity: 0.5;")
 
-                        h1.article-title Unmetric is now integrated with Oracle Social Cloud
+                        h1.article-title 367% Increase in Super Bowl Content By Brands Since 2012
 
                         p.t-center Feb 10, 2016
 
@@ -276,7 +279,7 @@ html
                         
 
 
-                        .box.t-center
+                        .u-pad--less-top.t-center
 
                         
                             hr.mg-hr
@@ -295,23 +298,8 @@ html
         
         
 
-        section.row.subscribe.u-pad--less-top
-            .content
-                .bg-graident.col-5.pad-sub
-
-                    .grid.grid--gutter
-                        
-                            .grid-cell
-
-                                p.t-white Get interviews from your peers and industry experts, advice on social analytics and analyst debriefs of thought leaders delivered directly to your inbox.
-
-                            .grid-cell.size1of3
-                                .control-wrap
-                                        .parallal-input.t-center
-                                        
-                                            input(type="text" placeholder="Email Address")
-                                        
-                                            button.btn.w-btn Subscribe to Email updates   
+        //Subscribe
+        include includes/_subscribe.jade   
 
 
 
@@ -375,91 +363,10 @@ html
 
 
         
+        
         // FOOTER SECTION                    
-        footer.row.has-padding
-            .content
-               
+        include includes/_footer.jade 
 
-                ul.nav-footer.grid.grid--gutters
-                   
-                    li.grid-cell.size1of3
-                   
-
-                        h4 Products
-                        
-                        ul.nav-footer--list
-                            li: a.nav-footer--link(href="#") Analyze &mdash; for Social Media Analysts
-                            
-                            li: a.nav-footer--link(href="#") Track &mdash; for Marketers
-                            
-                            li: a.nav-footer--link(href="#") Discover &mdash; for Content Creators
-                    
-                    
-                    
-                    li.grid-cell
-                        h4 About
-                        
-                        ul.nav-footer--list
-                            li: a.nav-footer--link(href='#') Company
- 
-                            li: a.nav-footer--link(href='#') Customers
-                            
-                            li: a.nav-footer--link(href='#') Why Agencies love us
-    
-                            li: a.nav-footer--link(href='#') Our blog
-                            
-                            li: a.nav-footer--link(href='#') Press & News coverage
-                            
-                            li: a.nav-footer--link(href='#') Job openings
-                    
-                    
-                    
-                    li.grid-cell
-                        h4 Resources
-                        
-                        ul.nav-footer--list
-                            li: a.nav-footer--link(href="#") Articles
-                            
-                            li: a.nav-footer--link(href="#") Ebooks 
-                            
-                            li: a.nav-footer--link(href="#") Infographics 
-                            
-                            li: a.nav-footer--link(href="#") Interviews 
-                            
-                            li: a.nav-footer--link(href="#") Industry Reports 
-                            
-                            
-                            
-                    
-                    li.gird-cell 
-                        h4 Contact
-                        
-                        ul.nav-footer--list    
-                            li: a.nav-footer--link(href='#') Get in touch 
-                            
-                            li: a.nav-footer--link(href='#') Twitter
-                            
-                            li: a.nav-footer--link(href='#') Facebook
-                            
-                            li: a.nav-footer--link(href='#') Pinterest
-                            
-                            li: a.nav-footer--link(href='#') LinkedIn
-                            
-                            li: a.nav-footer--link(href='#') SlideShare
-
-                
-                
-                .grid.site-info-wrap
-                    .grid-cell
-                        p.site-info &copy; Unmetric 
-                        
-                        
-                    .grid-cell    
-                        p.victory &#9996;       
-                        
-                    .grid-cell
-                        p.site-links
-                            a(href="#") Privacy
 
         include includes/_foot.jade                                               
                             

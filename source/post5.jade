@@ -7,44 +7,43 @@ html
             // HEADER
             header.header
                 
-                a.logo(href="#") 
+                a.logo(href="posts.html") 
                     img.logo-image(src="assets/i/unmetric-logo-white.png" alt="Unmetric logo")
                 
 
-                a.blog-menu_link(href="#")
-                    span.blog-menu_icon
 
                 a.menu-link(href="#")
                     span.menu-icon
                 
 
 
-                nav.nav-main.is-hidden
+                nav.nav-main.0is-hidden
                     ul.nav-main-wrap
                         li 
-                            a.more.nav-main--link(href="#") Products 
+                            a.more.nav-main--link(href="#") All Posts
                                 i.icon-arrow-dropdown
                             
                             ul.nav-main-dd
-                                li: a.nav-main--link.is-active(href="#") Analyze
-                                        br
-                                        span.nav-main--desc Compare and analyze your competitors
+                                li: a.nav-main--link.is-active(href="posts.html") 5 ways Chipotle creates an awesome social media strategy
+                            
                                     
                                 li 
-                                    a.nav-main--link(href="#") Track
-                                        br
-                                        span.nav-main--desc Keep an eye on your competition
+                                    a.nav-main--link(href="post5.html") Unmetric is now integrated with Oracle Social Cloud
+                                        
                                     
                                 li 
-                                    a.nav-main--link(href="#") Discover
-                                        br
-                                        span.nav-main--desc Find inspiration to create content
-                        
-                        li: a.nav-main--link(href="#") About
-                        
-                        li: a.nav-main--link(href="#") Contact
-                        
-                        li: a.nav-main--link.nav-main--link-signin(href="#") Sign In
+                                    a.nav-main--link(href="post2.html") Top Home Appliance Brands On Social Media Q4 2015
+
+
+                                li: a.nav-main--link.is-active(href="post6.html") 367% Increase in Super Bowl Content By Brands Since 2012
+                            
+                                    
+                                li 
+                                    a.nav-main--link(href="post4.html") Analyzing top APAC and MEA Aviation brands on social media: Key Learnings
+
+                        li
+                            a.nav-main--link
+                                .btn.btn-secondary.t-weight--m(href="#") Subscribe    
 
                
         section.hero.row.u-pad--top-less
@@ -79,7 +78,7 @@ html
 
                         
                         p.light.u-left-border 
-                            em &ldquo; We continually add capabilities to enable our customers to innovate and take advantage of real-time insights for better data-driven business decisions,” said John Stetic, Group Vice President, Oracle Marketing Cloud. “The integration of Oracle Social Cloud with Unmetric is another example of our expanding ecosystem for seamless solutions; it will provide our customers with a new way to quickly assess their marketplace and develop strategies against their competitors. &rdquo;
+                            em &ldquo;We continually add capabilities to enable our customers to innovate and take advantage of real-time insights for better data-driven business decisions,” said John Stetic, Group Vice President, Oracle Marketing Cloud. “The integration of Oracle Social Cloud with Unmetric is another example of our expanding ecosystem for seamless solutions; it will provide our customers with a new way to quickly assess their marketplace and develop strategies against their competitors.&rdquo;
                         
                         
                        
@@ -87,8 +86,7 @@ html
 
                        
                        
-                        p.light.u-left-border 
-                            em &ldquo; As brands continue taking a more strategic, holistic approach to social media, we&#44;re focused on helping marketers deliver an ideal customer experience,&rdquo; said our CEO Lux Narayan. &ldquo;Unmetric works alongside a brand’s social listening and publishing tools, and this integration will enable Oracle Social Cloud customers to gain a competitive edge &rdquo;
+                        p &ldquo;As brands continue taking a more strategic, holistic approach to social media, we&#44;re focused on helping marketers deliver an ideal customer experience,&rdquo; said our CEO Lux Narayan. &ldquo;Unmetric works alongside a brand’s social listening and publishing tools, and this integration will enable Oracle Social Cloud customers to gain a competitive edge&rdquo;
 
                        
                        
@@ -218,7 +216,7 @@ html
                         
                         
 
-                        .u-pad--less-top                       
+                        .u-pad--less-top.t-center                       
                             
                             hr.mg-hr
                             
@@ -233,88 +231,13 @@ html
         
        
 
-        
+        //Subscribe
+        include includes/_subscribe.jade 
+
 
         // FOOTER SECTION                    
-        footer.row.has-padding
-            .content
-                ul.nav-footer.grid.grid--gutters
-                    li.grid-cell.size1of3
-                        h4 Products
-                        
-                        ul.nav-footer--list
-                            li: a.nav-footer--link(href="#") Analyze &mdash; for Social Media Analysts
-                            
-                            li: a.nav-footer--link(href="#") Track &mdash; for Marketers
-                            
-                            li: a.nav-footer--link(href="#") Discover &mdash; for Content Creators
-                    
-                    
-                    
-                    li.grid-cell
-                        h4 About
-                        
-                        ul.nav-footer--list
-                            li: a.nav-footer--link(href='#') Company
- 
-                            li: a.nav-footer--link(href='#') Customers
-                            
-                            li: a.nav-footer--link(href='#') Why Agencies love us
-    
-                            li: a.nav-footer--link(href='#') Our blog
-                            
-                            li: a.nav-footer--link(href='#') Press & News coverage
-                            
-                            li: a.nav-footer--link(href='#') Job openings
-                    
-                    
-                    
-                    li.grid-cell
-                        h4 Resources
-                        
-                        ul.nav-footer--list
-                            li: a.nav-footer--link(href="#") Articles
-                            
-                            li: a.nav-footer--link(href="#") Ebooks 
-                            
-                            li: a.nav-footer--link(href="#") Infographics 
-                            
-                            li: a.nav-footer--link(href="#") Interviews 
-                            
-                            li: a.nav-footer--link(href="#") Industry Reports 
-                            
-                            
-                            
-                    
-                    li.gird-cell 
-                        h4 Contact
-                        
-                        ul.nav-footer--list    
-                            li: a.nav-footer--link(href='#') Get in touch 
-                            
-                            li: a.nav-footer--link(href='#') Twitter
-                            
-                            li: a.nav-footer--link(href='#') Facebook
-                            
-                            li: a.nav-footer--link(href='#') Pinterest
-                            
-                            li: a.nav-footer--link(href='#') LinkedIn
-                            
-                            li: a.nav-footer--link(href='#') SlideShare
+        include includes/_footer.jade     
 
-                
-                
-                .grid.site-info-wrap
-                    .grid-cell
-                        p.site-info &copy; Unmetric 
-                        
-                        
-                    .grid-cell    
-                        p.victory &#9996;       
-                        
-                    .grid-cell
-                        p.site-links
-                            a(href="#") Privacy
 
         include includes/_foot.jade                                               
                             
