@@ -26,10 +26,18 @@
   <body class="theme--basic">
     <div class="header-rm">
       <!-- HEADER-->
-      <header class="header"><a href="posts.html" class="logo"> <img src="assets/i/unmetric-logo-white.png" alt="Unmetric logo" class="logo-image"></a><a href="#" class="menu-link"><span class="menu-icon"></span></a>
+      <header class="header"><a href="#" class="logo"> <img src="assets/i/unmetric-logo-white.png" alt="Unmetric logo" class="logo-image"></a><a href="#" class="menu-link"><span class="menu-icon"></span></a>
+        <form id="search" action="#" method="post">
+          <div id="label">
+            <label id="search-label" for="search-terms">search</label>
+          </div>
+          <div id="input"> 
+            <input type="text" name="search-terms" id="search-terms" placeholder="Search...">
+          </div>
+        </form>
         <nav class="nav-main 0is-hidden">
           <ul class="nav-main-wrap">
-            <li> <a href="#" class="more nav-main--link">All Posts<i class="icon-arrow-dropdown"></i></a>
+            <li> <a href="#" class="more nav-main--link">All Categories<i class="icon-arrow-dropdown"></i></a>
               <ul class="nav-main-dd">
                 <li><a href="posts.html" class="nav-main--link is-active">5 ways Chipotle creates an awesome social media strategy</a></li>
                 <li> <a href="post3.html" class="nav-main--link">Unmetric is now integrated with Oracle Social Cloud</a></li>
@@ -43,6 +51,12 @@
           </ul>
         </nav>
       </header>
+    </div>
+    <!--Fixed heder-->
+    <div class="fixed-header">
+      <div class="grid grid--center grid--gutter">
+        <div class="grid-cell size3of4"></div>
+      </div>
     </div>
     <section class="hero row u-pad--top-less">
       <div class="content">
@@ -71,15 +85,6 @@
             <p> With an amazing response rate of 54% and innovative content, Electrolux was able to engage their fans well above the industry average. This report is a summary of their performance on Facebook and Twitter.</p>
             <div class="box"><iframe src="//www.slideshare.net/slideshow/embed_code/key/ClrxoIR7rZ4SxO" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px">  <a href="//www.slideshare.net/unmetric/electrolux-social-media-report-for-q4-2015" title="Electrolux Social Media Report For Q4 2015" target="_blank"></a> </div></div>
             <p>To get reports like this delivered to your inbox, subscribe to our blog and we'll send you a round up once a week (don’t worry, we hate spam too). </p>
-            <div class="box">
-              <div class="control-wrap">
-                <div class="inline-form t-center">
-                  <input type="text" placeholder="Email address" id="input-text">
-                  <input type="submit" value="subscribe" class="btn btn-primary">
-                </div>
-              </div>
-              <p>If you would like to start a trial of Unmetric Analyze, the tool we used to create these reports in a matter of minutes, get started by filling the form below.  </p>
-            </div>
             <div class="box u-pad--less is-hidden">
               <form>
                 <h3 class="t-center">Start your free 3 day trial now</h3>
@@ -177,9 +182,10 @@
               </form>
             </div>
             <div class="u-pad--less-top t-center">
-              <hr class="mg-hr"><img src="assets/i/ranjani-raghupathi.jpg" alt="Ranjani" class="box-image box-avatar">
-              <h3>Posted by</h3><a href="ranjani.html">Ranjani Raghupathi</a>
-              <p class="light">A writer, a dreamer and a foodie all rolled in to one, Ranjani enjoys her not-so-secret affair with marketing and social media metrics. She plays cupid with words and marries them so they can live happily ever after as beautiful sentences. You can find her at any restaurant serving great food or at a book store sneaking a peak at the latest arrivals.</p>
+              <hr class="mg-hr">
+              <div class="author_img"> <img src="assets/i/ranjani-raghupathi.jpg" alt="Ranjani" class="box-image box-avatar"></div>
+              <h3>Ranjani Raghupathi</h3>
+              <p>A writer, a dreamer and a foodie all rolled in to one, Ranjani enjoys her not-so-secret affair with marketing and social media metrics. She plays cupid with words and marries them so they can live happily ever after as beautiful sentences. You can find her at any restaurant serving great food or at a book store sneaking a peak at the latest arrivals. Follow her on <a href="#">Twitter </a> and <a href="#">LinkedIn:</a></p>
             </div>
           </div>
         </div>
@@ -263,9 +269,9 @@
         </div>
       </div>
     </footer>
-    <script src="assets/jquery-2.1.3.min.js"></script>
-    <script src="assets/js/functions.js"></script>
-    <script src="assets/js/uilang.js"></script><code>
+    <script src="../assets/js/jquery-2.1.3.min.js"> </script>
+    <script src="../assets/js/functions.js"></script>
+    <script src="../assets/js/uilang.js"></script><code>
 
 clicking on ".more" toggles class "visible" on ".nav-main-dd"
 

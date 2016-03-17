@@ -1,5 +1,78 @@
 //Unmetric Post 
 
+//Expand search bar
+
+
+#search {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+#label {
+	margin-top: 15px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    z-index: 20;
+}
+
+#label label {
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    background: url("../i/search4.svg") no-repeat;
+    background-size: 20px;
+    font-size: 0;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+#input {
+	position: relative;
+    top: -40px;
+    left: 190px;
+    height: 40px;
+    z-index: 5;
+}
+
+#input input {
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: -450px;
+    height: 100%;
+    margin: 0;
+    padding: 0 10px;
+    border: none;
+    background-color: white;
+    color: #5856D8;
+    font-size: 18px;
+    width: 300px;
+	visibility: hidden;
+	transform: translateX(10px);
+}
+
+
+
+#input input:focus {
+    border: 1px solid #5856D8;
+    box-shadow: 0 1px 0 #5856D8;
+}
+
+
+
+#input input.focus {
+    z-index: 20;
+    visibility: visible;
+    transition: 1s;
+}
+
+
+
 
 //Main 
 
@@ -254,6 +327,17 @@
 
 
 
+//Fixed header
+
+.fixed-header{
+	display: none;
+	background: blue;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 5;
+	height: 80px;
+}
 
 
 

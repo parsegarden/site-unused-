@@ -15,12 +15,21 @@ html
                 a.menu-link(href="#")
                     span.menu-icon
                 
+                
+                form#search(action="#" method="post")
+                    #label
+                        
+                        label#search-label(for="search-terms") search
+                        
+                    #input 
+                        input(type="text" name="search-terms" id="search-terms" placeholder="Search...")
+
 
 
                 nav.nav-main.0is-hidden
                     ul.nav-main-wrap
                         li 
-                            a.more.nav-main--link(href="#") All Posts
+                            a.more.nav-main--link(href="#") All Categories
                                 i.icon-arrow-dropdown
                             
                             ul.nav-main-dd
@@ -45,7 +54,10 @@ html
                             a.nav-main--link
                                 .btn.btn-secondary.t-weight--m(href="#") Subscribe    
 
-               
+        
+        include includes/_fixed-nav.jade   
+
+
         section.hero.row.u-pad--top-less
             .content
                 .grid.grid--center
@@ -276,15 +288,16 @@ html
                         
                             hr.mg-hr
 
-                            
-                            img.box-image.box-avatar(src="assets/i/avatars/aishwarya-krishnamurthy.png", alt="Aishwarya krishnamurthy.png") 
+                            .author_img
+                                img.box-image.box-avatar(src="assets/i/avatars/aishwarya-krishnamurthy.png", alt="Aishwarya krishnamurthy.png") 
                        
-                            h3 Posted by
-                           
-                            a(href="#") Aishwarya Krishnamurthy 
+                            h3  Aishwarya Krishnamurthy 
 
                            
-                            p When she's not at the Unmetric office, knee deep in social media metrics and being a marketing ninja, you can find Aishwarya curled up in bed with a book and her basset hound - Tristan.
+                            p When she's not at the Unmetric office, knee deep in social media metrics and being a marketing ninja, you can find Aishwarya curled up in bed with a book and her basset hound - Tristan. Follow her on 
+                                a(href="#") Twitter 
+                                |  and 
+                                a(href="#") LinkedIn:
 
  
         

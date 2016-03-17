@@ -103,6 +103,8 @@ button {}
     z-index: 1;
 }
 
+
+
 .parallal-input{
     display: flex;
     align-items: center;
@@ -116,6 +118,7 @@ button {}
         border-radius: 5px;
         background: transparent;
         padding-left: 10px;
+        font-size: 18px;
     }
     ::-webkit-input-placeholder {
    color: white;

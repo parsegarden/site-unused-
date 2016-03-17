@@ -6,7 +6,7 @@ html
         .header-rm
             // HEADER
             header.header
-                a.logo(href="posts.html") 
+                a.logo(href="#") 
                     img.logo-image(src="assets/i/unmetric-logo-white.png" alt="Unmetric logo")
                 
 
@@ -14,12 +14,24 @@ html
                 a.menu-link(href="#")
                     span.menu-icon
                 
+                
+                form#search(action="#" method="post")
+                    #label
+                        
+                        label#search-label(for="search-terms") search
+                        
+                    #input 
+                        input(type="text" name="search-terms" id="search-terms" placeholder="Search...")
+
+
 
 
                 nav.nav-main.0is-hidden
                     ul.nav-main-wrap
+
+
                         li 
-                            a.more.nav-main--link(href="#") All Posts
+                            a.more.nav-main--link(href="#") All Categories
                                 i.icon-arrow-dropdown
                             
                             ul.nav-main-dd
@@ -44,7 +56,9 @@ html
                             a.nav-main--link
                                 .btn.btn-secondary.t-weight--m(href="#") Subscribe    
 
-               
+        
+        include includes/_fixed-nav.jade       
+        
         
         section.hero.row.u-pad--top-less
             .content
@@ -109,20 +123,7 @@ html
 
                         p To get reports like this delivered to your inbox, subscribe to our blog and we'll send you a round up once a week (don’t worry, we hate spam too). 
 
-                        
-                        .box
-                            .control-wrap
-                                .inline-form.t-center
-                                
-                                    input(type="text" placeholder="Email address" id="input-text")
-                                
-                                    input.btn.btn-primary(type="submit" value="subscribe")  
-
-
-
-                            p If you would like to start a trial of Unmetric Analyze, the tool we used to create these reports in a matter of minutes, get started by filling the form below.  
-
-                        
+                
 
                         .box.u-pad--less.is-hidden
                             form
@@ -244,13 +245,16 @@ html
                             hr.mg-hr
 
            
-                            img.box-image.box-avatar(src="assets/i/ranjani-raghupathi.jpg", alt="Ranjani") 
-                       
-                            h3 Posted by
+                            .author_img 
+                                img.box-image.box-avatar(src="assets/i/ranjani-raghupathi.jpg", alt="Ranjani") 
+    
                            
-                            a(href="ranjani.html") Ranjani Raghupathi
+                            h3 Ranjani Raghupathi
                            
-                            p.light A writer, a dreamer and a foodie all rolled in to one, Ranjani enjoys her not-so-secret affair with marketing and social media metrics. She plays cupid with words and marries them so they can live happily ever after as beautiful sentences. You can find her at any restaurant serving great food or at a book store sneaking a peak at the latest arrivals.
+                            p A writer, a dreamer and a foodie all rolled in to one, Ranjani enjoys her not-so-secret affair with marketing and social media metrics. She plays cupid with words and marries them so they can live happily ever after as beautiful sentences. You can find her at any restaurant serving great food or at a book store sneaking a peak at the latest arrivals. Follow her on 
+                                a(href="#") Twitter 
+                                |  and 
+                                a(href="#") LinkedIn:
  
         
         //Subscribe

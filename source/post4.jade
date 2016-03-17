@@ -15,12 +15,21 @@ html
                 a.menu-link(href="#")
                     span.menu-icon
                 
+                
+                form#search(action="#" method="post")
+                    #label
+                        
+                        label#search-label(for="search-terms") search
+                        
+                    #input 
+                        input(type="text" name="search-terms" id="search-terms" placeholder="Search...")
+
 
 
                 nav.nav-main.0is-hidden
                     ul.nav-main-wrap
                         li 
-                            a.more.nav-main--link(href="#") All Posts
+                            a.more.nav-main--link(href="#") All Categories
                                 i.icon-arrow-dropdown
                             
                             ul.nav-main-dd
@@ -48,6 +57,7 @@ html
                                         
                         
                         
+        include includes/_fixed-nav.jade   
 
                
         section.hero.row.u-pad--top-less
@@ -69,10 +79,9 @@ html
                 .grid.grid--center.main
                     .grid-cell.col-6
 
-                        p.light
-                            em A version of this article first appeared on 
+                        p.light.t-italic A version of this article first appeared on 
                             a.blog-link(href="#") Social Times
-                            em  on February 5th, 2016. This article includes data up to February 8th so the numbers have changed slightly.
+                            |  on February 5th, 2016. This article includes data up to February 8th so the numbers have changed slightly.
 
                         br    
                         
@@ -283,16 +292,17 @@ html
 
                         
                             hr.mg-hr
-
                             
-                            img.box-image.box-avatar(src="assets/i/avatars/peter.png", alt="Peter") 
-                       
-                            h3 Posted by
+                            .author_img 
+                                img.box-image.box-avatar(src="assets/i/avatars/peter.png", alt="Peter") 
+                            
+                            h3 Peter Claridge 
                            
-                            p.light Peter is an avid writer and blogger, gets excited by social media metrics and dreams that one day he will play for Manchester United.
-
-                            p Follow him on twitter: 
-                                a(href="#") Peter Claridge 
+                            p Peter is an avid writer and blogger, gets excited by social media metrics and dreams that one day he will play for Manchester United. Follow him on 
+                                a(href="#") Twitter 
+                                |  and 
+                                a(href="#") LinkedIn: 
+                    
 
 
         
