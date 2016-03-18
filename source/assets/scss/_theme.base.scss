@@ -24,6 +24,8 @@ body.theme--basic::before{
         @include linear-gradient(#5658D8, #27DCF9);
     }
 }
+
+
 .theme--basic .header-rm{
     .header{
         background: transparent;
@@ -31,6 +33,7 @@ body.theme--basic::before{
         height: 0;
     }
 }
+
 
 //Home page
 
