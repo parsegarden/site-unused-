@@ -34,3 +34,21 @@ $(document).ready(function(){
     });
 
 });
+
+
+
+//Mobile nav
+
+$(function() {
+  mobileNav();
+});
+
+
+
+function mobileNav() {
+  $('.menu-link').on('click', function(){
+    var status = $(this).hasClass('is-open');
+    if(status){ $('.menu-link, .nav-main').removeClass('is-open'); }
+    else { $('.menu-link, .nav-main').addClass('is-open'); }
+  });
+}

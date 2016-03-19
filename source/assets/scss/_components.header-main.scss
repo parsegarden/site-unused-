@@ -140,8 +140,8 @@
         @include position(absolute, 0 0 null null);
         @include size(48px);
         
-        // Make it cross when hovered
-        &:hover {
+        // Make it cross when added class is-open
+        &.is-open {
             .menu-icon {
                 background: transparent; 
                    

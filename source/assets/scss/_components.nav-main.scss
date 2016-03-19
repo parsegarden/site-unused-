@@ -3,19 +3,32 @@
 \* -------------------- */
 
 .nav-main {
-    @include position(fixed, 42px 0 0 0);
+    
     background-color: #4474DE;
-    display: none;
+    overflow: auto;
+    visibility: hidden;
     z-index: 9;
+    transform: translateY(100%);
+    transition: all 0.10s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    
     
     
     @include media-query(hd) {
         @include position(relative, 0 0 0 0);
         background: none;
-        display: block;
+        overflow: visible;
+        visibility: visible;
     }
 }
-  
+
+.nav-main.is-open {
+    visibility: visible;
+    transform: translateY(-13%);
+
+
+}
+
 
     .nav-main-wrap{
         
@@ -86,6 +99,7 @@
 
 
 .nav-main-dd{
+
     
     @include media-query(hd) {
         position: absolute;

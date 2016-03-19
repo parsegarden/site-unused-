@@ -24,40 +24,10 @@ html
                     #input 
                         input(type="text" name="search-terms" id="search-terms" placeholder="Search...")
 
+                
+                //Nav
 
-
-                nav.nav-main.0is-hidden
-                    ul.nav-main-wrap
-                        
-                        li 
-                            a.more.nav-main--link(href="#") All Categories
-                                i.icon-arrow-dropdown
-                            
-                            ul.nav-main-dd
-                                li: a.nav-main--link.is-active(href="#") Campaign Analysis
-                            
-                                    
-                                li 
-                                    a.nav-main--link(href="post3.html") Events & Real Time Marketing
-                                        
-                                    
-                                li 
-                                    a.nav-main--link(href="post1.html") Free Ebooks & Guides
-
-
-                                li: a.nav-main--link.is-active(href="post4.html") How To
-                            
-                                    
-                                li 
-                                    a.nav-main--link(href="post2.html") Inside Unmetric
-
-                                li 
-                                    a.nav-main--link(href="post2.html") Social Strategies
-
-
-                        li
-                            a.nav-main--link(href="#")
-                                button.btn.btn-secondary.t-weight--m Subscribe     
+                include includes/_nav.jade     
                                         
                                         
         include includes/_fixed-nav.jade  
