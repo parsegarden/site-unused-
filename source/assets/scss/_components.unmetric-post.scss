@@ -133,6 +133,11 @@
 
 	h2{
 		margin: 0;
+		
+		@include media-query(palm){
+			margin-bottom: 20px;
+		}	
+
 	}
 	
 	img{
@@ -199,6 +204,42 @@
 
 
 
+//Article link 
+
+.article_link:hover a h2{
+	color: #3E84E2;
+}
+
+
+.article_link:hover .article_link--image{
+
+	display: block;
+	
+}
+
+.article_link--image{
+	
+	@include media-query(hd){
+		@include linear-gradient(to bottom right,#5856D8, #00FBD3);
+		display: none;
+		opacity: 0.6;
+		height: 160px;
+		width: 300px;
+		position: absolute;
+		right: 115px;
+		z-index: 3;
+	}
+}	
+
+.article-title{
+	line-height: 1;
+}
+
+
+
+
+
+
 
 
 //Section Download Link
@@ -251,39 +292,6 @@
 
 
 
-
-
-
-//Article link 
-
-.article_link:hover a h2{
-	color: #3E84E2;
-}
-
-
-.article_link:hover .article_link--image{
-
-	display: block;
-	
-}
-
-.article_link--image{
-	
-	@include media-query(hd){
-		@include linear-gradient(to bottom right,#5856D8, #00FBD3);
-		display: none;
-		opacity: 0.6;
-		height: 160px;
-		width: 300px;
-		position: absolute;
-		right: 115px;
-		z-index: 3;
-	}
-}	
-
-.article-title{
-	line-height: 1;
-}
 
 
 
@@ -358,17 +366,22 @@
 	position: fixed;
 	top: 0;
 	z-index: 5;
-	padding: 0;
+	padding: 10px;
 
 
 	@include media-query(palm){
-		padding: 3px 5px 15px 5px;
+		padding: 0 0 5px 0;
 	}
 }
 
 .fixed-ad-content {
 	display: flex;
-	margin-top: 34px;
+	position: relative;
+	top: 18px;
+
+	@include media-query(palm){
+		top: -5px;
+	}
 
 	span{
 		color: white;
