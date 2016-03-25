@@ -2,13 +2,13 @@
    #LINKS
 \* -------------------- */
 
-a, 
+a,
 [class$="-link"] {
     color: $link-color;
     cursor: pointer;
     text-decoration: none;
     outline: none !important;
-    
+
 }
 
 
@@ -16,13 +16,13 @@ a,
 
 a {
     &:hover {
-        text-decoration: none;    
+        text-decoration: none;
     }
-    
+
     &:focus {
-        outline: none !important;    
+        outline: none !important;
     }
-    
+
     &:hover,
     &:active {
         outline: 0;
@@ -36,15 +36,20 @@ a[class^='social_button-'] {
     transition: background, 0.3s;
     background: #d8d9e5;
     color: #022550;
-    padding: 6px 12px;
+    padding: 6px 15px;
     margin-right: 1px;
     text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover{
+        color: white;
+    }
 }
 
 // Underline on link
 
 .blog-link{
     border-bottom: 1px solid #666666;
-    color: #666; 
-    cursor: pointer;  
+    color: #666;
+    cursor: pointer;
 }

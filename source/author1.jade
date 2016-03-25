@@ -6,8 +6,7 @@ html
         .header-rm
             // HEADER
             header.header
-                
-                a.logo(href="posts.html") 
+                a.logo(href="#") 
                     img.logo-image(src="assets/i/unmetric-logo-white.png" alt="Unmetric logo")
                 
 
@@ -15,35 +14,24 @@ html
                 a.menu-link(href="#")
                     span.menu-icon
                 
+                
+                form#search(action="#" method="post")
+                    #label
+                        
+                        label#search-label(for="search-terms") search
+                        
+                    #input 
+                        input(type="text" name="search-terms" id="search-terms" placeholder="Search...")
 
 
-                nav.nav-main.0is-hidden
-                    ul.nav-main-wrap
-                        li 
-                            a.more.nav-main--link(href="#") All Posts
-                                i.icon-arrow-dropdown
-                            
-                            ul.nav-main-dd
-                                li: a.nav-main--link.is-active(href="posts.hmtl") 5 ways Chipotle creates an awesome social media strategy
-                            
-                                    
-                                li 
-                                    a.nav-main--link(href="post5.html") Unmetric is now integrated with Oracle Social Cloud
-                                        
-                                    
-                                li 
-                                    a.nav-main--link(href="post2.html") Top Home Appliance Brands On Social Media Q4 2015
 
 
-                                li: a.nav-main--link.is-active(href="post6.html") 367% Increase in Super Bowl Content By Brands Since 2012
-                            
-                                    
-                                li 
-                                    a.nav-main--link(href="post4.html") Analyzing top APAC and MEA Aviation brands on social media: Key Learnings
+                //Nav
 
-                        li
-                            a.nav-main--link
-                                .btn.btn-secondary.t-weight--m(href="#") Subscribe    
+                include includes/_nav.jade  
+
+    
+        include includes/_fixed-nav.jade    
 
                
         
@@ -142,7 +130,9 @@ html
                                             button.btn.w-btn.btn-secondary.t-weight--m Older Posts  
 
         
-
+        
+        //Nav
+        include includes/_nav-footer.jade  
 
 
         // FOOTER SECTION                    
