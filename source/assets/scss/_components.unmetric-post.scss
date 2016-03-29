@@ -28,8 +28,8 @@
     left: 10px;
     width: 60px;
     height: 60px;
-    background: url("../i/search4.svg") no-repeat;
-    background-size: 20px;
+    background: url("../i/search-icon.png") no-repeat;
+    background-size: 25px;
     font-size: 0;
     text-indent: -9999px;
     cursor: pointer;
@@ -81,12 +81,28 @@
 
 
 //socila link
+
+.post-action{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    padding-top: 26px;
+    border-radius: 3px 3px 0 0;
+    transition: top 0.2s ease-in-out;
+    background: white;
+    box-shadow: 0 0 1px rgba(0,0,0,.44);
+    z-index: 5;
+
+}
+
+
+
 .social_buttons-wrap{
     margin: -20px 0 30px 0;
     text-align: center;
     padding: 10px;
-    height: 100px;
-    z-index: 2;
     white-space: nowrap;
 
     @include media-query(palm){
@@ -134,6 +150,14 @@
         background-color: $instagram-color;
     }
 }
+
+
+// we'll add this class using javascript
+.nav-up {
+  top: -60px; // same as header height. use variables in LESS/SASS
+}
+
+
 
 
 
