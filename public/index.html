@@ -25,12 +25,20 @@
   </head>
   <body class="hm--mod">
     <!-- HEADER-->
-    <header class="header 0is-hidden"><a href="javascript:void(0)" class="logo"> <img src="assets/i/unmetric-logo-white.png" alt="Unmetric logo" class="logo-image"></a><a href="javascript:void(0)" class="menu-link"><span class="menu-icon"></span></a>
-      <nav class="nav-main">
+    <header class="header"><a href="#" class="logo"> <img src="assets/i/unmetric-logo-white.png" alt="Unmetric logo" class="logo-image"></a><a href="#" class="menu-link"><span class="menu-icon"></span></a>
+      <form id="search" action="#" method="post">
+        <div id="label">
+          <label id="search-label" for="search-terms">search</label>
+        </div>
+        <div id="input"> 
+          <input type="text" name="search-terms" id="search-terms" placeholder="Search...">
+        </div>
+      </form>
+      <nav class="nav-main 0is-hidden">
         <ul class="nav-main-wrap">
-          <li> <a href="javascript:void(0)" class="more nav-main--link">Products <i class="icon-arrow-dropdown"></i></a>
+          <li> <a href="#" class="more nav-main--link">Products<i class="icon-arrow-dropdown"></i></a>
             <ul class="nav-main-dd">
-              <li> <a href="javascript:void(0)" class="nav-main--link is-active"> <span class="menu-analyze">Analyze<i class="icon-arrow-right arrow-right"></i></span><br><span class="nav-main--desc">Analytics for social media analysts</span></a></li>
+              <li> <a href="javascript:void(0)" class="nav-main--link"> <span class="menu-analyze">Analyze<i class="icon-arrow-right arrow-right"></i></span><br><span class="nav-main--desc">Analytics for social media analysts</span></a></li>
               <li> <a href="javascript:void(0)" class="nav-main--link"> <span class="menu-track">Track<i class="icon-arrow-right arrow-right"></i></span><br><span class="nav-main--desc">Keep an eye on your competition</span></a></li>
               <li> <a href="javascript:void(0)" class="nav-main--link"> <span class="menu-discover">Discover<i class="icon-arrow-right arrow-right"></i></span><br><span class="nav-main--desc">Find inspiration to create content</span></a></li>
             </ul>
@@ -38,219 +46,115 @@
           <li><a href="javascript:void(0)" class="nav-main--link">About</a></li>
           <li><a href="javascript:void(0)" class="nav-main--link">Contact</a></li>
           <li><a href="javascript:void(0)" class="nav-main--link">Sign In</a></li>
+          <li><a href="javascript:void(0)" class="nav-main--link"> 
+              <button class="btn btn-secondary t-weight--m">LOGIN</button></a></li>
         </ul>
       </nav>
     </header>
     <section class="hero row u-pad--top-less is-tall 0is-hidden">
-      <div class="content t-center u-pad-less-top">
-        <h1 class="hero-title">Take Your Competition Head On  </h1>
+      <div class="content t-center">
+        <h1 class="hero-title">Out-market Your Competition </h1>
+        <div class="col-4">
+          <p class="t-white hero-copy t-weight--book">Thousands of real-time marketers at hundreds of leading brands and agencies across 20+ countries use Unmetric to compete and win.</p>
+        </div>
+        <div class="t-center">
+          <p class="hero-meet--intro"><img src="assets/i/left-arrow.svg" alt="#" class="arrow-product--left"><span class="hero-intro t-weight--m">MEET OUR PRODUCTS</span><img src="assets/i/right-arrow.svg" alt="#" class="arrow-product--right"></p>
+        </div>
         <div class="grid grid--gutter">
-          <div class="grid-cell box hero-list--item"><a class="box-link hero-list--link">
-              <h3 class="hero-list--heading">Social Media Analysts</h3>
-              <p class="box-copy"> <b class="hero-list--copy">Analyze </b>your competition’s social content and campaign in depth.</p><span class="btn btn-small btn-primary">Learn more about Analyze<i class="icon-arrow-right"></i></span></a></div>
-          <div class="grid-cell box hero-list--item"><a class="box-link hero-list--link">  
-              <h3 class="hero-list--heading">Marketers </h3>
-              <p class="box-copy"> <b class="hero-list--copy">Track</b>   your competitors' social media marketing in real time.</p><span class="btn btn-small btn-primary">Learn more about Track<i class="icon-arrow-right"></i></span></a></div>
-          <div class="grid-cell box hero-list--item"><a class="box-link hero-list--link">  
-              <h3 class="billboard-list--heading">Content Creators</h3>
-              <p class="box-copy"> <b class="hero-list--copy"> Discover</b>   ideas and inspiration to create engaging social content</p><span class="btn btn-small btn-primary">Learn more about Discover<i class="icon-arrow-right"></i></span></a></div>
+          <div class="box hero-list--item"><a class="box-link hero-list--link">
+              <h3 class="hero-list--heading">Media analysts</h3>
+              <p class="t-white">Analyze your competition’s social content and campaign in depth.</p><span class="btn btn-small btn-primary t-weight--m">Learn more about Analyze<i class="icon-arrow-right"></i></span></a></div>
+          <div class="box hero-list--item"><a class="box-link hero-list--link">  
+              <h3 class="hero-list--heading">Brand Manager</h3>
+              <p class="t-white">Track your competitors' social media marketing in real time.</p><span class="btn btn-small btn-primary t-weight--m">Learn more about Track<i class="icon-arrow-right"></i></span></a></div>
+          <div class="box hero-list--item"><a class="box-link hero-list--link">  
+              <h3 class="hero-list--heading">Content Creators</h3>
+              <p class="t-white">Discover ideas and inspiration to create engaging social content</p><span class="btn btn-primary t-weight--m">Learn more about Discover<i class="icon-arrow-right"></i></span></a></div>
         </div>
-        <div class="logo-list-wrap">
-          <ul class="logo-list">
-            <li class="logo-list-item logo-list-item--gm logo-list-c"><span>GM</span></li>
-            <li class="logo-list-item logo-list-item--ls logo-list-c"><span>Lower's</span></li>
-            <li class="logo-list-item logo-list-item--ah logo-list-c"><span>Aa</span></li>
-            <li class="logo-list-item logo-list-item--lo logo-list-c"><span>Loreal</span></li>
-            <li class="logo-list-item logo-list-item--un logo-list-c"><span>Unilever</span></li>
-            <li class="logo-list-item logo-list-item--og logo-list-c"><span>Og</span></li>
-            <li class="logo-list-item logo-list-item--hm logo-list-c"><span>H.M   </span></li>
-          </ul>
-        </div>
-        <p class="t-white">Thousands of real-time marketers at hundreds of leading brands and agencies <span class="break">across 20+ countries use Unmetric to compete and win                    </span></p>
       </div>
     </section>
+    <div class="row group logos">
+      <div class="logo-list-wrap">
+        <ul class="logo-list">
+          <li class="logo-list-item logo-list-item--gm logo-list-c"><span>GM</span></li>
+          <li class="logo-list-item logo-list-item--ls logo-list-c"><span>Lower's</span></li>
+          <li class="logo-list-item logo-list-item--ah logo-list-c"><span>Aa</span></li>
+          <li class="logo-list-item logo-list-item--lo logo-list-c"><span>Loreal</span></li>
+          <li class="logo-list-item logo-list-item--un logo-list-c"><span>Unilever</span></li>
+          <li class="logo-list-item logo-list-item--og logo-list-c"><span>Og</span></li>
+          <li class="logo-list-item logo-list-item--hm logo-list-c"><span>H.M                    </span></li>
+        </ul>
+      </div>
+    </div>
     <!-- Testimonials                               -->
-    <section class="row u-pad--top-less">
-      <div class="content t-center">
-        <div class="testimonial-wrap">
-          <blockquote class="testimonial-content testimonial-content--1">
-            <div class="testimonial-text-wrap">
-              <q class="testimonial-text"><span class="d-quotes d-quotes--left">&ldquo;</span><span>Unmetric has made it simple to get a great pulse on <span class="break">competitive performance in a matter of minutes.<span class="d-quotes d-quotes--right">&rdquo; </span></span></span></q>
-              <p class="testimonial-author">Christopher Brown, Director of Social Media Strategy</p>
-            </div><a href="javascript:void(0)" class="testimonial-link">   <img src="assets/i/avatars/mathis.png" alt="Christopher Brown" class="testimonial-avatar"><br><img src="assets/i/logos/kinetic.png" class="testimonial-logo"></a>
-          </blockquote>
-          <blockquote class="testimonial-content testimonial-content--2">
-            <div class="testimonial-text-wrap">
-              <q class="testimonial-text"><span class="d-quotes d-quotes--left">&ldquo;</span><span>Being able to keep tabs on communities and their publishing performance <span class="break">has been faster and easier using Unmetric than other tools.                                    <span class="d-quotes d-quotes--right">&rdquo; </span></span></span></q>
-              <p class="testimonial-author">Christopher Brown, Director of Social Media Strategy</p>
-            </div><a href="javascript:void(0)" class="testimonial-link"><img src="assets/i/avatars/christopher.png" alt="CHRISTOPHER BROWN" class="testimonial-avatar"><br><img src="assets/i/logos/logo-story.png" class="testimonial-logo"></a>
-          </blockquote>
-          <blockquote class="testimonial-content testimonial-content--3 is-active">
-            <div class="testimonial-text-wrap">
-              <q class="testimonial-text"><span class="d-quotes d-quotes--left">&ldquo;</span><span>Unmetric has made it simple to get a great pulse on <span class="break">competitive performance in a matter of minutes.<span class="d-quotes d-quotes--right">&rdquo; </span></span></span></q>
-              <p class="testimonial-author">Christopher Brown, Director of Social Media Strategy</p>
-            </div><a href="javascript:void(0)" class="testimonial-link"><img src="assets/i/avatars/chrissy.png" alt="OMRI DUEK, MANAGER" class="testimonial-avatar"><br><img src="assets/i/logos/logo-mrm.png" class="testimonial-logo"></a>
-          </blockquote>
-          <blockquote class="testimonial-content testimonial-content--4">
-            <div class="testimonial-text-wrap">
-              <q class="testimonial-text"><span class="d-quotes d-quotes--left">&ldquo;</span><span>Unmetric has made it simple to get a great pulse on <span class="break">competitive performance in a matter of minutes.<span class="d-quotes d-quotes--right">&rdquo; </span></span></span></q>
-              <p class="testimonial-author">Christopher Brown, Director of Social Media Strategy</p>
-            </div><a href="javascript:void(0)" class="testimonial-link"><img src="assets/i/avatars/omri.png" alt="Christopher Brown" class="testimonial-avatar"><br><img src="assets/i/logos/logo-cococola.png" class="testimonial-logo"></a>
-          </blockquote>
-          <blockquote class="testimonial-content testimonial-content--5">
-            <div class="testimonial-text-wrap">
-              <q class="testimonial-text"><span class="d-quotes d-quotes--left">&ldquo;</span><span>Unmetric has made it simple to get a great pulse on <span class="break">competitive performance in a matter of minutes.<span class="d-quotes d-quotes--right">&rdquo; </span></span></span></q>
-              <p class="testimonial-author">Christopher Brown, Director of Social Media Strategy</p>
-            </div><a href="javascript:void(0)" class="testimonial-link"><img src="assets/i/avatars/melvin.png" alt="MELVIN LEONG" class="testimonial-avatar"><br><img src="assets/i/logos/logo-changi.png" class="testimonial-logo"></a>
-          </blockquote>
+    <section class="row group">
+      <div class="testimonial u-pad--top-less">
+        <div class="layer"></div>
+        <div class="content t-center">
+          <div class="testimonial-wrap">
+            <blockquote class="testimonial-content testimonial-content--1">
+              <div class="testimonial-text-wrap">
+                <q class="testimonial-text"><span class="d-quotes d-quotes--left">&ldquo;</span><span>Unmetric has made it simple to get a great pulse on <span class="break">competitive performance in a matter of minutes.<span class="d-quotes d-quotes--right">&rdquo; </span></span></span></q>
+                <p class="testimonial-author">Christopher Brown, Director of Social Media Strategy</p>
+              </div><a href="javascript:void(0)" class="testimonial-link">   <img src="assets/i/avatars/mathis.png" alt="Christopher Brown" class="testimonial-avatar"><br><img src="assets/i/logos/kinetic.png" class="testimonial-logo"></a>
+            </blockquote>
+            <blockquote class="testimonial-content testimonial-content--2">
+              <div class="testimonial-text-wrap">
+                <q class="testimonial-text"><span class="d-quotes d-quotes--left">&ldquo;</span><span>Being able to keep tabs on communities and their publishing performance <span class="break">has been faster and easier using Unmetric than other tools.                                    <span class="d-quotes d-quotes--right">&rdquo; </span></span></span></q>
+                <p class="testimonial-author">Christopher Brown, Director of Social Media Strategy</p>
+              </div><a href="javascript:void(0)" class="testimonial-link"><img src="assets/i/avatars/christopher.png" alt="CHRISTOPHER BROWN" class="testimonial-avatar"><br><img src="assets/i/logos/logo-story.png" class="testimonial-logo"></a>
+            </blockquote>
+            <blockquote class="testimonial-content testimonial-content--3 is-active">
+              <div class="testimonial-text-wrap">
+                <q class="testimonial-text"><span class="d-quotes d-quotes--left">&ldquo;</span><span>Unmetric has made it simple to get a great pulse on <span class="break">competitive performance in a matter of minutes.<span class="d-quotes d-quotes--right">&rdquo; </span></span></span></q>
+                <p class="testimonial-author">Christopher Brown, Director of Social Media Strategy</p>
+              </div><a href="javascript:void(0)" class="testimonial-link"><img src="assets/i/avatars/chrissy.png" alt="OMRI DUEK, MANAGER" class="testimonial-avatar"><br><img src="assets/i/logos/logo-mrm.png" class="testimonial-logo"></a>
+            </blockquote>
+            <blockquote class="testimonial-content testimonial-content--4">
+              <div class="testimonial-text-wrap">
+                <q class="testimonial-text"><span class="d-quotes d-quotes--left">&ldquo;</span><span>Unmetric has made it simple to get a great pulse on <span class="break">competitive performance in a matter of minutes.<span class="d-quotes d-quotes--right">&rdquo; </span></span></span></q>
+                <p class="testimonial-author">Christopher Brown, Director of Social Media Strategy</p>
+              </div><a href="javascript:void(0)" class="testimonial-link"><img src="assets/i/avatars/omri.png" alt="Christopher Brown" class="testimonial-avatar"><br><img src="assets/i/logos/logo-cococola.png" class="testimonial-logo"></a>
+            </blockquote>
+            <blockquote class="testimonial-content testimonial-content--5">
+              <div class="testimonial-text-wrap">
+                <q class="testimonial-text"><span class="d-quotes d-quotes--left">&ldquo;</span><span>Unmetric has made it simple to get a great pulse on <span class="break">competitive performance in a matter of minutes.<span class="d-quotes d-quotes--right">&rdquo; </span></span></span></q>
+                <p class="testimonial-author">Christopher Brown, Director of Social Media Strategy</p>
+              </div><a href="javascript:void(0)" class="testimonial-link"><img src="assets/i/avatars/melvin.png" alt="MELVIN LEONG" class="testimonial-avatar"><br><img src="assets/i/logos/logo-changi.png" class="testimonial-logo"></a>
+            </blockquote>
+          </div>
         </div>
       </div>
     </section>
-    <section class="row u-pad--top-less u-overflow">
-      <div class="content t-center">
-        <h2>Demand More From Your Social Analytics Provider</h2>
-        <p class="intro">See why people are choosing Unmetric</p>
-        <table class="data-table">
-          <tbody>
-            <tr>
-              <th></th>
-              <th> <b>Unmetric Analyze</b></th>
-              <th>Other social analyze providers</th>
-              <th>Other command center solutions</th>
-              <th>Other content creation apps</th>
-            </tr>
-            <tr>
-              <td>No Audience Size Penalties<span class="tooltip-wrap"><i class="icon-help"></i><span class="tooltip">Unmetric does not charge you extra for your success or if you want to monitor brands with large audiences.</span></span></td>
-              <td> <i class="icon-check-circle"></i></td>
-              <td>&mdash;</td>
-              <td>&mdash;</td>
-              <td>&mdash;</td>
-            </tr>
-            <tr>
-              <td>Unrivaled Campaign Intelligence  <span class="tooltip-wrap"><i class="icon-help"></i><span class="tooltip">Unmetric uses human analysts to identify and tag campaigns and content in a way no algorithm can.</span></span></td>
-              <td> <i class="icon-check-circle"></i></td>
-              <td>&mdash;</td>
-              <td>&mdash;</td>
-              <td>&mdash;        </td>
-            </tr>
-            <tr>
-              <td>Promoted Content Detection   <span class="tooltip-wrap"><i class="icon-help"></i><span class="tooltip">Unmetric will dissect your competitors' paid content strategies on Facebook and Twitter.</span></span></td>
-              <td> <i class="icon-check-circle"></i></td>
-              <td><i class="icon-check-circle"></i></td>
-              <td>&mdash;</td>
-              <td>&mdash;          </td>
-            </tr>
-            <tr>
-              <td>1-Click Automated Reporting & Alerts <span class="tooltip-wrap"><i class="icon-help"></i><span class="tooltip">All your analysis and comparison reports created automatically in Powerpoint and Excel."</span></span></td>
-              <td> <i class="icon-check-circle"></i></td>
-              <td>&mdash;</td>
-              <td>&mdash;</td>
-              <td>&mdash;                            </td>
-            </tr>
-            <tr>
-              <th></th>
-              <th> <b>Unmetric Track</b></th>
-              <th> </th>
-              <th> </th>
-              <th> </th>
-            </tr>
-            <tr>
-              <td>User-generated Social Media Listening  <span class="tooltip-wrap"><i class="icon-help"></i><span class="tooltip">Unmetric focuses on brands and competitive intelligence. Our partners can help you with social listening.</span></span></td>
-              <td>
-                 
-                &mdash;
-              </td>
-              <td>&mdash;</td>
-              <td><i class="icon-check-circle"></i></td>
-              <td>&mdash;</td>
-            </tr>
-            <tr>
-              <td>Real-time Competitor Content Stream   <span class="tooltip-wrap"><i class="icon-help"></i><span class="tooltip">The missing piece in your command center setup, Unmetric Track live streams your competitors' content.</span></span></td>
-              <td> <i class="icon-check-circle"></i></td>
-              <td>&mdash;</td>
-              <td>&mdash;</td>
-              <td>&mdash;        </td>
-            </tr>
-            <tr>
-              <td>Filtered Feeds For Tent-pole Events    <span class="tooltip-wrap"><i class="icon-help"></i><span class="tooltip">Remove the noise and see exactly what brands are posting around big events like the Oscars and Super Bowl.</span></span></td>
-              <td> <i class="icon-check-circle"></i></td>
-              <td>&mdash;</td>
-              <td>&mdash;</td>
-              <td>&mdash;          </td>
-            </tr>
-            <tr>
-              <td>Track 'Owned Content' Engagement  <span class="tooltip-wrap"><i class="icon-help"></i><span class="tooltip">The only app that lets you track competitor content in real time and on the go.</span></span></td>
-              <td> <i class="icon-check-circle"></i></td>
-              <td>&mdash;</td>
-              <td>&mdash;</td>
-              <td><i class="icon-check-circle">                           </i></td>
-            </tr>
-            <tr>
-              <th></th>
-              <th> <b>Unmetric Discover</b></th>
-              <th> </th>
-              <th> </th>
-              <th> </th>
-            </tr>
-            <tr>
-              <td>Social Media Publishing Tools  <span class="tooltip-wrap"><i class="icon-help"></i><span class="tooltip">Unmetric focuses on what brands are doing but our partners can help you with your publishing requirements.</span></span></td>
-              <td> <i class="icon-check-circle"></i></td>
-              <td>&mdash;</td>
-              <td>&mdash;</td>
-              <td>&mdash;</td>
-            </tr>
-            <tr>
-              <td>Brand Content Search Engine   <span class="tooltip-wrap"><i class="icon-help"></i><span class="tooltip">The only search engine focused on brands social media content.</span></span></td>
-              <td> <i class="icon-check-circle"></i></td>
-              <td>&mdash;</td>
-              <td>&mdash;</td>
-              <td>&mdash;        </td>
-            </tr>
-            <tr>
-              <td>Discover Engaging Trends & Topics     <span class="tooltip-wrap"><i class="icon-help"></i><span class="tooltip">Never miss an opportunity to engage with a timely piece of content by staying on top of trends and topics.</span></span></td>
-              <td> <i class="icon-check-circle"></i></td>
-              <td>&mdash;</td>
-              <td>&mdash;</td>
-              <td>&mdash;          </td>
-            </tr>
-            <tr>
-              <td>Track 'Owned Content' Engagement  <span class="tooltip-wrap"><i class="icon-help"></i><span class="tooltip">Unmetric does not charge you extra for your success or if you want to monitor brands with large audiences</span></span></td>
-              <td> <i class="icon-check-circle"></i></td>
-              <td>&mdash;</td>
-              <td>&mdash;</td>
-              <td>&mdash;              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-    <section class="row u-pad--top-less">
-      <div class="content t-center">
-        <h2>Our Partners</h2>
-        <div class="logo-list-wrap">
-          <ul class="logo-list">
-            <li class="logo-list-item logo-list-item--or logo-list-a"><span>Oracle</span></li>
-            <li class="logo-list-item logo-list-item--sf logo-list-a"><span>Salesforce</span></li>
-            <li class="logo-list-item logo-list-item--km logo-list-a"><span>Kantar Media</span></li>
-            <li class="logo-list-item logo-list-item--hs logo-list-a"><span>Hootsuite</span></li>
-            <li class="logo-list-item logo-list-item--pr logo-list-a"><span>Percolate</span></li>
-            <li class="logo-list-item logo-list-item--bw logo-list-a"><span>brandwatch</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="row has-padding">
-      <div class="content t-center">
-        <h2>We&rsquo;re Making the News</h2>
-        <div class="logo-list-wrap">
-          <ul class="logo-list">
-            <li class="logo-list-item logo-list-item--fo logo-list-b"><span>Forbes</span></li>
-            <li class="logo-list-item logo-list-item--aa logo-list-b"><span>AdAge</span></li>
-            <li class="logo-list-item logo-list-item--aw logo-list-b"><span>Adweek</span></li>
-            <li class="logo-list-item logo-list-item--hp logo-list-b"><span>Huffington Post</span></li>
-            <li class="logo-list-item logo-list-item--wsj logo-list-b"><span>WSJ</span></li>
-            <li class="logo-list-item logo-list-item--ft logo-list-b"><span>Fortune                </span></li>
-          </ul>
+    <section class="row group">
+      <div class="promos grid--gutter">
+        <div class="t-center">
+          <div class="col-1 company-partner">
+            <h2>Our Partners</h2>
+            <div class="logo-list-wrap">
+              <ul class="logo-list">
+                <li class="logo-list-item logo-list-item--or logo-list-a"><span>Oracle</span></li>
+                <li class="logo-list-item logo-list-item--sf logo-list-a"><span>Salesforce</span></li>
+                <li class="logo-list-item logo-list-item--km logo-list-a"><span>Kantar Media</span></li>
+                <li class="logo-list-item logo-list-item--hs logo-list-a"><span>Hootsuite</span></li>
+                <li class="logo-list-item logo-list-item--pr logo-list-a"><span>Percolate</span></li>
+                <li class="logo-list-item logo-list-item--bw logo-list-a"><span>brandwatch</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-1 making-news">
+            <h2>We&rsquo;re Making the News</h2>
+            <div class="logo-list-wrap">
+              <ul class="logo-list">
+                <li class="logo-list-item logo-list-item--fo logo-list-b"><span>Forbes</span></li>
+                <li class="logo-list-item logo-list-item--aa logo-list-b"><span>AdAge</span></li>
+                <li class="logo-list-item logo-list-item--aw logo-list-b"><span>Adweek</span></li>
+                <li class="logo-list-item logo-list-item--hp logo-list-b"><span>Huffington Post</span></li>
+                <li class="logo-list-item logo-list-item--wsj logo-list-b"><span>WSJ</span></li>
+                <li class="logo-list-item logo-list-item--ft logo-list-b"><span>Fortune                </span></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -260,9 +164,9 @@
           <li class="grid-cell size1of3">
             <h4>Products</h4>
             <ul class="nav-footer--list">
-              <li><a href="javascript:void(0)" class="nav-footer--link">Analyze &mdash; for Social Media Analysts</a></li>
-              <li><a href="javascript:void(0)" class="nav-footer--link">Track &mdash; for Marketers</a></li>
-              <li><a href="javascript:void(0)" class="nav-footer--link">Discover &mdash; for Content Creators</a></li>
+              <li><a href="#" class="nav-footer--link">Analyze &mdash; for Social Media Analysts</a></li>
+              <li><a href="#" class="nav-footer--link">Track &mdash; for Marketers</a></li>
+              <li><a href="#" class="nav-footer--link">Discover &mdash; for Content Creators</a></li>
             </ul>
           </li>
           <li class="grid-cell">
@@ -279,11 +183,11 @@
           <li class="grid-cell">
             <h4>Resources</h4>
             <ul class="nav-footer--list">
-              <li><a href="javascript:void(0)" class="nav-footer--link">Articles</a></li>
-              <li><a href="javascript:void(0)" class="nav-footer--link">Ebooks </a></li>
-              <li><a href="javascript:void(0)" class="nav-footer--link">Infographics </a></li>
-              <li><a href="javascript:void(0)" class="nav-footer--link">Interviews </a></li>
-              <li><a href="javascript:void(0)" class="nav-footer--link">Industry Reports </a></li>
+              <li><a href="#" class="nav-footer--link">Articles</a></li>
+              <li><a href="#" class="nav-footer--link">Ebooks </a></li>
+              <li><a href="#" class="nav-footer--link">Infographics </a></li>
+              <li><a href="#" class="nav-footer--link">Interviews </a></li>
+              <li><a href="#" class="nav-footer--link">Industry Reports </a></li>
             </ul>
           </li>
           <li class="gird-cell"> 
@@ -306,7 +210,7 @@
             <p class="victory">&#9996;       </p>
           </div>
           <div class="grid-cell">
-            <p class="site-links"><a href="javascript:void(0)">Privacy</a></p>
+            <p class="site-links"><a href="#">Privacy</a></p>
           </div>
         </div>
       </div>

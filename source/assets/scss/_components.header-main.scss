@@ -7,30 +7,30 @@
     height: 42px;
     z-index: 3;
 
-    
+
     @include media-query(hd) {
         display: flex;
         height: 64px;
     }
-    
+
     .logo {
         display: block;
         opacity: .75;
-        padding: 10px 20px;  
-          
-        
+        padding: 10px 20px;
+
+
         @include media-query(hd) {
-            padding: 20px;
+            padding: 28px 0 0 40px;
             flex: 1;
         }
     }
-    
+
     .logo-image {
-        height: 16px; 
-        
+        height: 16px;
+
         @include media-query(hd) {
             height: 18px;
-        }   
+        }
     }
     .logo-title{
         font-size: 22px;
@@ -58,12 +58,12 @@
 
 .menu-icon {
     width: 15px;
-        
+
     &:before {
         top: -6px;
         right: 0;
     }
-    
+
     &:after {
         right: 0;
         top: 6px;
@@ -90,12 +90,12 @@
 
 .blog-menu_icon {
     width: 15px;
-        
+
     &:before {
         top: -6px;
         right: 0;
     }
-    
+
     &:after {
         right: 0;
         top: 6px;
@@ -111,18 +111,18 @@
      @include media-query(hd) {
         @include position(absolute, 0 0 null null);
         @include size(48px);
-    
+
         // Make it cross when hovered
         &:hover {
             .blog-menu_icon {
-                background: transparent; 
-                   
-                
+                background: transparent;
+
+
                 &::before {
                     transform-origin: 100% 100%;
                     transform: rotate(-45deg);
                 }
-                
+
                 &::after{
                     transform-origin: 85% 100%;
                     transform: rotate(45deg);
@@ -135,22 +135,22 @@
 
 // Mobile link to activate menu
 .menu-link {
-    
+
     @include media-query(palm) {
         @include position(absolute, 0 0 null null);
         @include size(48px);
-        
+
         // Make it cross when added class is-open
         &.is-open {
             .menu-icon {
-                background: transparent; 
-                   
-                
+                background: transparent;
+
+
                 &::before {
                     transform-origin: 100% 100%;
                     transform: rotate(-45deg);
                 }
-                
+
                 &::after{
                     transform-origin: 85% 100%;
                     transform: rotate(45deg);
@@ -158,5 +158,4 @@
             }
         }
     }
-}    
-    
+}

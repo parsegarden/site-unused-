@@ -11,15 +11,15 @@ body.theme--basic::before{
 }
 
 .theme--basic {
-    
+
     .hero {
         color: white;
     }
-    
+
     .header {
         @include linear-gradient(#5856D6, #4F6CDD);
     }
-    
+
     .btn-primary {
         @include linear-gradient(#5658D8, #27DCF9);
     }
@@ -37,35 +37,37 @@ body.theme--basic::before{
 
 //Home page
 
+.hm--mod::before{
+    display: block;
+    content: "";
+    height: 600px;
+    @include position(absolute, 0 0 0 0);
+}
+
 .hm--mod {
-    
-    .hero {
-        background-color: #01CC80;
 
-        &::before{
-            @include position(absolute,0 0 0 0);
-            display: block;
-            content: "";
-            background: url('../i/bg-2x-football.png') no-repeat;
-            background-size: cover;
-            background-position: center center;
-            height: 97vh;
-            
-
-            @include media-query(palm) {
-                background-color: #5857D6;
-                height: 820px;
-              
-            }    
-        }
-    }
-    
-    .header {   
+    .header{
+        background: transparent;
         position: relative;
         height: 0;
+
+        form{
+            visibility: hidden;
+        }
     }
-    
+
+    .hero {
+        @include linear-gradient(to right,#5856D8, #00FBD3);
+
+            @include media-query(palm) {
+                height: 100%;
+
+            }
+        }
+
+
+
     .btn-primary {
         @include linear-gradient(#5658D8, #27DCF9);
     }
-}   
+}

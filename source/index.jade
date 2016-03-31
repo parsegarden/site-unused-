@@ -4,23 +4,35 @@ html
     
     body.hm--mod
         // HEADER
-        header.header.0is-hidden
-            
-            a.logo(href="javascript:void(0)") 
+        header.header
+            a.logo(href="#") 
                 img.logo-image(src="assets/i/unmetric-logo-white.png" alt="Unmetric logo")
             
-            a.menu-link(href="javascript:void(0)")
+
+
+            a.menu-link(href="#")
                 span.menu-icon
             
-            nav.nav-main
+            
+            form#search(action="#" method="post")
+                #label
+                    
+                    label#search-label(for="search-terms") search
+                    
+                #input 
+                    input(type="text" name="search-terms" id="search-terms" placeholder="Search...")
+                
+            nav.nav-main.0is-hidden
                 ul.nav-main-wrap
+                    
                     li 
-                        a.more.nav-main--link(href="javascript:void(0)") Products 
+                        a.more.nav-main--link(href="#") Products
                             i.icon-arrow-dropdown
                         
+
                         ul.nav-main-dd
                             li 
-                                a.nav-main--link.is-active(href="javascript:void(0)") 
+                                a.nav-main--link(href="javascript:void(0)") 
                                     span.menu-analyze Analyze
                                         i.icon-arrow-right.arrow-right
                                     br
@@ -46,622 +58,254 @@ html
                     li: a.nav-main--link(href="javascript:void(0)") Contact
                     
                     li: a.nav-main--link(href="javascript:void(0)") Sign In
+                    
+                    li: a.nav-main--link(href="javascript:void(0)") 
+                        button.btn.btn-secondary.t-weight--m LOGIN
+                    
         
-        
-        
-        
+    
                 
         section.hero.row.u-pad--top-less.is-tall.0is-hidden
-            .content.t-center.u-pad-less-top
-                h1.hero-title Take Your Competition Head On  
+            .content.t-center
+                h1.hero-title Out-market Your Competition 
+                
+                .col-4
+                    p.t-white.hero-copy.t-weight--book Thousands of real-time marketers at hundreds of leading brands and agencies across 20+ countries use Unmetric to compete and win.
+                
+                
+                .t-center
+                    p.hero-meet--intro
+                        
+                        img.arrow-product--left(src="assets/i/left-arrow.svg" alt="#") 
+                        
+                        span.hero-intro.t-weight--m MEET OUR PRODUCTS
+                        
+                        img.arrow-product--right(src="assets/i/right-arrow.svg" alt="#") 
+                        
+                        
                 
                 .grid.grid--gutter
-                    .grid-cell.box.hero-list--item
+                    .box.hero-list--item
                         a.box-link.hero-list--link
                             
-                            h3.hero-list--heading Social Media Analysts
-                            p.box-copy 
-                                b.hero-list--copy Analyze 
-                                | your competition’s social content and campaign in depth.
+                            h3.hero-list--heading Media analysts
+                            p.t-white Analyze your competition’s social content and campaign in depth.
                             
-                            span.btn.btn-small.btn-primary Learn more about Analyze
+                            span.btn.btn-small.btn-primary.t-weight--m Learn more about Analyze
                                 i.icon-arrow-right
-                                
-                                
-                                
-                    .grid-cell.box.hero-list--item
+                            
+                            
+                           
+                    .box.hero-list--item
                         a.box-link.hero-list--link   
                             
-                            h3.hero-list--heading Marketers 
-                            p.box-copy 
-                                b.hero-list--copy Track
-                                |    your competitors' social media marketing in real time.
+                            h3.hero-list--heading Brand Manager
+                            p.t-white Track your competitors' social media marketing in real time.
                             
-                            span.btn.btn-small.btn-primary Learn more about Track
+                            span.btn.btn-small.btn-primary.t-weight--m Learn more about Track
                                 i.icon-arrow-right
                                 
                     
-                    .grid-cell.box.hero-list--item
+                    .box.hero-list--item
                         a.box-link.hero-list--link   
                             
-                            h3.billboard-list--heading Content Creators
-                            p.box-copy 
-                                b.hero-list--copy  Discover
-                                |    ideas and inspiration to create engaging social content
+                            h3.hero-list--heading Content Creators
+                            p.t-white Discover ideas and inspiration to create engaging social content
                             
-                            span.btn.btn-small.btn-primary Learn more about Discover
+                            span.btn.btn-primary.t-weight--m Learn more about Discover
                                 i.icon-arrow-right
-                
+                    
+        .row.group.logos
+            .logo-list-wrap
+                ul.logo-list
+                    li.logo-list-item.logo-list-item--gm.logo-list-c
+                        span GM
 
-                .logo-list-wrap
-                    ul.logo-list
-                        li.logo-list-item.logo-list-item--gm.logo-list-c
-                            span GM
+                    li.logo-list-item.logo-list-item--ls.logo-list-c
+                        span Lower's
 
-                        li.logo-list-item.logo-list-item--ls.logo-list-c
-                            span Lower's
+                    li.logo-list-item.logo-list-item--ah.logo-list-c
+                        span Aa
 
-                        li.logo-list-item.logo-list-item--ah.logo-list-c
-                            span Aa
+                    li.logo-list-item.logo-list-item--lo.logo-list-c
+                        span Loreal
 
-                        li.logo-list-item.logo-list-item--lo.logo-list-c
-                            span Loreal
+                    li.logo-list-item.logo-list-item--un.logo-list-c
+                        span Unilever
 
-                        li.logo-list-item.logo-list-item--un.logo-list-c
-                            span Unilever
+                    li.logo-list-item.logo-list-item--og.logo-list-c
+                        span Og
 
-                        li.logo-list-item.logo-list-item--og.logo-list-c
-                            span Og
-
-                        li.logo-list-item.logo-list-item--hm.logo-list-c
-                            span H.M   
-
-
-                p.t-white Thousands of real-time marketers at hundreds of leading brands and agencies 
-                    span.break across 20+ countries use Unmetric to compete and win                    
-                   
-                   
-                   
+                    li.logo-list-item.logo-list-item--hm.logo-list-c
+                        span H.M                    
+                       
+                       
+                       
                    
                    
         // Testimonials                               
-        section.row.u-pad--top-less
-            .content.t-center
-                .testimonial-wrap
-                    blockquote.testimonial-content.testimonial-content--1
-                        .testimonial-text-wrap
-                            q.testimonial-text
-                                span.d-quotes.d-quotes--left &ldquo;
-                                
-                                span Unmetric has made it simple to get a great pulse on 
-                                    span.break competitive performance in a matter of minutes.
-                                
-                                        span.d-quotes.d-quotes--right &rdquo; 
-                                 
-                            p.testimonial-author Christopher Brown, Director of Social Media Strategy
-                    
-                        a.testimonial-link(href="javascript:void(0)")    
-                            img.testimonial-avatar(src="assets/i/avatars/mathis.png" alt="Christopher Brown")
-                            
-                            br
-                                
-                            img.testimonial-logo(src="assets/i/logos/kinetic.png")
-                        
-                 
-                          
-                    blockquote.testimonial-content.testimonial-content--2
-                        .testimonial-text-wrap
-                            q.testimonial-text
-                                span.d-quotes.d-quotes--left &ldquo;
-                                
-                                span Being able to keep tabs on communities and their publishing performance 
-                                    span.break has been faster and easier using Unmetric than other tools.                                    
-                                        span.d-quotes.d-quotes--right &rdquo; 
-                                 
-                            p.testimonial-author Christopher Brown, Director of Social Media Strategy
-                        
-                        a.testimonial-link(href="javascript:void(0)")
-                            img.testimonial-avatar(src="assets/i/avatars/christopher.png" alt="CHRISTOPHER BROWN")
-                        
-                            br
-                            
-                            img.testimonial-logo(src="assets/i/logos/logo-story.png")
-                        
-                  
-                        
-                    blockquote.testimonial-content.testimonial-content--3.is-active
-                        .testimonial-text-wrap
-                            q.testimonial-text
-                                span.d-quotes.d-quotes--left &ldquo;
-                                span Unmetric has made it simple to get a great pulse on 
-                                    span.break competitive performance in a matter of minutes.
-                                        span.d-quotes.d-quotes--right &rdquo; 
-                                 
-                            p.testimonial-author Christopher Brown, Director of Social Media Strategy
-                        
-                        a.testimonial-link(href="javascript:void(0)")
-                            img.testimonial-avatar(src="assets/i/avatars/chrissy.png" alt="OMRI DUEK, MANAGER")
-                            
-                            br
-                                
-                            img.testimonial-logo(src="assets/i/logos/logo-mrm.png")
-                        
-                
-                               
-                    blockquote.testimonial-content.testimonial-content--4
-                        .testimonial-text-wrap
-                            q.testimonial-text
-                                span.d-quotes.d-quotes--left &ldquo;
-                                
-                                span Unmetric has made it simple to get a great pulse on 
-                                    span.break competitive performance in a matter of minutes.
-                                        span.d-quotes.d-quotes--right &rdquo; 
-                                 
-                            p.testimonial-author Christopher Brown, Director of Social Media Strategy
-                        
-                        a.testimonial-link(href="javascript:void(0)")
-                            img.testimonial-avatar(src="assets/i/avatars/omri.png" alt="Christopher Brown")
-                            
-                            br
-                                
-                            img.testimonial-logo(src="assets/i/logos/logo-cococola.png")
-                        
-                        
-                               
-                    blockquote.testimonial-content.testimonial-content--5
-                        .testimonial-text-wrap
-                            q.testimonial-text
-                                span.d-quotes.d-quotes--left &ldquo;
-                                
-                                span Unmetric has made it simple to get a great pulse on 
-                                    span.break competitive performance in a matter of minutes.
-                                        span.d-quotes.d-quotes--right &rdquo; 
-                                 
-                            p.testimonial-author Christopher Brown, Director of Social Media Strategy
-                        
-                        a.testimonial-link(href="javascript:void(0)")
-                            img.testimonial-avatar(src="assets/i/avatars/melvin.png" alt="MELVIN LEONG")
-                            
-                            br
-                                
-                            img.testimonial-logo(src="assets/i/logos/logo-changi.png")
-    
-    
-    
-    
-        section.row.u-pad--top-less.u-overflow
-            .content.t-center
-                h2 Demand More From Your Social Analytics Provider
-                                
-                p.intro See why people are choosing Unmetric
-                
-                table.data-table
-                    tbody
-                        tr
-                            th
-                            
-                            th 
-                                b Unmetric Analyze
-                                
-                            th Other social analyze providers
-                            
-                            th Other command center solutions
-                            
-                            th Other content creation apps
-    
-                            
-                        
-                        tr
-                            td No Audience Size Penalties
-                                span.tooltip-wrap
-                                    i.icon-help
+        section.row.group
+            .testimonial.u-pad--top-less
+                .layer
+                .content.t-center
+                    .testimonial-wrap
+                        blockquote.testimonial-content.testimonial-content--1
+                            .testimonial-text-wrap
+                                q.testimonial-text
+                                    span.d-quotes.d-quotes--left &ldquo;
                                     
-                                    span.tooltip Unmetric does not charge you extra for your success or if you want to monitor brands with large audiences.
-                            
-                            td  
-                                i.icon-check-circle
-                            
-                            td
-                                &mdash;
-                            
-                            td
-                                &mdash;
-                                
-                            td
-                                &mdash;
-    
-    
-                        
-                         tr
-                            td Unrivaled Campaign Intelligence  
-                                span.tooltip-wrap
-                                    i.icon-help
+                                    span Unmetric has made it simple to get a great pulse on 
+                                        span.break competitive performance in a matter of minutes.
                                     
-                                    span.tooltip Unmetric uses human analysts to identify and tag campaigns and content in a way no algorithm can.
-                            
-                            td 
-                                i.icon-check-circle
-                            
-                            td
-                                &mdash;
-                            
-                            td
-                                &mdash;
-                                
-                            td
-                                &mdash;        
-    
-                        tr
-                            td Promoted Content Detection   
-                                span.tooltip-wrap
-                                    i.icon-help
-                                    
-                                    span.tooltip Unmetric will dissect your competitors' paid content strategies on Facebook and Twitter.
-                            
-                            td 
-                                i.icon-check-circle
-                            
-                            td
-                                i.icon-check-circle
-                            
-                            td
-                                &mdash;
-                                
-                            td
-                                &mdash;          
-                        
-                        
-    
-                        tr
-                            td 1-Click Automated Reporting & Alerts 
-                                span.tooltip-wrap
-                                    i.icon-help
-                                    
-                                    span.tooltip All your analysis and comparison reports created automatically in Powerpoint and Excel."
-                            
-                            td 
-                                i.icon-check-circle
-                            
-                            td
-                                &mdash;
-                            
-                            td
-                                &mdash;
-                                
-                            td
-                                &mdash;                            
-                        
-    
-    
-                        tr
-                            th
-                            
-                            th 
-                                b Unmetric Track
-                                
-                            th 
-                            
-                            th 
-                            
-                            th  
-                                                            
-    
-    
-                        tr
-                            td User-generated Social Media Listening  
-                                span.tooltip-wrap
-                                    i.icon-help
-                                    
-                                    span.tooltip Unmetric focuses on brands and competitive intelligence. Our partners can help you with social listening.
-                            
-                            td  
-                                &mdash;
-                            
-                            td
-                                &mdash;
-                            
-                            td
-                                i.icon-check-circle
-                                
-                            td
-                                &mdash;
-                        
-                         tr
-                            td Real-time Competitor Content Stream   
-                                span.tooltip-wrap
-                                    i.icon-help
-                                    
-                                    span.tooltip The missing piece in your command center setup, Unmetric Track live streams your competitors' content.
-                            
-                            td 
-                                i.icon-check-circle
-                            
-                            td
-                                &mdash;
-                            
-                            td
-                                &mdash;
-                                
-                            td
-                                &mdash;        
-                        
-                        
-                                
-                        tr
-                            td Filtered Feeds For Tent-pole Events    
-                                span.tooltip-wrap
-                                    i.icon-help
-                                    
-                                    span.tooltip Remove the noise and see exactly what brands are posting around big events like the Oscars and Super Bowl.
-                            
-                            td 
-                                i.icon-check-circle
-                            
-                            td
-                                &mdash;
-                            
-                            td
-                                &mdash;
-                                
-                            td
-                                &mdash;          
-                        
-                        
-                        
-                        tr
-                            td Track 'Owned Content' Engagement  
-                                span.tooltip-wrap
-                                    i.icon-help
-                                    
-                                    span.tooltip The only app that lets you track competitor content in real time and on the go.
-                            
-                            td 
-                                i.icon-check-circle
-                            
-                            td
-                                &mdash;
-                            
-                            td
-                                &mdash;
-                                
-                            td
-                                i.icon-check-circle                            
-                        
-                        
-                        
-                        tr
-                            th
-                            
-                            th 
-                                b Unmetric Discover
-                                
-                            th 
-                            
-                            th 
-                            
-                            th 
-                        
-                        
+                                            span.d-quotes.d-quotes--right &rdquo; 
                                      
-                        tr
-                            td Social Media Publishing Tools  
-                                span.tooltip-wrap
-                                    i.icon-help
+                                p.testimonial-author Christopher Brown, Director of Social Media Strategy
+                        
+                            a.testimonial-link(href="javascript:void(0)")    
+                                img.testimonial-avatar(src="assets/i/avatars/mathis.png" alt="Christopher Brown")
+                                
+                                br
                                     
-                                    span.tooltip Unmetric focuses on what brands are doing but our partners can help you with your publishing requirements.
+                                img.testimonial-logo(src="assets/i/logos/kinetic.png")
                             
-                            td  
-                                i.icon-check-circle
-                            
-                            td
-                                &mdash;
-                            
-                            td
-                                &mdash;
-                                
-                            td
-                                &mdash;
-                        
-                        
-                        
-                        tr
-                            td Brand Content Search Engine   
-                                span.tooltip-wrap
-                                    i.icon-help
-                                    
-                                    span.tooltip The only search engine focused on brands social media content.
-                            
-                            td 
-                                i.icon-check-circle
-                            
-                            td
-                                &mdash;
-                            
-                            td
-                                &mdash;
-                                
-                            td
-                                &mdash;        
-                                
-                        
-                        
-                        tr
-                            td Discover Engaging Trends & Topics     
-                                span.tooltip-wrap
-                                    i.icon-help
-                                    
-                                    span.tooltip Never miss an opportunity to engage with a timely piece of content by staying on top of trends and topics.
-                            
-                            td 
-                                i.icon-check-circle
-                            
-                            td
-                                &mdash;
-                            
-                            td
-                                &mdash;
-                                
-                            td
-                                &mdash;          
-                        
-                        
-                        
-                        tr
-                            td Track 'Owned Content' Engagement  
-                                span.tooltip-wrap
-                                    i.icon-help
-                                    
-                                    span.tooltip Unmetric does not charge you extra for your success or if you want to monitor brands with large audiences
-
-                            
-                            td 
-                                i.icon-check-circle
-                            
-                            td
-                                &mdash;
-                            
-                            td
-                                &mdash;
-                                
-                            td
-                                &mdash;              
-        
-             
-        
-                
-        section.row.u-pad--top-less
-            .content.t-center
-                h2 Our Partners
-                
-                .logo-list-wrap
-                    ul.logo-list
-                        li.logo-list-item.logo-list-item--or.logo-list-a
-                            span Oracle
-
-                        li.logo-list-item.logo-list-item--sf.logo-list-a
-                            span Salesforce
-
-                        li.logo-list-item.logo-list-item--km.logo-list-a
-                            span Kantar Media
-
-                        li.logo-list-item.logo-list-item--hs.logo-list-a
-                            span Hootsuite
-
-                        li.logo-list-item.logo-list-item--pr.logo-list-a
-                            span Percolate
-
-                        li.logo-list-item.logo-list-item--bw.logo-list-a
-                            span brandwatch
-
-
-
-         section.row.has-padding
-            .content.t-center
-                h2 We&rsquo;re Making the News
-
-                .logo-list-wrap
-                    ul.logo-list
-                        li.logo-list-item.logo-list-item--fo.logo-list-b
-                            span Forbes
-
-                        li.logo-list-item.logo-list-item--aa.logo-list-b
-                            span AdAge
-
-                        li.logo-list-item.logo-list-item--aw.logo-list-b
-                            span Adweek
-
-                        li.logo-list-item.logo-list-item--hp.logo-list-b
-                            span Huffington Post
-
-                        li.logo-list-item.logo-list-item--wsj.logo-list-b
-                            span WSJ
-
-                        li.logo-list-item.logo-list-item--ft.logo-list-b
-                            span Fortune                
-
-                                 
+                     
                               
-        footer.row.has-padding
-            .content
-                ul.nav-footer.grid.grid--gutters
-                    li.grid-cell.size1of3
-                        h4 Products
+                        blockquote.testimonial-content.testimonial-content--2
+                            .testimonial-text-wrap
+                                q.testimonial-text
+                                    span.d-quotes.d-quotes--left &ldquo;
+                                    
+                                    span Being able to keep tabs on communities and their publishing performance 
+                                        span.break has been faster and easier using Unmetric than other tools.                                    
+                                            span.d-quotes.d-quotes--right &rdquo; 
+                                     
+                                p.testimonial-author Christopher Brown, Director of Social Media Strategy
+                            
+                            a.testimonial-link(href="javascript:void(0)")
+                                img.testimonial-avatar(src="assets/i/avatars/christopher.png" alt="CHRISTOPHER BROWN")
+                            
+                                br
+                                
+                                img.testimonial-logo(src="assets/i/logos/logo-story.png")
+                            
+                      
+                            
+                        blockquote.testimonial-content.testimonial-content--3.is-active
+                            .testimonial-text-wrap
+                                q.testimonial-text
+                                    span.d-quotes.d-quotes--left &ldquo;
+                                    span Unmetric has made it simple to get a great pulse on 
+                                        span.break competitive performance in a matter of minutes.
+                                            span.d-quotes.d-quotes--right &rdquo; 
+                                     
+                                p.testimonial-author Christopher Brown, Director of Social Media Strategy
+                            
+                            a.testimonial-link(href="javascript:void(0)")
+                                img.testimonial-avatar(src="assets/i/avatars/chrissy.png" alt="OMRI DUEK, MANAGER")
+                                
+                                br
+                                    
+                                img.testimonial-logo(src="assets/i/logos/logo-mrm.png")
+                            
+                    
+                                   
+                        blockquote.testimonial-content.testimonial-content--4
+                            .testimonial-text-wrap
+                                q.testimonial-text
+                                    span.d-quotes.d-quotes--left &ldquo;
+                                    
+                                    span Unmetric has made it simple to get a great pulse on 
+                                        span.break competitive performance in a matter of minutes.
+                                            span.d-quotes.d-quotes--right &rdquo; 
+                                     
+                                p.testimonial-author Christopher Brown, Director of Social Media Strategy
+                            
+                            a.testimonial-link(href="javascript:void(0)")
+                                img.testimonial-avatar(src="assets/i/avatars/omri.png" alt="Christopher Brown")
+                                
+                                br
+                                    
+                                img.testimonial-logo(src="assets/i/logos/logo-cococola.png")
+                            
+                            
+                                   
+                        blockquote.testimonial-content.testimonial-content--5
+                            .testimonial-text-wrap
+                                q.testimonial-text
+                                    span.d-quotes.d-quotes--left &ldquo;
+                                    
+                                    span Unmetric has made it simple to get a great pulse on 
+                                        span.break competitive performance in a matter of minutes.
+                                            span.d-quotes.d-quotes--right &rdquo; 
+                                     
+                                p.testimonial-author Christopher Brown, Director of Social Media Strategy
+                            
+                            a.testimonial-link(href="javascript:void(0)")
+                                img.testimonial-avatar(src="assets/i/avatars/melvin.png" alt="MELVIN LEONG")
+                                
+                                br
+                                    
+                                img.testimonial-logo(src="assets/i/logos/logo-changi.png")
+        
+        
+        
+                
+        section.row.group
+            .promos.grid--gutter
+                .t-center
+                
+                    .col-1.company-partner
+                        h2 Our Partners
                         
-                        ul.nav-footer--list
-                            li: a.nav-footer--link(href="javascript:void(0)") Analyze &mdash; for Social Media Analysts
-                            
-                            li: a.nav-footer--link(href="javascript:void(0)") Track &mdash; for Marketers
-                            
-                            li: a.nav-footer--link(href="javascript:void(0)") Discover &mdash; for Content Creators
-                    
-                    
-                    
-                    li.grid-cell
-                        h4 About
-                        
-                        ul.nav-footer--list
-                            li: a.nav-footer--link(href='#') Company
- 
-                            li: a.nav-footer--link(href='#') Customers
-                            
-                            li: a.nav-footer--link(href='#') Why Agencies love us
-    
-                            li: a.nav-footer--link(href='#') Our blog
-                            
-                            li: a.nav-footer--link(href='#') Press & News coverage
-                            
-                            li: a.nav-footer--link(href='#') Job openings
-                    
-                    
-                    
-                    li.grid-cell
-                        h4 Resources
-                        
-                        ul.nav-footer--list
-                            li: a.nav-footer--link(href="javascript:void(0)") Articles
-                            
-                            li: a.nav-footer--link(href="javascript:void(0)") Ebooks 
-                            
-                            li: a.nav-footer--link(href="javascript:void(0)") Infographics 
-                            
-                            li: a.nav-footer--link(href="javascript:void(0)") Interviews 
-                            
-                            li: a.nav-footer--link(href="javascript:void(0)") Industry Reports 
-                            
-                            
-                            
-                    
-                    li.gird-cell 
-                        h4 Contact
-                        
-                        ul.nav-footer--list    
-                            li: a.nav-footer--link(href='#') Get in touch 
-                            
-                            li: a.nav-footer--link(href='#') Twitter
-                            
-                            li: a.nav-footer--link(href='#') Facebook
-                            
-                            li: a.nav-footer--link(href='#') Pinterest
-                            
-                            li: a.nav-footer--link(href='#') LinkedIn
-                            
-                            li: a.nav-footer--link(href='#') SlideShare
+                        .logo-list-wrap
+                            ul.logo-list
+                                li.logo-list-item.logo-list-item--or.logo-list-a
+                                    span Oracle
 
-                
-                
-                .grid.site-info-wrap
-                    .grid-cell
-                        p.site-info &copy; Unmetric 
-                        
-                        
-                    .grid-cell    
-                        p.victory &#9996;       
-                        
-                    .grid-cell
-                        p.site-links
-                            a(href="javascript:void(0)") Privacy
+                                li.logo-list-item.logo-list-item--sf.logo-list-a
+                                    span Salesforce
+
+                                li.logo-list-item.logo-list-item--km.logo-list-a
+                                    span Kantar Media
+
+                                li.logo-list-item.logo-list-item--hs.logo-list-a
+                                    span Hootsuite
+
+                                li.logo-list-item.logo-list-item--pr.logo-list-a
+                                    span Percolate
+
+                                li.logo-list-item.logo-list-item--bw.logo-list-a
+                                    span brandwatch
+
+
+
+                    .col-1.making-news
+                        h2 We&rsquo;re Making the News
+
+                        .logo-list-wrap
+                            ul.logo-list
+                                li.logo-list-item.logo-list-item--fo.logo-list-b
+                                    span Forbes
+
+                                li.logo-list-item.logo-list-item--aa.logo-list-b
+                                    span AdAge
+
+                                li.logo-list-item.logo-list-item--aw.logo-list-b
+                                    span Adweek
+
+                                li.logo-list-item.logo-list-item--hp.logo-list-b
+                                    span Huffington Post
+
+                                li.logo-list-item.logo-list-item--wsj.logo-list-b
+                                    span WSJ
+
+                                li.logo-list-item.logo-list-item--ft.logo-list-b
+                                    span Fortune                
+
+                                     
                             
                             
                             
                             
+        include includes/_footer.jade                    
         include includes/_foot.jade

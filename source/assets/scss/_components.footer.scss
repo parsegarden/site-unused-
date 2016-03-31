@@ -7,11 +7,12 @@ footer.row.has-padding {
     @include linear-gradient(#f6f6f6, #fff);
     padding: 80px 0 60px;
     text-align: center;
-    
+    clear: both;
+
     h4 {
         color: $grey-light;
     }
-    
+
     @include media-query(hd) {
         text-align: left;
     }
@@ -20,7 +21,7 @@ footer.row.has-padding {
 
 
 .nav-footer--list {
-    margin-bottom: 30px;    
+    margin-bottom: 30px;
 }
 
 
@@ -29,7 +30,7 @@ footer.row.has-padding {
 .nav-footer--link {
     @include font-size($text-size-xxs);
     color: $grey-light;
-    
+
 }
 
 
@@ -39,7 +40,7 @@ footer.row.has-padding {
 }
     .site-info {
         @include font-size($text-size-xxxs);
-        color: $grey-light;    
+        color: $grey-light;
     }
 
     .victory {
@@ -48,16 +49,16 @@ footer.row.has-padding {
         margin: -20px 0 0;
         text-align: center;
     }
-    
+
     .site-links {
         @include font-size($text-size-xxxs);
-        
+
         a {
-            color: $grey-light;    
+            color: $grey-light;
         }
-        
+
         @include media-query(hd) {
-            text-align: right;        
+            text-align: right;
         }
     }
 
@@ -76,29 +77,29 @@ footer.row.has-padding {
     z-index: 2;
     opacity: 0.95;
     overflow: hidden;
-    
+
     .container {
         width: 1200px;
         padding: 40px 0 60px 80px;
     }
-    
+
     h3 {
         @include font-size($text-size-xs);
         margin-bottom: 10px;
         text-transform: uppercase;
         color: #777777;
         font-weight: 700;
-        
+
         span {
             display: inline-block;
             line-height: 1.8;
         }
     }
-    
+
     a {
         color: #444444;
         line-height: 1.8;
-        
+
         &:hover {
             color: $link-color;
         }
@@ -107,7 +108,7 @@ footer.row.has-padding {
 
 
 @media (max-width: 800px) {
-    
+
     .bottom-bar .container{
         padding: 0 0 20px 20px;
 
@@ -115,5 +116,5 @@ footer.row.has-padding {
         margin-bottom: 25px;
        }
     }
-   
-}      
+
+}

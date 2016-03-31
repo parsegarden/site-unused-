@@ -31,7 +31,7 @@
 
 
     .nav-main-wrap{
-
+        padding: 7px 40px 0 0;
 
         @include media-query(hd) {
             display: flex;
@@ -46,6 +46,7 @@
         color: white;
         display: block;
         margin: 0 20px;
+        text-transform: uppercase;
         padding: 20px 0;
 
         &.is-active {
@@ -82,6 +83,9 @@
 
             @include media-query(hd) {
                 color: #444;
+                font-size: 14px;
+                margin-top: 5px;
+                text-transform: lowercase;
             }
         }
 
