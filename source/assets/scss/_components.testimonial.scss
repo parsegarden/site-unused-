@@ -130,10 +130,11 @@
                 position: relative;
                 top: 50px;
                 width: 50px;
-                margin-top: 55px;
+
 
                 @include media-query(hd) {
                     width: 150px;
+                    margin-top: 55px;
 
                     &:hover {
                         .testimonial-avatar {
@@ -186,10 +187,10 @@
             .testimonial-author {
                 @include font-size($text-size-xxxs);
                 color: #000;
+                margin-top: 10px;
 
                 @include media-query(hd) {
                     @include font-size($text-size-s);
-                    margin-top: 10px;
                 }
             }
 
