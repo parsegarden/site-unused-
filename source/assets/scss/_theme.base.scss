@@ -60,16 +60,16 @@ body.theme--basic::before{
         }
         button{
             background: white;
-            color: #27DCF9;
+            color: #00B6C9;
         }
     }
 
     .hero {
-        @include linear-gradient(to right,#5856D8, #00FBD3);
+        @include linear-gradient(135deg, #5856D8, #18FE89);
 
             @include media-query(palm) {
                 height: 100%;
 
             }
         }
-}    
+}

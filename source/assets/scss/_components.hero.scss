@@ -60,20 +60,20 @@
 
         &:first-child span {
             background: white;
-            color: #548EDD;
+            color: #2996CC;
 
         }
 
         &:nth-child(2) span {
             background: white;
-            color: #54A9DE;
+            color: #00B6C9;
 
 
         }
 
         &:last-child span {
             background: white;
-            color: #50CEDE;
+            color: #00C963;
 
 
         }
@@ -98,7 +98,7 @@
 
 
     .hero-list--link {
-        border: 1px solid white;
+        border: 1px solid rgba(white, 0.8);
         border-radius: 10px;
         display: block;
         margin-top: 2px;
@@ -112,19 +112,30 @@
             width: 100%;
 
         }
+
         &:hover {
             border-color: white;
             z-index: 2;
-            box-shadow: 0 5px 10px rgba(black, .2);
+            box-shadow: 0 5px 15px rgba(black, .1);
+
+            p{
+                color: white;
+
+            }
         }
 
         p {
             padding: 5px 30px 10px 30px;
+            color: rgba(white, 0.9);
 
             .page__home--alt & {
                 padding: 5px 38px 10px;
             }
         }
+
+
+
+
 
         @include media-query(palm) {
             padding: 10px 0 0 0;

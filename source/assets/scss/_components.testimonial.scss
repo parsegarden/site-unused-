@@ -28,11 +28,11 @@
 .testimonial-wrap {
     position: relative;
     height: 200px;
-    font-family: calluna;
-    font-style: italic;
+    padding: 115px 0;
 
     @include media-query(hd) {
         height: 240px;
+
     }
 }
 
@@ -42,6 +42,7 @@
             height: 100px;
             position: absolute;
             width: 100%;
+
 
             // When a testimonial is active/clicked/tapped
             &.is-active {
@@ -54,7 +55,7 @@
                 }
 
                 .testimonial-logo {
-                    height: 24px;
+                    height: 20px;
                 }
 
                 .testimonial-text-wrap,
@@ -129,6 +130,7 @@
                 position: relative;
                 top: 50px;
                 width: 50px;
+                margin-top: 55px;
 
                 @include media-query(hd) {
                     width: 150px;
@@ -150,6 +152,12 @@
                 height: 100px;
                 padding: 0 10px;
                 visibility: hidden;
+
+
+                .testimonial-text {
+                    max-width: 920px;
+                    margin: 0 auto;
+                }
             }
 
 
@@ -177,9 +185,11 @@
 
             .testimonial-author {
                 @include font-size($text-size-xxxs);
+                color: #000;
 
                 @include media-query(hd) {
                     @include font-size($text-size-s);
+                    margin-top: 10px;
                 }
             }
 
