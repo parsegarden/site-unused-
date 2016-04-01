@@ -98,6 +98,14 @@ hr.mg-hr{
 ** Padding
 */
 
+.u-pad--hero{
+	padding: 80px 0 0 0;
+
+	@include media-query(hd) {
+        padding: 100px 0 0 0;
+    }
+}
+
 .u-pad-top{
 	padding: 80px 0 0 0;
 

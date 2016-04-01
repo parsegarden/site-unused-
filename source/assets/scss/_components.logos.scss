@@ -6,8 +6,9 @@
 		padding: 20px 30px 0 30px;
 
 	@include media-query(palm) {
-		padding: 80px 10px 110px 10px;
-		height: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		//margin-bottom: 0;
 	}
 
@@ -28,7 +29,7 @@
 	display: inline-block;
     overflow: hidden;
     text-indent: 100%;
-	margin: 0 15px;
+	//margin: 0 5px;
     //white-space: nowrap;
 
 	@include media-query(palm) {
@@ -62,9 +63,9 @@
 			content: "";
 			width: 0.1%;
 			background-color: $grey-lighter;
-			height: 82.8%;
+			height: 90%;
 			position: absolute;
-			left: 700px;
+			left: 50%;
 			margin: -150px 20px;
 			z-index: -1;
 		}
@@ -200,40 +201,54 @@
     background: url(../i/logo-sprite3.png) 0 0 no-repeat;
     background-size: cover;
     height: 50px;
-    width: 110px;
+    width: 120px;
     border: 1px solid transparent;
-}
+	margin: 0 25px;
+	@include media-query(palm) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}}
 
 
 .logo-list-item--gm{
 
-    background-position: 40px 0;
+    background-position: 80px 0;
+
+	@include media-query(palm) {
+		background-position: 45px 0;
+	}
 }
 .logo-list-item--ls{
 
-    background-position: -110px 0;
+    background-position: -90px 0;
 }
 
 .logo-list-item--ah{
 
-	background-position: -258px 0;
+	background-position: -260px 0;
 }
 
 .logo-list-item--lo{
 
-	background-position: -415px 0;
+	background-position: -430px 0;
 }
 .logo-list-item--un{
 
-	background-position: -568px 0;
+	background-position: -605px 0;
 }
 .logo-list-item--og{
 
-	background-position: -730px 0;
+	background-position: -775px 0;
 
 }
 .logo-list-item--hm{
 
-	background-position: -900px 0;
+	background-position: -932px 0;
+
+	@include media-query(palm) {
+		background-position: -912px 0;
+	}
 
 }
