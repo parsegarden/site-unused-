@@ -152,11 +152,11 @@
 
 
 .logo-list-b{
-    background: url(../i/logos/logo-sprite2.png) 0 0 no-repeat;
+    background: url(../i/logo-sprite2.png) 0 0 no-repeat;
     background-size: cover;
-    height: 42px;
+    height: 38px;
     width: 130px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 
 	@include media-query(palm) {
 		margin-bottom: 50px;
@@ -166,29 +166,29 @@
 
 .logo-list-item--fo{
 
-    background-position: 0 0%;
+    background-position: 20px 0%;
 }
 .logo-list-item--aa{
 
-    background-position: -190px 0;
+    background-position: -140px 0;
 }
 
 .logo-list-item--aw{
 
-	background-position: -370px 0;
+	background-position: -270px 0;
 }
 
 .logo-list-item--hp{
 
-	background-position: -560px 0;
+	background-position: -440px 0;
 }
 .logo-list-item--wsj{
 
-	background-position: -700px 0;
+	background-position: -600px 0;
 }
 .logo-list-item--ft{
 	width: 265px;
-	background-position: -860px 0;
+	background-position: -750px 0;
 
 }
 

@@ -1,236 +1,145 @@
 doctype html
-
 html
-    head
-        title Unmetric Home
-        
-        meta(charset="utf-8")
-        meta(name="author", content="unmetric")
-        meta(http-equiv="cleartype", content="on")
-        // http://t.co/dKP3o1e
-        meta(name="HandheldFriendly", content="True")
-        meta(name="MobileOptimized", content="320")
-        meta(name="viewport", content="initial-scale=1.0")
-        meta(name="apple-mobile-web-app-capable", content="yes")
-        meta(name="apple-mobile-web-app-title", content="Unmetric")
-        meta(name="msapplication-TileImage", content="")
-        meta(name="msapplication-TileColor", content="#4c5bb7")
-        
-        
-        
-        // Styles
-        link(href="./assets/css/styles.css", rel="stylesheet", type="text/css")
-        
-        // FONTASTIC ICONS
-        link(href="https://file.myfontastic.com/MbCTJofyGYYqRjeb8aineC/icons.css", rel="stylesheet")
-        
-        
-        // Favicon
-        link(rel="shortcut icon", href="i/favicon.ico")
-        
-        
-        
-        // JavaScript
-        script(src="https://use.typekit.net/njh2cfh.js")
-        script.
-            try{Typekit.load({ async: true });}catch(e){}
+    include includes/_head.jade
+    
+    body.hm--mod
+        // HEADER
+        header.header
+            a.logo(href="#") 
+                img.logo-image(src="assets/i/unmetric-logo-white.png" alt="Unmetric logo")
             
+
+
+            a.menu-link(href="#")
+                span.menu-icon
+            
+            
+            form#search(action="#" method="post")
+                #label
+                    
+                    label#search-label(for="search-terms") search
+                    
+                #input 
+                    input(type="text" name="search-terms" id="search-terms" placeholder="Search...")
+                
+            nav.nav-main.0is-hidden
+                ul.nav-main-wrap
+                    
+                    li 
+                        a.more.nav-main--link(href="#") Products
+                            i.icon-arrow-dropdown
+                        
+
+                        ul.nav-main-dd
+                            li 
+                                a.nav-main--link(href="javascript:void(0)") 
+                                    span.menu-analyze Analyze
+                                        i.icon-arrow-right.arrow-right
+                                    br
+                                    span.nav-main--desc Analytics for social media analysts
+                                
+                            li 
+                                a.nav-main--link(href="javascript:void(0)") 
+                                    span.menu-track Track
+                                        i.icon-arrow-right.arrow-right
+                                    br
+                                    span.nav-main--desc Keep an eye on your competition
+                                
+                            li 
+                                a.nav-main--link(href="javascript:void(0)") 
+                                    span.menu-discover Discover
+                                        i.icon-arrow-right.arrow-right
+                                    br
+                                    span.nav-main--desc Find inspiration to create content
+
+                    
+                    li: a.nav-main--link(href="javascript:void(0)") About
+                    
+                    li: a.nav-main--link(href="javascript:void(0)") Contact
+                    
+                    li: a.nav-main--link(href="javascript:void(0)") Sign In
+                    
+                    li: a.nav-main--link(href="javascript:void(0)") 
+                        button.btn.btn-secondary.t-weight--m LOGIN
+                    
+        
     
-
-    body.page-home.page-home-alt
-        header.top-bar
-            .container
-                a.logo(href="#")
-                    img(src='./assets/i/unmetric-logo-transparent.png' alt='Unmetric logo')
+                
+        section.hero.row.u-pad--top-less.is-tall.0is-hidden
+            .content.t-center
+                h1.hero-title Out-market Your Competition 
+                
+                .col-4
+                    p.t-white.hero-copy.t-weight--book Thousands of real-time marketers at hundreds of leading brands and agencies across 20+ countries use Unmetric to compete and win.
+                
+                
+                .t-center.is-hidden
+                    p.hero-meet--intro
+                        
+                        img.arrow-product--left(src="assets/i/left-arrow.svg" alt="#") 
+                        
+                        span.hero-intro.t-weight--m MEET OUR PRODUCTS
+                        
+                        img.arrow-product--right(src="assets/i/right-arrow.svg" alt="#") 
+                        
+                        
+                
+                .grid.grid--gutter
+                    .box.hero-list--item
+                        a.box-link.hero-list--link
+                            
+                            h3.hero-list--heading Analysts & Strategists
+                            p.t-white Analyze your competition&rsquo;s content and campaign in depth.
+                            
+                            span.btn.btn-small.btn-primary.t-weight--m Learn more about Analyze
+                                i.icon-arrow-right
+                            
+                            
+                           
+                    .box.hero-list--item
+                        a.box-link.hero-list--link   
+                            
+                            h3.hero-list--heading Brand Managers
+                            p.t-white Track your competitors&rsquo; media marketing in real time.
+                            
+                            span.btn.btn-small.btn-primary.t-weight--m Learn more about Track
+                                i.icon-arrow-right
+                                
                     
-
-
-
-                
-                
-                
-                nav.nav-wrap
-                    a.nav-link(href='#') Products
+                    .box.hero-list--item
+                        a.box-link.hero-list--link   
+                            
+                            h3.hero-list--heading Content Creators
+                            p.t-white Discover ideas and inspiration to create engaging social content
+                            
+                            span.btn.btn-primary.t-weight--m.btn-small Learn more about Discover
+                                i.icon-arrow-right
                     
-                    a.nav-link(href='#') Customers
-                
-                    a.nav-link(href='#') Company
-                
-                    a.nav-link(href='#') Log in
-                    
-                
-                
-                
-        section.billboard
-            .container
-                .billboard-content
-                    h1.page-title Take your competition head on
-                    
-                    h2.page-subtitle
-                        | Join thousands of real-time marketers at hundreds of leading brands and agencies across 20+ countries who trust Unmetric for their marketing needs.
-                        
-                    ul.billboard-list
-                        li.billboard-list--item
-                            a.billboard-list--link(href='#')
-                                h3.billboard-list--heading 
-                                    span Digital Marketers
-                        
-                                p.billboard-list--copy 
-                                    b Track 
-                                    | your competitors social media marketing in real time.
-                                
-                                span.billboard-list--more Learn More
-                                    i.icon-arrow-right
-                        
-                        
-                        
-                        li.billboard-list--item
-                            a.billboard-list--link(href='#')
-                                h3.billboard-list--heading 
-                                    span Social Media Analysts
-                                
-                                p.billboard-list--copy 
-                                    b Analyze 
-                                    | your competition’s social content and campaign in depth.
-                                
-                                span.billboard-list--more Learn More
-                                    i.icon-arrow-right
-                                
-                                
-                        li.billboard-list--item
-                            a.billboard-list--link(href='#')
-                                h3.billboard-list--heading 
-                                    span Content Creators
-                                
-                                p.billboard-list--copy 
-                                    b Discover 
-                                    | ideas and inspiration to create engaging social content.
-                                
-                                span.billboard-list--more Learn More
-                                    i.icon-arrow-right
-                
-                
-                
-        section.clients-wrap
-            .container
-                .size1of1
-                    ul.clients-list
-                        li.clients-list--item
-                            img(src='./assets/i/logo-microsoft@2x.png' alt='Microsoft logo')
-                        
-                        li.clients-list--item
-                            img(src='./assets/i/logo-kfc@2x.png' alt='KFC logo')
-                            
-                        li.clients-list--item
-                            img(src='./assets/i/logo-edelman@2x.png' alt='Edelman logo')
-                        
-                        li.clients-list--item
-                            img(src='./assets/i/logo-gm@2x.png' alt='GM logo')
-                            
-                        li.clients-list--item
-                            img(src='./assets/i/logo-lowes@2x.png' alt='Lowes logo')
-                        
-                        li.clients-list--item
-                            img(src='./assets/i/logo-underarmour@2x.png' alt='Underarmour logo')
-                            
-                        li.clients-list--item
-                            img(src='./assets/i/logo-bbdo@2x.png' alt='BBDO logo')
-                      
-              
-              
-              
-        footer.bottom-bar
-            .container
-                .size4of12            
-                    ul
-                        li 
-                            h3 
-                                span Products
-                        
-                        li
-                            a.footer-list--link(href='#') Sense — for Marketers
-    
-                        li
-                            a.footer-list--link(href='#') Analyze — for Social Media Analysts
-                            
-                        li    
-                            a.footer-list--link(href='#') Discover — for Content Creators
-                  
-                
-                .size3of12
-                    ul
-                        li
-                            h3 
-                                span About
-                            
-                        li   
-                            a.footer-list--link(href='#') Company
- 
-                        li
-                            a.footer-list--link(href='#') Customers
-                        
-                        li
-                            a.footer-list--link(href='#') Why Agencies love us
+        .row.group.logos
+            .logo-list-wrap
+                ul.logo-list
+                    li.logo-list-item.logo-list-item--gm.logo-list-c
+                        span GM
 
-                        li      
-                            a.footer-list--link(href='#') Our blog
-                        
-                        li    
-                            a.footer-list--link(href='#') Press & News coverage
-                        
-                        li  
-                            a.footer-list--link(href='#') Job openings
+                    li.logo-list-item.logo-list-item--ls.logo-list-c
+                        span Lower's
 
-                          
+                    li.logo-list-item.logo-list-item--ah.logo-list-c
+                        span Aa
 
-                .size3of12
-                    ul
-                        li
-                            h3 
-                                span Resources 
-                    
-                        li
-                            a.footer-list--link(href='#') Articles 
-                        
-                        li  
-                            a.footer-list--link(href='#') Ebooks
-                        
-                        li  
-                            a.footer-list--link(href='#') Infographics
-                        
-                        li  
-                            a.footer-list--link(href='#') Interviews
-                        
-                        li  
-                            a.footer-list--link(href='#') Industry Reports
-                      
-                      
-                .size2of12
-                    ul 
-                        li 
-                            h3 
-                                span Contact
-                            
-                        li
-                            a.footer-list--link(href='#') Get in touch 
-                        
-                        li
-                            a.footer-list--link(href='#') Twitter
-                        
-                        li  
-                            a.footer-list--link(href='#') Facebook
-                        
-                        li
-                            a.footer-list--link(href='#') Pinterest
-                        
-                        li
-                            a.footer-list--link(href='#') LinkedIn
-                        
-                        li
-                            a.footer-list--link(href='#') SlideShare
+                    li.logo-list-item.logo-list-item--lo.logo-list-c
+                        span Loreal
 
+                    li.logo-list-item.logo-list-item--un.logo-list-c
+                        span Unilever
 
+                    li.logo-list-item.logo-list-item--og.logo-list-c
+                        span Og
 
-
-        script(src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
-        script(src='assets/js/functions.js')
+                    li.logo-list-item.logo-list-item--hm.logo-list-c
+                        span H.M                    
+                       
+                
+        
+        include includes/_footer.jade                    
+        include includes/_foot.jade

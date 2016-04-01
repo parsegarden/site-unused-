@@ -32,6 +32,10 @@ body.theme--basic::before{
         position: relative;
         height: 0;
     }
+
+    .nav-main--link{
+        text-transform: none;
+    }
 }
 
 
@@ -54,6 +58,10 @@ body.theme--basic::before{
         form{
             visibility: hidden;
         }
+        button{
+            background: white;
+            color: #27DCF9;
+        }
     }
 
     .hero {
@@ -64,10 +72,4 @@ body.theme--basic::before{
 
             }
         }
-
-
-
-    .btn-primary {
-        @include linear-gradient(#5658D8, #27DCF9);
-    }
-}
+}    

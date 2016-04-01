@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Unmetric Home</title>
+    <title>Unmetric</title>
     <meta charset="utf-8">
     <meta name="author" content="unmetric">
     <meta http-equiv="cleartype" content="on">
@@ -14,113 +14,148 @@
     <meta name="msapplication-TileImage" content="">
     <meta name="msapplication-TileColor" content="#4c5bb7">
     <!-- Styles-->
-    <link href="./assets/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
     <!-- FONTASTIC ICONS-->
-    <link href="https://file.myfontastic.com/MbCTJofyGYYqRjeb8aineC/icons.css" rel="stylesheet">
+    <link href="https://file.myfontastic.com/Nu78X7V3JTmvUKt9N5J33g/icons.css" rel="stylesheet">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="i/favicon.ico">
+    <link rel="shortcut icon" href="assets/i/favicon.ico">
     <!-- JavaScript-->
     <script src="https://use.typekit.net/njh2cfh.js"></script>
-    <script>
-      try{Typekit.load({ async: true });}catch(e){}
-      
-      
-      
-    </script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
-  <body class="page-home page-home-alt">
-    <header class="top-bar">
-      <div class="container"><a href="#" class="logo"><img src="./assets/i/unmetric-logo-transparent.png" alt="Unmetric logo"></a>
-        <nav class="nav-wrap"><a href="#" class="nav-link">Products</a><a href="#" class="nav-link">Customers</a><a href="#" class="nav-link">Company</a><a href="#" class="nav-link">Log in</a></nav>
-      </div>
+  <body class="hm--mod">
+    <!-- HEADER-->
+    <header class="header"><a href="#" class="logo"> <img src="assets/i/unmetric-logo-white.png" alt="Unmetric logo" class="logo-image"></a><a href="#" class="menu-link"><span class="menu-icon"></span></a>
+      <form id="search" action="#" method="post">
+        <div id="label">
+          <label id="search-label" for="search-terms">search</label>
+        </div>
+        <div id="input"> 
+          <input type="text" name="search-terms" id="search-terms" placeholder="Search...">
+        </div>
+      </form>
+      <nav class="nav-main 0is-hidden">
+        <ul class="nav-main-wrap">
+          <li> <a href="#" class="more nav-main--link">Products<i class="icon-arrow-dropdown"></i></a>
+            <ul class="nav-main-dd">
+              <li> <a href="javascript:void(0)" class="nav-main--link"> <span class="menu-analyze">Analyze<i class="icon-arrow-right arrow-right"></i></span><br><span class="nav-main--desc">Analytics for social media analysts</span></a></li>
+              <li> <a href="javascript:void(0)" class="nav-main--link"> <span class="menu-track">Track<i class="icon-arrow-right arrow-right"></i></span><br><span class="nav-main--desc">Keep an eye on your competition</span></a></li>
+              <li> <a href="javascript:void(0)" class="nav-main--link"> <span class="menu-discover">Discover<i class="icon-arrow-right arrow-right"></i></span><br><span class="nav-main--desc">Find inspiration to create content</span></a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)" class="nav-main--link">About</a></li>
+          <li><a href="javascript:void(0)" class="nav-main--link">Contact</a></li>
+          <li><a href="javascript:void(0)" class="nav-main--link">Sign In</a></li>
+          <li><a href="javascript:void(0)" class="nav-main--link"> 
+              <button class="btn btn-secondary t-weight--m">LOGIN</button></a></li>
+        </ul>
+      </nav>
     </header>
-    <section class="billboard">
-      <div class="container">
-        <div class="billboard-content">
-          <h1 class="page-title">Take your competition head on</h1>
-          <h2 class="page-subtitle">Join thousands of real-time marketers at hundreds of leading brands and agencies across 20+ countries who trust Unmetric for their marketing needs.</h2>
-          <ul class="billboard-list">
-            <li class="billboard-list--item"><a href="#" class="billboard-list--link">
-                <h3 class="billboard-list--heading"> <span>Digital Marketers</span></h3>
-                <p class="billboard-list--copy"> <b>Track </b>your competitors social media marketing in real time.</p><span class="billboard-list--more">Learn More<i class="icon-arrow-right"></i></span></a></li>
-            <li class="billboard-list--item"><a href="#" class="billboard-list--link">
-                <h3 class="billboard-list--heading"> <span>Social Media Analysts</span></h3>
-                <p class="billboard-list--copy"> <b>Analyze </b>your competition’s social content and campaign in depth.</p><span class="billboard-list--more">Learn More<i class="icon-arrow-right"></i></span></a></li>
-            <li class="billboard-list--item"><a href="#" class="billboard-list--link">
-                <h3 class="billboard-list--heading"> <span>Content Creators</span></h3>
-                <p class="billboard-list--copy"> <b>Discover </b>ideas and inspiration to create engaging social content.</p><span class="billboard-list--more">Learn More<i class="icon-arrow-right"></i></span></a></li>
-          </ul>
+    <section class="hero row u-pad--top-less is-tall 0is-hidden">
+      <div class="content t-center">
+        <h1 class="hero-title">Out-market Your Competition </h1>
+        <div class="col-4">
+          <p class="t-white hero-copy t-weight--book">Thousands of real-time marketers at hundreds of leading brands and agencies across 20+ countries use Unmetric to compete and win.</p>
+        </div>
+        <div class="t-center is-hidden">
+          <p class="hero-meet--intro"><img src="assets/i/left-arrow.svg" alt="#" class="arrow-product--left"><span class="hero-intro t-weight--m">MEET OUR PRODUCTS</span><img src="assets/i/right-arrow.svg" alt="#" class="arrow-product--right"></p>
+        </div>
+        <div class="grid grid--gutter">
+          <div class="box hero-list--item"><a class="box-link hero-list--link">
+              <h3 class="hero-list--heading">Analysts & Strategists</h3>
+              <p class="t-white">Analyze your competition&rsquo;s content and campaign in depth.</p><span class="btn btn-small btn-primary t-weight--m">Learn more about Analyze<i class="icon-arrow-right"></i></span></a></div>
+          <div class="box hero-list--item"><a class="box-link hero-list--link">  
+              <h3 class="hero-list--heading">Brand Managers</h3>
+              <p class="t-white">Track your competitors&rsquo; media marketing in real time.</p><span class="btn btn-small btn-primary t-weight--m">Learn more about Track<i class="icon-arrow-right"></i></span></a></div>
+          <div class="box hero-list--item"><a class="box-link hero-list--link">  
+              <h3 class="hero-list--heading">Content Creators</h3>
+              <p class="t-white">Discover ideas and inspiration to create engaging social content</p><span class="btn btn-primary t-weight--m btn-small">Learn more about Discover<i class="icon-arrow-right"></i></span></a></div>
         </div>
       </div>
     </section>
-    <section class="clients-wrap">
-      <div class="container">
-        <div class="size1of1">
-          <ul class="clients-list">
-            <li class="clients-list--item"><img src="./assets/i/logo-microsoft@2x.png" alt="Microsoft logo"></li>
-            <li class="clients-list--item"><img src="./assets/i/logo-kfc@2x.png" alt="KFC logo"></li>
-            <li class="clients-list--item"><img src="./assets/i/logo-edelman@2x.png" alt="Edelman logo"></li>
-            <li class="clients-list--item"><img src="./assets/i/logo-gm@2x.png" alt="GM logo"></li>
-            <li class="clients-list--item"><img src="./assets/i/logo-lowes@2x.png" alt="Lowes logo"></li>
-            <li class="clients-list--item"><img src="./assets/i/logo-underarmour@2x.png" alt="Underarmour logo"></li>
-            <li class="clients-list--item"><img src="./assets/i/logo-bbdo@2x.png" alt="BBDO logo"></li>
-          </ul>
-        </div>
+    <div class="row group logos">
+      <div class="logo-list-wrap">
+        <ul class="logo-list">
+          <li class="logo-list-item logo-list-item--gm logo-list-c"><span>GM</span></li>
+          <li class="logo-list-item logo-list-item--ls logo-list-c"><span>Lower's</span></li>
+          <li class="logo-list-item logo-list-item--ah logo-list-c"><span>Aa</span></li>
+          <li class="logo-list-item logo-list-item--lo logo-list-c"><span>Loreal</span></li>
+          <li class="logo-list-item logo-list-item--un logo-list-c"><span>Unilever</span></li>
+          <li class="logo-list-item logo-list-item--og logo-list-c"><span>Og</span></li>
+          <li class="logo-list-item logo-list-item--hm logo-list-c"><span>H.M                    </span></li>
+        </ul>
       </div>
-    </section>
-    <footer class="bottom-bar">
-      <div class="container">
-        <div class="size4of12">           
-          <ul>
-            <li> 
-              <h3> <span>Products</span></h3>
-            </li>
-            <li><a href="#" class="footer-list--link">Sense — for Marketers</a></li>
-            <li><a href="#" class="footer-list--link">Analyze — for Social Media Analysts</a></li>
-            <li>   <a href="#" class="footer-list--link">Discover — for Content Creators</a></li>
-          </ul>
-        </div>
-        <div class="size3of12">
-          <ul>
-            <li>
-              <h3> <span>About</span></h3>
-            </li>
-            <li>  <a href="#" class="footer-list--link">Company</a></li>
-            <li><a href="#" class="footer-list--link">Customers</a></li>
-            <li><a href="#" class="footer-list--link">Why Agencies love us</a></li>
-            <li>     <a href="#" class="footer-list--link">Our blog</a></li>
-            <li>   <a href="#" class="footer-list--link">Press & News coverage</a></li>
-            <li> <a href="#" class="footer-list--link">Job openings</a></li>
-          </ul>
-        </div>
-        <div class="size3of12">
-          <ul>
-            <li>
-              <h3> <span>Resources </span></h3>
-            </li>
-            <li><a href="#" class="footer-list--link">Articles </a></li>
-            <li> <a href="#" class="footer-list--link">Ebooks</a></li>
-            <li> <a href="#" class="footer-list--link">Infographics</a></li>
-            <li> <a href="#" class="footer-list--link">Interviews</a></li>
-            <li> <a href="#" class="footer-list--link">Industry Reports</a></li>
-          </ul>
-        </div>
-        <div class="size2of12">
-          <ul> 
-            <li> 
-              <h3> <span>Contact</span></h3>
-            </li>
-            <li><a href="#" class="footer-list--link">Get in touch </a></li>
-            <li><a href="#" class="footer-list--link">Twitter</a></li>
-            <li> <a href="#" class="footer-list--link">Facebook</a></li>
-            <li><a href="#" class="footer-list--link">Pinterest</a></li>
-            <li><a href="#" class="footer-list--link">LinkedIn</a></li>
-            <li><a href="#" class="footer-list--link">SlideShare</a></li>
-          </ul>
+    </div>
+    <footer class="row has-padding">
+      <div class="content">
+        <ul class="nav-footer grid grid--gutters">
+          <li class="grid-cell size1of3">
+            <h4>Products</h4>
+            <ul class="nav-footer--list">
+              <li><a href="#" class="nav-footer--link">Analyze &mdash; for Social Media Analysts</a></li>
+              <li><a href="#" class="nav-footer--link">Track &mdash; for Marketers</a></li>
+              <li><a href="#" class="nav-footer--link">Discover &mdash; for Content Creators</a></li>
+            </ul>
+          </li>
+          <li class="grid-cell">
+            <h4>About</h4>
+            <ul class="nav-footer--list">
+              <li><a href="#" class="nav-footer--link">Company</a></li>
+              <li><a href="#" class="nav-footer--link">Customers</a></li>
+              <li><a href="#" class="nav-footer--link">Why Agencies love us</a></li>
+              <li><a href="#" class="nav-footer--link">Our blog</a></li>
+              <li><a href="#" class="nav-footer--link">Press & News coverage</a></li>
+              <li><a href="#" class="nav-footer--link">Job openings</a></li>
+            </ul>
+          </li>
+          <li class="grid-cell">
+            <h4>Resources</h4>
+            <ul class="nav-footer--list">
+              <li><a href="#" class="nav-footer--link">Articles</a></li>
+              <li><a href="#" class="nav-footer--link">Ebooks </a></li>
+              <li><a href="#" class="nav-footer--link">Infographics </a></li>
+              <li><a href="#" class="nav-footer--link">Interviews </a></li>
+              <li><a href="#" class="nav-footer--link">Industry Reports </a></li>
+            </ul>
+          </li>
+          <li class="gird-cell"> 
+            <h4>Contact</h4>
+            <ul class="nav-footer--list">   
+              <li><a href="#" class="nav-footer--link">Get in touch </a></li>
+              <li><a href="#" class="nav-footer--link">Twitter</a></li>
+              <li><a href="#" class="nav-footer--link">Facebook</a></li>
+              <li><a href="#" class="nav-footer--link">Pinterest</a></li>
+              <li><a href="#" class="nav-footer--link">LinkedIn</a></li>
+              <li><a href="#" class="nav-footer--link">SlideShare</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="grid site-info-wrap">
+          <div class="grid-cell">
+            <p class="site-info">&copy; Unmetric </p>
+          </div>
+          <div class="grid-cell">   
+            <p class="victory">&#9996;       </p>
+          </div>
+          <div class="grid-cell">
+            <p class="site-links"><a href="#">Privacy</a></p>
+          </div>
         </div>
       </div>
     </footer>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="assets/js/jquery-2.1.3.min.js"> </script>
     <script src="assets/js/functions.js"></script>
+    <script src="assets/js/uilang.js"></script><code>
+
+clicking on ".more" toggles class "visible" on ".nav-main-dd"
+
+
+<!-- HOMEPAGE – TESTIMONIAL -->
+clicking on ".testimonial-content--2 .testimonial-link" removes class "is-active" on ".testimonial-content--3"
+clicking on ".testimonial-content--2 .testimonial-link" adds class "is-active" on ".testimonial-content--2"
+
+</code>
+
+
   </body>
 </html>
