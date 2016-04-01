@@ -28,6 +28,7 @@
 	display: inline-block;
     overflow: hidden;
     text-indent: 100%;
+	margin: 0 15px;
     //white-space: nowrap;
 
 	@include media-query(palm) {

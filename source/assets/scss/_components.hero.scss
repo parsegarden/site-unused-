@@ -45,7 +45,7 @@
     .hero-list--item {
         display: flex;
         justify-content: center;
-        padding: 60px 0 0 25px;
+        padding: 40px 0 0 25px;
         text-align: center;
 
         @include media-query(palm) {
@@ -114,8 +114,12 @@
             box-shadow: 0 5px 10px rgba(black, .2);
         }
 
-        p{
-            padding: 5px 25px 10px 25px;
+        p {
+            padding: 5px 30px 10px 30px;
+
+            .page__home--alt & {
+                padding: 5px 38px 10px;
+            }
         }
 
         @include media-query(palm) {
@@ -126,6 +130,10 @@
             border-radius: 0 0 8px 8px;
             height: 48px;
             padding: 12px;
+        }
+
+        .page__home--alt & {
+            width: 340px;
         }
     }
 
