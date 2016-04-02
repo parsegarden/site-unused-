@@ -156,6 +156,8 @@
 
 
                 .testimonial-text {
+                    font-family: calluna;
+                    font-style: italic;
                     max-width: 920px;
                     margin: 0 auto;
                 }
@@ -189,6 +191,7 @@
                 color: #000;
                 margin-top: 10px;
 
+
                 @include media-query(hd) {
                     @include font-size($text-size-s);
                 }
@@ -202,7 +205,6 @@
             .d-quotes {
                 @include font-size($text-size-xxl);
                 line-height: 1;
-                margin-top: -8px;
                 position: absolute;
 
                 @include media-query(hd) {
@@ -213,6 +215,7 @@
 
             .d-quotes--left {
                 margin-left: -22px;
+                margin-top: -5px;
 
                 @include media-query(hd) {
                     margin-left: -30px;
