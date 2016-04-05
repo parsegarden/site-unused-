@@ -3,11 +3,9 @@
 \*------------------------------------*/
 
 .testimonial{
-    background: url(../i/avatars/chrissy.png)no-repeat;
-    background-position:  center 30%;
-    background-size: cover;
     height: 540px;
     position: relative;
+    background-color: rgba(225, 225, 225, 0.85);
 
     @include media-query(palm) {
         height: 400px;
@@ -15,14 +13,6 @@
 }
 
 
-.layer{
-    background-color: rgba(225, 225, 225, 0.85);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 110%;
-    height: 100%;
-}
 
 
 .testimonial-wrap {
