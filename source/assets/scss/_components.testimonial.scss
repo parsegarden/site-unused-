@@ -3,9 +3,10 @@
 \*------------------------------------*/
 
 .testimonial{
+    background-color: #f6f6f6;
     height: 540px;
     position: relative;
-    background-color: rgba(225, 225, 225, 0.85);
+    z-index: 2;
 
     @include media-query(palm) {
         height: 400px;
