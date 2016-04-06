@@ -164,9 +164,9 @@
     background: url(../i/logo-sprite3.png) 0 0 no-repeat;
     background-size: cover;
     height: 50px;
-    width: 120px;
+    width: 90px;
     border: 1px solid transparent;
-	margin:  0 15px;
+	margin:  0 20px;
 
 
 	@include media-query(palm) {
@@ -181,22 +181,22 @@
 
 .logo-list-item--gm{
 
-    background-position: 45px 0;
+    background-position: 35px 0;
 }
 
 .logo-list-item--ls{
-
-    background-position: -70px 0;
+	width: 100px;
+    background-position: -90px 0;
 }
 
 .logo-list-item--ah{
-
+	width: 120px;
 	background-position: -215px 0;
 }
 
 .logo-list-item--lo{
 	width: 225px;
-	background-position: -375px 0;
+	background-position: -370px 0;
 }
 
 .logo-list-item--un{
@@ -207,7 +207,6 @@
 
 
 .logo-list-item--og{
-	width: 100px;
 	background-position: -755px 0;
 
 
@@ -215,8 +214,8 @@
 }
 
 .logo-list-item--hm{
-	width: 180px;
-	background-position: -860px 0;
+	width: 130px;
+	background-position: -890px 0;
 
 }
 
