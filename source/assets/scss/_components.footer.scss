@@ -16,8 +16,16 @@ footer.row.has-padding {
     @include media-query(hd) {
         text-align: left;
     }
+
+    a:hover{
+        color: $grey-dark;
+    }
+
 }
 
+footer:hover li a{
+    color: $grey-base;
+}
 
 
 .nav-footer--list {
@@ -38,6 +46,7 @@ footer.row.has-padding {
     //padding-top: 20px;
     text-align: center;
     margin-top: -20px;
+
     img{
         height: 60px;
     }
