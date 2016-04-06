@@ -191,7 +191,11 @@
 
 
 .hero-meet--intro{
-    opacity: .3;
+
+    span{
+        color: rgba(#333, 0.4);
+        //text-transform: uppercase;
+    }
 
     @include media-query(palm) {
         visibility: hidden;
@@ -202,12 +206,12 @@
     position: relative;
     top: 22px;
     right: 30px;
-    opacity: .3;
+    opacity: 0.2;
 }
 
 .arrow-product--right{
     position: relative;
     top: 22px;
     left: 30px;
-    opacity: .3;
+    opacity: 0.2;
 }
