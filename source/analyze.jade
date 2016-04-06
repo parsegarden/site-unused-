@@ -4,47 +4,63 @@ html
 
     body.theme--basic
          // HEADER
-        header.header
-            
-            a.logo(href="#") 
-                img.logo-image(src="assets/i/unmetric-logo-white.png" alt="Unmetric logo")
-            
-            a.menu-link(href="#")
-                span.menu-icon
-            
-            nav.nav-main.0is-hidden
-                ul.nav-main-wrap
-                    li 
-                        a.more.nav-main--link(href="javascript:void(0)") Products 
-                            i.icon-arrow-dropdown
-                        
-                        ul.nav-main-dd
-                            li 
-                                a.nav-main--link.is-active(href="javascript:void(0)") 
-                                    span.menu-analyze Analyze
-                                        i.icon-arrow-right.arrow-right
-                                    br
-                                    span.nav-main--desc Analytics for social media analysts
-                                
-                            li 
-                                a.nav-main--link(href="javascript:void(0)") 
-                                    span.menu-track Track
-                                        i.icon-arrow-right.arrow-right
-                                    br
-                                    span.nav-main--desc Keep an eye on your competition
-                                
-                            li 
-                                a.nav-main--link(href="javascript:void(0)") 
-                                    span.menu-discover Discover
-                                        i.icon-arrow-right.arrow-right
-                                    br
-                                    span.nav-main--desc Find inspiration to create content
-                    
-                    li: a.nav-main--link(href="#") About
-                    
-                    li: a.nav-main--link(href="#") Contact
-                    
-                    li: a.nav-main--link.nav-main--link-signin(href="#") Sign In
+         header.header
+             a.logo(href="#") 
+                 img.logo-image(src="assets/i/unmetric-logo-white.png" alt="Unmetric logo")
+             
+
+
+             a.menu-link(href="#")
+                 span.menu-icon
+             
+             
+             form#search(action="#" method="post")
+                 #label
+                     
+                     label#search-label(for="search-terms") search
+                     
+                 #input 
+                     input(type="text" name="search-terms" id="search-terms" placeholder="Search...")
+                 
+             nav.nav-main.0is-hidden
+                 ul.nav-main-wrap
+                     
+                     li 
+                         a.more.nav-main--link(href="#") Products
+                             i.icon-arrow-dropdown
+                         
+
+                         ul.nav-main-dd
+                             li 
+                                 a.nav-main--link(href="javascript:void(0)") 
+                                     span.menu-analyze Analyze
+                                         i.icon-arrow-right.arrow-right
+                                     br
+                                     span.nav-main--desc Analytics for social media analysts
+                                 
+                             li 
+                                 a.nav-main--link(href="javascript:void(0)") 
+                                     span.menu-track Track
+                                         i.icon-arrow-right.arrow-right
+                                     br
+                                     span.nav-main--desc Competitor tracking for marketers
+                                 
+                             li 
+                                 a.nav-main--link(href="javascript:void(0)") 
+                                     span.menu-discover Discover
+                                         i.icon-arrow-right.arrow-right
+                                     br
+                                     span.nav-main--desc Inspiration for content creators
+
+                     
+                     li: a.nav-main--link(href="javascript:void(0)") About
+                     
+                     li: a.nav-main--link(href="javascript:void(0)") Contact
+                     
+                     li: a.nav-main--link(href="javascript:void(0)") Login 
+                     
+                     li: a.nav-main--link(href="javascript:void(0)") 
+                         button.btn.btn-secondary.t-weight--m SIGN UP
            
             
         

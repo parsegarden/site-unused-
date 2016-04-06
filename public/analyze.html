@@ -25,23 +25,33 @@
   </head>
   <body class="theme--basic">
     <!-- HEADER-->
+    <header class="header"><a href="#" class="logo"> <img src="assets/i/unmetric-logo-white.png" alt="Unmetric logo" class="logo-image"></a><a href="#" class="menu-link"><span class="menu-icon"></span></a>
+      <form id="search" action="#" method="post">
+        <div id="label">
+          <label id="search-label" for="search-terms">search</label>
+        </div>
+        <div id="input"> 
+          <input type="text" name="search-terms" id="search-terms" placeholder="Search...">
+        </div>
+      </form>
+      <nav class="nav-main 0is-hidden">
+        <ul class="nav-main-wrap">
+          <li> <a href="#" class="more nav-main--link">Products<i class="icon-arrow-dropdown"></i></a>
+            <ul class="nav-main-dd">
+              <li> <a href="javascript:void(0)" class="nav-main--link"> <span class="menu-analyze">Analyze<i class="icon-arrow-right arrow-right"></i></span><br><span class="nav-main--desc">Analytics for social media analysts</span></a></li>
+              <li> <a href="javascript:void(0)" class="nav-main--link"> <span class="menu-track">Track<i class="icon-arrow-right arrow-right"></i></span><br><span class="nav-main--desc">Competitor tracking for marketers</span></a></li>
+              <li> <a href="javascript:void(0)" class="nav-main--link"> <span class="menu-discover">Discover<i class="icon-arrow-right arrow-right"></i></span><br><span class="nav-main--desc">Inspiration for content creators</span></a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)" class="nav-main--link">About</a></li>
+          <li><a href="javascript:void(0)" class="nav-main--link">Contact</a></li>
+          <li><a href="javascript:void(0)" class="nav-main--link">Login </a></li>
+          <li><a href="javascript:void(0)" class="nav-main--link"> 
+              <button class="btn btn-secondary t-weight--m">SIGN UP</button></a></li>
+        </ul>
+      </nav>
+    </header>
   </body>
-  <header class="header"><a href="#" class="logo"> <img src="assets/i/unmetric-logo-white.png" alt="Unmetric logo" class="logo-image"></a><a href="#" class="menu-link"><span class="menu-icon"></span></a>
-    <nav class="nav-main 0is-hidden">
-      <ul class="nav-main-wrap">
-        <li> <a href="javascript:void(0)" class="more nav-main--link">Products <i class="icon-arrow-dropdown"></i></a>
-          <ul class="nav-main-dd">
-            <li> <a href="javascript:void(0)" class="nav-main--link is-active"> <span class="menu-analyze">Analyze<i class="icon-arrow-right arrow-right"></i></span><br><span class="nav-main--desc">Analytics for social media analysts</span></a></li>
-            <li> <a href="javascript:void(0)" class="nav-main--link"> <span class="menu-track">Track<i class="icon-arrow-right arrow-right"></i></span><br><span class="nav-main--desc">Keep an eye on your competition</span></a></li>
-            <li> <a href="javascript:void(0)" class="nav-main--link"> <span class="menu-discover">Discover<i class="icon-arrow-right arrow-right"></i></span><br><span class="nav-main--desc">Find inspiration to create content</span></a></li>
-          </ul>
-        </li>
-        <li><a href="#" class="nav-main--link">About</a></li>
-        <li><a href="#" class="nav-main--link">Contact</a></li>
-        <li><a href="#" class="nav-main--link nav-main--link-signin">Sign In</a></li>
-      </ul>
-    </nav>
-  </header>
   <section class="hero row has-padding">
     <div class="content t-center">
       <h1 class="hero-title">Analyze for Social media Analysts</h1><img src="assets/i/bg-2x.png" alt="Product" class="col-1 box-image box-screenshot">

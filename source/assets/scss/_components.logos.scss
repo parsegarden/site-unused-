@@ -49,38 +49,11 @@
 //Promos
 
 .promos{
-	max-width: 90%;
-	margin-top: 120px;
-	margin-left: auto;
-	margin-right: auto;
-	display: flex;
-	justify-content: center;
+	position: relative;
+	padding-top: 35px;
 
-	@include media-query(palm) {
-		margin-top: 10px 0;
-	}
-
-	&::before{
-		@include media-query(hd) {
-			display: block;
-			content: "";
-			width: 0.1%;
-			background-color: $grey-lighter;
-			height: 600px;
-			position: absolute;
-			left: 50%;
-			margin: -120px 20px;
-			z-index: -1;
-		}
-
-		@include media-query(palm) {
-			visibility: hidden;
-		}
-
-	}
 
 	h2{
-		margin-bottom: 40px;
 
 		@include media-query(palm) {
 			margin-bottom: 60px;
@@ -88,26 +61,15 @@
 	}
 }
 
-
-.company-partner{
-	float: left;
-	padding-right: 100px;
+.promos-list {
+    margin-top: 94px;
 
 	@include media-query(palm) {
-		padding-bottom: 50px;
-		padding-right: 0;
+		margin: 30px 0 40px;
 	}
 }
 
-.making-news{
-	float: right;
-	padding-left: 100px;
 
-	@include media-query(palm) {
-		padding-bottom: 50px;
-		padding-left: 0;
-	}
-}
 
 //Logo-list-a
 
@@ -117,38 +79,40 @@
     background-size: cover;
     height: 60px;
 	margin-bottom: 20px;
+	width: 160px;
 
-	@include media-query(palm) {
-		margin-bottom: 30px;
-	}
+
 }
+
+
+
 
 
 .logo-list-item--or{
-	width: 155px;
-    background-position: 0 0%;
+
+    background-position: 20px 0%;
 }
 .logo-list-item--sf{
-	width: 120px;
-    background-position: -158px 0;
+
+    background-position: -165px 0;
 }
 
 .logo-list-item--km{
-	width: 210px;
-	background-position: -272px 0;
+	width: 180px;
+	background-position: -368px 0;
 }
 
 .logo-list-item--hs{
-	width: 165px;
-	background-position: -485px 0;
+	width: 170px;
+	background-position: -600px 0;
 }
 .logo-list-item--pr{
-	width: 200px;
-	background-position: -675px 0;
+
+	background-position: -815px 0;
 }
 .logo-list-item--bw{
-	width: 250px;
-	background-position: -885px 0;
+	width: 185px;
+	background-position: -1040px 0;
 
 }
 
@@ -159,41 +123,37 @@
 .logo-list-b{
     background: url(../i/logo-sprite2.png) 0 0 no-repeat;
     background-size: cover;
-    height: 38px;
-    width: 130px;
-	margin-bottom: 54px;
-
-	@include media-query(palm) {
-		margin-bottom: 50px;
-	}
-
+    height: 28px;
+    width: 160px;
+	margin-top: 10px;
+	margin-bottom: 40px;
 }
+
 
 .logo-list-item--fo{
 
-    background-position: 20px 0%;
+    background-position: 35px 0%;
+
 }
 .logo-list-item--aa{
 
-    background-position: -140px 0;
+    background-position: -115px 0;
 }
 
 .logo-list-item--aw{
 
-	background-position: -270px 0;
+	background-position: -260px 0;
 }
 
 .logo-list-item--hp{
-
-	background-position: -440px 0;
+	width: 130px;
+	background-position: -400px 0;
 }
 .logo-list-item--wsj{
-
-	background-position: -600px 0;
+	background-position: -505px 0;
 }
 .logo-list-item--ft{
-	width: 265px;
-	background-position: -750px 0;
+	background-position: -665px 0;
 
 }
 
@@ -204,14 +164,15 @@
     background: url(../i/logo-sprite3.png) 0 0 no-repeat;
     background-size: cover;
     height: 50px;
-    width: 120px;
+    width: 100px;
     border: 1px solid transparent;
-	margin: 0 25px;
+	margin:  -5px 10px 5px 49px;
 
 	@include media-query(palm) {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
 
 	}
 }
@@ -219,51 +180,48 @@
 
 .logo-list-item--gm{
 
-    background-position: 50px 0;
-
-	@include media-query(palm) {
-		background-position: 20px 0;
-	}
+    background-position: 55px 0;
 }
 
 .logo-list-item--ls{
 
-    background-position: -100px 0;
-
-	@include media-query(palm) {
-		background-position: -130px 0;
-	}
-
+    background-position: -85px 0;
 }
 
 .logo-list-item--ah{
 
-	background-position: -280px 0;
+	background-position: -240px 0;
 }
 
 .logo-list-item--lo{
-
-	background-position: -478px 0;
+	width: 225px;
+	background-position: -405px 0;
 }
+
 .logo-list-item--un{
 
-	background-position: -655px 0;
+	background-position: -685px 0;
 
-	@include media-query(palm) {
-		background-position: -660px 0;
-	}
 }
+
+
 .logo-list-item--og{
+	width: 100px;
+	background-position: -815px 0;
 
-	background-position: -825px 0;
 
-	@include media-query(palm) {
-		background-position: -832px 0;
-	}
 
 }
+
 .logo-list-item--hm{
+	width: 180px;
+	background-position: -955px 0;
 
-	background-position: -1000px 0;
+}
 
+[class*="logo-list-item--"] {
+
+	@include media-query(palm){
+		margin: 0 auto;
+	}
 }

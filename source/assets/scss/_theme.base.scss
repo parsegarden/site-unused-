@@ -5,7 +5,7 @@
 body.theme--basic::before{
     display: block;
     content: "";
-    @include linear-gradient(#5856D8, #27DCF9, #FFF);
+    @include linear-gradient(135deg, #5856D8, #27DCF9, #FFF);
     height: 600px;
     @include position(absolute, 0 0 0 0);
 }
@@ -17,7 +17,7 @@ body.theme--basic::before{
     }
 
     .header {
-        @include linear-gradient(#5856D6, #4F6CDD);
+        //@include linear-gradient(#5856D6, #4F6CDD);
     }
 
     .btn-primary {
