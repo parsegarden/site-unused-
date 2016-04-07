@@ -1,17 +1,17 @@
 /* -------------------- *\
   #UNMETRIC-SITE-STYLES
 \* -------------------- */
- 
- 
- 
- 
+
+
+
+
 /**
  * #SETTINGS
  */
 @import "bourbon";
 @import "neat";
 @import "settings.default";
-@import "settings.colors"; 
+@import "settings.colors";
 @import "settings.responsive";
 
 
@@ -19,7 +19,7 @@
 
 /**
  * #TOOLS
- */ 
+ */
 @import "tools.mixins";
 @import "tools.responsive";
 
@@ -29,8 +29,8 @@
 /**
  * #GENERIC
  */
-@import "generic.normalize"; 
-@import "generic.box-sizing"; 
+@import "generic.normalize";
+@import "generic.box-sizing";
 
 
 
@@ -38,12 +38,12 @@
  * #BASE
  */
 @import "base.type";
-@import "base.page"; 
+@import "base.page";
 @import "base.links";
 @import "base.layout";
 @import "base.grid";
 @import "base.form";
-@import "base.theme-old";
+
 @import "base-images";
 
 
@@ -53,7 +53,7 @@
 /**
  * #OBJECTS
  */
- 
+
 @import "object.box";
 @import "object.data-table";
 
@@ -64,48 +64,49 @@
  */
 @import "components.alerts";
 @import "components.buttons";
-
-
-
-@import "components.analyze-competition-old";
-@import "components.analyze-performance-old";
-@import "components.analyze-header-old";
-@import "components.logos";
 @import "components.form-old";
-@import "components.clients-old";
-@import "components.price-old";
-@import "components.header-old";
+
+
+
+
+
+
+@import "components.logos";
+
+
+
+
 @import "components.hero";
 @import "components.footer";
-@import "components.science-old";
-@import "components.social-content-old";
-@import "components.winning-strategies-old";
-@import "components.demand-old";
+
+
+
+
 @import "components.lists";
 @import "components.loading";
 @import "components.loader-page";
-@import "components.avatar-old";
-@import "components.news-old";
+
+
 @import "_components.caption";
 @import "components.nav-main";
-@import "components.track-header-old";
-@import "components.track-competition-old";
-@import "components.pulse-competition-old";
-@import "components.social-profile-old";
-@import "components.unmetric-track-old";
-@import "components.request-invite-old";
-@import "components.discover-header-old";
-@import "components.about-unmetric-header-old";
-@import "components.ourself-old";
-@import "components.executives-old";
-@import "components.advisor-old";
-@import "components.contact-old";
-@import "components.media-strategy-header-old";
-@import "components.introduction-old";
-@import "components.contents-old";
-@import "components.news-header-old";
-@import "components.unmetric-news-old";
-@import "components.partners-old";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import "columns";
 @import "components.header-main";
 @import "components.testimonial";
