@@ -212,7 +212,7 @@
         &:before {
             display: block;
             content: "";
-            background: url("/assets/i/left-arrow.svg") no-repeat;
+            background: url("../i/left-arrow.svg") no-repeat;
             background-size: 39px;
             top: 12px;
             left: 378px;
@@ -221,7 +221,7 @@
         &:after{
             display: block;
             content: "";
-            background: url("/assets/i/right-arrow.svg") no-repeat;
+            background: url("../i/right-arrow.svg") no-repeat;
             background-size: 39px;
             top: 12px;
             right: 370px;
