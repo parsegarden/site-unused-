@@ -186,49 +186,57 @@
 
 
 .hero-meet--intro{
-    margin: 35px 0 20px;
+    span{
+        color: rgba(#333, 0.4);
+        
+        &::before,
+        &::after{
+            display: none;
+        }
+    }
 
     @include media-query(palm) {
         margin: 20px 0;
     }
 
-    span{
-        color: rgba(#333, 0.4);
+    @include media-query(hd) {
+        margin: 35px 0 20px;
 
-        &::before,
-        &::after{
-            display: block;
-            content: "";
-            height: 45px;
-            width: 45px;
-            position: absolute;
-            opacity: 0.2;
+        span{
+            color: rgba(#333, 0.4);
 
-            @include media-query(palm) {
-                display: none;
+            &::before,
+            &::after{
+                display: block;
+                content: "";
+                height: 45px;
+                width: 45px;
+                position: absolute;
+                opacity: 0.2;
+
+                @include media-query(palm) {
+                    display: none;
+                }
+            }
+
+            &:before {
+                display: block;
+                content: "";
+                background: url("../i/left-arrow.svg") no-repeat;
+                background-size: 39px;
+                top: 12px;
+                left: 378px;
+            }
+
+            &:after{
+                display: block;
+                content: "";
+                background: url("../i/right-arrow.svg") no-repeat;
+                background-size: 39px;
+                top: 12px;
+                right: 370px;
             }
         }
-
-        &:before {
-            display: block;
-            content: "";
-            background: url("../i/left-arrow.svg") no-repeat;
-            background-size: 39px;
-            top: 12px;
-            left: 378px;
-        }
-
-        &:after{
-            display: block;
-            content: "";
-            background: url("../i/right-arrow.svg") no-repeat;
-            background-size: 39px;
-            top: 12px;
-            right: 370px;
-        }
     }
 
-    @include media-query(palm) {
-        //display: none;
-    }
 }
