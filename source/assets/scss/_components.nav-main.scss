@@ -22,6 +22,11 @@
         overflow: visible;
         visibility: visible;
     }
+
+    @include media-query(palm) {
+        margin-top: 50px;
+        height: 1000px;
+    }
 }
 
 .nav-main.is-open {
@@ -39,6 +44,11 @@
             display: flex;
             padding: 7px 40px 0 0;
 
+        }
+
+        @include media-query(palm) {
+            height: 90vh;
+            overflow: scroll;
         }
     }
 
@@ -217,20 +227,17 @@
 
 
 //fixec nav-main
-.menu-fixed{
-    position: fixed;
 
-    .hero{
-        padding-top: 650px;
-    }
-    .nav-main{
-        position:absolute;
-        top:190px;
-        height: 1115px;
-        z-index:1;
-        width:100%;
-        padding:0;
-        overflow: hidden;
-        overflow-y: auto;
+@include media-query(palm) {
+
+    .menu-fixed{
+        position: fixed;
+
+        .hero{
+            padding-top: 650px;
+        }
+        .nav-main{
+
+        }
     }
 }
