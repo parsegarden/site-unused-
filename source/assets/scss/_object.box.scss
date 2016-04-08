@@ -4,91 +4,95 @@
 
 .box {
     margin-bottom: 40px;
+
+    @include media-query(palm) {
+        margin-bottom: 20px;
+    }
 }
 
     // For all type of images, icons, avatars
     .box-image {
         margin-bottom: 10px;
     }
-    
+
     // Esp. for icon inside box
     .box-icon {
         height: 60px;
     }
-    
+
     // Esp. for avatar inside box
     .box-avatar {
         width: 100px;
     }
-    
-    
+
+
     .box-subheading {
         color: $grey-base;
         margin-bottom: 5px;
         text-transform: uppercase;
     }
-    
-    
+
+
 
 //
 // Product feature box
 //
 .box-feature-wrap {
-    
+
     @include media-query(hd) {
         .box-feature {
-            margin-bottom: 30px;    
+            margin-bottom: 30px;
         }
-        
+
             .box-link {
-                border-bottom: 1px solid $grey-lighter;    
+                border-bottom: 1px solid $grey-lighter;
                 display: block;
                 padding-bottom: 10px;
                 text-align: left;
                 width: 300px;
             }
-            
+
             .box-screenshot {
                 @include position(absolute, 20% 0 null null);
                 visibility: hidden;
             }
-            
+
             .is-active {
                 .box-link {
                     border-bottom-color: $grey-light;
                     padding-right: 100px;
                     width: 398px;
                 }
-                
+
                 .box-heading {
                     color: $grey-dark;
                 }
-                
+
                 .box-copy {
                     color: $grey-darker;
                 }
-                
+
                 .box-screenshot {
                     visibility: visible;
                 }
-            }    
+            }
         }
-        
+
         &.box-feature-wrap--alt {
             .box-link {
                 margin-left: 893px;
             }
-            
+
             .box-screenshot {
                 left: 0;
                 right: auto;
             }
-            
+
             .is-active {
                 .box-link {
                     padding: 0 0 0 100px;
                     margin-left: 793px;
-                }    
+                }
             }
         }
 }
@@ -96,7 +100,7 @@
 
 
 
-//Blog box 
+//Blog box
 
 .o-box{
     width: 300px;
