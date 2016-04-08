@@ -83,8 +83,15 @@
             position: relative;
             top: 4px;
         }
-        button{
+
+        .btn{
+            text-align: center;
             margin: 20px 0;
+            position: relative;
+            top: -8px;
+            background-color: white;
+            color: #00C963;
+
         }
 
         @include media-query(hd) {
@@ -92,7 +99,7 @@
             margin: 0 20px;
             padding: 20px 0;
 
-            button{
+            .btn{
                 margin: 0;
             }
 
@@ -101,10 +108,7 @@
 
     .nav-main--link {
 
-        button{
-            position: relative;
-            top: -8px;
-        }
+
     }
 
 
