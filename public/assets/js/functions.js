@@ -39,7 +39,13 @@ function mobileNav() {
     var status = $(this).hasClass('is-open');
     if(status){ $('.menu-link, .nav-main').removeClass('is-open'); }
     else { $('.menu-link, .nav-main').addClass('is-open'); }
-  });
+
+
+    if(status){ $('.page__home--alt').removeClass('menu-fixed'); }
+
+    else { $('.page__home--alt').addClass('menu-fixed'); }
+
+      });
 }
 
 

@@ -4,13 +4,15 @@
 
 .nav-main {
 
-    background-color: #4474DE;
+    @include linear-gradient(#5856D8, #27DCF9 80%, #FFF);
     overflow: auto;
     visibility: hidden;
     z-index: 9;
     transform: translateY(100%);
     transition: all 0.10s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
+    overflow: scroll;
+
 
 
 
@@ -106,6 +108,10 @@
 
 .nav-main-dd{
 
+    .nav-main--link{
+        text-transform: none;
+    }
+
 
     @include media-query(hd) {
         position: absolute;
@@ -137,9 +143,6 @@
 
         }
 
-        .nav-main--link{
-            text-transform: none;
-        }
 
 
         li > a{
@@ -172,6 +175,16 @@
         }
 
     }
+
+    @include media-query(palm) {
+
+        padding-left: 30px;
+
+        .nav-main--link{
+            text-transform: none;
+            max-width: 250px;
+        }
+    }
 }
 
 
@@ -199,4 +212,25 @@
     position: relative;
     top: 2px;
     font-size: 13px;
+}
+
+
+
+//fixec nav-main
+.menu-fixed{
+    position: fixed;
+
+    .hero{
+        padding-top: 650px;
+    }
+    .nav-main{
+        position:absolute;
+        top:190px;
+        height: 1115px;
+        z-index:1;
+        width:100%;
+        padding:0;
+        overflow: hidden;
+        overflow-y: auto;
+    }
 }

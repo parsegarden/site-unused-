@@ -3,12 +3,13 @@
 \*------------------------------------*/
 
 .logos{
-		padding: 20px 30px 0 30px;
+		padding: 20px 0 0;
 
 	@include media-query(palm) {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		padding: 60px 0 50px;
 		//margin-bottom: 0;
 	}
 
@@ -182,6 +183,10 @@
 .logo-list-item--gm{
 
     background-position: 35px 0;
+
+	@include media-query(palm) {
+		background-position: 20px 0;
+	}
 }
 
 .logo-list-item--ls{
@@ -197,11 +202,16 @@
 .logo-list-item--lo{
 	width: 225px;
 	background-position: -370px 0;
+
 }
 
 .logo-list-item--un{
 
 	background-position: -635px 0;
+
+	@include media-query(palm) {
+		background-position: -655px 0;
+	}
 
 }
 
@@ -209,7 +219,9 @@
 .logo-list-item--og{
 	background-position: -755px 0;
 
-
+	@include media-query(palm) {
+		background-position: -770px 0;
+	}
 
 }
 
@@ -217,6 +229,9 @@
 	width: 130px;
 	background-position: -890px 0;
 
+	@include media-query(palm) {
+		background-position: -888px 0;
+	}
 }
 
 [class*="logo-list-item--"] {
