@@ -8,7 +8,7 @@
     flex-direction: column;
 
     h1{
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 }
 
@@ -22,6 +22,10 @@
         @include media-query(hd) {
             @include font-size($text-size-xxxl);
         }
+
+        @include media-query(palm) {
+    		font-size: $text-size-xl;
+    	}
     }
 
     .hero-intro{
@@ -50,7 +54,7 @@
     .hero-list{
 
         @include media-query(palm) {
-            padding: 40px 0 30px;;
+            padding: 10px 0 30px;;
         }
 
     }
@@ -66,6 +70,7 @@
 
         @include media-query(palm) {
             padding: 0 0 0;
+            margin-bottom: 10px;
 
         }
 

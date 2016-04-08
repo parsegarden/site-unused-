@@ -110,7 +110,7 @@ blockquote {
         margin-bottom: 10px;
 
         @include media-query(desk) {
-            @include font-size($text-size-xl);    
+            @include font-size($text-size-xl);
         }
     }
 }
@@ -160,6 +160,7 @@ small,
     font-weight: 900;
     letter-spacing: -2px;
     font-size: 60px;
+
 }
 
 .page-subtitle {

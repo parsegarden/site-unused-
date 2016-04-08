@@ -65,13 +65,13 @@
 
 
     .nav-main--link {
-        border-top: 1px solid rgba(white, .25);
+        border-top: 1px solid rgba(white, .15);
         color: white;
         display: block;
-        font-weight: 500;
-        margin: 0 20px;
+        font-weight: 400;
+        margin: 0;
         text-transform: uppercase;
-        padding: 20px 0;
+        padding: 15px 20px;
 
         &.is-active {
             background-color: rgba(white, .5);
@@ -89,6 +89,8 @@
 
         @include media-query(hd) {
             border: none;
+            margin: 0 20px;
+            padding: 20px 0;
 
             button{
                 margin: 0;
@@ -139,7 +141,7 @@
         text-transform: none;
 
         @include media-query(palm) {
-            padding-left: 20px;
+            padding-left: 40px;
         }
     }
 
