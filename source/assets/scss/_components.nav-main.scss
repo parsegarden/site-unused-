@@ -65,7 +65,7 @@
 
 
     .nav-main--link {
-        border-top: 1px solid rgba(white, .18);
+        border-top: 1px solid rgba(white, .25);
         color: white;
         display: block;
         font-weight: 500;
@@ -137,8 +137,10 @@
 
     .nav-main--link{
         text-transform: none;
-        padding-left: 30px;
-        text-transform: none;
+
+        @include media-query(palm) {
+            padding-left: 20px;
+        }
     }
 
 
