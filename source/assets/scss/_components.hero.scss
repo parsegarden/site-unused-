@@ -186,27 +186,49 @@
 
 
 .hero-meet--intro{
+    margin: 35px 0 20px;
+
+    @include media-query(palm) {
+        margin: 20px 0;
+    }
 
     span{
         color: rgba(#333, 0.4);
-        //text-transform: uppercase;
+
+        &::before,
+        &::after{
+            display: block;
+            content: "";
+            height: 45px;
+            width: 45px;
+            position: absolute;
+            opacity: 0.2;
+
+            @include media-query(palm) {
+                display: none;
+            }
+        }
+
+        &:before {
+            display: block;
+            content: "";
+            background: url("/assets/i/left-arrow.svg") no-repeat;
+            background-size: 39px;
+            top: 12px;
+            left: 378px;
+        }
+
+        &:after{
+            display: block;
+            content: "";
+            background: url("/assets/i/right-arrow.svg") no-repeat;
+            background-size: 39px;
+            top: 12px;
+            right: 370px;
+        }
     }
 
     @include media-query(palm) {
-        display: none;
+        //display: none;
     }
-}
-
-.arrow-product--left{
-    position: relative;
-    top: 22px;
-    right: 30px;
-    opacity: 0.2;
-}
-
-.arrow-product--right{
-    position: relative;
-    top: 22px;
-    left: 30px;
-    opacity: 0.2;
 }
