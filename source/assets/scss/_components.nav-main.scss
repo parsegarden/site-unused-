@@ -68,7 +68,7 @@
         border-top: 1px solid rgba(white, .15);
         color: white;
         display: block;
-        font-weight: 400;
+        font-weight: 500;
         margin: 0;
         text-transform: uppercase;
         padding: 15px 20px;
@@ -114,6 +114,7 @@
             color: rgba(white, .8);
             display: inline-block;
             margin-top: -5px;
+            font-weight: 400;
 
             @include media-query(hd) {
                 color: #444;
