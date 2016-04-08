@@ -2,6 +2,16 @@
    #NAV-MAIN
 \* -------------------- */
 
+.page__home--alt .nav-main{
+
+    @include linear-gradient(135deg, #5856D8, #18FE89);
+
+    @include media-query(hd) {
+        background: none;
+    }
+}
+
+
 .nav-main {
 
     @include linear-gradient(#5856D8, #27DCF9 80%, #FFF);
@@ -24,7 +34,7 @@
     }
 
     @include media-query(palm) {
-        margin-top: 50px;
+        margin-top: 44px;
         height: 1000px;
     }
 }
@@ -55,7 +65,7 @@
 
 
     .nav-main--link {
-        border-top: 1px solid rgba(white, .25);
+        border-top: 1px solid rgba(white, .18);
         color: white;
         display: block;
         font-weight: 500;
@@ -73,9 +83,16 @@
             position: relative;
             top: 4px;
         }
+        button{
+            margin: 20px 0;
+        }
 
         @include media-query(hd) {
             border: none;
+
+            button{
+                margin: 0;
+            }
 
         }
     }
@@ -119,6 +136,8 @@
 .nav-main-dd{
 
     .nav-main--link{
+        text-transform: none;
+        padding-left: 30px;
         text-transform: none;
     }
 
@@ -184,16 +203,6 @@
             font-weight: 600;
         }
 
-    }
-
-    @include media-query(palm) {
-
-        padding-left: 30px;
-
-        .nav-main--link{
-            text-transform: none;
-            max-width: 250px;
-        }
     }
 }
 
