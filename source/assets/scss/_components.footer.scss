@@ -42,9 +42,9 @@ footer:hover li a{
 }
 
 
-.Partner-twitter{
+.partner-twitter{
 
-    margin: 20px;
+    margin-top: 20px;
 
     @include media-query(hd) {
         margin-top: -20px;
@@ -60,10 +60,12 @@ footer:hover li a{
 
 
 .site-info-wrap {
-    margin-top: 80px;
+    margin-top: 40px;
+    padding-left: 10px;
 
     @include media-query(palm) {
         margin-top: 40px;
+        padding-left: 0;
     }
 }
     .site-info {
@@ -81,12 +83,14 @@ footer:hover li a{
     .site-links {
         @include font-size($text-size-xxxs);
 
+
         a {
             color: $grey-light;
         }
 
         @include media-query(hd) {
             text-align: right;
+            padding-right: 30px;
         }
     }
 

@@ -167,8 +167,11 @@
     height: 50px;
     width: 90px;
     border: 1px solid transparent;
-	margin:  0 20px;
+	margin:  0 10px;
 
+	@include media-query(hd) {
+		margin: 0 20px;
+	}
 
 	@include media-query(palm) {
 		display: flex;
