@@ -203,7 +203,7 @@
 .is-tall{
 
      @include media-query(hd) {
-        height: 90vh;
+        height: 90%;
     }
 }
 

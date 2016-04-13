@@ -18,6 +18,7 @@
 
 
 .logo-list-wrap{
+	position: relative;
 	background-color: white;
 	@include display(flex);
 	@include justify-content(center);
