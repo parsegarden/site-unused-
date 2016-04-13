@@ -189,9 +189,9 @@ hr.mg-hr{
 }
 
 .u--center{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include display(flex);
+	@include justify-content(center);
+	@include align-items(center);
 }
 
 
