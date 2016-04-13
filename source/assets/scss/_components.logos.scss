@@ -6,9 +6,9 @@
 		padding: 20px 0 0;
 
 	@include media-query(palm) {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		@include display(flex);
+		@include justify-content(center);
+		@include align-items(center);
 		padding: 45px 0 40px;
 		//margin-bottom: 0;
 	}
