@@ -19,9 +19,9 @@
 
 .logo-list-wrap{
 	background-color: white;
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
+	@include display(flex);
+	@include justify-content(center);
+	@include align-items(center);
 	z-index: -2;
 	//margin-bottom: 60px;
 }
@@ -174,7 +174,7 @@
 	}
 
 	@include media-query(palm) {
-		display: flex;
+		@include display(flex);
 		justify-content: center;
 
 

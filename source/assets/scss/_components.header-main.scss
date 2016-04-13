@@ -9,7 +9,7 @@
 
 
     @include media-query(hd) {
-        display: flex;
+        @include display(flex);
         height: 64px;
     }
 
@@ -21,7 +21,7 @@
 
         @include media-query(hd) {
             padding: 28px 0 0 40px;
-            flex: 1;
+            @include flex(1);
         }
     }
 

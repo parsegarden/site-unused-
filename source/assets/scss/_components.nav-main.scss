@@ -154,9 +154,9 @@
         position: absolute;
         top: 65px;
         left: -40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        @include display(flex);
+        @include flex-direction(column);
+        @include justify-content(space-around);
         opacity: 0;
         width: 260px;
         box-shadow: 0 5px 10px rgba(black, .2);
