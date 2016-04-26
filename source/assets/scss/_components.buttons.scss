@@ -4,7 +4,7 @@
 
 
 .btn {
-    border-radius: 5px;    
+    border-radius: 5px;
     display: inline-block;
     padding: 15px;
     width: 100%;
@@ -12,10 +12,10 @@
     position: relative;
     z-index: 2;
     outline: none;
-    
+
     > .icon-arrow-right {
         position: relative;
-        top: 3px;
+        top: 4px;
     }
 }
 
@@ -26,7 +26,7 @@
 
 
 .btn-primary {
-    @include linear-gradient(#5658D8, #27DCF9);   
+    @include linear-gradient(#5658D8, #27DCF9);
     border: none;
     color: white;
 }
@@ -79,19 +79,19 @@
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px;
-   
+
 }
 
 .btn-info{
-    background-color: white;   
+    background-color: white;
     color: #72BAF3;
     border: 1px solid #72BAF3;
 
-} 
+}
 
 .btn-info:active{
     color: white;
-}   
+}
 .button:focus{
     @include linear-gradient(to bottom, #1e5799 0%,#2989d8 0%,#7db9e8 77%,#7db9e8 77%);
 }
@@ -117,7 +117,7 @@
     border-radius: 3px;
     font-size: 18px;
 }
-.btn-fb{ 
-        @include linear-gradient(to bottom, #1e5799 0%,#2989d8 0%,#7db9e8 77%,#7db9e8 77%);      
+.btn-fb{
+        @include linear-gradient(to bottom, #1e5799 0%,#2989d8 0%,#7db9e8 77%,#7db9e8 77%);
         padding: 10px  65px;
 }

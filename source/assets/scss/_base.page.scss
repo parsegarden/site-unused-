@@ -109,3 +109,14 @@ img {
 
     }
 }
+
+
+
+//Page
+.page__home--alt-new{
+	height: 100%;
+
+	@include media-query(hd) {
+		height: 75vh;
+	}
+}

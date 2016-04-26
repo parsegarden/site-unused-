@@ -88,9 +88,15 @@
             margin: 20px 0;
             position: relative;
             top: -12px;
-            background-color: white;
-            color: #00C963;
 
+        }
+        .page__home--alt{
+
+            .btn{
+                background-color: white;
+                color: #00C963;
+
+            }
         }
 
         @include media-query(hd) {
@@ -257,5 +263,62 @@
         .nav-main{
 
         }
+    }
+}
+
+
+//page__home--alt-new
+
+.page__home--alt-new{
+
+    .nav-main--link {
+        margin: 0;
+    }
+
+    .nav-main {
+        z-index: 9;
+        transform: none;
+        position: absolute;
+        background: none;
+        top: -13px;
+        right: 0;
+        visibility: visible;
+    }
+
+    .nav-main-wrap{
+        .btn{
+            background: none;
+            color: white;
+            border: 1px solid rgba(white, 0.5);
+            padding: 5px 15px;
+            font-size: 16px;
+
+            &:hover{
+                border: 1px solid white;
+            }
+        }
+    }
+
+
+    @include media-query(hd) {
+        .nav-main {
+            @include position(relative, 0 0 0 0);
+            background: none;
+            overflow: visible;
+        }
+    }
+
+
+    @include media-query(palm) {
+        .nav-main {
+            z-index: 9;
+            transform: none;
+            height: 95px;
+            position: absolute;
+            background: none;
+            top: -63px;
+            right: 0;
+        }
+
     }
 }

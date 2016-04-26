@@ -4,6 +4,8 @@
 
 .logos{
 		padding: 20px 0 0;
+		@include flex-direction(column)
+		z-index: 3;
 
 	@include media-query(palm) {
 		@include display(flex);
@@ -241,5 +243,23 @@
 
 	@include media-query(palm){
 		margin: 15px auto;
+	}
+}
+
+
+//page__home--alt-new
+
+.page__home--alt-new{
+
+	.logos{
+		padding: 65px 0;
+
+		@include media-query(palm){
+			padding: 80px 0 50px;
+		}
+
+		p{
+			padding: 0 10px;
+		}
 	}
 }

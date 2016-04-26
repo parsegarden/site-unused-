@@ -116,3 +116,126 @@
 .o-box__pad {
     padding: 20px;
 }
+
+
+
+
+
+//page__home--alt-new
+
+.page__home--alt-new {
+
+    .box-feature-wrap {
+
+        .box-copy{
+            color: $grey-light;
+        }
+
+        .box,
+        .box-feature {
+
+            @include media-query(palm) {
+                margin: 0;
+            }
+        }
+
+        span {
+            font-size:  14px;
+        }
+
+        .btn {
+            width: 160px;
+            color: white;
+            background-color: #5856D6;
+            margin: 10px 0 30px;
+
+            .arrow-right {
+                margin-left: 5px;
+            }
+        }
+
+        @include media-query(hd) {
+            .box-feature {
+                margin-bottom: 30px;
+            }
+
+            .btn{
+                margin: 10px 0;
+            }
+
+            .track-screen-shoot{
+                width: 846px;
+                margin: 0;
+
+                @include media-query(hd) {
+                    margin-left: -80px;
+                }
+            }
+
+                img{
+                    height: 480px;
+                    width: 720px;
+                }
+
+                .box-link {
+                    border-bottom: none;
+                    display: block;
+                    padding-bottom: 10px;
+                    text-align: left;
+                }
+
+                .box-screenshot {
+                    @include position(absolute, -15% 0 null null);
+                    visibility: hidden;
+                }
+
+
+                .box-link {
+                    border-bottom-color: none;
+                    padding-top: 50px;
+                    width: 300px;
+
+
+                }
+
+                .box-heading {
+                    color: $grey-dark;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    font-size: $text-size-xl;
+                }
+
+                .box-screenshot {
+                    visibility: visible;
+                }
+            }
+
+
+            &.box-feature-wrap--alt {
+                .box-link {
+                    margin-left: 893px;
+                }
+
+                .box-screenshot {
+                    left: 0;
+                    right: auto;
+                }
+
+
+                .box-link {
+                    padding: 50px 0 0 100px;
+                    margin-left: 793px;
+                    width: 400px;
+
+                    @include media-query(palm) {
+
+                    padding: 0;
+                    margin: 0;
+
+                    }
+                }
+            }
+    }
+
+
+}

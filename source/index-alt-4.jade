@@ -1,0 +1,166 @@
+doctype html
+html
+    include includes/_head.jade
+    
+    body.hm--mod.page__home--alt.page__home--alt-new
+        // HEADER
+        header.header
+            a.logo(href="#") 
+                img.logo-image(src="assets/i/unmetric-logo-white.png" alt="Unmetric logo")
+            
+            
+            a.menu-link.is-hidden(href="#")
+                span.menu-icon
+                
+            
+            nav.nav-main.0is-hidden
+                ul.nav-main-wrap
+                    .is-hidden
+                        li 
+                            a.more.nav-main--link(href="#") Products
+                                i.icon-arrow-dropdown
+                            
+
+                            ul.nav-main-dd
+                                li 
+                                    a.nav-main--link(href="javascript:void(0)") 
+                                        span.menu-analyze Analyze
+                                            i.icon-arrow-right.arrow-right
+                                        br
+                                        span.nav-main--desc Analytics for social media analysts
+                                    
+                                li 
+                                    a.nav-main--link(href="javascript:void(0)") 
+                                        span.menu-track Track
+                                            i.icon-arrow-right.arrow-right
+                                        br
+                                        span.nav-main--desc Keep an eye on your competition
+                                    
+                                li 
+                                    a.nav-main--link(href="javascript:void(0)") 
+                                        span.menu-discover Discover
+                                            i.icon-arrow-right.arrow-right
+                                        br
+                                        span.nav-main--desc Find inspiration to create content
+
+                        
+                        li: a.nav-main--link(href="javascript:void(0)") About
+                        
+                        li: a.nav-main--link(href="javascript:void(0)") Contact
+                        
+                        li: a.nav-main--link(href="javascript:void(0)") Login
+                    
+                    li: a.nav-main--link(href="javascript:void(0)") 
+                        .btn.btn-secondary.t-weight--m SIGN IN
+                    
+        
+    
+                
+        section.hero.row.u--center.u-pad--hero.is-tall.0is-hidden
+            .content.t-center
+                
+                .col-4
+                    p.hero-copy.t-white.t-weight--book An easy and intelligent way to 
+                        br 
+                        | understand and out-perform 
+                        br 
+                        | your competitor’s marketing efforts.
+                
+                
+                .t-center.0is-hidden
+                    p.hero-meet--intro.intro.t-weight--m MEET OUR PRODUCTS
+                    
+                    a(href="#").arrow-down
+                        img(src="../assets/i/dropdown-arrow.svg", alt="")
+        
+        
+        section.row.has-padding
+            .content.t-center
+            
+                .box-feature-wrap     
+                    .box.box-feature
+                        a.box-link
+                            h3.box-heading Analyze
+                            p.t-weight--m
+                                span FOR ANALYSTS & STRATEGISTS
+                            
+                              
+                            p.box-copy In depth analysis of your competition’s content and  campaigns to understand what engages best and why.
+                            
+                            button.btn Learn How
+                                i.icon-arrow-right.arrow-right
+                                  
+                        img.box-image.box-screenshot(src="assets/i/product-shots/ana-sshot-campaigns-min.png")                      
+    
+        
+        
+        section.row.has-padding
+            .content.t-center        
+                .box-feature-wrap.box-feature-wrap--alt  
+                    .box.box-feature
+                        a.box-link
+                            h3.box-heading Track
+                            
+                            p.t-weight--m
+                                span FOR BRAND MANAGERS
+                            
+                            p.box-copy Feel the pulse of your competitor’s brand marketing in real-time on Facebook, Twitter, YouTube and Instagram
+                            
+                            button.btn Learn How
+                                i.icon-arrow-right.arrow-right
+                                
+                        img.box-image.box-screenshot.track-screen-shoot(src="assets/i/product-shots/track_cc-sshot-home-min.png")        
+                            
+        
+        
+        
+        section.row.has-padding.has-border
+            .content.t-center
+            
+                .box-feature-wrap     
+                    .box.box-feature
+                        a.box-link
+                            h3.box-heading Discover
+                            p.t-weight--m
+                                span FOR CONTENT CREATORS
+                            
+                              
+                            p.box-copy Find new ideas and feed your inspiration to create engaging content, save, share and discuss with your team.
+                            
+                            button.btn Learn How
+                                i.icon-arrow-right.arrow-right
+                                  
+                        img.box-image.box-screenshot(src="assets/i/product-shots/discover_screen-short.png")
+
+        
+        .row.group.logos.u-pad--less.flex
+            
+            p.t-center.intro Thousands of real-time marketers at hundreds of leading brands and agencies 
+                br
+                | across 20+ countries use Unmetric to compete and win.
+            
+            .logo-list-wrap
+                ul.logo-list
+                    li.logo-list-item.logo-list-item--gm.logo-list-c
+                        span GM
+
+                    li.logo-list-item.logo-list-item--ls.logo-list-c
+                        span Lower's
+
+                    li.logo-list-item.logo-list-item--ah.logo-list-c
+                        span Aa
+
+                    li.logo-list-item.logo-list-item--lo.logo-list-c
+                        span Loreal
+
+                    li.logo-list-item.logo-list-item--un.logo-list-c
+                        span Unilever
+
+                    li.logo-list-item.logo-list-item--og.logo-list-c
+                        span Og
+
+                    li.logo-list-item.logo-list-item--hm.logo-list-c
+                        span H.M         
+        
+        include includes/_footer.jade                    
+        include includes/_foot.jade
