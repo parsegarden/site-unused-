@@ -293,13 +293,13 @@
   }
 }
 
+
 .hero{
     .hero-op{
         color: rgba(white, 0.75);
     }
 
 }
-
 
 
 .hero-title {
@@ -317,6 +317,25 @@
         font-size: $text-size-m;
     }
 }
+
+
+    .hero-title--nw {
+
+        @include font-size($text-size-xl);
+        color: white;
+        letter-spacing: 0px;
+        position: relative;
+        z-index: 2;
+
+        @include media-query(hd) {
+            @include font-size($text-size-xxl);
+        }
+
+        @include media-query(palm) {
+    		font-size: $text-size-l;
+    	}
+    }
+
 
 
     .intro{
@@ -400,7 +419,7 @@
     	padding: 100px 0 20px 0;
 
     	@include media-query(hd) {
-            padding: 38px 0 0 0;
+            padding: 70px 0 0 0;
         }
     }
 
