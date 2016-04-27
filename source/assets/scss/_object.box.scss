@@ -125,10 +125,27 @@
 
 .page__home--alt-new {
 
+
     .box-feature-wrap {
 
         .box-copy{
             color: #666;
+        }
+
+
+        .analyze-feat {
+            color: #4D48D4;
+            font-size: 18px;
+        }
+
+        .track-feat {
+            color: #059ECA;
+            font-size: 18px;
+        }
+
+        .discover-feat {
+            color: #05CA86;
+            font-size: 18px;
         }
 
         .box,
@@ -151,6 +168,19 @@
             .arrow-right {
                 margin-left: 5px;
                 top: 2px;
+            }
+        }
+
+
+        .box-heading {
+            color: $grey-dark;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 32px;
+
+            @include media-query(palm) {
+                color: $grey-dark;
+                font-size: 28px;
             }
         }
 
@@ -182,11 +212,11 @@
                     border-bottom: none;
                     display: block;
                     padding-bottom: 10px;
-                    padding-left: 60px;
+                    padding-left: 40px;
                     text-align: left;
                     border-bottom-color: none;
-                    padding-top: 70px;
-                    width: 340px;
+                    padding-top: 10px;
+                    width: 400px;
 
                 }
 
@@ -195,13 +225,6 @@
                     visibility: hidden;
                 }
 
-
-                .box-heading {
-                    color: $grey-dark;
-                    font-weight: 400;
-                    text-transform: uppercase;
-                    font-size: $text-size-xl;
-                }
 
                 .box-screenshot {
                     visibility: visible;
@@ -221,9 +244,9 @@
 
 
                 .box-link {
-                    padding: 50px 0 0 100px;
+                    padding: 0 0 0 100px;
                     margin-left: 793px;
-                    width: 400px;
+                    width: 420px;
 
                     @include media-query(palm) {
 
