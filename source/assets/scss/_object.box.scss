@@ -260,3 +260,19 @@
 
 
 }
+
+
+//page__home
+.page__home{
+    .box-feature-wrap {
+
+        .box-link {
+            @include media-query(hd) {
+
+                width: 320px;
+                padding-top: 65px; 
+
+            }
+        }
+    }
+}
