@@ -128,7 +128,7 @@
     .box-feature-wrap {
 
         .box-copy{
-            color: $grey-light;
+            color: #666;
         }
 
         .box,
@@ -146,7 +146,6 @@
         .btn {
             width: 160px;
             color: white;
-            background-color: #5856D6;
             margin: 10px 0 30px;
 
             .arrow-right {
@@ -156,6 +155,8 @@
         }
 
         @include media-query(hd) {
+            padding-bottom: 60px;
+
             .box-feature {
                 margin-bottom: 30px;
             }
@@ -169,12 +170,11 @@
                 margin: 0;
 
                 @include media-query(hd) {
-                    margin-left: -80px;
+                    margin-left: -60px;
                 }
             }
 
                 img{
-                    height: 480px;
                     width: 720px;
                 }
 
@@ -182,7 +182,12 @@
                     border-bottom: none;
                     display: block;
                     padding-bottom: 10px;
+                    padding-left: 60px;
                     text-align: left;
+                    border-bottom-color: none;
+                    padding-top: 70px;
+                    width: 340px;
+
                 }
 
                 .box-screenshot {
@@ -190,14 +195,6 @@
                     visibility: hidden;
                 }
 
-
-                .box-link {
-                    border-bottom-color: none;
-                    padding-top: 50px;
-                    width: 300px;
-
-
-                }
 
                 .box-heading {
                     color: $grey-dark;
