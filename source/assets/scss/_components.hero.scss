@@ -358,7 +358,7 @@
         padding: 20px 0;
         margin-top: -15px;
         border: none;
-        width: 100%;
+        width: 420px;
 
 
         @include media-query(hd) {
@@ -377,7 +377,7 @@
         @include media-query(palm) {
             height: 100%;
             top: 0;
-            padding: 20px 0;
+            padding: 20px 15px;
         }
 
 
@@ -439,7 +439,7 @@
 
 
         @include media-query(hd) {
-            height: 62vh;
+            height: 68vh;
             width: 100vw;
             margin-top: 70px;
         }
@@ -457,11 +457,13 @@
 .page__home-new {
 
     .hero-list--link {
-        padding: 0 75px;
-        margin-top: -10px;
+        width: 440px;
+        padding: 0 48px;
+
 
         @include media-query(palm) {
-            padding: 20px 0px;
+            padding: 20px 5px;
+            width: 100%;
         }
 
         p {
