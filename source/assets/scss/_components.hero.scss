@@ -376,6 +376,7 @@
 
         @include media-query(palm) {
             height: 100%;
+            width: 100%;
             top: 0;
             padding: 20px 15px;
         }
