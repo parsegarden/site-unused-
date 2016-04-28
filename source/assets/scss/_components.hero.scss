@@ -303,19 +303,12 @@
 
 
 .hero-title {
-    @include font-size($text-size-l);
+    @include font-size($text-size-xl);
     color: white;
     position: relative;
     z-index: 2;
     letter-spacing: 0px;
 
-    @include media-query(hd) {
-        @include font-size($text-size-xl);
-    }
-
-    @include media-query(palm) {
-        font-size: $text-size-m;
-    }
 }
 
 
@@ -332,7 +325,7 @@
         }
 
         @include media-query(palm) {
-    		font-size: $text-size-l;
+    		@include font-size($text-size-l);
     	}
     }
 
