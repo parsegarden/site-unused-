@@ -457,7 +457,7 @@
 .page__home-new {
 
     .hero-list--link {
-        padding: 0 65px;
+        padding: 0 75px;
         margin-top: -10px;
 
         @include media-query(palm) {
@@ -465,7 +465,7 @@
         }
 
         p {
-            padding: 5px 10px 10px;
+            padding: 5px 0 10px;
         }
 
 
