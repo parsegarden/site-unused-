@@ -356,7 +356,9 @@
         height: 100%;
         top: 0;
         padding: 20px 0;
+        margin-top: -15px;
         border: none;
+        width: 100%;
 
 
         @include media-query(hd) {
@@ -368,10 +370,6 @@
 
             p{
                 padding: 5px 80px 10px;
-            }
-
-            &{
-                width: 100%;
             }
         }
 
@@ -407,6 +405,7 @@
         }
     }
 
+
     .u-pad--hero{
     	padding: 100px 0 20px 0;
 
@@ -419,6 +418,7 @@
     .hero-list--item{
         overflow: hidden;
         height: 100%;
+        padding: 20px 0;
 
         &:first-child {
             @include linear-gradient(135deg, transparent, transparent,  rgba(white, 0.2));
@@ -439,12 +439,79 @@
 
 
         @include media-query(hd) {
-            height: 72vh;
+            height: 62vh;
             width: 100vw;
+            margin-top: 70px;
         }
     }
 
     .l-height{
         line-height: 1.3;
     }
+}
+
+
+
+//page__home-new
+
+.page__home-new {
+
+    .hero-list--link {
+        padding: 0 65px;
+        margin-top: -10px;
+
+        @include media-query(palm) {
+            padding: 20px 0px;
+        }
+
+        p {
+            padding: 5px 10px 10px;
+        }
+
+
+        p {
+            @include media-query(hd) {
+                display: none;
+            }
+
+            display: block;
+        }
+
+
+        span.btn {
+            @include media-query(hd) {
+                visibility: hidden;
+            }
+
+            visibility: visible;
+        }
+
+
+        &:hover{
+
+            p {
+                display: block;
+            }
+
+            span.btn {
+                visibility: visible;
+            }
+
+            .hero-list--heading{
+                color: white;
+            }
+        }
+
+    }
+
+    .hero-list--heading {
+        font-size: 32px;
+        text-transform: none;
+        font-weight: normal;
+        color: rgba(white, 0.75);
+
+    }
+
+
+
 }
