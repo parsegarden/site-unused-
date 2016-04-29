@@ -358,7 +358,7 @@
         padding: 20px 0;
         margin-top: -15px;
         border: none;
-        width: 420px;
+        width: 100%;
 
 
         @include media-query(hd) {
@@ -368,8 +368,10 @@
             @include align-items(center);
             //margin: 0 20px;
 
+
             p{
                 padding: 5px 80px 10px;
+                width: 415px;
             }
         }
 
@@ -379,6 +381,10 @@
             width: 100%;
             top: 0;
             padding: 20px 15px;
+
+            p{
+                width: 100%;
+            }
         }
 
 
