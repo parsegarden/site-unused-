@@ -360,6 +360,11 @@
         border: none;
         width: 100%;
 
+        p{
+            padding: 5px 80px 10px;
+            width: 420px;
+        }
+
 
         @include media-query(hd) {
             @include display(flex);
@@ -368,23 +373,14 @@
             @include align-items(center);
             //margin: 0 20px;
 
-
-            p{
-                padding: 5px 80px 10px;
-                width: 415px;
-            }
         }
-
 
         @include media-query(palm) {
             height: 100%;
             width: 100%;
             top: 0;
-            padding: 20px 15px;
+            padding: 20px 0px;
 
-            p{
-                width: 100%;
-            }
         }
 
 
@@ -464,13 +460,25 @@
 .page__home-new {
 
     .hero-list--link {
-        width: 440px;
         padding: 0 48px;
+
+
+        p,
+        .hero-list--heading {
+            width: 340px;
+
+        }
+
 
 
         @include media-query(palm) {
             padding: 20px 5px;
             width: 100%;
+
+            p,
+            .hero-list--heading {
+                width: 100%;
+            }
         }
 
         p {
